@@ -571,7 +571,20 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
 .vt.pass{color:var(--stamp);border-color:var(--stamp)}
 .vt.hold{color:var(--muted)}
 .runshot pre{overflow-wrap:anywhere;word-break:break-all}
+/* 꼬리표(지식 색인·꾸러미): 조립기 스타일의 색 변수를 시리즈 테마에 맞춘다 */
+body .kgx{--gfp:var(--ok)}
+body .kgx .it .df,body .kgx .todo li{color:var(--soft)}
+body .kgx .path span.lim{color:var(--stamp)}
 :root{--font:"Noto Sans SC",system-ui,sans-serif;--stampf:"Noto Sans SC",sans-serif}*{word-break:normal!important;line-break:strict}</style>
+<!-- lab-kg:head -->
+<meta name="citation_title" content="模型招聘委员会 第二次公开招聘 · 6-8 GRU">
+<meta name="dc.title" content="模型招聘委员会 第二次公开招聘 · 6-8 GRU">
+<meta name="dc.date" content="2026-10-24">
+<meta name="dc.language" content="ko">
+<meta name="dc.type" content="InteractiveResource">
+<meta name="citation_author" content="Sangsun Ahn">
+<meta name="dcterms.isPartOf" content="模型招聘委员会 第二次公开招聘">
+<!-- /lab-kg:head -->
 </head>
 <body>
 <nav class="top" aria-label="本页目录">
@@ -830,6 +843,22 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
   <div class="card"><ul class="reflist"><li><b>数据与计算。</b> 手写数字的密封试卷 450 张、错位试卷、序列组共同任务“不均匀的速度”与 6-6 的规定相同。成绩单中 RNN·LSTM 两行直接采用 6-6·6-7 Colab 代码的运行结果。判定数字由页面读取 A 章 Colab 代码的运行结果后写出。训练时间是在制作本站的电脑（CPU 2 个）上测得的值，因电脑而异。01 章的图是浏览器用一个种子只训练了几个轮次得到的值。复试条件（与 6-7 相同的重复 1~5 次）和预测在测量之前就写进了委员会文档。03 章的“AI 给出的代码”是特意编写的示例。</li><li><b>判定规则。</b> 第二次公开招聘的判定，取在 Colab 中用 5 个随机种子（随机数）训练所得的平均值。必须同时超过基准线（手册先生）和前辈成绩（现在负责同一工作的第一次录用者）才算录用。与前辈的差距小于种子间波动（标准差）时，视为平局，前辈保住席位。页面中的“亲自训练看看”只用一个种子在浏览器中重新训练，所以可能与判定数字略有出入。</li><li><b>复试。</b> 被判待定的应聘者可以申请一次复试。应聘者在考试前先说出依据和预测，前辈也在相同条件下重新应试。复试结果同样取 5 个种子的平均值，输了就如实记录。</li><li><b>图片。</b> 登场人物的图片沿用自《人工智能算法家族组织图》。面试室场景、工牌和图表由本页用代码直接绘制。</li><li><b>“招聘委员会”设定。</b> 这是把模型比作应聘者、把训练和评估比作面试的比喻，并不代表真实的招聘流程或任何具体公司。“待定”只是表示“在这项工作和这份数据上，前辈更合适”，并不是模型的优劣之分。</li><li><b>登场人物。</b> Money-Robo 是作者运营的服务的吉祥物角色。博士、助理、果蝇研究员、手册先生、前辈员工和应聘者都不代表真实人物。台词里关于钱和预算的说法，是用来比喻计算成本的口头禅。</li><li><b>数据。</b> 表格数据组的实操考题是 UCI Machine Learning Repository 的 Concrete Compressive Strength 数据（Yeh, 1998，1,030 条，CC BY 4.0），试卷沿用与第一次公开招聘相同的规定（test_size=0.25, stratify=强度 3 个等级, random_state=42；训练 772 · 测试 258）。图像方面的实操考题是 scikit-learn 自带的手写数字（load_digits，1,797 张，原始数据为 UCI Optical Recognition of Handwritten Digits，CC BY 4.0），监督学习各集的试卷为 test_size=0.25, stratify=y, random_state=42（训练 1,347 · 测试 450）。</li><li><b>语言。</b> 本系列以韩语撰写。译本在韩语版内容定稿后，以相同的文件名添加。Colab 代码中的注释和运行结果保持韩语原文。</li></ul></div>
 </div>
 </section>
+<!-- lab-kg:body -->
+<section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
+<h2>知识索引 — 在本页查找</h2>
+<p class="kgx-sub">汇集了本页出现的概念、方法、生物对应、主张与开放问题。可搜索，点击条目查看邻接关系，并通过“查看说明”返回正文。</p>
+<div id="kg-mount"></div>
+</div></section>
+<section class="kgx kgx-sec" id="export"><div class="kgx-wrap">
+<h2>本体·书目资料包 — 带走本页的知识</h2>
+<p class="kgx-sub">将知识索引连同出处下载为文件。可用于 Zotero（BibTeX·RIS）、Protégé（Turtle）、Neo4j·Gephi（CSV）以及合并多页（kg.json）。</p>
+<div id="export-mount"></div>
+</div></section>
+<script type="application/json" id="kg-raw">{"version": "1.0", "page": "6-8", "nodes": [{"id": "lab:method/gru", "type": "Method", "label": {"ko": "GRU", "en": "Gated Recurrent Unit"}, "definition": {"ko": "셀 상태 없이 상태 h 하나에 문 두 개(갱신 z·리셋 r)를 단 순환 망. 갱신 문이 옛 기억과 새 후보를 섞는 비율을 정한다.", "zh": "没有细胞状态，只有一个状态 h，并配有两个门（更新 z、重置 r）的循环网络。更新门决定旧记忆与新候选值的混合比例。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "cho2014"}]}, {"id": "lab:method/lstm-prev", "type": "Method", "label": {"ko": "LSTM (순서팀 앞 줄)", "en": "LSTM (previous applicant, 6-7)", "zh": "LSTM（序列组前一行）"}, "definition": {"ko": "6-7에서 본 문 세 개와 셀 상태의 순환 망. RNN보다 오래 기억하지만 숫자가 RNN의 네 배 가까이 된다.", "zh": "6-7中见过的、带三个门和细胞状态的循环网络。比RNN记得更久，但数字数量接近RNN的四倍。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/rnn-prev", "type": "Method", "label": {"ko": "RNN (순서팀 첫 줄)", "en": "RNN (first applicant, 6-6)", "zh": "RNN（序列组第一行）"}, "definition": {"ko": "6-6에서 본 순환 망. 순서팀 공통 과제와 기억 시험의 출발점이다.", "zh": "6-6中见过的循环网络。是序列组共同任务与记忆测试的起点。"}, "anchor": "#m4", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:method/svm-senior", "type": "Method", "label": {"ko": "SVM (선배)", "en": "SVM (senior)", "zh": "SVM（前辈）"}, "definition": {"ko": "순서를 8줄로 되돌리거나 0으로 채워 한꺼번에 읽는 선배. 선배 기록은 6-6~6-8에서 같은 숫자다.", "zh": "将序列还原为8行或补0后一次读入的前辈。前辈成绩在6-6~6-8中是相同的数字。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/update-gate", "type": "Concept", "label": {"ko": "갱신 문", "en": "Update gate", "zh": "更新门"}, "definition": {"ko": "옛 상태와 새 후보를 섞는 비율 z. PyTorch에서는 z가 옛 상태를 남기는 비율이다.", "zh": "混合旧状态与新候选值的比例 z。在PyTorch中，z 是保留旧状态的比例。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "cho2014"}]}, {"id": "lab:concept/reset-gate", "type": "Concept", "label": {"ko": "리셋 문", "en": "Reset gate", "zh": "重置门"}, "definition": {"ko": "새 후보를 만들 때 옛 상태를 얼마나 참고할지 정하는 r. 0에 가까우면 이번 입력만으로 후보를 만든다.", "zh": "制作新候选值时参考旧状态多少的 r。接近0时，仅用本次输入制作候选值。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/candidate", "type": "Term", "label": {"ko": "후보", "en": "Candidate", "zh": "候选"}, "definition": {"ko": "이번 걸음에 들어올 새 상태 n. tanh로 −1~1 사이 값이다.", "zh": "本步将进入的新状态 n。经 tanh 处理，值在 −1~1 之间。"}, "anchor": "#m1", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:concept/gate-tying", "type": "Concept", "label": {"ko": "잊기와 적기를 묶기", "en": "Tying forgetting and writing", "zh": "把遗忘与写入绑定在一起"}, "definition": {"ko": "LSTM의 망각 문 f와 입력 문 i를 f = z, i = 1 − z로 묶은 셈이다. 남기는 만큼 덜 적고, 출력 문과 셀 상태는 없다.", "zh": "相当于将LSTM的遗忘门 f 与输入门 i 绑定为 f = z、i = 1 − z。保留多少，就少写多少；并且没有输出门和细胞状态。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/param-count", "type": "Concept", "label": {"ko": "파라미터 수", "en": "Parameter count", "zh": "参数数量"}, "definition": {"ko": "모델이 학습으로 정하는 숫자의 개수. 순환 칸은 RNN 1묶음, GRU 3묶음, LSTM 4묶음이고 출력층 650개는 셋이 같다.", "zh": "模型通过学习决定的数字个数。循环单元在RNN中为1组、GRU为3组、LSTM为4组，输出层的650个在三者中相同。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/train-time", "type": "Term", "label": {"ko": "학습 시간", "en": "Training time", "zh": "训练时间"}, "definition": {"ko": "같은 컴퓨터에서 정해진 에포크를 학습하는 데 걸린 시간. 구현에 따라 파라미터 수와 다르게 움직일 수 있다.", "zh": "在同一台电脑上，学习规定轮次所花费的时间。根据实现方式不同，可能与参数数量的变化不一致。"}, "anchor": "#m4", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:claim/param-ratio", "type": "Claim", "label": {"ko": "문 하나를 빼면 숫자가 약 4분의 3", "en": "One fewer gate gives about three quarters of the numbers", "zh": "去掉一个门，数字约为4分之3"}, "definition": {"ko": "GRU는 문 하나와 셀 상태를 빼서 순환 칸의 숫자가 LSTM의 약 4분의 3이 된다.", "zh": "GRU去掉一个门和细胞状态，因此循环单元的数字约为LSTM的4分之3。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/gru-gradient-path", "type": "Claim", "label": {"ko": "상태 길의 기울기", "en": "Gradient along the state path", "zh": "状态通道上的梯度"}, "definition": {"ko": "∂h_t/∂h_(t−1)에 z_t가 들어 있어, z가 1에 가까우면 기억이 그대로 넘어가고 기울기도 덜 사라진다. LSTM의 망각 문과 같은 역할이다.", "zh": "∂h_t/∂h_(t−1) 中包含 z_t，因此 z 接近1时，记忆原样传递，梯度也更不容易消失。与LSTM的遗忘门作用相同。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "cho2014"}, {"ref": "chung2014"}]}, {"id": "lab:claim/lstm-vs-gru", "type": "Claim", "label": {"ko": "LSTM과 GRU 가운데 무엇이 나은지는 일마다 다르다", "en": "LSTM vs GRU depends on the task", "zh": "LSTM与GRU哪个更好，因任务而异"}, "definition": {"ko": "두 구조를 비교한 경험적 연구들에서도 일관된 승자는 없었다. 그래서 둘 다 재 본다.", "zh": "在比较两种结构的经验研究中，也没有一致的胜者。因此两者都进行测量。"}, "anchor": "#m6", "coverage": "explained", "confidence": "high", "source": [{"ref": "chung2014"}, {"ref": "jozefowicz2015"}, {"ref": "greff2017"}]}, {"id": "lab:limitation/below-senior", "type": "Limitation", "label": {"ko": "순서팀 셋 모두 선배를 넘지 못했다", "en": "No recurrent net beat the senior", "zh": "序列组三者都未能超过前辈"}, "definition": {"ko": "길이를 간단한 규칙으로 되돌릴 수 있는 이 공장의 글씨에서는 한꺼번에 보는 선배 SVM이 더 잘 읽었다.", "zh": "在这个工厂的手写数字中，可以通过简单规则还原长度，因此一次性观察全部输入的前辈SVM读取得更好。"}, "anchor": "#m6", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/formula-variants", "type": "Limitation", "label": {"ko": "구현마다 식이 다르다", "en": "Formulas differ between implementations", "zh": "各实现的公式不同"}, "definition": {"ko": "처음 논문과 PyTorch는 z를 옛 기억을 남기는 비율로 쓰지만 일부 교재는 반대다. PyTorch는 리셋 문을 W_h h를 계산한 뒤에 곱한다.", "zh": "最初的论文与PyTorch将 z 用作保留旧记忆的比例，但一些教材则相反。PyTorch在计算 W_h h 之后再乘以重置门。"}, "anchor": "#m3", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:task/uneven-speed", "type": "Task", "label": {"ko": "고르지 않은 속도 읽기", "en": "Reading digits at uneven speed", "zh": "不均匀速度读取"}, "definition": {"ko": "같은 손글씨를 줄마다 1~3번 반복해 8~24줄로 늘려(재시험은 8~40줄) 읽고 0~9를 맞히는 분류.", "zh": "同一手写数字每行重复1~3次，拉伸为8~24行（复试为8~40行）后读取，并对0~9进行分类。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:task/blank-memory", "type": "Task", "label": {"ko": "빈 줄 기억 시험", "en": "Blank-line memory test", "zh": "空行记忆测试"}, "definition": {"ko": "숫자 8줄 뒤에 빈 줄 K번을 붙여 순서팀 세 명의 기억을 재는 시험.", "zh": "在8行数字后面接上K次空行，测试序列组三位候选人的记忆。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:dataset/optical-digits", "type": "Dataset", "label": {"ko": "손글씨 8×8 숫자", "en": "Optical Recognition of Handwritten Digits", "zh": "手写数字8×8"}, "definition": {"ko": "6-4와 같은 8×8 손글씨 데이터. 줄이나 칸으로 읽어 순서 데이터로 쓴다.", "zh": "与6-4相同的8×8手写数字数据。按行或按格读取，用作序列数据。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "alpaydin1998"}]}, {"id": "lab:metric/test-accuracy", "type": "Metric", "label": {"ko": "시험 정확도 (씨앗 5개 평균)", "en": "Test accuracy (mean of 5 seeds)", "zh": "测试准确率（5个种子的平均）"}, "definition": {"ko": "봉인된 시험지에서 맞힌 비율. 세 지원자 모두 같은 조건과 씨앗 다섯 개의 평균으로 잰다.", "zh": "在密封试卷上答对的比例。三位应聘者都以相同条件与5个种子的平均值进行测量。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/sequence-scorecard", "type": "Concept", "label": {"ko": "순서팀 성적표", "en": "Sequence-team scorecard", "zh": "序列组成绩单"}, "definition": {"ko": "RNN·LSTM·GRU를 같은 과제, 같은 조건으로 잰 표. 이 편에서 세 줄이 완성된다.", "zh": "以相同任务、相同条件测量RNN、LSTM、GRU的表。本篇中三行全部完成。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/verdict", "type": "Claim", "label": {"ko": "판정: 보류 확정", "en": "Verdict: on hold, confirmed", "zh": "判定：待定（最终）"}, "definition": {"ko": "GRU는 고르지 않은 속도에서 94.1%, 재시험에서 93.1%로 선배 SVM의 96.9%·96.2%에 못 미쳐 보류가 확정되었다.", "zh": "GRU在不均匀速度下为94.1%，复试为93.1%，低于前辈SVM的96.9%、96.2%，因此最终确定待定。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:sim/gru-train", "type": "Simulation", "label": {"ko": "한 줄씩 읽는 GRU 학습", "en": "In-browser GRU training", "zh": "逐行读取的GRU学习"}, "definition": {"ko": "브라우저에서 씨앗 0으로 6에포크 학습하며 갱신 문과 리셋 문이 움직이는 모습을 직접 본다.", "zh": "在浏览器中以种子0学习6轮次（epoch），亲眼观察更新门与重置门的变化。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/scale", "type": "Analogy", "label": {"ko": "옛 메모와 새 메모를 저울에 달아 섞기", "en": "Weighing old and new notes on one scale", "zh": "在天平上称量旧备忘与新备忘后混合"}, "definition": {"ko": "저울 한쪽을 늘리면 다른 쪽이 줄듯, 갱신 문 z만큼 옛 기억을 남기고 나머지 1 − z를 새 후보로 채운다.", "zh": "像天平一端升高另一端就下降，以更新门 z 的比例保留旧记忆，其余 1 − z 用新候选值填充。"}, "anchor": "#analogy-sec", "coverage": "explained", "confidence": "high"}, {"id": "lab:bio/memory-overwrite", "type": "BioAnalogue", "label": {"ko": "초파리 기억 흔적의 덧씌움", "en": "Fly memory traces overlaid by new learning", "zh": "果蝇记忆痕迹的覆写"}, "definition": {"ko": "초파리의 기억 흔적은 새 학습이 오면 옛 흔적 위에 덧씌워지며 비율이 경험에 따라 바뀐다. 다만 이는 시간이 걸리는 과정이고 GRU의 섞기는 걸음마다 즉시 계산한다.", "zh": "果蝇的记忆痕迹在新学习到来时会覆盖在旧痕迹之上，覆盖的比例会随经验改变。不过，这是需要时间的过程，而GRU的混合是每一步即时计算的。"}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "medium"}, {"id": "lab:question/lstm-or-gru", "type": "Question", "label": {"ko": "어떤 일에서 LSTM이, 어떤 일에서 GRU가 나은가?", "en": "When does LSTM beat GRU or the reverse?", "zh": "哪种任务中LSTM更好，哪种任务中GRU更好？"}, "definition": {"ko": "정확도는 비슷하고 숫자와 시간만 다른 이 실험으로는 일반적인 답을 낼 수 없다. 일마다 둘 다 재 봐야 한다.", "zh": "这个实验中两者准确率相近，只有参数数量与时间不同，无法得出一般性的结论。需要在每个任务中都进行测量。"}, "anchor": "#m6", "coverage": "mentioned", "confidence": "medium"}], "edges": [{"s": "lab:method/gru", "p": "lab:broader", "o": "lab:topic/lstm-gru"}, {"s": "lab:method/lstm-prev", "p": "lab:broader", "o": "lab:topic/lstm-gru"}, {"s": "lab:method/rnn-prev", "p": "lab:broader", "o": "lab:topic/rnn"}, {"s": "lab:method/svm-senior", "p": "lab:broader", "o": "lab:topic/svm"}, {"s": "lab:metric/test-accuracy", "p": "lab:broader", "o": "lab:topic/accuracy-metrics"}, {"s": "lab:concept/param-count", "p": "lab:broader", "o": "lab:topic/lstm-gru"}, {"s": "lab:task/uneven-speed", "p": "lab:broader", "o": "lab:topic/time-series"}, {"s": "lab:concept/update-gate", "p": "lab:partOf", "o": "lab:method/gru"}, {"s": "lab:concept/reset-gate", "p": "lab:partOf", "o": "lab:method/gru"}, {"s": "lab:concept/candidate", "p": "lab:partOf", "o": "lab:method/gru"}, {"s": "lab:concept/update-gate", "p": "lab:prerequisiteOf", "o": "lab:concept/gate-tying"}, {"s": "lab:concept/gate-tying", "p": "lab:partOf", "o": "lab:method/gru"}, {"s": "lab:method/rnn-prev", "p": "lab:prerequisiteOf", "o": "lab:method/lstm-prev"}, {"s": "lab:method/lstm-prev", "p": "lab:prerequisiteOf", "o": "lab:method/gru"}, {"s": "lab:method/lstm-prev", "p": "lab:hasLimitation", "o": "lab:limitation/below-senior"}, {"s": "lab:method/gru", "p": "lab:hasLimitation", "o": "lab:limitation/below-senior"}, {"s": "lab:method/gru", "p": "lab:hasLimitation", "o": "lab:limitation/formula-variants"}, {"s": "lab:claim/param-ratio", "p": "lab:supports", "o": "lab:method/gru"}, {"s": "lab:method/lstm-prev", "p": "lab:contrastsWith", "o": "lab:method/gru"}, {"s": "lab:concept/param-count", "p": "lab:prerequisiteOf", "o": "lab:claim/param-ratio"}, {"s": "lab:concept/train-time", "p": "lab:relatedTo", "o": "lab:concept/param-count"}, {"s": "lab:claim/gru-gradient-path", "p": "lab:supports", "o": "lab:method/gru"}, {"s": "lab:concept/update-gate", "p": "lab:prerequisiteOf", "o": "lab:claim/gru-gradient-path"}, {"s": "lab:claim/lstm-vs-gru", "p": "lab:supports", "o": "lab:method/gru"}, {"s": "lab:claim/lstm-vs-gru", "p": "lab:raises", "o": "lab:question/lstm-or-gru"}, {"s": "lab:limitation/below-senior", "p": "lab:raises", "o": "lab:question/lstm-or-gru"}, {"s": "lab:method/gru", "p": "lab:contrastsWith", "o": "lab:method/svm-senior"}, {"s": "lab:method/gru", "p": "lab:solves", "o": "lab:task/uneven-speed"}, {"s": "lab:method/svm-senior", "p": "lab:solves", "o": "lab:task/uneven-speed"}, {"s": "lab:method/gru", "p": "lab:solves", "o": "lab:task/blank-memory"}, {"s": "lab:task/uneven-speed", "p": "lab:evaluatedOn", "o": "lab:dataset/optical-digits"}, {"s": "lab:method/gru", "p": "lab:evaluatedBy", "o": "lab:metric/test-accuracy"}, {"s": "lab:concept/sequence-scorecard", "p": "lab:evaluatedBy", "o": "lab:metric/test-accuracy"}, {"s": "lab:metric/test-accuracy", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:concept/sequence-scorecard", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:concept/update-gate", "p": "lab:demonstratedBy", "o": "lab:sim/gru-train"}, {"s": "lab:analogy/scale", "p": "lab:analogyOf", "o": "lab:concept/update-gate"}, {"s": "lab:bio/memory-overwrite", "p": "lab:bioAnalogueOf", "o": "lab:concept/update-gate"}], "topicLabels": {"lab:area/math": "数学基础", "lab:topic/linear-algebra": "线性代数", "lab:topic/probability-statistics": "概率·统计", "lab:topic/calculus-optimization-math": "微积分与优化数学", "lab:topic/information-theory": "信息论", "lab:area/ml-basics": "机器学习基础", "lab:topic/supervised-learning": "监督学习", "lab:topic/unsupervised-learning": "无监督学习概念", "lab:topic/generalization": "泛化·过拟合", "lab:topic/bias-variance": "偏差-方差平衡", "lab:topic/data-splitting": "训练·验证·测试划分", "lab:topic/feature-engineering": "特征工程", "lab:topic/rule-vs-learning": "基于规则 vs 基于学习", "lab:area/classical": "经典模型", "lab:topic/linear-regression": "线性回归", "lab:topic/logistic-regression": "逻辑回归", "lab:topic/svm": "支持向量机", "lab:topic/knn": "k-近邻", "lab:topic/decision-tree": "决策树", "lab:topic/naive-bayes": "朴素贝叶斯", "lab:area/ensemble": "集成", "lab:topic/bagging": "装袋（Bagging）", "lab:topic/random-forest": "随机森林", "lab:topic/boosting": "提升（Boosting）", "lab:topic/stacking": "堆叠（Stacking）", "lab:area/nn-basics": "神经网络基础", "lab:topic/weights-and-biases": "权重与偏置", "lab:topic/perceptron": "感知机", "lab:topic/mlp": "多层感知机", "lab:topic/activation-function": "激活函数", "lab:topic/loss-function": "损失函数", "lab:topic/backpropagation": "反向传播", "lab:topic/universal-approximation": "通用近似定理", "lab:area/optimization": "优化", "lab:topic/gradient-descent": "梯度下降法", "lab:topic/sgd-minibatch": "随机梯度下降·小批量", "lab:topic/momentum-adam": "动量·Adam", "lab:topic/learning-rate-schedule": "学习率调整", "lab:area/regularization": "正则化与泛化技术", "lab:topic/weight-decay": "权重衰减（L2）", "lab:topic/dropout": "Dropout", "lab:topic/early-stopping": "早停", "lab:topic/normalization-layers": "归一化层", "lab:topic/data-augmentation": "数据增强", "lab:area/vision": "卷积·视觉", "lab:topic/convolution": "卷积·权重共享", "lab:topic/pooling": "池化", "lab:topic/receptive-field": "感受野", "lab:topic/residual-connections": "残差连接", "lab:topic/object-detection": "目标检测", "lab:topic/segmentation": "分割", "lab:area/sequence": "序列模型", "lab:topic/rnn": "循环神经网络", "lab:topic/lstm-gru": "LSTM·GRU", "lab:topic/seq2seq": "序列到序列", "lab:topic/time-series": "时间序列预测", "lab:area/attention": "注意力·Transformer", "lab:topic/attention-mechanism": "注意力机制", "lab:topic/self-attention": "自注意力", "lab:topic/multi-head-attention": "多头注意力", "lab:topic/positional-encoding": "位置编码", "lab:topic/transformer": "Transformer", "lab:area/language": "语言模型·自然语言处理", "lab:topic/tokenization": "词元化（Tokenization）", "lab:topic/word-embedding": "词嵌入", "lab:topic/pretrained-lm": "预训练语言模型", "lab:topic/transfer-learning": "迁移学习·微调", "lab:topic/lora": "LoRA·适配器", "lab:topic/prompting": "提示（Prompting）", "lab:topic/rag": "检索增强生成", "lab:area/generative": "生成模型", "lab:topic/autoencoder": "自编码器", "lab:topic/vae": "变分自编码器", "lab:topic/gan": "生成对抗网络", "lab:topic/diffusion": "扩散模型", "lab:topic/autoregressive-generation": "自回归生成", "lab:area/representation": "表示学习", "lab:topic/embedding-space": "嵌入空间", "lab:topic/self-supervised": "自监督学习", "lab:topic/contrastive": "对比学习", "lab:topic/sparse-representation": "稀疏表示", "lab:topic/random-features": "随机特征", "lab:topic/multi-task-learning": "多任务学习", "lab:area/rl": "强化学习", "lab:topic/mdp": "马尔可夫决策过程", "lab:topic/reward": "奖励", "lab:topic/value-function": "价值函数", "lab:topic/q-learning": "Q-学习", "lab:topic/policy-gradient": "策略梯度", "lab:topic/exploration": "探索与利用", "lab:topic/reward-prediction-error": "奖励预测误差", "lab:area/unsupervised": "无监督方法", "lab:topic/clustering": "聚类", "lab:topic/pca": "主成分分析", "lab:topic/tsne-umap": "t-SNE·UMAP", "lab:topic/density-estimation": "密度估计", "lab:topic/anomaly-detection": "异常检测", "lab:area/evaluation": "评估", "lab:topic/accuracy-metrics": "准确率·损失指标", "lab:topic/precision-recall": "精确率·召回率", "lab:topic/roc-auc": "ROC·AUC", "lab:topic/confusion-matrix": "混淆矩阵", "lab:topic/data-leakage": "数据泄露", "lab:topic/ablation": "消融实验", "lab:area/graph": "图学习", "lab:topic/gnn": "图神经网络", "lab:topic/message-passing": "消息传递", "lab:topic/knowledge-graph": "知识图谱", "lab:area/systems": "系统·MLOps", "lab:topic/deployment": "部署", "lab:topic/distribution-shift": "分布偏移", "lab:topic/monitoring": "监控", "lab:topic/reproducibility": "可复现性", "lab:area/responsible": "负责任的 AI", "lab:topic/fairness": "公平性", "lab:topic/interpretability": "可解释性·解释", "lab:topic/ai-safety": "安全性", "lab:topic/privacy": "隐私", "lab:area/neuro": "神经科学与 AI", "lab:topic/biological-neuron": "生物神经元与脉冲", "lab:topic/synaptic-plasticity": "突触可塑性", "lab:topic/connectome": "连接组", "lab:topic/sensory-processing": "感觉处理", "lab:topic/learning-memory-circuits": "学习·记忆回路", "lab:topic/circuit-methods": "神经回路实验技术"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/6-8","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"모델 채용 위원회 2차 공채 · 6-8 GRU","schema:inLanguage":"ko","schema:dateCreated":"2026-10-24","schema:version":"1.0","dct:isPartOf":"모델 채용 위원회 2차 공채","schema:about":[{"@id":"lab:topic/lstm-gru"}],"schema:educationalLevel":"대학 학부 · 입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/cho2014"},{"@id":"lab:work/chung2014"},{"@id":"lab:work/jozefowicz2015"},{"@id":"lab:work/greff2017"},{"@id":"lab:work/alpaydin1998"}]},{"@id":"lab:method/gru","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"GRU","@language":"ko"},{"@value":"Gated Recurrent Unit","@language":"en"}],"skos:definition":[{"@value":"셀 상태 없이 상태 h 하나에 문 두 개(갱신 z·리셋 r)를 단 순환 망. 갱신 문이 옛 기억과 새 후보를 섞는 비율을 정한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/lstm-gru"}],"skos:broader":[{"@id":"lab:topic/lstm-gru"}],"lab:hasLimitation":[{"@id":"lab:limitation/below-senior"},{"@id":"lab:limitation/formula-variants"}],"lab:contrastsWith":[{"@id":"lab:method/svm-senior"}],"lab:solves":[{"@id":"lab:task/uneven-speed"},{"@id":"lab:task/blank-memory"}],"lab:evaluatedBy":[{"@id":"lab:metric/test-accuracy"}]},{"@id":"lab:method/lstm-prev","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"LSTM (순서팀 앞 줄)","@language":"ko"},{"@value":"LSTM (previous applicant, 6-7)","@language":"en"}],"skos:definition":[{"@value":"6-7에서 본 문 세 개와 셀 상태의 순환 망. RNN보다 오래 기억하지만 숫자가 RNN의 네 배 가까이 된다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:broader":[{"@id":"lab:topic/lstm-gru"}],"skos:broader":[{"@id":"lab:topic/lstm-gru"}],"lab:prerequisiteOf":[{"@id":"lab:method/gru"}],"lab:hasLimitation":[{"@id":"lab:limitation/below-senior"}],"lab:contrastsWith":[{"@id":"lab:method/gru"}]},{"@id":"lab:method/rnn-prev","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"RNN (순서팀 첫 줄)","@language":"ko"},{"@value":"RNN (first applicant, 6-6)","@language":"en"}],"skos:definition":[{"@value":"6-6에서 본 순환 망. 순서팀 공통 과제와 기억 시험의 출발점이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m4","lab:broader":[{"@id":"lab:topic/rnn"}],"skos:broader":[{"@id":"lab:topic/rnn"}],"lab:prerequisiteOf":[{"@id":"lab:method/lstm-prev"}]},{"@id":"lab:method/svm-senior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"SVM (선배)","@language":"ko"},{"@value":"SVM (senior)","@language":"en"}],"skos:definition":[{"@value":"순서를 8줄로 되돌리거나 0으로 채워 한꺼번에 읽는 선배. 선배 기록은 6-6~6-8에서 같은 숫자다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/svm"}],"skos:broader":[{"@id":"lab:topic/svm"}],"lab:solves":[{"@id":"lab:task/uneven-speed"}]},{"@id":"lab:concept/update-gate","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"갱신 문","@language":"ko"},{"@value":"Update gate","@language":"en"}],"skos:definition":[{"@value":"옛 상태와 새 후보를 섞는 비율 z. PyTorch에서는 z가 옛 상태를 남기는 비율이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/gru"}],"lab:prerequisiteOf":[{"@id":"lab:concept/gate-tying"},{"@id":"lab:claim/gru-gradient-path"}],"lab:demonstratedBy":[{"@id":"lab:sim/gru-train"}]},{"@id":"lab:concept/reset-gate","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"리셋 문","@language":"ko"},{"@value":"Reset gate","@language":"en"}],"skos:definition":[{"@value":"새 후보를 만들 때 옛 상태를 얼마나 참고할지 정하는 r. 0에 가까우면 이번 입력만으로 후보를 만든다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/gru"}]},{"@id":"lab:concept/candidate","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"후보","@language":"ko"},{"@value":"Candidate","@language":"en"}],"skos:definition":[{"@value":"이번 걸음에 들어올 새 상태 n. tanh로 −1~1 사이 값이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/gru"}]},{"@id":"lab:concept/gate-tying","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"잊기와 적기를 묶기","@language":"ko"},{"@value":"Tying forgetting and writing","@language":"en"}],"skos:definition":[{"@value":"LSTM의 망각 문 f와 입력 문 i를 f = z, i = 1 − z로 묶은 셈이다. 남기는 만큼 덜 적고, 출력 문과 셀 상태는 없다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/gru"}]},{"@id":"lab:concept/param-count","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"파라미터 수","@language":"ko"},{"@value":"Parameter count","@language":"en"}],"skos:definition":[{"@value":"모델이 학습으로 정하는 숫자의 개수. 순환 칸은 RNN 1묶음, GRU 3묶음, LSTM 4묶음이고 출력층 650개는 셋이 같다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:broader":[{"@id":"lab:topic/lstm-gru"}],"skos:broader":[{"@id":"lab:topic/lstm-gru"}],"lab:prerequisiteOf":[{"@id":"lab:claim/param-ratio"}]},{"@id":"lab:concept/train-time","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"학습 시간","@language":"ko"},{"@value":"Training time","@language":"en"}],"skos:definition":[{"@value":"같은 컴퓨터에서 정해진 에포크를 학습하는 데 걸린 시간. 구현에 따라 파라미터 수와 다르게 움직일 수 있다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m4","lab:relatedTo":[{"@id":"lab:concept/param-count"}],"skos:related":[{"@id":"lab:concept/param-count"}]},{"@id":"lab:claim/param-ratio","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"문 하나를 빼면 숫자가 약 4분의 3","@language":"ko"},{"@value":"One fewer gate gives about three quarters of the numbers","@language":"en"}],"skos:definition":[{"@value":"GRU는 문 하나와 셀 상태를 빼서 순환 칸의 숫자가 LSTM의 약 4분의 3이 된다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:method/gru"}]},{"@id":"lab:claim/gru-gradient-path","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"상태 길의 기울기","@language":"ko"},{"@value":"Gradient along the state path","@language":"en"}],"skos:definition":[{"@value":"∂h_t/∂h_(t−1)에 z_t가 들어 있어, z가 1에 가까우면 기억이 그대로 넘어가고 기울기도 덜 사라진다. LSTM의 망각 문과 같은 역할이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:method/gru"}]},{"@id":"lab:claim/lstm-vs-gru","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"LSTM과 GRU 가운데 무엇이 나은지는 일마다 다르다","@language":"ko"},{"@value":"LSTM vs GRU depends on the task","@language":"en"}],"skos:definition":[{"@value":"두 구조를 비교한 경험적 연구들에서도 일관된 승자는 없었다. 그래서 둘 다 재 본다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m6","lab:supports":[{"@id":"lab:method/gru"}],"lab:raises":[{"@id":"lab:question/lstm-or-gru"}]},{"@id":"lab:limitation/below-senior","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"순서팀 셋 모두 선배를 넘지 못했다","@language":"ko"},{"@value":"No recurrent net beat the senior","@language":"en"}],"skos:definition":[{"@value":"길이를 간단한 규칙으로 되돌릴 수 있는 이 공장의 글씨에서는 한꺼번에 보는 선배 SVM이 더 잘 읽었다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m6","lab:raises":[{"@id":"lab:question/lstm-or-gru"}]},{"@id":"lab:limitation/formula-variants","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"구현마다 식이 다르다","@language":"ko"},{"@value":"Formulas differ between implementations","@language":"en"}],"skos:definition":[{"@value":"처음 논문과 PyTorch는 z를 옛 기억을 남기는 비율로 쓰지만 일부 교재는 반대다. PyTorch는 리셋 문을 W_h h를 계산한 뒤에 곱한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m3"},{"@id":"lab:task/uneven-speed","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"고르지 않은 속도 읽기","@language":"ko"},{"@value":"Reading digits at uneven speed","@language":"en"}],"skos:definition":[{"@value":"같은 손글씨를 줄마다 1~3번 반복해 8~24줄로 늘려(재시험은 8~40줄) 읽고 0~9를 맞히는 분류.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:broader":[{"@id":"lab:topic/time-series"}],"skos:broader":[{"@id":"lab:topic/time-series"}],"lab:evaluatedOn":[{"@id":"lab:dataset/optical-digits"}]},{"@id":"lab:task/blank-memory","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"빈 줄 기억 시험","@language":"ko"},{"@value":"Blank-line memory test","@language":"en"}],"skos:definition":[{"@value":"숫자 8줄 뒤에 빈 줄 K번을 붙여 순서팀 세 명의 기억을 재는 시험.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4"},{"@id":"lab:dataset/optical-digits","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"손글씨 8×8 숫자","@language":"ko"},{"@value":"Optical Recognition of Handwritten Digits","@language":"en"}],"skos:definition":[{"@value":"6-4와 같은 8×8 손글씨 데이터. 줄이나 칸으로 읽어 순서 데이터로 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:metric/test-accuracy","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"시험 정확도 (씨앗 5개 평균)","@language":"ko"},{"@value":"Test accuracy (mean of 5 seeds)","@language":"en"}],"skos:definition":[{"@value":"봉인된 시험지에서 맞힌 비율. 세 지원자 모두 같은 조건과 씨앗 다섯 개의 평균으로 잰다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/accuracy-metrics"}],"skos:broader":[{"@id":"lab:topic/accuracy-metrics"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:concept/sequence-scorecard","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"순서팀 성적표","@language":"ko"},{"@value":"Sequence-team scorecard","@language":"en"}],"skos:definition":[{"@value":"RNN·LSTM·GRU를 같은 과제, 같은 조건으로 잰 표. 이 편에서 세 줄이 완성된다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:evaluatedBy":[{"@id":"lab:metric/test-accuracy"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:claim/verdict","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"판정: 보류 확정","@language":"ko"},{"@value":"Verdict: on hold, confirmed","@language":"en"}],"skos:definition":[{"@value":"GRU는 고르지 않은 속도에서 94.1%, 재시험에서 93.1%로 선배 SVM의 96.9%·96.2%에 못 미쳐 보류가 확정되었다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5"},{"@id":"lab:sim/gru-train","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"한 줄씩 읽는 GRU 학습","@language":"ko"},{"@value":"In-browser GRU training","@language":"en"}],"skos:definition":[{"@value":"브라우저에서 씨앗 0으로 6에포크 학습하며 갱신 문과 리셋 문이 움직이는 모습을 직접 본다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:analogy/scale","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"옛 메모와 새 메모를 저울에 달아 섞기","@language":"ko"},{"@value":"Weighing old and new notes on one scale","@language":"en"}],"skos:definition":[{"@value":"저울 한쪽을 늘리면 다른 쪽이 줄듯, 갱신 문 z만큼 옛 기억을 남기고 나머지 1 − z를 새 후보로 채운다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:concept/update-gate"}]},{"@id":"lab:bio/memory-overwrite","@type":["lab:BioAnalogue","skos:Concept"],"skos:prefLabel":[{"@value":"초파리 기억 흔적의 덧씌움","@language":"ko"},{"@value":"Fly memory traces overlaid by new learning","@language":"en"}],"skos:definition":[{"@value":"초파리의 기억 흔적은 새 학습이 오면 옛 흔적 위에 덧씌워지며 비율이 경험에 따라 바뀐다. 다만 이는 시간이 걸리는 과정이고 GRU의 섞기는 걸음마다 즉시 계산한다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:bioAnalogueOf":[{"@id":"lab:concept/update-gate"}]},{"@id":"lab:question/lstm-or-gru","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"어떤 일에서 LSTM이, 어떤 일에서 GRU가 나은가?","@language":"ko"},{"@value":"When does LSTM beat GRU or the reverse?","@language":"en"}],"skos:definition":[{"@value":"정확도는 비슷하고 숫자와 시간만 다른 이 실험으로는 일반적인 답을 낼 수 없다. 일마다 둘 다 재 봐야 한다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m6"}]}</script>
+<script type="application/json" id="refs-csl">[{"id":"cho2014","type":"article-journal","title":"Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation","author":[{"family":"Cho","given":"K., van Merriënboer, B."},{"family":"Gulcehre","given":"C."},{"family":"Bahdanau","given":"D."},{"family":"Bougares","given":"F."},{"family":"Schwenk","given":"H."},{"family":"Bengio","given":"Y."}],"issued":{"date-parts":[[2014]]},"container-title":"EMNLP","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"chung2014","type":"paper-conference","title":"Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling","author":[{"family":"Chung","given":"J."},{"family":"Gulcehre","given":"C."},{"family":"Cho","given":"K."},{"family":"Bengio","given":"Y."}],"issued":{"date-parts":[[2014]]},"container-title":"arXiv:1412.3555","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"jozefowicz2015","type":"paper-conference","title":"An Empirical Exploration of Recurrent Network Architectures","author":[{"family":"Jozefowicz","given":"R."},{"family":"Zaremba","given":"W."},{"family":"Sutskever","given":"I."}],"issued":{"date-parts":[[2015]]},"container-title":"ICML","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"greff2017","type":"article-journal","title":"LSTM: A search space odyssey","author":[{"family":"Greff","given":"K., et al."}],"issued":{"date-parts":[[2017]]},"container-title":"IEEE TNNLS","volume":"28","page":"2222–2232","issue":"10","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"alpaydin1998","type":"dataset","title":"Optical Recognition of Handwritten Digits","author":[{"family":"Alpaydin","given":"E."},{"family":"Kaynak","given":"C."}],"issued":{"date-parts":[[1998]]},"publisher":"UCI Machine Learning Repository","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}}]</script>
+<script type="application/json" id="page-meta">{"title": "模型招聘委员会 第二次公开招聘 · 6-8 GRU", "number": "6-8", "date": "2026-10-24", "version": "1.0", "series": "模型招聘委员会 第二次公开招聘", "language": "ko", "creator": [{"name": "Ahn Sangsun", "affiliation": "M-Robo Co., Ltd."}], "about": ["lab:topic/lstm-gru"], "educationalLevel": "대학 학부 · 입문", "learningResourceType": "interactive explainer", "description": "문 두 개(갱신·리셋)로 LSTM과 비슷한 일을 더 적은 숫자로 하는 지원자 GRU의 면접. 같은 과제로 한 줄씩·한 칸씩 읽기, 갱신 문이 기억을 섞는 방식, 세 순환 망의 파라미터와 학습 시간, 순서팀 성적표 완성, 고르지 않은 속도 과제와 LSTM과 같은 조건의 재시험. 모델 채용 위원회 2차 공채 6-8.", "basedOn": ["cho2014", "chung2014", "jozefowicz2015", "greff2017", "alpaydin1998"]}</script>
+<!-- /lab-kg:body -->
 <footer>
   <div class="wrap">
     <p><b style="color:var(--text)">模型招聘委员会 第二次公开招聘 · 6-8 GRU</b> · <a href="6-0_job_posting.html#m8">完整地图（6-0）</a> — 作者 Sangsun Ahn（M-Robo 公司代表）</p>
@@ -1717,5 +1746,408 @@ var CODE={title:'GRU 面试——相同任务、数字与时间、补全序列�
 
 boot();
 </script>
+<!-- lab-kg:script -->
+<script>
+/* ai-lab-retrofit 휴대판 (색 변수가 없는 페이지에서도 동작) */
+/* ══ KG: 지식 색인(#kg) + 온톨로지·서지 꾸러미(#export) — 공용 모듈 ══
+   데이터 블록: #kg-raw(중립 JSON), #refs-csl(CSL-JSON), #page-meta, #kg-ld(빌드 때 생성)
+   외부 라이브러리 없음. 모든 내보내기는 kg-raw에서 만든다. */
+var KGX=(function(){
+'use strict';
+function $id(i){return document.getElementById(i);}
+function J(id){var e=$id(id); return e?JSON.parse(e.textContent):null;}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function el(tag,cls,html){var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+
+var TYPE={Concept:['概念','#82b8ff'],Method:['方法','#5ee39c'],BioAnalogue:['生物对应','#ef5b5b'],Claim:['主张','#f1b646'],
+  Question:['开放问题','#d672d6'],Limitation:['局限','#ff9a7a'],Task:['任务','#7fe0c8'],Metric:['指标','#b9a8ff'],
+  Dataset:['数据','#c9c4a4'],Simulation:['模拟','#8a88a8'],QuizItem:['测验','#6f6d8c'],Work:['文献','#e0d7a8'],
+  Area:['领域','#eceaf3'],Topic:['主题','#9d9bb8'],Analogy:['类比','#ff86b8'],Term:['术语','#82b8ff']};
+var REL={prerequisiteOf:'需先掌握',hasLimitation:'局限',addressedBy:'已解决',partOf:'部分',bioAnalogueOf:'生物对应',
+  contrastsWith:'对比',supports:'支持',assertedIn:'出处',evaluatedBy:'以指标评估',evaluatedOn:'以数据评估',
+  demonstratedBy:'模拟',raises:'引出问题',relatedTo:'相关',solves:'解决任务',analogyOf:'类比',assesses:'测验检验',
+  broader:'上位主题',explainedIn:'说明位置'};
+function tl(t){return (TYPE[t]||[t])[0];} function tc(t){return (TYPE[t]||[0,'#9d9bb8'])[1];}
+function pn(p){return p.replace(/^lab:/,'');}
+function lab(n){return n.label?(n.label[LANG]||n.label.en||n.label.ko):n.id;}
+
+/* ── 변환기 ─────────────────────────────────────────── */
+var NS='urn:lab:';
+var CTX={'@vocab':NS,lab:NS,skos:'http://www.w3.org/2004/02/skos/core#',schema:'https://schema.org/',
+  dct:'http://purl.org/dc/terms/',prov:'http://www.w3.org/ns/prov#',rdfs:'http://www.w3.org/2000/01/rdf-schema#'};
+var SKOS_T={Concept:1,Method:1,Task:1,Term:1,Limitation:1,BioAnalogue:1,Metric:1,Area:1,Topic:1};
+var SCH_T={Work:'schema:ScholarlyArticle',Claim:'schema:Claim',Dataset:'schema:Dataset',QuizItem:'schema:Question',Question:'schema:Question',Simulation:'schema:SoftwareApplication'};
+function lit(o){var a=[]; Object.keys(o||{}).forEach(function(k){ var v=o[k]; (Array.isArray(v)?v:[v]).forEach(function(x){a.push({'@value':x,'@language':k});});}); return a;}
+function toJsonLd(g,meta){
+  var graph=g.nodes.map(function(n){
+    var t=['lab:'+n.type]; if(SKOS_T[n.type])t.push('skos:Concept'); if(SCH_T[n.type])t.push(SCH_T[n.type]);
+    var o={'@id':n.id,'@type':t,'skos:prefLabel':lit(n.label)};
+    if(n.altLabel)o['skos:altLabel']=lit(n.altLabel);
+    if(n.definition)o['skos:definition']=lit(n.definition);
+    ['level','status','confidence','coverage','family','page','anchor'].forEach(function(k){ if(n[k]!=null)o['lab:'+k]=n[k];});
+    (n.match||[]).forEach(function(m){ var p=m.rel==='exact'?'skos:exactMatch':'skos:closeMatch'; (o[p]=o[p]||[]).push({'@id':m.iri});});
+    return o;});
+  var byS={}; graph.forEach(function(o){byS[o['@id']]=o;});
+  g.edges.forEach(function(e){ var s=byS[e.s]; if(!s)return; var k=e.p; (s[k]=s[k]||[]).push({'@id':e.o});
+    if(e.p==='lab:broader')(s['skos:broader']=s['skos:broader']||[]).push({'@id':e.o});
+    if(e.p==='lab:assertedIn')(s['prov:wasDerivedFrom']=s['prov:wasDerivedFrom']||[]).push({'@id':e.o});
+    if(e.p==='lab:relatedTo')(s['skos:related']=s['skos:related']||[]).push({'@id':e.o}); });
+  if(meta)graph.unshift({'@id':NS+'page/'+meta.number,'@type':['schema:LearningResource','schema:WebPage'],'schema:name':meta.title,
+    'schema:inLanguage':meta.language,'schema:dateCreated':meta.date,'schema:version':meta.version,'dct:isPartOf':meta.series,
+    'schema:about':(meta.about||[]).map(function(a){return {'@id':a};}),'schema:educationalLevel':meta.educationalLevel,
+    'schema:learningResourceType':meta.learningResourceType,'dct:source':(meta.basedOn||[]).map(function(b){return {'@id':'lab:work/'+b};})});
+  return {'@context':CTX,'@graph':graph};
+}
+function ttlS(s){return '"'+String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\n/g,'\\n')+'"';}
+function ttlI(id){return id.indexOf('lab:')===0?'lab:'+id.slice(4).replace(/[^A-Za-z0-9_\-]/g,function(c){return c==='/'?'_':encodeURIComponent(c).replace(/%/g,'_');}):'<'+id+'>';}
+function toTurtle(g){
+  var L=['@prefix lab: <'+NS+'> .','@prefix skos: <http://www.w3.org/2004/02/skos/core#> .','@prefix schema: <https://schema.org/> .',
+    '@prefix prov: <http://www.w3.org/ns/prov#> .',''];
+  var out={}; g.edges.forEach(function(e){(out[e.s]=out[e.s]||[]).push(e);});
+  g.nodes.forEach(function(n){
+    var P=['a lab:'+n.type+(SKOS_T[n.type]?', skos:Concept':'')];
+    Object.keys(n.label||{}).forEach(function(k){P.push('skos:prefLabel '+ttlS(n.label[k])+'@'+k);});
+    Object.keys(n.altLabel||{}).forEach(function(k){[].concat(n.altLabel[k]).forEach(function(v){P.push('skos:altLabel '+ttlS(v)+'@'+k);});});
+    Object.keys(n.definition||{}).forEach(function(k){P.push('skos:definition '+ttlS(n.definition[k])+'@'+k);});
+    if(n.status)P.push('lab:status '+ttlS(n.status)); if(n.level!=null)P.push('lab:level '+n.level);
+    if(n.anchor)P.push('lab:anchor '+ttlS(n.anchor));
+    (out[n.id]||[]).forEach(function(e){P.push(ttlI(e.p)+' '+ttlI(e.o)); if(e.p==='lab:broader')P.push('skos:broader '+ttlI(e.o));});
+    L.push(ttlI(n.id)+'\n  '+P.join(' ;\n  ')+' .\n');});
+  return L.join('\n');
+}
+function csvq(v){v=v==null?'':String(v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toNodesCsv(g){return ['id,type,label_ko,label_en,status,level,family,page,anchor,coverage,confidence'].concat(g.nodes.map(function(n){
+  return [n.id,n.type,n.label&&n.label.ko,n.label&&n.label.en,n.status,n.level,n.family,n.page,n.anchor,n.coverage,n.confidence].map(csvq).join(',');})).join('\r\n');}
+function toEdgesCsv(g){return ['source,predicate,target,anchor,confidence'].concat(g.edges.map(function(e){return [e.s,e.p,e.o,e.anchor,e.confidence].map(csvq).join(',');})).join('\r\n');}
+function toMermaid(g){
+  var keep=g.nodes.filter(function(n){return n.type!=='QuizItem'&&n.type!=='Simulation'&&n.type!=='Work';}).slice(0,40);
+  var ix={}; keep.forEach(function(n,i){ix[n.id]='n'+i;});
+  var L=['graph LR']; keep.forEach(function(n){L.push('  '+ix[n.id]+'["'+lab(n).replace(/"/g,"'")+'"]');});
+  g.edges.forEach(function(e){ if(ix[e.s]&&ix[e.o])L.push('  '+ix[e.s]+' -- '+(REL[pn(e.p)]||pn(e.p))+' --> '+ix[e.o]);});
+  return L.join('\n');
+}
+function toProvCsv(g,refs){
+  var R={}; refs.forEach(function(r){R[r.id]=r;});
+  var L=['item,kind,work,loc,confidence,verified,pageAnchor'];
+  g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){ var r=R[s.ref]; var v=r&&r.lab&&r.lab.verified;
+    L.push([n.id,'node',s.ref,s.loc||'',n.confidence,v?(v.title&&v.year&&v.venue?'bib-checked':'partial'):'no',n.anchor].map(csvq).join(','));});});
+  g.edges.forEach(function(e){ if(e.p==='lab:assertedIn')L.push([e.s+' '+e.p+' '+e.o,'edge',e.o.replace('lab:work/',''),'',e.confidence,'',e.anchor].map(csvq).join(','));});
+  return L.join('\r\n');
+}
+/* CSL → BibTeX · RIS · 문장 */
+var BIBT={'article-journal':'article','paper-conference':'inproceedings','book':'book','chapter':'incollection','webpage':'misc','dataset':'misc','report':'techreport','thesis':'phdthesis','software':'misc'};
+var RIST={'article-journal':'JOUR','paper-conference':'CPAPER','book':'BOOK','chapter':'CHAP','webpage':'ELEC','dataset':'DATA','report':'RPRT','thesis':'THES','software':'COMP'};
+function names(a){return (a||[]).map(function(p){return p.literal||(p.family+(p.given?', '+p.given:''));});}
+function yr(r){return r.issued&&r.issued['date-parts']&&r.issued['date-parts'][0][0];}
+function toBib(r){var f=[],add=function(k,v){ if(v!==undefined&&v!==null&&v!=='')f.push('  '+k+' = {'+v+'}');};
+  add('title',r.title); add('author',names(r.author).map(function(n){return n==='et al.'?'others':n;}).join(' and ')); add('year',yr(r));
+  add(r.type==='article-journal'?'journal':'booktitle',r['container-title']); add('volume',r.volume); add('number',r.issue);
+  add('pages',(r.page||'').replace('-','--')); add('publisher',r.publisher); add('doi',r.DOI); add('url',r.URL);
+  if(r.lab&&r.lab.note)add('note',r.lab.note);
+  return '@'+(BIBT[r.type]||'misc')+'{'+r.id+',\n'+f.join(',\n')+'\n}';}
+function toRis(r){var L=['TY  - '+(RIST[r.type]||'GEN')],add=function(t,v){ if(v)L.push(t+'  - '+v);};
+  add('TI',r.title); names(r.author).forEach(function(n){add('AU',n);}); add('PY',yr(r)); add('T2',r['container-title']);
+  add('VL',r.volume); add('IS',r.issue); var pg=(r.page||'').split('-'); add('SP',pg[0]); add('EP',pg[1]); add('DO',r.DOI); add('UR',r.URL);
+  if(r.lab&&r.lab.note)add('N1',r.lab.note); L.push('ER  - '); return L.join('\r\n');}
+function toText(r){ var a=names(r.author), first=a[0]?a[0].split(',')[0]:''; var au=a.length>2||a.indexOf('et al.')>=0?first+' 等':a.map(function(x){return x.split(',')[0];}).join(' & ');
+  return au+' ('+(yr(r)||'年份不详')+'). '+r.title+'. '+(r['container-title']||'')+(r.volume?', '+r.volume:'')+(r.issue?'('+r.issue+')':'')+(r.page?', '+r.page:'')+'.'+(r.DOI?' https://doi.org/'+r.DOI:'');}
+function pageBib(m){var f=['  title = {'+m.title+'}','  year = {'+m.date.slice(0,4)+'}','  howpublished = {'+m.series+' '+m.number+', v'+m.version+'}'];
+  if(m.creator&&m.creator.length&&m.creator[0].name)f.unshift('  author = {'+m.creator.map(function(c){return c.name;}).join(' and ')+'}'); if(m.url)f.push('  url = {'+m.url+'}');
+  return '@misc{lab_page_'+m.number+',\n'+f.join(',\n')+'\n}';}
+function pageRis(m){var L=['TY  - ELEC','TI  - '+m.title]; (m.creator||[]).forEach(function(c){ if(c.name)L.push('AU  - '+c.name);}); L.push('PY  - '+m.date.slice(0,4),'T2  - '+m.series,'ET  - '+m.version); if(m.url)L.push('UR  - '+m.url); L.push('ER  - '); return L.join('\r\n');}
+function pageText(m){ var who=(m.creator||[]).filter(function(c){return c.name;}).map(function(c){return c.name;}).join(', ')||'{作者}';
+  return who+' ('+m.date.slice(0,4)+'). '+m.title+'. '+m.series+' '+m.number+', v'+m.version+'.'+(m.url?' '+m.url:'');}
+
+/* ── ZIP (압축 없음) ─────────────────────────────────── */
+var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}
+  return function(u8){var x=0xFFFFFFFF;for(var i=0;i<u8.length;i++)x=t[(x^u8[i])&255]^(x>>>8);return (x^0xFFFFFFFF)>>>0;};})();
+function makeZip(files){
+  var enc=new TextEncoder(),parts=[],central=[],off=0;
+  function u16(v){return [v&255,(v>>8)&255];} function u32(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255];}
+  files.forEach(function(f){var name=enc.encode(f.name),data=enc.encode(f.text),crc=CRC(data);
+    var head=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0));
+    parts.push(new Uint8Array(head),name,data);
+    central.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),
+      u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),name);
+    off+=head.length+name.length+data.length;});
+  var cdLen=0; central.forEach(function(c){parts.push(c); cdLen+=c.length;});
+  parts.push(new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cdLen),u32(off),u16(0))));
+  return new Blob(parts,{type:'application/zip'});
+}
+/* 내려받기: claude.ai 아티팩트 안에서는 downloads 능력, 파일로 열면 일반 링크 */
+var DLP=(window.claude&&typeof window.claude.use==='function')?window.claude.use('downloads').catch(function(){return null;}):Promise.resolve(null);
+var OKX=/\.(json|txt|csv|md|zip|html|svg|pdf)$/i;
+function anchorSave(blob,name){var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name;
+  document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},800);}
+function download(blob,name){
+  return DLP.then(function(d){
+    if(!d){anchorSave(blob,name); return;}
+    var fn=OKX.test(name)?name:name+'.txt';   // .bib .ris .ttl .jsonld 은 .txt를 붙여 저장 (확장자만 지우면 원래 형식)
+    return d.save({filename:fn,data:blob}).catch(function(e){ if(e&&e.code==='declined')return;
+      if(e&&(e.code==='unavailable'||e.code==='not_granted'))anchorSave(blob,name);
+      else console.warn('保存失败',e&&e.code);});
+  });
+}
+function dlText(text,name,type){download(new Blob([text],{type:(type||'text/plain')+';charset=utf-8'}),name);}
+
+/* ── 범위 ───────────────────────────────────────────── */
+function filterScope(KG,scope){
+  if(scope==='all')return KG;
+  var keepT={terms:{Concept:1,Method:1,BioAnalogue:1,Limitation:1,Task:1,Metric:1,Dataset:1},
+             claims:{Claim:1,Work:1},prereq:null}[scope];
+  var nodes,edges;
+  if(scope==='prereq'){ edges=KG.edges.filter(function(e){return e.p==='lab:prerequisiteOf'||e.p==='lab:hasLimitation'||e.p==='lab:addressedBy';});
+    var ids={}; edges.forEach(function(e){ids[e.s]=1;ids[e.o]=1;}); nodes=KG.nodes.filter(function(n){return ids[n.id];}); }
+  else { nodes=KG.nodes.filter(function(n){return keepT[n.type];}); var ix={}; nodes.forEach(function(n){ix[n.id]=1;});
+    if(scope==='claims'){ KG.edges.forEach(function(e){ if(e.p==='lab:supports'&&ix[e.s])ix[e.o]=2;});
+      nodes=KG.nodes.filter(function(n){return ix[n.id];}); }
+    edges=KG.edges.filter(function(e){return ix[e.s]&&(ix[e.o]||/^lab:(topic|area)\//.test(e.o));}); }
+  return {version:KG.version,page:KG.page,scope:scope,nodes:nodes,edges:edges};
+}
+function readme(meta,g,refs){
+  var un=refs.filter(function(r){var v=r.lab&&r.lab.verified; return !v||Object.keys(v).some(function(k){return !v[k];});});
+  return ['本体·书目资料包 — '+meta.title,'系列： '+meta.series+' '+meta.number+' · 版本 '+meta.version+' · 制作日期 '+meta.date,'',
+   '范围： '+(g.scope||'all')+' · 节点 '+g.nodes.length+' · 关系 '+g.edges.length+' · 文献 '+refs.length,'',
+   '[파일]','manifest.json 清单 · page_meta.json 页面书目 · kg.json 中立图（原始）· kg.jsonld JSON-LD · kg.ttl Turtle',
+   'nodes.csv / edges.csv 表格（UTF-8 BOM）· references.csl.json 参考文献原文 · references.bib BibTeX · references.ris RIS',
+   'provenance.csv 主张↔文献对应 · mermaid.md 图用','',
+   '[이 페이지 인용]',pageText(meta),'',
+   '[확인 필요]',(un.length?un.map(function(r){var v=r.lab.verified;return '- '+r.id+': '+Object.keys(v).filter(function(k){return !v[k];}).join(', ');}).join('\n'):'- 文献书目条目均已确认'),
+   '- 主张（Claim）的原文位置（页·图号）尚空缺。请对照原文填写 provenance.csv 的 loc。',
+   '- 页面作者姓名、许可证和公开地址暂留空白。请用户自行填写。','',
+   '[규칙] lab: 접두어 IRI는 '+NS+' （临时）。外部本体 ID 仅在确认后以 skos:exactMatch/closeMatch 写入。',
+   '[주의] 뼈대 영역(lab:topic/*, lab:area/*)은 작성자 초안이며 공식 분류 체계가 아니다.'].join('\n');
+}
+function buildPackage(scope){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); var g=filterScope(KG,scope);
+  var used={}; g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){used[s.ref]=1;}); if(n.type==='Work')used[n.id.replace('lab:work/','')]=1;});
+  var refs=scope==='all'?REF:REF.filter(function(r){return used[r.id];});
+  var files=[{name:'page_meta.json',text:JSON.stringify(META,null,2)},{name:'kg.json',text:JSON.stringify(g,null,2)},
+    {name:'kg.jsonld',text:JSON.stringify(toJsonLd(g,META),null,2)},{name:'kg.ttl',text:toTurtle(g)},
+    {name:'nodes.csv',text:'﻿'+toNodesCsv(g)},{name:'edges.csv',text:'﻿'+toEdgesCsv(g)},
+    {name:'references.csl.json',text:JSON.stringify(refs,null,2)},{name:'references.bib',text:[pageBib(META)].concat(refs.map(toBib)).join('\n\n')},
+    {name:'references.ris',text:[pageRis(META)].concat(refs.map(toRis)).join('\r\n')},{name:'provenance.csv',text:'﻿'+toProvCsv(g,refs)},
+    {name:'mermaid.md',text:'```mermaid\n'+toMermaid(g)+'\n```\n'},{name:'README.txt',text:readme(META,g,refs)}];
+  files.unshift({name:'manifest.json',text:JSON.stringify({package:'lab-kg',packageVersion:'1.0',page:META.number,pageId:KG.page,pageVersion:META.version,
+    registry:META.registry||'',created:META.date,scope:scope,counts:{nodes:g.nodes.length,edges:g.edges.length,refs:refs.length},
+    files:files.map(function(f){return f.name;})},null,2)});
+  return files;
+}
+
+/* ── 공통 화면 조각 ─────────────────────────────────── */
+var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding:48px 0;font-family:inherit}.kgx-sec .kgx-wrap{max-width:1080px;margin:0 auto;padding:0 16px}.kgx-sec h2{margin:0 0 6px;font-size:24px}.kgx-sec .kgx-sub{color:var(--muted,#9d9bb8);margin:0 0 18px}\
+\
+.kgx .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}\
+.kgx input[type=search]{flex:1 1 220px;min-width:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);color:var(--text,#eceaf3);border-radius:8px;padding:8px 12px;font:inherit;font-size:15px}\
+.kgx .tchip{font-size:12.5px;border-radius:999px;padding:3px 10px;border:1px solid var(--rule,#363a52);background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);cursor:pointer}\
+.kgx .tchip[aria-pressed=true]{color:#13141f;font-weight:700}\
+.kgx .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}\
+@media (max-width:860px){.kgx .grid2{grid-template-columns:1fr}}\
+.kgx .list{max-height:520px;overflow:auto;border:1px solid var(--rule,#363a52);border-radius:10px;background:var(--panel,#1c1e2d)}\
+.kgx .it{padding:10px 14px;border-bottom:1px solid var(--rule,#363a52);cursor:pointer}\
+.kgx .it:last-child{border-bottom:0}.kgx .it:hover{background:var(--panel2,#25283a)}\
+.kgx .it.sel{background:var(--panel2,#25283a);box-shadow:inset 3px 0 0 var(--gfp,#5ee39c)}\
+.kgx .it .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}\
+.kgx .it .nm{font-weight:700}.kgx .it .en{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .ty{font-size:11.5px;border-radius:5px;padding:0 6px;color:#13141f;font-weight:700;white-space:nowrap}\
+.kgx .it .df{color:#d7d4e6;font-size:14px;margin:3px 0 0}\
+.kgx .it .more{display:none;margin-top:6px;font-size:13.5px;color:var(--muted,#9d9bb8)}.kgx .it.sel .more{display:block}\
+.kgx .it a{color:var(--gfp,#5ee39c)}\
+.kgx .rel{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:6px;background:var(--bg,#13141f);border:1px solid var(--rule,#363a52);font-size:12.5px;cursor:pointer;color:var(--text,#eceaf3)}\
+.kgx .gbox{position:relative;border:1px solid var(--rule,#363a52);border-radius:10px;background:#101119;overflow:hidden}\
+.kgx .gbox canvas{display:block;width:100%;height:420px}\
+.kgx .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted,#9d9bb8);margin-top:8px}\
+.kgx .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}\
+.kgx .path{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\
+.kgx .path span.s{background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:8px;padding:4px 10px;font-size:14px}\
+.kgx .path span.a{color:var(--muted,#9d9bb8)}.kgx .path span.lim{border-color:#ff9a7a;color:#ffbda8}\
+.kgx .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}\
+.kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
+.kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
+.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
+.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
+.kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
+.kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
+.kgx .badge.role{background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);border:1px solid var(--rule,#363a52)}\
+.kgx pre.cite{white-space:pre-wrap;word-break:break-word;background:#101119;border:1px solid var(--rule,#363a52);border-radius:8px;padding:10px 12px;font-size:13px;margin:8px 0;max-height:220px;overflow:auto}\
+.kgx .files{display:flex;flex-wrap:wrap;gap:6px}\
+.kgx .todo li{margin:4px 0;color:#d7d4e6}\
+.kgx h3{font-size:17px;margin:20px 0 8px}\
+';
+function addCss(){ if($id('kgx-css'))return; var s=el('style'); s.id='kgx-css'; s.textContent=CSS; document.head.appendChild(s);}
+function copy(text,btn){ function ok(){var o=btn.textContent; btn.textContent='已复制'; setTimeout(function(){btn.textContent=o;},1200);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback();
+  function fallback(){var p=btn.parentNode.parentNode.querySelector('pre.cite'); if(p){var r=document.createRange(); r.selectNodeContents(p); var s=getSelection(); s.removeAllRanges(); s.addRange(r);} btn.textContent='已选择 — Ctrl+C';}}
+
+/* ── 지식 색인 ──────────────────────────────────────── */
+function mountIndex(root){
+  var KG=J('kg-raw'); var N={},OUT={},IN={};
+  KG.nodes.forEach(function(n){N[n.id]=n;OUT[n.id]=[];IN[n.id]=[];});
+  KG.edges.forEach(function(e){ if(OUT[e.s])OUT[e.s].push(e); if(IN[e.o])IN[e.o].push(e);});
+  var types=Object.keys(KG.nodes.reduce(function(a,n){a[n.type]=(a[n.type]||0)+1;return a;},{}));
+  var count={}; KG.nodes.forEach(function(n){count[n.type]=(count[n.type]||0)+1;});
+  var on={}; types.forEach(function(t){on[t]=t!=='QuizItem'&&t!=='Simulation'&&t!=='Work';});
+  var sel=null,q='';
+  root.classList.add('kgx');
+  var topics=0; KG.edges.forEach(function(e){if(e.p==='lab:broader')topics++;});
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';}), csrc=claims.filter(function(n){return (n.source||[]).length;}).length;
+  root.innerHTML='<div class="stats"><div><b>'+KG.nodes.length+'</b><span>条目（节点）</span></div><div><b>'+KG.edges.length+'</b><span>关系</span></div>'+
+    '<div><b>'+(count.Concept||0)+(count.Method||0)+'</b><span>概念·方法</span></div><div><b>'+(count.BioAnalogue||0)+'</b><span>生物对应</span></div>'+
+    '<div><b>'+csrc+'/'+claims.length+'</b><span>有出处的主张</span></div><div><b>'+topics+'</b><span>骨架主题连接</span></div></div>'+
+    '<div class="tools"><input type="search" placeholder="查找 — 权重、overfitting、蘑菇体、气味记忆笔记 …" aria-label="知识索引搜索"></div>'+
+    '<div class="tools chips" role="group" aria-label="类型"></div>'+
+    '<div class="grid2"><div class="list" role="listbox" aria-label="搜索结果"></div>'+
+    '<div><div class="gbox"><canvas aria-label="所选条目及邻接关系图"></canvas></div><div class="legend"></div>'+
+    '<p class="note gnote">选择条目后，只显示与其直接相连的邻居。也可以点击图中的点。</p></div></div>'+
+    '<h3>阶梯路径 — 先修内容与局限的链条</h3><div class="path ladder"></div>'+
+    '<h3>开放问题 · 需确认</h3><ul class="todo qs"></ul>';
+  // 칸 수 계산 오류 방지: 개념+방법 합
+  root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);
+  var inp=root.querySelector('input'), chips=root.querySelector('.chips'), list=root.querySelector('.list'), cv=root.querySelector('canvas');
+  types.forEach(function(t){var b=el('button','tchip',tl(t)+' '+count[t]); b.type='button'; b.setAttribute('aria-pressed',on[t]);
+    if(on[t])b.style.background=tc(t),b.style.borderColor=tc(t);
+    b.onclick=function(){on[t]=!on[t]; b.setAttribute('aria-pressed',on[t]); b.style.background=on[t]?tc(t):''; b.style.borderColor=on[t]?tc(t):''; render();};
+    chips.appendChild(b);});
+  var lg=root.querySelector('.legend'); types.forEach(function(t){lg.insertAdjacentHTML('beforeend','<span><i style="background:'+tc(t)+'"></i>'+tl(t)+'</span>');});
+  lg.insertAdjacentHTML('beforeend','<span>── 箭头：关系方向</span>');
+  inp.addEventListener('input',function(){q=inp.value.trim().toLowerCase(); render();});
+  function hay(n){return [n.id,n.label&&n.label.ko,n.label&&n.label.en,n.definition&&n.definition.ko,n.label&&n.label[LANG],n.definition&&n.definition[LANG],n.altLabel&&[].concat(n.altLabel.ko||[]).join(' ')].join(' ').toLowerCase();}
+  function relHtml(n){
+    var h=[]; OUT[n.id].forEach(function(e){ var o=N[e.o]; var nm=o?lab(o):((KG.topicLabels||{})[e.o]||e.o.replace(/^lab:(topic|area)\//,'').replace(/-/g,' '));
+      h.push('<span class="rel" data-go="'+esc(o?e.o:'')+'">'+esc(REL[pn(e.p)]||pn(e.p))+' → '+esc(nm)+'</span>');});
+    IN[n.id].forEach(function(e){ var s=N[e.s]; if(!s)return; h.push('<span class="rel" data-go="'+esc(e.s)+'">'+esc(lab(s))+' → '+esc(REL[pn(e.p)]||pn(e.p))+'</span>');});
+    return h.join('');}
+  function render(){
+    var arr=KG.nodes.filter(function(n){return on[n.type]&&(!q||hay(n).indexOf(q)>=0);});
+    list.innerHTML=arr.length?'':'<div class="it">没有找到条目。请检查类型标签是否已关闭。</div>';
+    arr.forEach(function(n){var d=el('div','it'+(sel===n.id?' sel':'')); d.setAttribute('role','option'); d.dataset.id=n.id;
+      var alt=LANG==='ko'&&n.altLabel&&n.altLabel.ko?' · '+[].concat(n.altLabel.ko).join(', '):'';
+      var src=(n.source||[]).length?' · 出处 '+n.source.length:'';
+      d.innerHTML='<div class="h"><span class="ty" style="background:'+tc(n.type)+'">'+tl(n.type)+'</span><span class="nm">'+esc(lab(n))+'</span><span class="en">'+esc((LANG!=='en'&&n.label&&n.label.en&&n.label.en!==lab(n)&&n.label.en)||'')+esc(alt)+'</span></div>'+
+        (n.definition?'<p class="df">'+esc(n.definition[LANG]||n.definition.ko)+'</p>':'')+
+        '<div class="more">'+(n.anchor?'<a href="'+n.anchor+'">查看说明 →</a>':'')+' <span>'+esc(src)+(n.confidence&&n.confidence!=='high'?' · 确信度 '+n.confidence:'')+'</span><div style="margin-top:6px">'+relHtml(n)+'</div></div>';
+      d.onclick=function(ev){var g=ev.target.closest('.rel'); if(g){ if(g.dataset.go)pick(g.dataset.go,true); ev.stopPropagation(); return;}
+        if(ev.target.tagName==='A')return; pick(n.id);};
+      list.appendChild(d);});
+    draw();
+  }
+  function pick(id,scroll){ sel=id; var n=N[id]; if(n&&!on[n.type]){on[n.type]=true; var b=[].slice.call(chips.children)[types.indexOf(n.type)]; b.setAttribute('aria-pressed',true); b.style.background=tc(n.type); b.style.borderColor=tc(n.type);}
+    if(scroll&&q){q='';inp.value='';} render(); var it=list.querySelector('.it.sel'); if(it)it.scrollIntoView({block:'nearest'});}
+  // 그래프
+  var G={pts:[]};
+  function layout(){
+    var center=sel||KG.edges.reduce(function(best,e){return best;},null);
+    var ids={},pts=[];
+    if(!sel){ // 개요: 퀴즈·시뮬·문헌 빼고 연결 많은 순 최대 60
+      var deg={}; KG.edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.o]=(deg[e.o]||0)+1;});
+      KG.nodes.filter(function(n){return on[n.type];}).sort(function(a,b){return (deg[b.id]||0)-(deg[a.id]||0);}).slice(0,60).forEach(function(n){ids[n.id]=1;});
+    } else { ids[sel]=1; OUT[sel].forEach(function(e){if(N[e.o])ids[e.o]=1;}); IN[sel].forEach(function(e){ids[e.s]=1;}); }
+    var r=mulberry(7); Object.keys(ids).forEach(function(id){pts.push({id:id,x:r()-.5,y:r()-.5,vx:0,vy:0});});
+    var ix={}; pts.forEach(function(p,i){ix[p.id]=i;});
+    var es=KG.edges.filter(function(e){return ix[e.s]!=null&&ix[e.o]!=null;});
+    for(var it=0;it<220;it++){
+      for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+1e-4,f=0.0016/d2;
+        a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+      es.forEach(function(e){var a=pts[ix[e.s]],b=pts[ix[e.o]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+1e-6,f=(d-0.22)*0.04;
+        a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+      pts.forEach(function(p){ if(p.id===sel){p.x*=.9;p.y*=.9;} p.vx-=p.x*0.004;p.vy-=p.y*0.004; p.x+=p.vx;p.y+=p.vy;p.vx*=.6;p.vy*=.6;});
+    }
+    G={pts:pts,es:es,ix:ix};
+  }
+  function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    layout(); var dpr=Math.min(2,window.devicePixelRatio||1), W=cv.clientWidth||600, H=cv.clientHeight||420;
+    cv.width=W*dpr; cv.height=H*dpr; var c=cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,W,H);
+    var xs=G.pts.map(function(p){return p.x;}),ys=G.pts.map(function(p){return p.y;});
+    var mx=Math.min.apply(0,xs),Mx=Math.max.apply(0,xs),my=Math.min.apply(0,ys),My=Math.max.apply(0,ys);
+    var pad=54, sx=(W-2*pad)/Math.max(1e-3,Mx-mx), sy=(H-2*pad)/Math.max(1e-3,My-my);
+    G.pts.forEach(function(p){p.X=pad+(p.x-mx)*sx; p.Y=pad+(p.y-my)*sy; if(G.pts.length===1){p.X=W/2;p.Y=H/2;}});
+    c.lineWidth=1;
+    G.es.forEach(function(e){var a=G.pts[G.ix[e.s]],b=G.pts[G.ix[e.o]]; var hot=sel&&(e.s===sel||e.o===sel);
+      c.strokeStyle=hot?'rgba(236,234,243,.55)':'rgba(157,155,184,.22)'; c.beginPath(); c.moveTo(a.X,a.Y); c.lineTo(b.X,b.Y); c.stroke();
+      var ang=Math.atan2(b.Y-a.Y,b.X-a.X), ex=b.X-Math.cos(ang)*9, ey=b.Y-Math.sin(ang)*9;
+      c.fillStyle=c.strokeStyle; c.beginPath(); c.moveTo(ex,ey); c.lineTo(ex-Math.cos(ang-.4)*7,ey-Math.sin(ang-.4)*7); c.lineTo(ex-Math.cos(ang+.4)*7,ey-Math.sin(ang+.4)*7); c.fill();
+      if(sel&&hot&&G.pts.length<26){c.fillStyle='#9d9bb8'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='center';
+        c.fillText(REL[pn(e.p)]||pn(e.p),(a.X+b.X)/2,(a.Y+b.Y)/2-4);} });
+    c.textAlign='center'; c.font='12.5px '+getComputedStyle(document.body).fontFamily;
+    G.pts.forEach(function(p){var n=N[p.id]; var R=p.id===sel?9:6; c.fillStyle=tc(n.type); c.beginPath(); c.arc(p.X,p.Y,R,0,7); c.fill();
+      if(p.id===sel){c.strokeStyle='#eceaf3';c.lineWidth=2;c.stroke();c.lineWidth=1;}
+      var t=lab(n); if(t.length>14)t=t.slice(0,13)+'…'; c.fillStyle=p.id===sel?'#fff':'#d7d4e6'; c.fillText(t,p.X,p.Y-R-5);});
+    c.fillStyle='rgba(241,182,70,.9)'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='left';
+    c.fillText(sel?'邻居 '+(G.pts.length-1)+'个':'概览 — 连接较多的条目 '+G.pts.length+'个',10,18);
+  }
+  cv.addEventListener('click',function(ev){var r=cv.getBoundingClientRect(),x=ev.clientX-r.left,y=ev.clientY-r.top,best=null,bd=400;
+    G.pts.forEach(function(p){var d=(p.X-x)*(p.X-x)+(p.Y-y)*(p.Y-y); if(d<bd){bd=d;best=p;}}); if(best)pick(best.id,true);});
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(draw,150);});
+  // 사다리 경로
+  var lad=root.querySelector('.ladder'), chainE=KG.edges.filter(function(e){return (e.p==='lab:prerequisiteOf'&&N[e.s].type==='Method'&&N[e.o]&&N[e.o].type==='Method');});
+  var nexts={},has={}; chainE.forEach(function(e){nexts[e.s]=e.o;has[e.o]=1;});
+  var start=Object.keys(nexts).filter(function(k){return !has[k];})[0], seen={};
+  var html=[]; for(var cur=start;cur&&!seen[cur];cur=nexts[cur]){ seen[cur]=1;
+    html.push('<span class="s" data-go="'+cur+'" style="border-color:'+tc('Method')+'">'+esc(lab(N[cur]))+'</span>');
+    var lim=OUT[cur].filter(function(e){return e.p==='lab:hasLimitation';})[0];
+    if(lim)html.push('<span class="a">→ 局限</span><span class="s lim" data-go="'+lim.o+'">'+esc(lab(N[lim.o]))+'</span>');
+    if(nexts[cur])html.push('<span class="a">→ 解决</span>');}
+  lad.innerHTML=html.length?html.join(''):'<span class="note">本页没有阶梯链条。</span>';
+  lad.addEventListener('click',function(ev){var s=ev.target.closest('[data-go]'); if(s)pick(s.dataset.go,true);});
+  var qs=root.querySelector('.qs'); KG.nodes.filter(function(n){return n.type==='Question';}).forEach(function(n){
+    var li=el('li',null,'<b>'+esc(lab(n))+'</b>'+(n.definition?' — '+esc(n.definition[LANG]||n.definition.ko):'')+(n.confidence==='low'?' <span class="badge no">需确认</span>':'')+(n.anchor?' <a href="'+n.anchor+'" style="color:var(--gfp,#5ee39c)">正文</a>':''));
+    qs.appendChild(li);});
+  render();
+}
+
+/* ── 꾸러미 ─────────────────────────────────────────── */
+function mountExport(root){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); root.classList.add('kgx');
+  var verifiedAll=function(r){var v=r.lab&&r.lab.verified; return v&&Object.keys(v).every(function(k){return v[k];});};
+  var vb=REF.filter(verifiedAll).length;
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';});
+  var todo=[]; REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; Object.keys(v).forEach(function(k){if(!v[k])todo.push(r.id+' — '+k+' 未确认（留空）');});});
+  todo.push('主张 '+claims.length+'个原文位置（页·图号）— provenance.csv 的 loc 栏为空');
+  todo.push('页面作者姓名·许可证·公开地址 — 在 page_meta.json 中留空');
+  var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
+  KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
+  var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
+  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">助手</div><p>没有出处的主张未放入资料包。需要人工确认的条目 '+todo.length+'个，请见下方。</p></div>'+
+    '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>节点</span></div><div><b>'+KG.edges.length+'</b><span>关系</span></div><div><b>'+REF.length+'</b><span>文献</span></div>'+
+    '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>书目全部确认的文献</span></div>'+
+    '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>有出处的主张</span></div></div>'+
+    '<h3>引用本页</h3><div class="tools"><button class="tchip cf" data-f="text" aria-pressed="true" style="background:var(--gfp,#5ee39c);border-color:var(--gfp,#5ee39c)">普通文本</button><button class="tchip cf" data-f="bib" aria-pressed="false">BibTeX</button><button class="tchip cf" data-f="ris" aria-pressed="false">RIS</button><button class="bt cp" type="button">复制</button></div><pre class="cite pc"></pre>'+
+    '<h3>参考文献 — 确认标识与所支持的概念</h3><div class="refs list"></div>'+
+    '<h3>选择范围与格式</h3><div class="tools sc" role="group" aria-label="范围"></div><div class="tools"><button class="bt primary zip" type="button">下载资料包 ZIP</button><span class="note zc"></span></div>'+
+    '<div class="files"></div><p class="note">在 claude.ai 页面单独下载文件时，.bib·.ris·.ttl·.jsonld 文件名末尾会附加 .txt（删除末尾的 .txt 即可恢复原格式）。ZIP 内的文件保持原名。</p>'+
+    (META.seeAlso?'<p class="note">若要合并多个页面的资料包并与领域地图对照，请前往 → <a style="color:var(--gfp,#5ee39c)" href="'+esc(META.seeAlso)+'"'+(/^https?:/.test(META.seeAlso)?' target="_blank" rel="noopener"':'')+'>合并领域地图 (KG_00)</a></p>':'')+
+    '<h3>需人工确认的条目</h3><ul class="todo">'+todo.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>'+
+    '<p class="note">资料包版本 1.0 · 制作日期 '+esc(META.date)+' · 登记表 '+esc(META.registry||'KG_00_registry （原型）')+' · lab: 前缀 '+NS+' （临时）· 骨架主题（lab:topic/*）为作者草稿</p>';
+  var fmt='text', pc=root.querySelector('.pc');
+  function cite(){pc.textContent=fmt==='bib'?pageBib(META):fmt==='ris'?pageRis(META):pageText(META);}
+  [].forEach.call(root.querySelectorAll('.cf'),function(b){b.onclick=function(){fmt=b.dataset.f; [].forEach.call(root.querySelectorAll('.cf'),function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); cite();};});
+  root.querySelector('.cp').onclick=function(){copy(pc.textContent,this);}; cite();
+  var RL=root.querySelector('.refs');
+  REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; var bad=Object.keys(v).filter(function(k){return !v[k];});
+    var d=el('div','r','<div>'+esc(toText(r))+'<span class="badge role">'+esc({primary:'主资料',background:'背景',data:'数值',figure:'图'}[r.lab&&r.lab.role]||'背景')+'</span>'+
+      (bad.length?'<span class="badge no">需确认：'+esc(bad.join(', '))+'</span>':'<span class="badge ok">书目已确认</span>')+'</div>'+
+      '<div style="margin-top:6px">'+(sup[r.id]||[]).map(function(id){var n=N[id]; return n?'<a class="rel" href="'+(n.anchor||'#kg')+'">'+esc(lab(n))+'</a>':'';}).join('')+'</div>');
+    RL.appendChild(d);});
+  var scope='all', SC=root.querySelector('.sc'), zc=root.querySelector('.zc');
+  [['all','全部'],['terms','仅概念·方法'],['claims','仅主张 + 出处'],['prereq','仅先修关系']].forEach(function(s,i){
+    var b=el('button','tchip',s[1]); b.type='button'; b.setAttribute('aria-pressed',i===0); if(i===0)b.style.background='var(--gfp,#5ee39c)',b.style.borderColor='var(--gfp,#5ee39c)';
+    b.onclick=function(){scope=s[0]; [].forEach.call(SC.children,function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); info();};
+    SC.appendChild(b);});
+  var FL=root.querySelector('.files');
+  function info(){var f=buildPackage(scope), m=JSON.parse(f[0].text); zc.textContent='节点 '+m.counts.nodes+' · 关系 '+m.counts.edges+' · 文献 '+m.counts.refs+' · 文件 '+f.length+'个';
+    FL.innerHTML=''; f.forEach(function(x){var b=el('button','bt',esc(x.name)); b.type='button'; b.onclick=function(){dlText(x.text,x.name);}; FL.appendChild(b);});}
+  root.querySelector('.zip').onclick=function(){download(makeZip(buildPackage(scope)),'kg_'+META.number+'_'+scope+'.zip');};
+  info();
+}
+function init(){addCss(); var a=$id('kg-mount'),b=$id('export-mount'); if(a)mountIndex(a); if(b)mountExport(b);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+return {download:download,buildPackage:buildPackage,makeZip:makeZip,toJsonLd:toJsonLd,toTurtle:toTurtle,toBib:toBib,toRis:toRis};
+})();
+
+</script>
+<!-- /lab-kg:script -->
 </body>
 </html>

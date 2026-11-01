@@ -571,7 +571,20 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
 .vt.pass{color:var(--stamp);border-color:var(--stamp)}
 .vt.hold{color:var(--muted)}
 .runshot pre{overflow-wrap:anywhere;word-break:break-all}
+/* 꼬리표(지식 색인·꾸러미): 조립기 스타일의 색 변수를 시리즈 테마에 맞춘다 */
+body .kgx{--gfp:var(--ok)}
+body .kgx .it .df,body .kgx .todo li{color:var(--soft)}
+body .kgx .path span.lim{color:var(--stamp)}
 :root{--font:"IBM Plex Sans",system-ui,sans-serif;--stampf:"IBM Plex Sans",sans-serif}body,p,h1,h2,h3,h4,li,td,th,.lede{word-break:normal}</style>
+<!-- lab-kg:head -->
+<meta name="citation_title" content="Комиссия по найму моделей · Второй открытый набор · 6-3 ResNet">
+<meta name="dc.title" content="Комиссия по найму моделей · Второй открытый набор · 6-3 ResNet">
+<meta name="dc.date" content="2026-10-24">
+<meta name="dc.language" content="ko">
+<meta name="dc.type" content="InteractiveResource">
+<meta name="citation_author" content="Sangsun Ahn">
+<meta name="dcterms.isPartOf" content="Комиссия по найму моделей — Второй открытый набор">
+<!-- /lab-kg:head -->
 </head>
 <body>
 <nav class="top" aria-label="Содержание страницы">
@@ -845,6 +858,22 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
   <div class="card"><ul class="reflist"><li><b>Данные и расчёты.</b> Практическое задание — те же 1,030 составов бетона и 258 экзаменационных листов, что и в Первом открытом наборе (в среде сборки код Colab запускался на копии, находящейся на странице Первого набора). Числа вердиктов страница читает из результатов выполнения кода Colab в главе A. Столбцы градиентов в главе 01 и кривые обучения в главе 04 — значения, вычисленные браузером с одним сидом. Этот кандидат пересдачи не просит (решение записано в документе комиссии до измерения пересдачи). «Код от ИИ» в главе 03 — пример, нарочно составленный из типичных ошибок. Остаточный блок в этой серии — это оригинальная структура He и др. (2016), перенесённая на полносвязные слои для табличных данных; свёртка и пакетная нормализация не использовались.</li><li><b>Правила решения.</b> Во Втором открытом наборе решение принимается по среднему значению моделей, обученных в Colab с 5 сидами (случайными числами). Чтобы быть принятым, кандидат должен превзойти и базовую линию (Мистер Инструкция), и результат старшего (принятого в первом наборе сотрудника, который сейчас выполняет ту же работу). Если разница со старшим меньше разброса между сидами (стандартного отклонения), это считается ничьей, и место остаётся за старшим. Кнопка «Обучить самому» на странице обучает модель в браузере один раз, с одним сидом, поэтому её значения могут немного отличаться от чисел решения.</li><li><b>Пересдача.</b> Кандидат, которого отложили, может один раз потребовать пересдачу. Перед испытанием кандидат излагает свои доводы и прогноз, а старший сдаёт заново в тех же условиях. Результат пересдачи — тоже среднее по 5 сидам; если кандидат проиграл, так и записывается.</li><li><b>Рисунки.</b> Изображения персонажей взяты из «Организационной схемы семейства алгоритмов ИИ». Сцены в комнате собеседований, пропуска и графики страница рисует сама в коде.</li><li><b>Концепция «комиссии по найму».</b> Это метафора: модели сравниваются с кандидатами, а обучение и оценка — с собеседованием. Она не изображает реальную процедуру найма или какую-либо компанию. «Отложено» означает лишь «в этой работе и на этих данных старший справляется лучше», а не превосходство одной модели над другой.</li><li><b>Персонажи.</b> Money-Robo — персонаж-талисман сервиса, который ведёт автор. Доктор, ассистент, исследователь Дрозофила, Мистер Инструкция, старшие сотрудники и кандидаты не изображают реальных людей. Разговоры о деньгах и бюджете в репликах — присказка, обозначающая вычислительные затраты.</li><li><b>Данные.</b> Практическое задание группы табличных данных — набор UCI Machine Learning Repository «Concrete Compressive Strength» (Yeh, 1998, 1,030 записей, CC BY 4.0), а экзаменационный лист строится по тем же правилам, что и в Первом открытом наборе (test_size=0.25, stratify=3 класса прочности, random_state=42; обучение 772 · тест 258). Практическое задание со стороны изображений — рукописные цифры из scikit-learn (load_digits, 1,797 изображений; исходные данные UCI Optical Recognition of Handwritten Digits, CC BY 4.0), а экзаменационный лист для выпусков с учителем — test_size=0.25, stratify=y, random_state=42 (обучение 1,347 · тест 450).</li><li><b>Язык.</b> Серия написана на корейском языке. Переводы добавляются под тем же именем файла после того, как корейская версия будет окончательно утверждена. Комментарии и результаты выполнения в коде Colab остаются в корейском оригинале.</li></ul></div>
 </div>
 </section>
+<!-- lab-kg:body -->
+<section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
+<h2>Указатель знаний — поиск по этой странице</h2>
+<p class="kgx-sub">На этой странице собраны понятия, методы, биологические аналоги, утверждения и открытые вопросы. Можно искать, нажимать на запись, чтобы увидеть соседние связи, и возвращаться к тексту по ссылке «Перейти к объяснению».</p>
+<div id="kg-mount"></div>
+</div></section>
+<section class="kgx kgx-sec" id="export"><div class="kgx-wrap">
+<h2>Пакет онтологии и библиографии — забрать знания этой страницы</h2>
+<p class="kgx-sub">Указатель знаний скачивается файлами вместе с источниками. Подходит для Zotero (BibTeX, RIS), Protégé (Turtle), Neo4j и Gephi (CSV), для объединения нескольких страниц (kg.json).</p>
+<div id="export-mount"></div>
+</div></section>
+<script type="application/json" id="kg-raw">{"version": "1.0", "page": "6-3", "nodes": [{"id": "lab:method/resnet", "type": "Method", "label": {"ko": "ResNet", "en": "Residual network"}, "definition": {"ko": "블록마다 입력 x를 블록의 결과 F(x)에 그대로 더해(x + F(x)) 깊은 망이 배울 수 있게 한 신경망. 이 편은 층 4·10·26개를 잰다.", "ru": "Нейросеть, в которой каждый блок прибавляет вход x к результату блока F(x) без изменений (x + F(x)), что позволяет обучаться глубоким сетям. В этом выпуске измеряются сети из 4, 10 и 26 слоёв."}, "anchor": "#overview", "coverage": "explained", "confidence": "high", "source": [{"ref": "he2016"}]}, {"id": "lab:method/residual-block", "type": "Method", "label": {"ko": "잔차 블록", "en": "Residual block", "ru": "Остаточный блок"}, "definition": {"ko": "Linear → ReLU → Linear로 F(x)를 계산하고 입력 x를 더해 h = ReLU(x + F(x))를 내는 단위. 입력에서 얼마나 바꿀지만 배운다.", "ru": "Единица, которая считает F(x) как Linear → ReLU → Linear, прибавляет вход x и выдаёт h = ReLU(x + F(x)). Учится только тому, насколько изменить вход."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "he2016"}]}, {"id": "lab:concept/residual-connection", "type": "Concept", "label": {"ko": "잔차 연결(지름길)", "en": "Residual (skip) connection", "ru": "Остаточная связь (короткий путь)"}, "definition": {"ko": "블록의 입력을 출력에 그대로 더하는 지름길. 기울기가 이 길로 줄지 않고 흐른다.", "ru": "Короткий путь, прибавляющий вход блока прямо к выходу. По нему градиент течёт, не уменьшаясь."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "he2016"}]}, {"id": "lab:claim/identity-gradient", "type": "Claim", "label": {"ko": "지름길의 기울기는 1 +", "en": "Shortcut gradient is 1 + ∂F/∂x", "ru": "Градиент короткого пути: 1 +"}, "definition": {"ko": "잔차 블록의 ∂h/∂x는 1 + ∂F/∂x다. \"1\"을 따라가는 길이 남아 있어 블록을 많이 지나도 기울기가 0으로 사라지지 않는다.", "ru": "∂h/∂x остаточного блока равен 1 + ∂F/∂x. Остаётся путь по «1», поэтому градиент не затухает до 0, сколько бы блоков ни проходил."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "he2016"}, {"ref": "he2016b"}]}, {"id": "lab:method/mlp", "type": "Method", "label": {"ko": "다층 퍼셉트론", "en": "Multilayer perceptron", "ru": "Многослойный перцептрон"}, "definition": {"ko": "6-2의 지원자. 층을 쌓아 곡선 경계를 만드는 완전 연결 신경망. 이 편은 같은 회귀 업무와 학습 규칙을 쓴다.", "ru": "Кандидат из 6-2. Полносвязная нейросеть, строящая изогнутую границу из стопки слоёв. В этом выпуске используются та же задача регрессии и то же правило обучения."}, "anchor": "#overview", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/plain-deep-network", "type": "Method", "label": {"ko": "평범한 깊은 망", "en": "Plain deep network", "ru": "Обычная глубокая сеть"}, "definition": {"ko": "지름길 없이 블록을 쌓은 망. 26층에서는 입력 쪽 층이 배우지 못해 출력이 평균 근처에 머문다.", "ru": "Сеть из блоков без коротких путей. При 26 слоях слои у входа не учатся, и выход держится около среднего."}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/gbm-senior", "type": "Method", "label": {"ko": "선배 GBM", "en": "Senior GBM", "ru": "Старший GBM"}, "definition": {"ko": "같은 강도 회귀를 지금 맡은 1차 합격자. 시험지 R² 0.950이 이번 합격선이다.", "ru": "Принятый в 1-м наборе сотрудник, сейчас выполняющий ту же регрессию прочности. R² 0.950 на экзаменационном листе — планка найма на этот раз."}, "anchor": "#overview", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/tabular-resnet", "type": "Method", "label": {"ko": "표 데이터용 ResNet", "en": "ResNet for tabular data", "ru": "ResNet для табличных данных"}, "definition": {"ko": "완전 연결 층으로 블록을 짠 ResNet 변형. 표 데이터의 기준선으로 연구된 구조다.", "ru": "Вариант ResNet с блоками из полносвязных слоёв. Структура, изученная как базовая линия для табличных данных."}, "anchor": "#m6", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "gorishniy2021"}]}, {"id": "lab:method/backpropagation", "type": "Method", "label": {"ko": "역전파", "en": "Backpropagation", "ru": "Обратное распространение"}, "definition": {"ko": "출력층의 오차를 한 층씩 거꾸로 전하며 층마다 가중치 행렬과 활성화 함수의 기울기를 곱해 가는 방법.", "ru": "Метод: ошибка выходного слоя передаётся назад слой за слоем, и на каждом слое перемножаются градиенты матрицы весов и функции активации."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/vanishing-gradient", "type": "Limitation", "label": {"ko": "기울기 소실", "en": "Vanishing gradient", "ru": "Затухание градиента"}, "definition": {"ko": "역전파 때 층을 지날수록 기울기가 작아져 입력 쪽 층이 거의 배우지 못하는 현상. 층이 스무 개를 넘으면 두드러진다.", "ru": "Затухание градиента: при обратном распространении градиент уменьшается от слоя к слою, и слои у входа почти не учатся. Заметно, когда слоёв больше двадцати."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "hochreiter1991"}]}, {"id": "lab:concept/exploding-gradient", "type": "Term", "label": {"ko": "기울기 폭발", "en": "Exploding gradient", "ru": "Взрыв градиента"}, "definition": {"ko": "반대로 층을 지날수록 기울기가 커져 학습이 튕겨 나가는 현상.", "ru": "Обратное явление: градиент растёт от слоя к слою, и обучение расходится."}, "anchor": "#glossary-sec", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:concept/he-init", "type": "Term", "label": {"ko": "He 초기화", "en": "He initialization", "ru": "Инициализация He"}, "definition": {"ko": "ReLU 망에서 층마다 값의 크기가 유지되도록 가중치를 N(0, 2/입력 수)에서 뽑는 방법.", "ru": "Способ выбирать веса из N(0, 2/число входов), чтобы в сети с ReLU величина значений сохранялась от слоя к слою."}, "anchor": "#m4", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:concept/batch-norm", "type": "Term", "label": {"ko": "배치 정규화", "en": "Batch normalization", "ru": "Пакетная нормализация"}, "definition": {"ko": "층마다 미니배치의 평균·분산으로 값을 맞추는 층. 원래 ResNet 블록 안에 있지만 이 편은 지름길의 효과만 보려고 뺐다.", "ru": "Слой, приводящий значения к среднему и дисперсии мини-батча на каждом слое. Изначально находится внутри блока ResNet, но в этом выпуске убран, чтобы видеть только эффект короткого пути."}, "anchor": "#m3", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:concept/projection", "type": "Term", "label": {"ko": "투영", "en": "Projection", "ru": "Проекция"}, "definition": {"ko": "지름길 양쪽의 폭이 다를 때 x를 맞는 폭으로 바꾸는 선형 층.", "ru": "Линейный слой, который приводит x к нужной ширине, когда ширина с двух сторон короткого пути различается."}, "anchor": "#m6", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:task/regress-strength", "type": "Task", "label": {"ko": "압축 강도 회귀", "en": "Strength regression", "ru": "Регрессия прочности на сжатие"}, "definition": {"ko": "6-2와 같은 콘크리트 강도(MPa) 회귀. 표준화해 배우고 채점 때 MPa로 되돌린다.", "ru": "Та же регрессия прочности бетона (MPa), что и в 6-2. Учится на стандартизованных значениях, при оценке возвращается в MPa."}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:dataset/concrete", "type": "Dataset", "label": {"ko": "콘크리트 배합 1,030건", "en": "Concrete compressive strength", "ru": "1,030 составов бетона"}, "definition": {"ko": "특징 8개와 강도가 든 표 데이터. 시험지 258건은 05장까지 봉인한다.", "ru": "Табличные данные с 8 признаками и прочностью. 258 записей экзаменационного листа запечатаны до главы 05."}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "yeh1998"}]}, {"id": "lab:metric/r2", "type": "Metric", "label": {"ko": "결정계수 R²", "en": "R-squared", "ru": "Коэффициент детерминации R²"}, "definition": {"ko": "1이면 완벽, 0이면 늘 평균만 말하는 것과 같다. 층 수별로 씨앗 다섯 개의 평균을 낸다.", "ru": "1 — идеально, 0 — то же, что всегда говорить среднее. Для каждого числа слоёв берётся среднее пяти сидов."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/verdict", "type": "Claim", "label": {"ko": "판정: 보류", "en": "Verdict: on hold", "ru": "Решение: Отложено"}, "definition": {"ko": "ResNet 26층의 시험지 R²는 0.922로, 지름길이 없는 26층(R² ≈ 0)과 달리 배운다. 그러나 선배 GBM의 0.950에는 못 미쳐 보류다.", "ru": "R² ResNet из 26 слоёв на экзаменационном листе равен 0.922, то есть в отличие от 26 слоёв без коротких путей (R² ≈ 0) сеть учится. Но до 0.950 старшего GBM не дотягивает, поэтому «Отложено»."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/depth-learns-not-improves", "type": "Claim", "label": {"ko": "깊어도 배우지만 깊어서 나아지지는 않는다", "en": "Deep learns, but deeper is not better", "ru": "Глубокая сеть учится, но от глубины лучше не становится"}, "definition": {"ko": "지름길은 깊은 망이 배울 수 있게 해 줄 뿐이고, 깊이가 성적을 올리는지는 일이 정한다. 이 배합표에서는 깊이가 선배를 넘게 하지 못했다.", "ru": "Короткий путь лишь позволяет глубокой сети учиться, а повышает ли глубина оценку, решает задача. На этой таблице составов глубина не помогла превзойти старшего."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/overkill-small-table", "type": "Limitation", "label": {"ko": "얕은 망으로 충분한 일에는 값만 든다", "en": "Costly on small tables", "ru": "Там, где хватает мелкой сети, глубина стоит лишь затрат"}, "definition": {"ko": "1,030건짜리 배합표처럼 깊이가 필요 없는 일에서는 얻는 것이 없고 파라미터와 시간만 든다.", "ru": "В задачах вроде таблицы из 1,030 записей, где глубина не нужна, ничего не выигрывается, а тратятся параметры и время."}, "anchor": "#m6", "coverage": "explained", "confidence": "high"}, {"id": "lab:question/does-depth-help", "type": "Question", "label": {"ko": "깊이가 배합표에서도 쓸모 있는가", "en": "Does depth help on a concrete table?", "ru": "Полезна ли глубина на таблице составов?"}, "definition": {"ko": "층을 깊게 쌓을 수 있다는 것과 깊어야 잘한다는 것이 같은가라는 물음.", "ru": "Вопрос: одно и то же ли «можно строить глубокие сети» и «хорошо работают только глубокие»."}, "anchor": "#m5", "coverage": "mentioned", "confidence": "medium"}, {"id": "lab:sim/layer-gradients", "type": "Simulation", "label": {"ko": "층마다 기울기의 크기", "en": "Per-layer gradient lab", "ru": "Величина градиента по слоям"}, "definition": {"ko": "처음 가중치의 4·12블록 망에서 훈련 배합 한 묶음의 손실을 거꾸로 흘려 층마다 기울기 크기를 로그 눈금으로 재 보는 실험.", "ru": "Эксперимент: в сетях из 4 и 12 блоков с начальными весами потери одной пачки обучающих составов передаются назад, и величина градиента каждого слоя измеряется в логарифмической шкале."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:sim/plain-vs-residual", "type": "Simulation", "label": {"ko": "26층 평범 대 잔차 학습", "en": "Plain vs residual training lab", "ru": "26 слоёв: обычная сеть и остаточное обучение"}, "definition": {"ko": "층 26개의 평범한 망과 잔차 망을 나란히 40에포크 학습시켜 손실 곡선을 비교한다.", "ru": "Обычная и остаточная сети из 26 слоёв обучаются рядом по 40 эпох, кривые потерь сравниваются."}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/telephone-game", "type": "Analogy", "label": {"ko": "긴 전화 게임", "en": "Long telephone game", "ru": "Длинная игра в испорченный телефон"}, "definition": {"ko": "스물여섯 명을 거치면 처음 사람의 말이 거의 남지 않는 놀이. 기울기 소실에 빗댄다.", "ru": "Игра, где после двадцати шести человек от слов первого почти ничего не остаётся. Аналогия с затуханием градиента."}, "anchor": "#analogy-sec", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/note-passing", "type": "Analogy", "label": {"ko": "원래 쪽지를 함께 돌리기", "en": "Passing the original note along", "ru": "Передавать вместе исходную записку"}, "definition": {"ko": "전화 게임에 원래 쪽지를 함께 돌리고 각자는 고칠 점만 덧붙이는 일. 잔차 연결에 빗댄다.", "ru": "В игре в телефон вместе передаётся исходная записка, а каждый лишь добавляет свои поправки. Аналогия с остаточной связью."}, "anchor": "#analogy-sec", "coverage": "explained", "confidence": "high"}], "edges": [{"s": "lab:method/resnet", "p": "lab:broader", "o": "lab:topic/residual-connections"}, {"s": "lab:concept/residual-connection", "p": "lab:broader", "o": "lab:topic/residual-connections"}, {"s": "lab:method/mlp", "p": "lab:broader", "o": "lab:topic/mlp"}, {"s": "lab:method/backpropagation", "p": "lab:broader", "o": "lab:topic/backpropagation"}, {"s": "lab:method/gbm-senior", "p": "lab:broader", "o": "lab:topic/boosting"}, {"s": "lab:concept/batch-norm", "p": "lab:broader", "o": "lab:topic/normalization-layers"}, {"s": "lab:method/residual-block", "p": "lab:partOf", "o": "lab:method/resnet"}, {"s": "lab:concept/residual-connection", "p": "lab:partOf", "o": "lab:method/residual-block"}, {"s": "lab:concept/projection", "p": "lab:partOf", "o": "lab:method/residual-block"}, {"s": "lab:method/tabular-resnet", "p": "lab:partOf", "o": "lab:method/resnet"}, {"s": "lab:method/backpropagation", "p": "lab:prerequisiteOf", "o": "lab:limitation/vanishing-gradient"}, {"s": "lab:method/mlp", "p": "lab:prerequisiteOf", "o": "lab:method/plain-deep-network"}, {"s": "lab:method/plain-deep-network", "p": "lab:prerequisiteOf", "o": "lab:method/resnet"}, {"s": "lab:method/plain-deep-network", "p": "lab:hasLimitation", "o": "lab:limitation/vanishing-gradient"}, {"s": "lab:limitation/vanishing-gradient", "p": "lab:addressedBy", "o": "lab:method/residual-block"}, {"s": "lab:limitation/vanishing-gradient", "p": "lab:raises", "o": "lab:question/does-depth-help"}, {"s": "lab:concept/exploding-gradient", "p": "lab:contrastsWith", "o": "lab:limitation/vanishing-gradient"}, {"s": "lab:concept/he-init", "p": "lab:prerequisiteOf", "o": "lab:method/plain-deep-network"}, {"s": "lab:concept/batch-norm", "p": "lab:prerequisiteOf", "o": "lab:method/plain-deep-network"}, {"s": "lab:claim/identity-gradient", "p": "lab:supports", "o": "lab:method/residual-block"}, {"s": "lab:claim/identity-gradient", "p": "lab:supports", "o": "lab:concept/residual-connection"}, {"s": "lab:concept/residual-connection", "p": "lab:prerequisiteOf", "o": "lab:claim/identity-gradient"}, {"s": "lab:method/resnet", "p": "lab:hasLimitation", "o": "lab:limitation/overkill-small-table"}, {"s": "lab:claim/depth-learns-not-improves", "p": "lab:raises", "o": "lab:question/does-depth-help"}, {"s": "lab:limitation/overkill-small-table", "p": "lab:supports", "o": "lab:claim/depth-learns-not-improves"}, {"s": "lab:claim/depth-learns-not-improves", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/resnet", "p": "lab:contrastsWith", "o": "lab:method/gbm-senior"}, {"s": "lab:method/resnet", "p": "lab:solves", "o": "lab:task/regress-strength"}, {"s": "lab:method/gbm-senior", "p": "lab:solves", "o": "lab:task/regress-strength"}, {"s": "lab:method/mlp", "p": "lab:solves", "o": "lab:task/regress-strength"}, {"s": "lab:method/resnet", "p": "lab:evaluatedOn", "o": "lab:dataset/concrete"}, {"s": "lab:task/regress-strength", "p": "lab:evaluatedOn", "o": "lab:dataset/concrete"}, {"s": "lab:method/resnet", "p": "lab:evaluatedBy", "o": "lab:metric/r2"}, {"s": "lab:method/gbm-senior", "p": "lab:evaluatedBy", "o": "lab:metric/r2"}, {"s": "lab:metric/r2", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/tabular-resnet", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:limitation/vanishing-gradient", "p": "lab:demonstratedBy", "o": "lab:sim/layer-gradients"}, {"s": "lab:method/residual-block", "p": "lab:demonstratedBy", "o": "lab:sim/plain-vs-residual"}, {"s": "lab:method/plain-deep-network", "p": "lab:demonstratedBy", "o": "lab:sim/plain-vs-residual"}, {"s": "lab:analogy/telephone-game", "p": "lab:analogyOf", "o": "lab:limitation/vanishing-gradient"}, {"s": "lab:analogy/note-passing", "p": "lab:analogyOf", "o": "lab:concept/residual-connection"}], "topicLabels": {"lab:area/math": "Основы математики", "lab:topic/linear-algebra": "Линейная алгебра", "lab:topic/probability-statistics": "Вероятность и статистика", "lab:topic/calculus-optimization-math": "Матанализ и математика оптимизации", "lab:topic/information-theory": "Теория информации", "lab:area/ml-basics": "Основы машинного обучения", "lab:topic/supervised-learning": "Обучение с учителем", "lab:topic/unsupervised-learning": "Понятие обучения без учителя", "lab:topic/generalization": "Обобщение и переобучение", "lab:topic/bias-variance": "Баланс смещения и дисперсии", "lab:topic/data-splitting": "Разделение на обучающую, валидационную и тестовую выборки", "lab:topic/feature-engineering": "Конструирование признаков", "lab:topic/rule-vs-learning": "Правила и обучение", "lab:area/classical": "Классические модели", "lab:topic/linear-regression": "Линейная регрессия", "lab:topic/logistic-regression": "логистическая регрессия", "lab:topic/svm": "Метод опорных векторов", "lab:topic/knn": "k ближайших соседей", "lab:topic/decision-tree": "Решающему дереву", "lab:topic/naive-bayes": "Наивный байесовский классификатор", "lab:area/ensemble": "Ансамбль", "lab:topic/bagging": "Бэггинг", "lab:topic/random-forest": "Случайный лес", "lab:topic/boosting": "Бустинг", "lab:topic/stacking": "Стекинг", "lab:area/nn-basics": "Основы нейросетей", "lab:topic/weights-and-biases": "Веса и смещение", "lab:topic/perceptron": "Перцептрон", "lab:topic/mlp": "Многослойный перцептрон", "lab:topic/activation-function": "Функции активации", "lab:topic/loss-function": "Функция потерь", "lab:topic/backpropagation": "Обратное распространение", "lab:topic/universal-approximation": "Универсальная теорема аппроксимации", "lab:area/optimization": "Оптимизация", "lab:topic/gradient-descent": "Градиентный спуск", "lab:topic/sgd-minibatch": "Стохастический градиентный спуск и мини-батчи", "lab:topic/momentum-adam": "Моментум и Adam", "lab:topic/learning-rate-schedule": "Настройка скорости обучения", "lab:area/regularization": "Регуляризация и методы обобщения", "lab:topic/weight-decay": "Затухание весов (L2)", "lab:topic/dropout": "Дропаут", "lab:topic/early-stopping": "Ранняя остановка", "lab:topic/normalization-layers": "Слои нормализации", "lab:topic/data-augmentation": "Аугментация данных", "lab:area/vision": "Свёртка и компьютерное зрение", "lab:topic/convolution": "Свёртка и разделение весов", "lab:topic/pooling": "Пулинг", "lab:topic/receptive-field": "Рецептивное поле", "lab:topic/residual-connections": "Остаточная связь", "lab:topic/object-detection": "Обнаружение объектов", "lab:topic/segmentation": "Сегментация", "lab:area/sequence": "Модели последовательностей", "lab:topic/rnn": "Рекуррентная нейронная сеть", "lab:topic/lstm-gru": "LSTM·GRU", "lab:topic/seq2seq": "Sequence-to-sequence", "lab:topic/time-series": "Прогнозирование временных рядов", "lab:area/attention": "Внимание и трансформеры", "lab:topic/attention-mechanism": "Механизм внимания", "lab:topic/self-attention": "самовнимание (self-attention)", "lab:topic/multi-head-attention": "Многоголовое внимание", "lab:topic/positional-encoding": "Позиционное кодирование", "lab:topic/transformer": "Трансформер", "lab:area/language": "Языковые модели и обработка естественного языка", "lab:topic/tokenization": "Токенизация", "lab:topic/word-embedding": "Эмбеддинги слов", "lab:topic/pretrained-lm": "Предобученные языковые модели", "lab:topic/transfer-learning": "Перенос обучения и дообучение", "lab:topic/lora": "LoRA и адаптеры", "lab:topic/prompting": "Промптинг", "lab:topic/rag": "Генерация с дополнением поиском", "lab:area/generative": "Генеративные модели", "lab:topic/autoencoder": "Автоэнкодер", "lab:topic/vae": "Вариационный автокодировщик", "lab:topic/gan": "Генеративно-состязательная сеть", "lab:topic/diffusion": "Диффузионная модель", "lab:topic/autoregressive-generation": "Авторегрессионная генерация", "lab:area/representation": "Обучение представлений", "lab:topic/embedding-space": "Пространство эмбеддингов", "lab:topic/self-supervised": "Самообучение", "lab:topic/contrastive": "Контрастное обучение", "lab:topic/sparse-representation": "Разреженные представления", "lab:topic/random-features": "Случайные признаки", "lab:topic/multi-task-learning": "Многозадачное обучение", "lab:area/rl": "Обучение с подкреплением", "lab:topic/mdp": "Марковский процесс принятия решений", "lab:topic/reward": "Награда", "lab:topic/value-function": "Функция ценности", "lab:topic/q-learning": "Q-обучение", "lab:topic/policy-gradient": "Градиент политики", "lab:topic/exploration": "Исследование и использование", "lab:topic/reward-prediction-error": "Ошибка предсказания награды", "lab:area/unsupervised": "Методы без учителя", "lab:topic/clustering": "Кластеризация", "lab:topic/pca": "Метод главных компонент", "lab:topic/tsne-umap": "t-SNE·UMAP", "lab:topic/density-estimation": "Оценка плотности", "lab:topic/anomaly-detection": "Обнаружение аномалий", "lab:area/evaluation": "Оценка", "lab:topic/accuracy-metrics": "Метрики точности и потерь", "lab:topic/precision-recall": "Precision и recall", "lab:topic/roc-auc": "ROC·AUC", "lab:topic/confusion-matrix": "Матрица ошибок", "lab:topic/data-leakage": "Утечка данных", "lab:topic/ablation": "Абляционные эксперименты", "lab:area/graph": "Обучение на графах", "lab:topic/gnn": "Графовые нейросети", "lab:topic/message-passing": "Передача сообщений", "lab:topic/knowledge-graph": "Граф знаний", "lab:area/systems": "Системы и MLOps", "lab:topic/deployment": "Развёртывание", "lab:topic/distribution-shift": "Сдвиг распределения", "lab:topic/monitoring": "Мониторинг", "lab:topic/reproducibility": "Воспроизводимость", "lab:area/responsible": "Ответственный ИИ", "lab:topic/fairness": "Справедливость", "lab:topic/interpretability": "Объяснимость и интерпретация", "lab:topic/ai-safety": "Безопасность", "lab:topic/privacy": "Приватность", "lab:area/neuro": "Нейронаука и ИИ", "lab:topic/biological-neuron": "Биологические нейроны и спайки", "lab:topic/synaptic-plasticity": "Синаптическая пластичность", "lab:topic/connectome": "Коннектом", "lab:topic/sensory-processing": "Сенсорная обработка", "lab:topic/learning-memory-circuits": "Цепи обучения и памяти", "lab:topic/circuit-methods": "Методы экспериментов с нейронными цепями"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/6-3","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"모델 채용 위원회 2차 공채 · 6-3 ResNet","schema:inLanguage":"ko","schema:dateCreated":"2026-10-24","schema:version":"1.0","dct:isPartOf":"모델 채용 위원회 2차 공채","schema:about":[{"@id":"lab:topic/residual-connections"},{"@id":"lab:topic/backpropagation"}],"schema:educationalLevel":"대학 학부 · 입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/he2016"},{"@id":"lab:work/he2016b"},{"@id":"lab:work/hochreiter1991"},{"@id":"lab:work/glorot2010"},{"@id":"lab:work/gorishniy2021"},{"@id":"lab:work/yeh1998"}]},{"@id":"lab:method/resnet","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"ResNet","@language":"ko"},{"@value":"Residual network","@language":"en"}],"skos:definition":[{"@value":"블록마다 입력 x를 블록의 결과 F(x)에 그대로 더해(x + F(x)) 깊은 망이 배울 수 있게 한 신경망. 이 편은 층 4·10·26개를 잰다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#overview","lab:broader":[{"@id":"lab:topic/residual-connections"}],"skos:broader":[{"@id":"lab:topic/residual-connections"}],"lab:hasLimitation":[{"@id":"lab:limitation/overkill-small-table"}],"lab:contrastsWith":[{"@id":"lab:method/gbm-senior"}],"lab:solves":[{"@id":"lab:task/regress-strength"}],"lab:evaluatedOn":[{"@id":"lab:dataset/concrete"}],"lab:evaluatedBy":[{"@id":"lab:metric/r2"}]},{"@id":"lab:method/residual-block","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"잔차 블록","@language":"ko"},{"@value":"Residual block","@language":"en"}],"skos:definition":[{"@value":"Linear → ReLU → Linear로 F(x)를 계산하고 입력 x를 더해 h = ReLU(x + F(x))를 내는 단위. 입력에서 얼마나 바꿀지만 배운다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/resnet"}],"lab:demonstratedBy":[{"@id":"lab:sim/plain-vs-residual"}]},{"@id":"lab:concept/residual-connection","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"잔차 연결(지름길)","@language":"ko"},{"@value":"Residual (skip) connection","@language":"en"}],"skos:definition":[{"@value":"블록의 입력을 출력에 그대로 더하는 지름길. 기울기가 이 길로 줄지 않고 흐른다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/residual-connections"}],"skos:broader":[{"@id":"lab:topic/residual-connections"}],"lab:partOf":[{"@id":"lab:method/residual-block"}],"lab:prerequisiteOf":[{"@id":"lab:claim/identity-gradient"}]},{"@id":"lab:claim/identity-gradient","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"지름길의 기울기는 1 +","@language":"ko"},{"@value":"Shortcut gradient is 1 + ∂F/∂x","@language":"en"}],"skos:definition":[{"@value":"잔차 블록의 ∂h/∂x는 1 + ∂F/∂x다. \"1\"을 따라가는 길이 남아 있어 블록을 많이 지나도 기울기가 0으로 사라지지 않는다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:supports":[{"@id":"lab:method/residual-block"},{"@id":"lab:concept/residual-connection"}]},{"@id":"lab:method/mlp","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"다층 퍼셉트론","@language":"ko"},{"@value":"Multilayer perceptron","@language":"en"}],"skos:definition":[{"@value":"6-2의 지원자. 층을 쌓아 곡선 경계를 만드는 완전 연결 신경망. 이 편은 같은 회귀 업무와 학습 규칙을 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#overview","lab:broader":[{"@id":"lab:topic/mlp"}],"skos:broader":[{"@id":"lab:topic/mlp"}],"lab:prerequisiteOf":[{"@id":"lab:method/plain-deep-network"}],"lab:solves":[{"@id":"lab:task/regress-strength"}]},{"@id":"lab:method/plain-deep-network","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"평범한 깊은 망","@language":"ko"},{"@value":"Plain deep network","@language":"en"}],"skos:definition":[{"@value":"지름길 없이 블록을 쌓은 망. 26층에서는 입력 쪽 층이 배우지 못해 출력이 평균 근처에 머문다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:prerequisiteOf":[{"@id":"lab:method/resnet"}],"lab:hasLimitation":[{"@id":"lab:limitation/vanishing-gradient"}],"lab:demonstratedBy":[{"@id":"lab:sim/plain-vs-residual"}]},{"@id":"lab:method/gbm-senior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"선배 GBM","@language":"ko"},{"@value":"Senior GBM","@language":"en"}],"skos:definition":[{"@value":"같은 강도 회귀를 지금 맡은 1차 합격자. 시험지 R² 0.950이 이번 합격선이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#overview","lab:broader":[{"@id":"lab:topic/boosting"}],"skos:broader":[{"@id":"lab:topic/boosting"}],"lab:solves":[{"@id":"lab:task/regress-strength"}],"lab:evaluatedBy":[{"@id":"lab:metric/r2"}]},{"@id":"lab:method/tabular-resnet","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"표 데이터용 ResNet","@language":"ko"},{"@value":"ResNet for tabular data","@language":"en"}],"skos:definition":[{"@value":"완전 연결 층으로 블록을 짠 ResNet 변형. 표 데이터의 기준선으로 연구된 구조다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m6","lab:partOf":[{"@id":"lab:method/resnet"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:method/backpropagation","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"역전파","@language":"ko"},{"@value":"Backpropagation","@language":"en"}],"skos:definition":[{"@value":"출력층의 오차를 한 층씩 거꾸로 전하며 층마다 가중치 행렬과 활성화 함수의 기울기를 곱해 가는 방법.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/backpropagation"}],"skos:broader":[{"@id":"lab:topic/backpropagation"}],"lab:prerequisiteOf":[{"@id":"lab:limitation/vanishing-gradient"}]},{"@id":"lab:limitation/vanishing-gradient","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"기울기 소실","@language":"ko"},{"@value":"Vanishing gradient","@language":"en"}],"skos:definition":[{"@value":"역전파 때 층을 지날수록 기울기가 작아져 입력 쪽 층이 거의 배우지 못하는 현상. 층이 스무 개를 넘으면 두드러진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:addressedBy":[{"@id":"lab:method/residual-block"}],"lab:raises":[{"@id":"lab:question/does-depth-help"}],"lab:demonstratedBy":[{"@id":"lab:sim/layer-gradients"}]},{"@id":"lab:concept/exploding-gradient","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"기울기 폭발","@language":"ko"},{"@value":"Exploding gradient","@language":"en"}],"skos:definition":[{"@value":"반대로 층을 지날수록 기울기가 커져 학습이 튕겨 나가는 현상.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#glossary-sec","lab:contrastsWith":[{"@id":"lab:limitation/vanishing-gradient"}]},{"@id":"lab:concept/he-init","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"He 초기화","@language":"ko"},{"@value":"He initialization","@language":"en"}],"skos:definition":[{"@value":"ReLU 망에서 층마다 값의 크기가 유지되도록 가중치를 N(0, 2/입력 수)에서 뽑는 방법.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m4","lab:prerequisiteOf":[{"@id":"lab:method/plain-deep-network"}]},{"@id":"lab:concept/batch-norm","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"배치 정규화","@language":"ko"},{"@value":"Batch normalization","@language":"en"}],"skos:definition":[{"@value":"층마다 미니배치의 평균·분산으로 값을 맞추는 층. 원래 ResNet 블록 안에 있지만 이 편은 지름길의 효과만 보려고 뺐다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m3","lab:broader":[{"@id":"lab:topic/normalization-layers"}],"skos:broader":[{"@id":"lab:topic/normalization-layers"}],"lab:prerequisiteOf":[{"@id":"lab:method/plain-deep-network"}]},{"@id":"lab:concept/projection","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"투영","@language":"ko"},{"@value":"Projection","@language":"en"}],"skos:definition":[{"@value":"지름길 양쪽의 폭이 다를 때 x를 맞는 폭으로 바꾸는 선형 층.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m6","lab:partOf":[{"@id":"lab:method/residual-block"}]},{"@id":"lab:task/regress-strength","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"압축 강도 회귀","@language":"ko"},{"@value":"Strength regression","@language":"en"}],"skos:definition":[{"@value":"6-2와 같은 콘크리트 강도(MPa) 회귀. 표준화해 배우고 채점 때 MPa로 되돌린다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:evaluatedOn":[{"@id":"lab:dataset/concrete"}]},{"@id":"lab:dataset/concrete","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"콘크리트 배합 1,030건","@language":"ko"},{"@value":"Concrete compressive strength","@language":"en"}],"skos:definition":[{"@value":"특징 8개와 강도가 든 표 데이터. 시험지 258건은 05장까지 봉인한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:metric/r2","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"결정계수 R²","@language":"ko"},{"@value":"R-squared","@language":"en"}],"skos:definition":[{"@value":"1이면 완벽, 0이면 늘 평균만 말하는 것과 같다. 층 수별로 씨앗 다섯 개의 평균을 낸다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:claim/verdict","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"판정: 보류","@language":"ko"},{"@value":"Verdict: on hold","@language":"en"}],"skos:definition":[{"@value":"ResNet 26층의 시험지 R²는 0.922로, 지름길이 없는 26층(R² ≈ 0)과 달리 배운다. 그러나 선배 GBM의 0.950에는 못 미쳐 보류다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5"},{"@id":"lab:claim/depth-learns-not-improves","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"깊어도 배우지만 깊어서 나아지지는 않는다","@language":"ko"},{"@value":"Deep learns, but deeper is not better","@language":"en"}],"skos:definition":[{"@value":"지름길은 깊은 망이 배울 수 있게 해 줄 뿐이고, 깊이가 성적을 올리는지는 일이 정한다. 이 배합표에서는 깊이가 선배를 넘게 하지 못했다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:raises":[{"@id":"lab:question/does-depth-help"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:limitation/overkill-small-table","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"얕은 망으로 충분한 일에는 값만 든다","@language":"ko"},{"@value":"Costly on small tables","@language":"en"}],"skos:definition":[{"@value":"1,030건짜리 배합표처럼 깊이가 필요 없는 일에서는 얻는 것이 없고 파라미터와 시간만 든다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m6","lab:supports":[{"@id":"lab:claim/depth-learns-not-improves"}]},{"@id":"lab:question/does-depth-help","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"깊이가 배합표에서도 쓸모 있는가","@language":"ko"},{"@value":"Does depth help on a concrete table?","@language":"en"}],"skos:definition":[{"@value":"층을 깊게 쌓을 수 있다는 것과 깊어야 잘한다는 것이 같은가라는 물음.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m5"},{"@id":"lab:sim/layer-gradients","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"층마다 기울기의 크기","@language":"ko"},{"@value":"Per-layer gradient lab","@language":"en"}],"skos:definition":[{"@value":"처음 가중치의 4·12블록 망에서 훈련 배합 한 묶음의 손실을 거꾸로 흘려 층마다 기울기 크기를 로그 눈금으로 재 보는 실험.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:sim/plain-vs-residual","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"26층 평범 대 잔차 학습","@language":"ko"},{"@value":"Plain vs residual training lab","@language":"en"}],"skos:definition":[{"@value":"층 26개의 평범한 망과 잔차 망을 나란히 40에포크 학습시켜 손실 곡선을 비교한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4"},{"@id":"lab:analogy/telephone-game","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"긴 전화 게임","@language":"ko"},{"@value":"Long telephone game","@language":"en"}],"skos:definition":[{"@value":"스물여섯 명을 거치면 처음 사람의 말이 거의 남지 않는 놀이. 기울기 소실에 빗댄다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:limitation/vanishing-gradient"}]},{"@id":"lab:analogy/note-passing","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"원래 쪽지를 함께 돌리기","@language":"ko"},{"@value":"Passing the original note along","@language":"en"}],"skos:definition":[{"@value":"전화 게임에 원래 쪽지를 함께 돌리고 각자는 고칠 점만 덧붙이는 일. 잔차 연결에 빗댄다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:concept/residual-connection"}]}]}</script>
+<script type="application/json" id="refs-csl">[{"id":"he2016","type":"paper-conference","title":"Deep Residual Learning for Image Recognition","author":[{"family":"He","given":"K."},{"family":"Zhang","given":"X."},{"family":"Ren","given":"S."},{"family":"Sun","given":"J."}],"issued":{"date-parts":[[2016]]},"container-title":"CVPR, 770–778","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"he2016b","type":"article-journal","title":"Identity Mappings in Deep Residual Networks","author":[{"family":"He","given":"K."},{"family":"Zhang","given":"X."},{"family":"Ren","given":"S."},{"family":"Sun","given":"J."}],"issued":{"date-parts":[[2016]]},"container-title":"ECCV","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"hochreiter1991","type":"article-journal","title":"Untersuchungen zu dynamischen neuronalen Netzen [Diploma thesis]","author":[{"family":"Hochreiter","given":"S."}],"issued":{"date-parts":[[1991]]},"container-title":"TU München","lab":{"note":"기울기 소실의 첫 분석","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"glorot2010","type":"article-journal","title":"Understanding the difficulty of training deep feedforward neural networks","author":[{"family":"Glorot","given":"X."},{"family":"Bengio","given":"Y."}],"issued":{"date-parts":[[2010]]},"container-title":"AISTATS","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"gorishniy2021","type":"paper-conference","title":"Revisiting Deep Learning Models for Tabular Data","author":[{"family":"Gorishniy","given":"Y."},{"family":"Rubachev","given":"I."},{"family":"Khrulkov","given":"V."},{"family":"Babenko","given":"A."}],"issued":{"date-parts":[[2021]]},"container-title":"NeurIPS","lab":{"note":"표 데이터용 ResNet","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"yeh1998","type":"dataset","title":"Concrete Compressive Strength","author":[{"family":"Yeh","given":"I.-C."}],"issued":{"date-parts":[[1998]]},"publisher":"UCI Machine Learning Repository","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}}]</script>
+<script type="application/json" id="page-meta">{"title": "Комиссия по найму моделей · Второй открытый набор · 6-3 ResNet", "number": "6-3", "date": "2026-10-24", "version": "1.0", "series": "Комиссия по найму моделей — Второй открытый набор", "language": "ko", "creator": [{"name": "Ahn Sangsun", "affiliation": "M-Robo Co., Ltd."}], "about": ["lab:topic/residual-connections", "lab:topic/backpropagation"], "educationalLevel": "대학 학부 · 입문", "learningResourceType": "interactive explainer", "description": "층을 건너뛰는 지름길(잔차 연결)로 깊은 망도 배우게 하는 지원자 ResNet의 면접. 콘크리트 강도 회귀에서 층을 4·10·26개 쌓아 평범한 망과 비교하고, 처음 가중치에서 층마다 기울기가 사라지는 모습, 지름길이 기울기를 살리는 까닭, 그래도 선배 GBM을 넘지 못하는 이유를 본다. 모델 채용 위원회 2차 공채 6-3.", "basedOn": ["he2016", "he2016b", "hochreiter1991", "glorot2010", "gorishniy2021", "yeh1998"]}</script>
+<!-- /lab-kg:body -->
 <footer>
   <div class="wrap">
     <p><b style="color:var(--text)">Комиссия по найму моделей · Второй открытый набор · 6-3 ResNet</b> · <a href="6-0_job_posting.html#m8">Полная карта (6-0)</a> — автор Sangsun Ahn (генеральный директор M-Robo Inc.)</p>
@@ -1666,5 +1695,408 @@ var CODE={title:'Собеседование с ResNet — исчезающий �
 
 boot();
 </script>
+<!-- lab-kg:script -->
+<script>
+/* ai-lab-retrofit 휴대판 (색 변수가 없는 페이지에서도 동작) */
+/* ══ KG: 지식 색인(#kg) + 온톨로지·서지 꾸러미(#export) — 공용 모듈 ══
+   데이터 블록: #kg-raw(중립 JSON), #refs-csl(CSL-JSON), #page-meta, #kg-ld(빌드 때 생성)
+   외부 라이브러리 없음. 모든 내보내기는 kg-raw에서 만든다. */
+var KGX=(function(){
+'use strict';
+function $id(i){return document.getElementById(i);}
+function J(id){var e=$id(id); return e?JSON.parse(e.textContent):null;}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function el(tag,cls,html){var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+
+var TYPE={Concept:['Понятие','#82b8ff'],Method:['Метод','#5ee39c'],BioAnalogue:['Биологический аналог','#ef5b5b'],Claim:['Утверждение','#f1b646'],
+  Question:['Открытый вопрос','#d672d6'],Limitation:['Ограничение','#ff9a7a'],Task:['задача','#7fe0c8'],Metric:['Метрика','#b9a8ff'],
+  Dataset:['Данные','#c9c4a4'],Simulation:['Симуляция','#8a88a8'],QuizItem:['Тест','#6f6d8c'],Work:['Литература','#e0d7a8'],
+  Area:['Область','#eceaf3'],Topic:['Тема','#9d9bb8'],Analogy:['Аналогия','#ff86b8'],Term:['Термины','#82b8ff']};
+var REL={prerequisiteOf:'Нужно знать заранее',hasLimitation:'Ограничение',addressedBy:'Решается',partOf:'Частичная',bioAnalogueOf:'Биологический аналог',
+  contrastsWith:'Противопоставление',supports:'Подтверждает',assertedIn:'Источник',evaluatedBy:'Оценивается метрикой',evaluatedOn:'Оценивается на данных',
+  demonstratedBy:'Симуляция',raises:'Порождает вопрос',relatedTo:'Связано',solves:'Решаемая задача',analogyOf:'Аналогия',assesses:'Проверка тестом',
+  broader:'Вышестоящая тема',explainedIn:'Где объяснено'};
+function tl(t){return (TYPE[t]||[t])[0];} function tc(t){return (TYPE[t]||[0,'#9d9bb8'])[1];}
+function pn(p){return p.replace(/^lab:/,'');}
+function lab(n){return n.label?(n.label[LANG]||n.label.en||n.label.ko):n.id;}
+
+/* ── 변환기 ─────────────────────────────────────────── */
+var NS='urn:lab:';
+var CTX={'@vocab':NS,lab:NS,skos:'http://www.w3.org/2004/02/skos/core#',schema:'https://schema.org/',
+  dct:'http://purl.org/dc/terms/',prov:'http://www.w3.org/ns/prov#',rdfs:'http://www.w3.org/2000/01/rdf-schema#'};
+var SKOS_T={Concept:1,Method:1,Task:1,Term:1,Limitation:1,BioAnalogue:1,Metric:1,Area:1,Topic:1};
+var SCH_T={Work:'schema:ScholarlyArticle',Claim:'schema:Claim',Dataset:'schema:Dataset',QuizItem:'schema:Question',Question:'schema:Question',Simulation:'schema:SoftwareApplication'};
+function lit(o){var a=[]; Object.keys(o||{}).forEach(function(k){ var v=o[k]; (Array.isArray(v)?v:[v]).forEach(function(x){a.push({'@value':x,'@language':k});});}); return a;}
+function toJsonLd(g,meta){
+  var graph=g.nodes.map(function(n){
+    var t=['lab:'+n.type]; if(SKOS_T[n.type])t.push('skos:Concept'); if(SCH_T[n.type])t.push(SCH_T[n.type]);
+    var o={'@id':n.id,'@type':t,'skos:prefLabel':lit(n.label)};
+    if(n.altLabel)o['skos:altLabel']=lit(n.altLabel);
+    if(n.definition)o['skos:definition']=lit(n.definition);
+    ['level','status','confidence','coverage','family','page','anchor'].forEach(function(k){ if(n[k]!=null)o['lab:'+k]=n[k];});
+    (n.match||[]).forEach(function(m){ var p=m.rel==='exact'?'skos:exactMatch':'skos:closeMatch'; (o[p]=o[p]||[]).push({'@id':m.iri});});
+    return o;});
+  var byS={}; graph.forEach(function(o){byS[o['@id']]=o;});
+  g.edges.forEach(function(e){ var s=byS[e.s]; if(!s)return; var k=e.p; (s[k]=s[k]||[]).push({'@id':e.o});
+    if(e.p==='lab:broader')(s['skos:broader']=s['skos:broader']||[]).push({'@id':e.o});
+    if(e.p==='lab:assertedIn')(s['prov:wasDerivedFrom']=s['prov:wasDerivedFrom']||[]).push({'@id':e.o});
+    if(e.p==='lab:relatedTo')(s['skos:related']=s['skos:related']||[]).push({'@id':e.o}); });
+  if(meta)graph.unshift({'@id':NS+'page/'+meta.number,'@type':['schema:LearningResource','schema:WebPage'],'schema:name':meta.title,
+    'schema:inLanguage':meta.language,'schema:dateCreated':meta.date,'schema:version':meta.version,'dct:isPartOf':meta.series,
+    'schema:about':(meta.about||[]).map(function(a){return {'@id':a};}),'schema:educationalLevel':meta.educationalLevel,
+    'schema:learningResourceType':meta.learningResourceType,'dct:source':(meta.basedOn||[]).map(function(b){return {'@id':'lab:work/'+b};})});
+  return {'@context':CTX,'@graph':graph};
+}
+function ttlS(s){return '"'+String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\n/g,'\\n')+'"';}
+function ttlI(id){return id.indexOf('lab:')===0?'lab:'+id.slice(4).replace(/[^A-Za-z0-9_\-]/g,function(c){return c==='/'?'_':encodeURIComponent(c).replace(/%/g,'_');}):'<'+id+'>';}
+function toTurtle(g){
+  var L=['@prefix lab: <'+NS+'> .','@prefix skos: <http://www.w3.org/2004/02/skos/core#> .','@prefix schema: <https://schema.org/> .',
+    '@prefix prov: <http://www.w3.org/ns/prov#> .',''];
+  var out={}; g.edges.forEach(function(e){(out[e.s]=out[e.s]||[]).push(e);});
+  g.nodes.forEach(function(n){
+    var P=['a lab:'+n.type+(SKOS_T[n.type]?', skos:Concept':'')];
+    Object.keys(n.label||{}).forEach(function(k){P.push('skos:prefLabel '+ttlS(n.label[k])+'@'+k);});
+    Object.keys(n.altLabel||{}).forEach(function(k){[].concat(n.altLabel[k]).forEach(function(v){P.push('skos:altLabel '+ttlS(v)+'@'+k);});});
+    Object.keys(n.definition||{}).forEach(function(k){P.push('skos:definition '+ttlS(n.definition[k])+'@'+k);});
+    if(n.status)P.push('lab:status '+ttlS(n.status)); if(n.level!=null)P.push('lab:level '+n.level);
+    if(n.anchor)P.push('lab:anchor '+ttlS(n.anchor));
+    (out[n.id]||[]).forEach(function(e){P.push(ttlI(e.p)+' '+ttlI(e.o)); if(e.p==='lab:broader')P.push('skos:broader '+ttlI(e.o));});
+    L.push(ttlI(n.id)+'\n  '+P.join(' ;\n  ')+' .\n');});
+  return L.join('\n');
+}
+function csvq(v){v=v==null?'':String(v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toNodesCsv(g){return ['id,type,label_ko,label_en,status,level,family,page,anchor,coverage,confidence'].concat(g.nodes.map(function(n){
+  return [n.id,n.type,n.label&&n.label.ko,n.label&&n.label.en,n.status,n.level,n.family,n.page,n.anchor,n.coverage,n.confidence].map(csvq).join(',');})).join('\r\n');}
+function toEdgesCsv(g){return ['source,predicate,target,anchor,confidence'].concat(g.edges.map(function(e){return [e.s,e.p,e.o,e.anchor,e.confidence].map(csvq).join(',');})).join('\r\n');}
+function toMermaid(g){
+  var keep=g.nodes.filter(function(n){return n.type!=='QuizItem'&&n.type!=='Simulation'&&n.type!=='Work';}).slice(0,40);
+  var ix={}; keep.forEach(function(n,i){ix[n.id]='n'+i;});
+  var L=['graph LR']; keep.forEach(function(n){L.push('  '+ix[n.id]+'["'+lab(n).replace(/"/g,"'")+'"]');});
+  g.edges.forEach(function(e){ if(ix[e.s]&&ix[e.o])L.push('  '+ix[e.s]+' -- '+(REL[pn(e.p)]||pn(e.p))+' --> '+ix[e.o]);});
+  return L.join('\n');
+}
+function toProvCsv(g,refs){
+  var R={}; refs.forEach(function(r){R[r.id]=r;});
+  var L=['item,kind,work,loc,confidence,verified,pageAnchor'];
+  g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){ var r=R[s.ref]; var v=r&&r.lab&&r.lab.verified;
+    L.push([n.id,'node',s.ref,s.loc||'',n.confidence,v?(v.title&&v.year&&v.venue?'bib-checked':'partial'):'no',n.anchor].map(csvq).join(','));});});
+  g.edges.forEach(function(e){ if(e.p==='lab:assertedIn')L.push([e.s+' '+e.p+' '+e.o,'edge',e.o.replace('lab:work/',''),'',e.confidence,'',e.anchor].map(csvq).join(','));});
+  return L.join('\r\n');
+}
+/* CSL → BibTeX · RIS · 문장 */
+var BIBT={'article-journal':'article','paper-conference':'inproceedings','book':'book','chapter':'incollection','webpage':'misc','dataset':'misc','report':'techreport','thesis':'phdthesis','software':'misc'};
+var RIST={'article-journal':'JOUR','paper-conference':'CPAPER','book':'BOOK','chapter':'CHAP','webpage':'ELEC','dataset':'DATA','report':'RPRT','thesis':'THES','software':'COMP'};
+function names(a){return (a||[]).map(function(p){return p.literal||(p.family+(p.given?', '+p.given:''));});}
+function yr(r){return r.issued&&r.issued['date-parts']&&r.issued['date-parts'][0][0];}
+function toBib(r){var f=[],add=function(k,v){ if(v!==undefined&&v!==null&&v!=='')f.push('  '+k+' = {'+v+'}');};
+  add('title',r.title); add('author',names(r.author).map(function(n){return n==='et al.'?'others':n;}).join(' and ')); add('year',yr(r));
+  add(r.type==='article-journal'?'journal':'booktitle',r['container-title']); add('volume',r.volume); add('number',r.issue);
+  add('pages',(r.page||'').replace('-','--')); add('publisher',r.publisher); add('doi',r.DOI); add('url',r.URL);
+  if(r.lab&&r.lab.note)add('note',r.lab.note);
+  return '@'+(BIBT[r.type]||'misc')+'{'+r.id+',\n'+f.join(',\n')+'\n}';}
+function toRis(r){var L=['TY  - '+(RIST[r.type]||'GEN')],add=function(t,v){ if(v)L.push(t+'  - '+v);};
+  add('TI',r.title); names(r.author).forEach(function(n){add('AU',n);}); add('PY',yr(r)); add('T2',r['container-title']);
+  add('VL',r.volume); add('IS',r.issue); var pg=(r.page||'').split('-'); add('SP',pg[0]); add('EP',pg[1]); add('DO',r.DOI); add('UR',r.URL);
+  if(r.lab&&r.lab.note)add('N1',r.lab.note); L.push('ER  - '); return L.join('\r\n');}
+function toText(r){ var a=names(r.author), first=a[0]?a[0].split(',')[0]:''; var au=a.length>2||a.indexOf('et al.')>=0?first+' и др.':a.map(function(x){return x.split(',')[0];}).join(' & ');
+  return au+' ('+(yr(r)||'год неизвестен')+'). '+r.title+'. '+(r['container-title']||'')+(r.volume?', '+r.volume:'')+(r.issue?'('+r.issue+')':'')+(r.page?', '+r.page:'')+'.'+(r.DOI?' https://doi.org/'+r.DOI:'');}
+function pageBib(m){var f=['  title = {'+m.title+'}','  year = {'+m.date.slice(0,4)+'}','  howpublished = {'+m.series+' '+m.number+', v'+m.version+'}'];
+  if(m.creator&&m.creator.length&&m.creator[0].name)f.unshift('  author = {'+m.creator.map(function(c){return c.name;}).join(' and ')+'}'); if(m.url)f.push('  url = {'+m.url+'}');
+  return '@misc{lab_page_'+m.number+',\n'+f.join(',\n')+'\n}';}
+function pageRis(m){var L=['TY  - ELEC','TI  - '+m.title]; (m.creator||[]).forEach(function(c){ if(c.name)L.push('AU  - '+c.name);}); L.push('PY  - '+m.date.slice(0,4),'T2  - '+m.series,'ET  - '+m.version); if(m.url)L.push('UR  - '+m.url); L.push('ER  - '); return L.join('\r\n');}
+function pageText(m){ var who=(m.creator||[]).filter(function(c){return c.name;}).map(function(c){return c.name;}).join(', ')||'{автор}';
+  return who+' ('+m.date.slice(0,4)+'). '+m.title+'. '+m.series+' '+m.number+', v'+m.version+'.'+(m.url?' '+m.url:'');}
+
+/* ── ZIP (압축 없음) ─────────────────────────────────── */
+var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}
+  return function(u8){var x=0xFFFFFFFF;for(var i=0;i<u8.length;i++)x=t[(x^u8[i])&255]^(x>>>8);return (x^0xFFFFFFFF)>>>0;};})();
+function makeZip(files){
+  var enc=new TextEncoder(),parts=[],central=[],off=0;
+  function u16(v){return [v&255,(v>>8)&255];} function u32(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255];}
+  files.forEach(function(f){var name=enc.encode(f.name),data=enc.encode(f.text),crc=CRC(data);
+    var head=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0));
+    parts.push(new Uint8Array(head),name,data);
+    central.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),
+      u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),name);
+    off+=head.length+name.length+data.length;});
+  var cdLen=0; central.forEach(function(c){parts.push(c); cdLen+=c.length;});
+  parts.push(new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cdLen),u32(off),u16(0))));
+  return new Blob(parts,{type:'application/zip'});
+}
+/* 내려받기: claude.ai 아티팩트 안에서는 downloads 능력, 파일로 열면 일반 링크 */
+var DLP=(window.claude&&typeof window.claude.use==='function')?window.claude.use('downloads').catch(function(){return null;}):Promise.resolve(null);
+var OKX=/\.(json|txt|csv|md|zip|html|svg|pdf)$/i;
+function anchorSave(blob,name){var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name;
+  document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},800);}
+function download(blob,name){
+  return DLP.then(function(d){
+    if(!d){anchorSave(blob,name); return;}
+    var fn=OKX.test(name)?name:name+'.txt';   // .bib .ris .ttl .jsonld 은 .txt를 붙여 저장 (확장자만 지우면 원래 형식)
+    return d.save({filename:fn,data:blob}).catch(function(e){ if(e&&e.code==='declined')return;
+      if(e&&(e.code==='unavailable'||e.code==='not_granted'))anchorSave(blob,name);
+      else console.warn('Не удалось сохранить',e&&e.code);});
+  });
+}
+function dlText(text,name,type){download(new Blob([text],{type:(type||'text/plain')+';charset=utf-8'}),name);}
+
+/* ── 범위 ───────────────────────────────────────────── */
+function filterScope(KG,scope){
+  if(scope==='all')return KG;
+  var keepT={terms:{Concept:1,Method:1,BioAnalogue:1,Limitation:1,Task:1,Metric:1,Dataset:1},
+             claims:{Claim:1,Work:1},prereq:null}[scope];
+  var nodes,edges;
+  if(scope==='prereq'){ edges=KG.edges.filter(function(e){return e.p==='lab:prerequisiteOf'||e.p==='lab:hasLimitation'||e.p==='lab:addressedBy';});
+    var ids={}; edges.forEach(function(e){ids[e.s]=1;ids[e.o]=1;}); nodes=KG.nodes.filter(function(n){return ids[n.id];}); }
+  else { nodes=KG.nodes.filter(function(n){return keepT[n.type];}); var ix={}; nodes.forEach(function(n){ix[n.id]=1;});
+    if(scope==='claims'){ KG.edges.forEach(function(e){ if(e.p==='lab:supports'&&ix[e.s])ix[e.o]=2;});
+      nodes=KG.nodes.filter(function(n){return ix[n.id];}); }
+    edges=KG.edges.filter(function(e){return ix[e.s]&&(ix[e.o]||/^lab:(topic|area)\//.test(e.o));}); }
+  return {version:KG.version,page:KG.page,scope:scope,nodes:nodes,edges:edges};
+}
+function readme(meta,g,refs){
+  var un=refs.filter(function(r){var v=r.lab&&r.lab.verified; return !v||Object.keys(v).some(function(k){return !v[k];});});
+  return ['Пакет онтологии и библиографии — '+meta.title,'Серия: '+meta.series+' '+meta.number+' · версия '+meta.version+' · дата создания '+meta.date,'',
+   'Область: '+(g.scope||'all')+' · узлов '+g.nodes.length+' · связей '+g.edges.length+' · литература '+refs.length,'',
+   '[파일]','manifest.json список · page_meta.json библиография страницы · kg.json нейтральный граф (оригинал) · kg.jsonld JSON-LD · kg.ttl Turtle',
+   'nodes.csv / edges.csv таблицы (UTF-8 BOM) · references.csl.json исходный список литературы · references.bib BibTeX · references.ris RIS',
+   'provenance.csv соответствие утверждений и литературы · mermaid.md для рисунков','',
+   '[이 페이지 인용]',pageText(meta),'',
+   '[확인 필요]',(un.length?un.map(function(r){var v=r.lab.verified;return '- '+r.id+': '+Object.keys(v).filter(function(k){return !v[k];}).join(', ');}).join('\n'):'- Все библиографические записи литературы подтверждены'),
+   '- Расположение утверждений (Claim) в первоисточнике (страница, номер рисунка) пока не заполнено. Нужно сверить с первоисточником и заполнить loc в provenance.csv.',
+   '- Имя автора страницы, лицензия и публичный адрес оставлены пустыми. Их заполняет пользователь.','',
+   '[규칙] lab: 접두어 IRI는 '+NS+' (временный). Внешние идентификаторы онтологий вносятся через skos:exactMatch/closeMatch только после проверки.',
+   '[주의] 뼈대 영역(lab:topic/*, lab:area/*)은 작성자 초안이며 공식 분류 체계가 아니다.'].join('\n');
+}
+function buildPackage(scope){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); var g=filterScope(KG,scope);
+  var used={}; g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){used[s.ref]=1;}); if(n.type==='Work')used[n.id.replace('lab:work/','')]=1;});
+  var refs=scope==='all'?REF:REF.filter(function(r){return used[r.id];});
+  var files=[{name:'page_meta.json',text:JSON.stringify(META,null,2)},{name:'kg.json',text:JSON.stringify(g,null,2)},
+    {name:'kg.jsonld',text:JSON.stringify(toJsonLd(g,META),null,2)},{name:'kg.ttl',text:toTurtle(g)},
+    {name:'nodes.csv',text:'﻿'+toNodesCsv(g)},{name:'edges.csv',text:'﻿'+toEdgesCsv(g)},
+    {name:'references.csl.json',text:JSON.stringify(refs,null,2)},{name:'references.bib',text:[pageBib(META)].concat(refs.map(toBib)).join('\n\n')},
+    {name:'references.ris',text:[pageRis(META)].concat(refs.map(toRis)).join('\r\n')},{name:'provenance.csv',text:'﻿'+toProvCsv(g,refs)},
+    {name:'mermaid.md',text:'```mermaid\n'+toMermaid(g)+'\n```\n'},{name:'README.txt',text:readme(META,g,refs)}];
+  files.unshift({name:'manifest.json',text:JSON.stringify({package:'lab-kg',packageVersion:'1.0',page:META.number,pageId:KG.page,pageVersion:META.version,
+    registry:META.registry||'',created:META.date,scope:scope,counts:{nodes:g.nodes.length,edges:g.edges.length,refs:refs.length},
+    files:files.map(function(f){return f.name;})},null,2)});
+  return files;
+}
+
+/* ── 공통 화면 조각 ─────────────────────────────────── */
+var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding:48px 0;font-family:inherit}.kgx-sec .kgx-wrap{max-width:1080px;margin:0 auto;padding:0 16px}.kgx-sec h2{margin:0 0 6px;font-size:24px}.kgx-sec .kgx-sub{color:var(--muted,#9d9bb8);margin:0 0 18px}\
+\
+.kgx .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}\
+.kgx input[type=search]{flex:1 1 220px;min-width:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);color:var(--text,#eceaf3);border-radius:8px;padding:8px 12px;font:inherit;font-size:15px}\
+.kgx .tchip{font-size:12.5px;border-radius:999px;padding:3px 10px;border:1px solid var(--rule,#363a52);background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);cursor:pointer}\
+.kgx .tchip[aria-pressed=true]{color:#13141f;font-weight:700}\
+.kgx .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}\
+@media (max-width:860px){.kgx .grid2{grid-template-columns:1fr}}\
+.kgx .list{max-height:520px;overflow:auto;border:1px solid var(--rule,#363a52);border-radius:10px;background:var(--panel,#1c1e2d)}\
+.kgx .it{padding:10px 14px;border-bottom:1px solid var(--rule,#363a52);cursor:pointer}\
+.kgx .it:last-child{border-bottom:0}.kgx .it:hover{background:var(--panel2,#25283a)}\
+.kgx .it.sel{background:var(--panel2,#25283a);box-shadow:inset 3px 0 0 var(--gfp,#5ee39c)}\
+.kgx .it .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}\
+.kgx .it .nm{font-weight:700}.kgx .it .en{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .ty{font-size:11.5px;border-radius:5px;padding:0 6px;color:#13141f;font-weight:700;white-space:nowrap}\
+.kgx .it .df{color:#d7d4e6;font-size:14px;margin:3px 0 0}\
+.kgx .it .more{display:none;margin-top:6px;font-size:13.5px;color:var(--muted,#9d9bb8)}.kgx .it.sel .more{display:block}\
+.kgx .it a{color:var(--gfp,#5ee39c)}\
+.kgx .rel{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:6px;background:var(--bg,#13141f);border:1px solid var(--rule,#363a52);font-size:12.5px;cursor:pointer;color:var(--text,#eceaf3)}\
+.kgx .gbox{position:relative;border:1px solid var(--rule,#363a52);border-radius:10px;background:#101119;overflow:hidden}\
+.kgx .gbox canvas{display:block;width:100%;height:420px}\
+.kgx .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted,#9d9bb8);margin-top:8px}\
+.kgx .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}\
+.kgx .path{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\
+.kgx .path span.s{background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:8px;padding:4px 10px;font-size:14px}\
+.kgx .path span.a{color:var(--muted,#9d9bb8)}.kgx .path span.lim{border-color:#ff9a7a;color:#ffbda8}\
+.kgx .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}\
+.kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
+.kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
+.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
+.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
+.kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
+.kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
+.kgx .badge.role{background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);border:1px solid var(--rule,#363a52)}\
+.kgx pre.cite{white-space:pre-wrap;word-break:break-word;background:#101119;border:1px solid var(--rule,#363a52);border-radius:8px;padding:10px 12px;font-size:13px;margin:8px 0;max-height:220px;overflow:auto}\
+.kgx .files{display:flex;flex-wrap:wrap;gap:6px}\
+.kgx .todo li{margin:4px 0;color:#d7d4e6}\
+.kgx h3{font-size:17px;margin:20px 0 8px}\
+';
+function addCss(){ if($id('kgx-css'))return; var s=el('style'); s.id='kgx-css'; s.textContent=CSS; document.head.appendChild(s);}
+function copy(text,btn){ function ok(){var o=btn.textContent; btn.textContent='Скопировано'; setTimeout(function(){btn.textContent=o;},1200);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback();
+  function fallback(){var p=btn.parentNode.parentNode.querySelector('pre.cite'); if(p){var r=document.createRange(); r.selectNodeContents(p); var s=getSelection(); s.removeAllRanges(); s.addRange(r);} btn.textContent='Выделено — Ctrl+C';}}
+
+/* ── 지식 색인 ──────────────────────────────────────── */
+function mountIndex(root){
+  var KG=J('kg-raw'); var N={},OUT={},IN={};
+  KG.nodes.forEach(function(n){N[n.id]=n;OUT[n.id]=[];IN[n.id]=[];});
+  KG.edges.forEach(function(e){ if(OUT[e.s])OUT[e.s].push(e); if(IN[e.o])IN[e.o].push(e);});
+  var types=Object.keys(KG.nodes.reduce(function(a,n){a[n.type]=(a[n.type]||0)+1;return a;},{}));
+  var count={}; KG.nodes.forEach(function(n){count[n.type]=(count[n.type]||0)+1;});
+  var on={}; types.forEach(function(t){on[t]=t!=='QuizItem'&&t!=='Simulation'&&t!=='Work';});
+  var sel=null,q='';
+  root.classList.add('kgx');
+  var topics=0; KG.edges.forEach(function(e){if(e.p==='lab:broader')topics++;});
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';}), csrc=claims.filter(function(n){return (n.source||[]).length;}).length;
+  root.innerHTML='<div class="stats"><div><b>'+KG.nodes.length+'</b><span>записи (узлы)</span></div><div><b>'+KG.edges.length+'</b><span>связи</span></div>'+
+    '<div><b>'+(count.Concept||0)+(count.Method||0)+'</b><span>понятия и методы</span></div><div><b>'+(count.BioAnalogue||0)+'</b><span>биологические аналоги</span></div>'+
+    '<div><b>'+csrc+'/'+claims.length+'</b><span>утверждения с источником</span></div><div><b>'+topics+'</b><span>связи с опорными темами</span></div></div>'+
+    '<div class="tools"><input type="search" placeholder="Поиск — вес, overfitting, клетки Кеньона, заметка о памяти запахов …" aria-label="Поиск по указателю знаний"></div>'+
+    '<div class="tools chips" role="group" aria-label="Тип"></div>'+
+    '<div class="grid2"><div class="list" role="listbox" aria-label="Результаты поиска"></div>'+
+    '<div><div class="gbox"><canvas aria-label="Граф выбранной записи и соседних связей"></canvas></div><div class="legend"></div>'+
+    '<p class="note gnote">При выборе записи показываются только непосредственно связанные с ней соседи. Можно также нажимать на точки графа.</p></div></div>'+
+    '<h3>Путь по лестнице — цепочка предпосылок и ограничений</h3><div class="path ladder"></div>'+
+    '<h3>Открытые вопросы · требуют проверки</h3><ul class="todo qs"></ul>';
+  // 칸 수 계산 오류 방지: 개념+방법 합
+  root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);
+  var inp=root.querySelector('input'), chips=root.querySelector('.chips'), list=root.querySelector('.list'), cv=root.querySelector('canvas');
+  types.forEach(function(t){var b=el('button','tchip',tl(t)+' '+count[t]); b.type='button'; b.setAttribute('aria-pressed',on[t]);
+    if(on[t])b.style.background=tc(t),b.style.borderColor=tc(t);
+    b.onclick=function(){on[t]=!on[t]; b.setAttribute('aria-pressed',on[t]); b.style.background=on[t]?tc(t):''; b.style.borderColor=on[t]?tc(t):''; render();};
+    chips.appendChild(b);});
+  var lg=root.querySelector('.legend'); types.forEach(function(t){lg.insertAdjacentHTML('beforeend','<span><i style="background:'+tc(t)+'"></i>'+tl(t)+'</span>');});
+  lg.insertAdjacentHTML('beforeend','<span>── стрелка: направление связи</span>');
+  inp.addEventListener('input',function(){q=inp.value.trim().toLowerCase(); render();});
+  function hay(n){return [n.id,n.label&&n.label.ko,n.label&&n.label.en,n.definition&&n.definition.ko,n.label&&n.label[LANG],n.definition&&n.definition[LANG],n.altLabel&&[].concat(n.altLabel.ko||[]).join(' ')].join(' ').toLowerCase();}
+  function relHtml(n){
+    var h=[]; OUT[n.id].forEach(function(e){ var o=N[e.o]; var nm=o?lab(o):((KG.topicLabels||{})[e.o]||e.o.replace(/^lab:(topic|area)\//,'').replace(/-/g,' '));
+      h.push('<span class="rel" data-go="'+esc(o?e.o:'')+'">'+esc(REL[pn(e.p)]||pn(e.p))+' → '+esc(nm)+'</span>');});
+    IN[n.id].forEach(function(e){ var s=N[e.s]; if(!s)return; h.push('<span class="rel" data-go="'+esc(e.s)+'">'+esc(lab(s))+' → '+esc(REL[pn(e.p)]||pn(e.p))+'</span>');});
+    return h.join('');}
+  function render(){
+    var arr=KG.nodes.filter(function(n){return on[n.type]&&(!q||hay(n).indexOf(q)>=0);});
+    list.innerHTML=arr.length?'':'<div class="it">Записей не найдено. Проверьте, не отключены ли фишки типов.</div>';
+    arr.forEach(function(n){var d=el('div','it'+(sel===n.id?' sel':'')); d.setAttribute('role','option'); d.dataset.id=n.id;
+      var alt=LANG==='ko'&&n.altLabel&&n.altLabel.ko?' · '+[].concat(n.altLabel.ko).join(', '):'';
+      var src=(n.source||[]).length?' · источников '+n.source.length:'';
+      d.innerHTML='<div class="h"><span class="ty" style="background:'+tc(n.type)+'">'+tl(n.type)+'</span><span class="nm">'+esc(lab(n))+'</span><span class="en">'+esc((LANG!=='en'&&n.label&&n.label.en&&n.label.en!==lab(n)&&n.label.en)||'')+esc(alt)+'</span></div>'+
+        (n.definition?'<p class="df">'+esc(n.definition[LANG]||n.definition.ko)+'</p>':'')+
+        '<div class="more">'+(n.anchor?'<a href="'+n.anchor+'">Перейти к объяснению →</a>':'')+' <span>'+esc(src)+(n.confidence&&n.confidence!=='high'?' · уверенность '+n.confidence:'')+'</span><div style="margin-top:6px">'+relHtml(n)+'</div></div>';
+      d.onclick=function(ev){var g=ev.target.closest('.rel'); if(g){ if(g.dataset.go)pick(g.dataset.go,true); ev.stopPropagation(); return;}
+        if(ev.target.tagName==='A')return; pick(n.id);};
+      list.appendChild(d);});
+    draw();
+  }
+  function pick(id,scroll){ sel=id; var n=N[id]; if(n&&!on[n.type]){on[n.type]=true; var b=[].slice.call(chips.children)[types.indexOf(n.type)]; b.setAttribute('aria-pressed',true); b.style.background=tc(n.type); b.style.borderColor=tc(n.type);}
+    if(scroll&&q){q='';inp.value='';} render(); var it=list.querySelector('.it.sel'); if(it)it.scrollIntoView({block:'nearest'});}
+  // 그래프
+  var G={pts:[]};
+  function layout(){
+    var center=sel||KG.edges.reduce(function(best,e){return best;},null);
+    var ids={},pts=[];
+    if(!sel){ // 개요: 퀴즈·시뮬·문헌 빼고 연결 많은 순 최대 60
+      var deg={}; KG.edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.o]=(deg[e.o]||0)+1;});
+      KG.nodes.filter(function(n){return on[n.type];}).sort(function(a,b){return (deg[b.id]||0)-(deg[a.id]||0);}).slice(0,60).forEach(function(n){ids[n.id]=1;});
+    } else { ids[sel]=1; OUT[sel].forEach(function(e){if(N[e.o])ids[e.o]=1;}); IN[sel].forEach(function(e){ids[e.s]=1;}); }
+    var r=mulberry(7); Object.keys(ids).forEach(function(id){pts.push({id:id,x:r()-.5,y:r()-.5,vx:0,vy:0});});
+    var ix={}; pts.forEach(function(p,i){ix[p.id]=i;});
+    var es=KG.edges.filter(function(e){return ix[e.s]!=null&&ix[e.o]!=null;});
+    for(var it=0;it<220;it++){
+      for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+1e-4,f=0.0016/d2;
+        a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+      es.forEach(function(e){var a=pts[ix[e.s]],b=pts[ix[e.o]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+1e-6,f=(d-0.22)*0.04;
+        a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+      pts.forEach(function(p){ if(p.id===sel){p.x*=.9;p.y*=.9;} p.vx-=p.x*0.004;p.vy-=p.y*0.004; p.x+=p.vx;p.y+=p.vy;p.vx*=.6;p.vy*=.6;});
+    }
+    G={pts:pts,es:es,ix:ix};
+  }
+  function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    layout(); var dpr=Math.min(2,window.devicePixelRatio||1), W=cv.clientWidth||600, H=cv.clientHeight||420;
+    cv.width=W*dpr; cv.height=H*dpr; var c=cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,W,H);
+    var xs=G.pts.map(function(p){return p.x;}),ys=G.pts.map(function(p){return p.y;});
+    var mx=Math.min.apply(0,xs),Mx=Math.max.apply(0,xs),my=Math.min.apply(0,ys),My=Math.max.apply(0,ys);
+    var pad=54, sx=(W-2*pad)/Math.max(1e-3,Mx-mx), sy=(H-2*pad)/Math.max(1e-3,My-my);
+    G.pts.forEach(function(p){p.X=pad+(p.x-mx)*sx; p.Y=pad+(p.y-my)*sy; if(G.pts.length===1){p.X=W/2;p.Y=H/2;}});
+    c.lineWidth=1;
+    G.es.forEach(function(e){var a=G.pts[G.ix[e.s]],b=G.pts[G.ix[e.o]]; var hot=sel&&(e.s===sel||e.o===sel);
+      c.strokeStyle=hot?'rgba(236,234,243,.55)':'rgba(157,155,184,.22)'; c.beginPath(); c.moveTo(a.X,a.Y); c.lineTo(b.X,b.Y); c.stroke();
+      var ang=Math.atan2(b.Y-a.Y,b.X-a.X), ex=b.X-Math.cos(ang)*9, ey=b.Y-Math.sin(ang)*9;
+      c.fillStyle=c.strokeStyle; c.beginPath(); c.moveTo(ex,ey); c.lineTo(ex-Math.cos(ang-.4)*7,ey-Math.sin(ang-.4)*7); c.lineTo(ex-Math.cos(ang+.4)*7,ey-Math.sin(ang+.4)*7); c.fill();
+      if(sel&&hot&&G.pts.length<26){c.fillStyle='#9d9bb8'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='center';
+        c.fillText(REL[pn(e.p)]||pn(e.p),(a.X+b.X)/2,(a.Y+b.Y)/2-4);} });
+    c.textAlign='center'; c.font='12.5px '+getComputedStyle(document.body).fontFamily;
+    G.pts.forEach(function(p){var n=N[p.id]; var R=p.id===sel?9:6; c.fillStyle=tc(n.type); c.beginPath(); c.arc(p.X,p.Y,R,0,7); c.fill();
+      if(p.id===sel){c.strokeStyle='#eceaf3';c.lineWidth=2;c.stroke();c.lineWidth=1;}
+      var t=lab(n); if(t.length>14)t=t.slice(0,13)+'…'; c.fillStyle=p.id===sel?'#fff':'#d7d4e6'; c.fillText(t,p.X,p.Y-R-5);});
+    c.fillStyle='rgba(241,182,70,.9)'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='left';
+    c.fillText(sel?'Соседей: '+(G.pts.length-1)+'':'Обзор — записей с наибольшим числом связей: '+G.pts.length+'',10,18);
+  }
+  cv.addEventListener('click',function(ev){var r=cv.getBoundingClientRect(),x=ev.clientX-r.left,y=ev.clientY-r.top,best=null,bd=400;
+    G.pts.forEach(function(p){var d=(p.X-x)*(p.X-x)+(p.Y-y)*(p.Y-y); if(d<bd){bd=d;best=p;}}); if(best)pick(best.id,true);});
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(draw,150);});
+  // 사다리 경로
+  var lad=root.querySelector('.ladder'), chainE=KG.edges.filter(function(e){return (e.p==='lab:prerequisiteOf'&&N[e.s].type==='Method'&&N[e.o]&&N[e.o].type==='Method');});
+  var nexts={},has={}; chainE.forEach(function(e){nexts[e.s]=e.o;has[e.o]=1;});
+  var start=Object.keys(nexts).filter(function(k){return !has[k];})[0], seen={};
+  var html=[]; for(var cur=start;cur&&!seen[cur];cur=nexts[cur]){ seen[cur]=1;
+    html.push('<span class="s" data-go="'+cur+'" style="border-color:'+tc('Method')+'">'+esc(lab(N[cur]))+'</span>');
+    var lim=OUT[cur].filter(function(e){return e.p==='lab:hasLimitation';})[0];
+    if(lim)html.push('<span class="a">→ ограничение</span><span class="s lim" data-go="'+lim.o+'">'+esc(lab(N[lim.o]))+'</span>');
+    if(nexts[cur])html.push('<span class="a">→ решение</span>');}
+  lad.innerHTML=html.length?html.join(''):'<span class="note">На этой странице нет цепочки-лестницы.</span>';
+  lad.addEventListener('click',function(ev){var s=ev.target.closest('[data-go]'); if(s)pick(s.dataset.go,true);});
+  var qs=root.querySelector('.qs'); KG.nodes.filter(function(n){return n.type==='Question';}).forEach(function(n){
+    var li=el('li',null,'<b>'+esc(lab(n))+'</b>'+(n.definition?' — '+esc(n.definition[LANG]||n.definition.ko):'')+(n.confidence==='low'?' <span class="badge no">требует проверки</span>':'')+(n.anchor?' <a href="'+n.anchor+'" style="color:var(--gfp,#5ee39c)">текст</a>':''));
+    qs.appendChild(li);});
+  render();
+}
+
+/* ── 꾸러미 ─────────────────────────────────────────── */
+function mountExport(root){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); root.classList.add('kgx');
+  var verifiedAll=function(r){var v=r.lab&&r.lab.verified; return v&&Object.keys(v).every(function(k){return v[k];});};
+  var vb=REF.filter(verifiedAll).length;
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';});
+  var todo=[]; REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; Object.keys(v).forEach(function(k){if(!v[k])todo.push(r.id+' — '+k+' не подтверждено (оставлено пустым)');});});
+  todo.push('Утверждения: '+claims.length+' шт. — расположение в первоисточнике (страница, номер рисунка), колонка loc в provenance.csv пуста');
+  todo.push('Имя автора страницы, лицензия и публичный адрес — оставлены пустыми в page_meta.json');
+  var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
+  KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
+  var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
+  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">Помощник</div><p>Утверждения без источника в пакет не включены. Пунктов для проверки человеком: '+todo.length+' — они перечислены ниже.</p></div>'+
+    '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>узлов</span></div><div><b>'+KG.edges.length+'</b><span>связей</span></div><div><b>'+REF.length+'</b><span>литературы</span></div>'+
+    '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>литературы с полностью подтверждённой библиографией</span></div>'+
+    '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>утверждений с источником</span></div></div>'+
+    '<h3>Цитировать эту страницу</h3><div class="tools"><button class="tchip cf" data-f="text" aria-pressed="true" style="background:var(--gfp,#5ee39c);border-color:var(--gfp,#5ee39c)">Обычный текст</button><button class="tchip cf" data-f="bib" aria-pressed="false">BibTeX</button><button class="tchip cf" data-f="ris" aria-pressed="false">RIS</button><button class="bt cp" type="button">Копировать</button></div><pre class="cite pc"></pre>'+
+    '<h3>Литература — значки проверки и поддерживаемые понятия</h3><div class="refs list"></div>'+
+    '<h3>Выбор области и формата</h3><div class="tools sc" role="group" aria-label="Область"></div><div class="tools"><button class="bt primary zip" type="button">Скачать пакет ZIP</button><span class="note zc"></span></div>'+
+    '<div class="files"></div><p class="note">При скачивании отдельных файлов на экране claude.ai к именам .bib, .ris, .ttl и .jsonld добавляется .txt (если убрать конечное .txt, получится исходный формат). Файлы внутри ZIP сохраняют исходные имена.</p>'+
+    (META.seeAlso?'<p class="note">Чтобы объединить пакеты нескольких страниц и сопоставить их с картой областей → <a style="color:var(--gfp,#5ee39c)" href="'+esc(META.seeAlso)+'"'+(/^https?:/.test(META.seeAlso)?' target="_blank" rel="noopener"':'')+'>Объединить с картой областей (KG_00)</a></p>':'')+
+    '<h3>Пункты для проверки человеком</h3><ul class="todo">'+todo.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>'+
+    '<p class="note">Версия пакета 1.0 · дата создания '+esc(META.date)+' · реестр '+esc(META.registry||'KG_00_registry (прототип)')+' · префикс lab: '+NS+' (временный) · опорные темы (lab:topic/*) — черновик автора</p>';
+  var fmt='text', pc=root.querySelector('.pc');
+  function cite(){pc.textContent=fmt==='bib'?pageBib(META):fmt==='ris'?pageRis(META):pageText(META);}
+  [].forEach.call(root.querySelectorAll('.cf'),function(b){b.onclick=function(){fmt=b.dataset.f; [].forEach.call(root.querySelectorAll('.cf'),function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); cite();};});
+  root.querySelector('.cp').onclick=function(){copy(pc.textContent,this);}; cite();
+  var RL=root.querySelector('.refs');
+  REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; var bad=Object.keys(v).filter(function(k){return !v[k];});
+    var d=el('div','r','<div>'+esc(toText(r))+'<span class="badge role">'+esc({primary:'основной источник',background:'фон',data:'числа',figure:'рисунок'}[r.lab&&r.lab.role]||'фон')+'</span>'+
+      (bad.length?'<span class="badge no">требует проверки: '+esc(bad.join(', '))+'</span>':'<span class="badge ok">библиография подтверждена</span>')+'</div>'+
+      '<div style="margin-top:6px">'+(sup[r.id]||[]).map(function(id){var n=N[id]; return n?'<a class="rel" href="'+(n.anchor||'#kg')+'">'+esc(lab(n))+'</a>':'';}).join('')+'</div>');
+    RL.appendChild(d);});
+  var scope='all', SC=root.querySelector('.sc'), zc=root.querySelector('.zc');
+  [['all','Всё'],['terms','Только понятия и методы'],['claims','Только утверждения и источники'],['prereq','Только связи-предпосылки']].forEach(function(s,i){
+    var b=el('button','tchip',s[1]); b.type='button'; b.setAttribute('aria-pressed',i===0); if(i===0)b.style.background='var(--gfp,#5ee39c)',b.style.borderColor='var(--gfp,#5ee39c)';
+    b.onclick=function(){scope=s[0]; [].forEach.call(SC.children,function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); info();};
+    SC.appendChild(b);});
+  var FL=root.querySelector('.files');
+  function info(){var f=buildPackage(scope), m=JSON.parse(f[0].text); zc.textContent='Узлов: '+m.counts.nodes+' · связей '+m.counts.edges+' · литература '+m.counts.refs+' · файлов '+f.length+'';
+    FL.innerHTML=''; f.forEach(function(x){var b=el('button','bt',esc(x.name)); b.type='button'; b.onclick=function(){dlText(x.text,x.name);}; FL.appendChild(b);});}
+  root.querySelector('.zip').onclick=function(){download(makeZip(buildPackage(scope)),'kg_'+META.number+'_'+scope+'.zip');};
+  info();
+}
+function init(){addCss(); var a=$id('kg-mount'),b=$id('export-mount'); if(a)mountIndex(a); if(b)mountExport(b);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+return {download:download,buildPackage:buildPackage,makeZip:makeZip,toJsonLd:toJsonLd,toTurtle:toTurtle,toBib:toBib,toRis:toRis};
+})();
+
+</script>
+<!-- /lab-kg:script -->
 </body>
 </html>

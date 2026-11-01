@@ -571,7 +571,20 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
 .vt.pass{color:var(--stamp);border-color:var(--stamp)}
 .vt.hold{color:var(--muted)}
 .runshot pre{overflow-wrap:anywhere;word-break:break-all}
+/* 꼬리표(지식 색인·꾸러미): 조립기 스타일의 색 변수를 시리즈 테마에 맞춘다 */
+body .kgx{--gfp:var(--ok)}
+body .kgx .it .df,body .kgx .todo li{color:var(--soft)}
+body .kgx .path span.lim{color:var(--stamp)}
 :root{--font:"Noto Sans SC",system-ui,sans-serif;--stampf:"Noto Sans SC",sans-serif}*{word-break:normal!important;line-break:strict}</style>
+<!-- lab-kg:head -->
+<meta name="citation_title" content="模型招聘委员会第二次公开招聘 · 6-14 GAN">
+<meta name="dc.title" content="模型招聘委员会第二次公开招聘 · 6-14 GAN">
+<meta name="dc.date" content="2026-10-24">
+<meta name="dc.language" content="ko">
+<meta name="dc.type" content="InteractiveResource">
+<meta name="citation_author" content="Sangsun Ahn">
+<meta name="dcterms.isPartOf" content="模型招聘委员会 第二次公开招聘">
+<!-- /lab-kg:head -->
 </head>
 <body>
 <nav class="top" aria-label="本页目录">
@@ -824,6 +837,22 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
   <div class="card"><ul class="reflist"><li><b>数据与计算。</b> 沿用生成组通用规定（6-13）：用全部 1,797 张学习，阅卷官（用密封规定中的训练数字图像训练的 SVM）读 1,000 张新数字图像。标准设置（30,000 步，单侧标签平滑 0.9）在测量之前就已定好。成绩单中的 VAE 行和上限直接采用 6-13 的 Colab 结果。判定数字由页面读取 A 章 Colab 代码的运行结果后写出。01 章的图是浏览器用相同结构极短地（3,000 步）训练出来的，所以比 Colab 的结果模糊得多。03 章的“AI 给出的代码”是特意做的示例。</li><li><b>判定规则。</b> 第二次公开招聘的判定，取在 Colab 中用 5 个随机种子（随机数）训练所得的平均值。必须同时超过基准线（手册先生）和前辈成绩（现在负责同一工作的第一次录用者）才算录用。与前辈的差距小于种子间波动（标准差）时，视为平局，前辈保住席位。页面中的“亲自训练看看”只用一个种子在浏览器中重新训练，所以可能与判定数字略有出入。</li><li><b>复试。</b> 被判待定的应聘者可以申请一次复试。应聘者在考试前先说出依据和预测，前辈也在相同条件下重新应试。复试结果同样取 5 个种子的平均值，输了就如实记录。</li><li><b>图片。</b> 登场人物的图片沿用自《人工智能算法家族组织图》。面试室场景、工牌和图表由本页用代码直接绘制。</li><li><b>“招聘委员会”设定。</b> 这是把模型比作应聘者、把训练和评估比作面试的比喻，并不代表真实的招聘流程或任何具体公司。“待定”只是表示“在这项工作和这份数据上，前辈更合适”，并不是模型的优劣之分。</li><li><b>登场人物。</b> Money-Robo 是作者运营的服务的吉祥物角色。博士、助理、果蝇研究员、手册先生、前辈员工和应聘者都不代表真实人物。台词里关于钱和预算的说法，是用来比喻计算成本的口头禅。</li><li><b>数据。</b> 表格数据组的实操考题是 UCI Machine Learning Repository 的 Concrete Compressive Strength 数据（Yeh, 1998，1,030 条，CC BY 4.0），试卷沿用与第一次公开招聘相同的规定（test_size=0.25, stratify=强度 3 个等级, random_state=42；训练 772 · 测试 258）。图像方面的实操考题是 scikit-learn 自带的手写数字（load_digits，1,797 张，原始数据为 UCI Optical Recognition of Handwritten Digits，CC BY 4.0），监督学习各集的试卷为 test_size=0.25, stratify=y, random_state=42（训练 1,347 · 测试 450）。</li><li><b>语言。</b> 本系列以韩语撰写。译本在韩语版内容定稿后，以相同的文件名添加。Colab 代码中的注释和运行结果保持韩语原文。</li></ul></div>
 </div>
 </section>
+<!-- lab-kg:body -->
+<section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
+<h2>知识索引 — 在本页查找</h2>
+<p class="kgx-sub">汇集了本页出现的概念、方法、生物对应、主张与开放问题。可搜索，点击条目查看邻接关系，并通过“查看说明”返回正文。</p>
+<div id="kg-mount"></div>
+</div></section>
+<section class="kgx kgx-sec" id="export"><div class="kgx-wrap">
+<h2>本体·书目资料包 — 带走本页的知识</h2>
+<p class="kgx-sub">将知识索引连同出处下载为文件。可用于 Zotero（BibTeX·RIS）、Protégé（Turtle）、Neo4j·Gephi（CSV）以及合并多页（kg.json）。</p>
+<div id="export-mount"></div>
+</div></section>
+<script type="application/json" id="kg-raw">{"version": "1.0", "page": "6-14", "nodes": [{"id": "lab:method/gan", "type": "Method", "label": {"ko": "생성적 적대 신경망", "en": "Generative adversarial network (GAN)", "zh": "生成对抗网络"}, "definition": {"ko": "잡음에서 표본을 만드는 생성자와 진짜·생성 표본을 가리는 판별자를 맞붙여 번갈아 학습하는 생성 모델. 이 편의 위조범과 감별사다.", "zh": "将从噪声生成样本的生成器与区分真实样本和生成样本的判别器相互对抗、交替学习的生成模型。本篇中的伪造者与鉴定师。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "goodfellow2014"}]}, {"id": "lab:method/generator", "type": "Method", "label": {"ko": "생성자 (위조범)", "en": "Generator", "zh": "生成器 (伪造者)"}, "definition": {"ko": "잡음 z 16칸을 받아 글씨 64칸을 만드는 망. 진짜 글씨는 보지 못하고 감별사를 거쳐 오는 기울기로만 배운다.", "zh": "接收 16 格噪声 z，生成 64 格数字图像的网络。它不直接看到真实数字图像，只通过经由鉴定师传来的梯度学习。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/discriminator", "type": "Method", "label": {"ko": "판별자 (감별사)", "en": "Discriminator", "zh": "判别器 (鉴定师)"}, "definition": {"ko": "글씨 64칸을 받아 진짜일 점수 1칸을 내는 분류기. 학습에만 쓰고 글씨를 쓸 때는 필요 없다.", "zh": "接收 64 格数字图像，输出 1 格真实程度分数的分类器。只用于学习，写数字图像时不需要。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/vae", "type": "Method", "label": {"ko": "VAE (후배, 6-13)", "en": "VAE (junior, 6-13)", "zh": "VAE (后辈，6-13)"}, "definition": {"ko": "6-13의 생성팀 지원자. 매끈한 잠재 지도를 그렸지만 글씨가 흐릿했다.", "zh": "6-13 生成组的应聘者。绘制了平滑的潜在地图，但数字图像模糊。"}, "anchor": "#overview", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:method/gmm-senior", "type": "Method", "label": {"ko": "GMM 40묶음 (선배)", "en": "GMM with 40 clusters (senior)", "zh": "GMM 40组 (前辈)"}, "definition": {"ko": "1차 공채의 선배. 종 모양 40개에서 표본을 뽑아 새 글씨를 쓴다.", "zh": "第一次公开招聘的前辈。从 40 个钟形分布中抽取样本，书写新数字图像。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/minimax", "type": "Concept", "label": {"ko": "미니맥스 목적", "en": "Minimax objective", "zh": "极小极大目标"}, "definition": {"ko": "판별자는 올리고 생성자는 내리려는 min-max 식. 실제로는 생성자가 −log D(G(z))를 줄인다.", "zh": "判别器要提高、生成器要降低的 min-max 公式。实际上，生成器最小化的是 −log D(G(z))。"}, "anchor": "#overview", "coverage": "explained", "confidence": "high", "source": [{"ref": "goodfellow2014"}]}, {"id": "lab:concept/alternating-training", "type": "Concept", "label": {"ko": "번갈아 학습", "en": "Alternating updates", "zh": "交替学习"}, "definition": {"ko": "감별사 한 걸음(위조범 고정), 위조범 한 걸음(감별사 고정)을 30,000번 되풀이한다.", "zh": "鉴定师一步（固定伪造者）、伪造者一步（固定鉴定师）的过程重复 30,000 次。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/detach", "type": "Term", "label": {"ko": "detach", "en": "detach"}, "definition": {"ko": "텐서를 계산 그래프에서 떼어 내 기울기가 그 뒤로 흐르지 않게 한다. 감별사 걸음에서 위조범이 함께 배우지 않게 하는 데 쓴다.", "zh": "将张量从计算图中分离，使梯度不再向其后传播。用于在鉴定师的一步中防止伪造者一同学习。"}, "anchor": "#m3", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/label-smoothing", "type": "Concept", "label": {"ko": "한쪽 라벨 누그러뜨리기", "en": "One-sided label smoothing", "zh": "单侧标签平滑"}, "definition": {"ko": "진짜 라벨을 1 대신 0.9로 주어 판별자가 지나치게 확신하지 않게 하는 방법.", "zh": "将真实标签设为 0.9 而非 1，使判别器不会过度自信的方法。"}, "anchor": "#m3", "coverage": "explained", "confidence": "high", "source": [{"ref": "salimans2016"}]}, {"id": "lab:concept/intermediate-record", "type": "Concept", "label": {"ko": "중간 기록", "en": "Intermediate checkpoints scoring", "zh": "中间记录"}, "definition": {"ko": "8,000 · 15,000 · 30,000걸음마다 새 글씨를 채점해 남긴 기록. 판정은 30,000걸음으로 한다.", "zh": "每 8,000、15,000、30,000 步对新数字图像进行评分并记录。判定以 30,000 步为准。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/loss-not-quality", "type": "Claim", "label": {"ko": "손실이 줄어도 글씨가 좋아지지 않는다", "en": "Loss does not track sample quality", "zh": "损失下降，数字图像却没有变好"}, "definition": {"ko": "두 손실은 서로를 따라 오르내려서 손실만으로는 품질을 알 수 없다. 그래서 중간 기록을 직접 채점한다.", "zh": "两个损失相互跟随上下起伏，因此仅凭损失无法得知质量。所以要直接对中间记录进行评分。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "goodfellow2014"}]}, {"id": "lab:claim/seed-variance", "type": "Claim", "label": {"ko": "씨앗마다 다르게 흘러간다", "en": "Runs differ by seed", "zh": "每颗种子的走向各不相同"}, "definition": {"ko": "같은 설정이어도 8,000걸음의 알아볼 수 있는 비율이 11.6% ± 5.8로 씨앗마다 크게 다르다. 그래서 씨앗 다섯 개의 평균으로 판정한다.", "zh": "即使设置相同，8,000 步时的可辨认比例为 11.6% ± 5.8，因种子不同差异很大。因此以五个种子的平均值进行判定。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/adversarial-instability", "type": "Claim", "label": {"ko": "적대적 학습은 균형을 잃기 쉽다", "en": "Adversarial training is fragile", "zh": "对抗训练容易失去平衡"}, "definition": {"ko": "생성자와 판별자의 줄다리기가 기울면 학습이 무너지고, 한쪽이 너무 약하거나 강하면 생성자가 배울 신호가 없다.", "zh": "生成器与判别器的拉锯若失衡，学习就会崩溃；若一方过弱或过强，生成器就得不到可学习的信号。"}, "anchor": "#m4", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "arjovsky2017"}, {"ref": "salimans2016"}]}, {"id": "lab:claim/verdict", "type": "Claim", "label": {"ko": "판정: 보류", "en": "Verdict: on hold", "zh": "判定：待定"}, "definition": {"ko": "GAN은 30,000걸음에서 알아볼 수 있는 비율 55.3%로 GMM 40묶음의 84.9%에 못 미쳐 보류. 8,000걸음에서는 11.6% ± 5.8에 모드 붕괴도 보였다.", "zh": "GAN 在 30,000 步的可辨认比例为 55.3%，低于 GMM 40组的 84.9%，因此待定。8,000 步时可辨认比例为 11.6% ± 5.8，并且还出现了模式崩溃。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/mode-collapse", "type": "Limitation", "label": {"ko": "모드 붕괴", "en": "Mode collapse", "zh": "模式崩溃"}, "definition": {"ko": "생성자가 일부 숫자 꼴로만 몰려 다양성을 잃는 현상. 고른 정도가 낮아진다.", "zh": "生成器只集中于部分数字形状，从而丧失多样性的现象。均匀度会降低。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/instability", "type": "Limitation", "label": {"ko": "불안정한 학습", "en": "Unstable training", "zh": "不稳定的训练"}, "definition": {"ko": "두 손실이 서로를 따라 오르내려 씨앗마다 결과가 다르고, 학습을 한 번에 믿고 맡기기 어렵다.", "zh": "两个损失相互跟随上下起伏，因此每颗种子的结果不同，很难一次就放心地把学习交给它。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/vae-blurry", "type": "Limitation", "label": {"ko": "VAE의 흐릿한 글씨", "en": "Blurriness of VAE", "zh": "VAE 的模糊数字图像"}, "definition": {"ko": "복원 오차를 줄이려다 애매한 곳에서 평균 글씨를 그려 채점관이 확신하지 못한다.", "zh": "为减小重构误差而在模糊处画出平均数字图像，阅卷官无法确定。"}, "anchor": "#overview", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:task/generate-digits", "type": "Task", "label": {"ko": "새 글씨 1,000장 쓰기", "en": "Generating 1,000 new digits", "zh": "写 1,000 张新数字图像"}, "definition": {"ko": "6-13과 같은 채점으로 새 글씨 1,000장을 만들어 채점관에게 읽히는 일.", "zh": "以与 6-13 相同的评分方式制作 1,000 张新数字图像，让阅卷官来读。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:dataset/digits", "type": "Dataset", "label": {"ko": "손글씨 숫자 1,797장", "en": "Optical Recognition of Handwritten Digits (1,797)", "zh": "手写数字 1,797张"}, "definition": {"ko": "8×8(64칸) 손글씨 숫자 데이터. 채점관과 천장은 6-13과 같다.", "zh": "8×8（64格）手写数字数据。阅卷官与天花板与 6-13 相同。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "alpaydin1998"}]}, {"id": "lab:metric/recognizable-ratio", "type": "Metric", "label": {"ko": "알아볼 수 있는 비율", "en": "Recognizable ratio", "zh": "可辨认比例"}, "definition": {"ko": "채점관이 최고 확률 0.9를 넘게 읽은 새 글씨의 비율. 판정의 기준이다.", "zh": "阅卷官以超过 0.9 的最高概率读出的新数字图像比例。这是判定的基准。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:metric/evenness", "type": "Metric", "label": {"ko": "고른 정도", "en": "Evenness (normalized entropy)", "zh": "均匀度"}, "definition": {"ko": "채점관이 읽은 숫자 분포의 정규화 엔트로피. 모드 붕괴가 있으면 낮아진다.", "zh": "阅卷官所读数字分布的归一化熵。若存在模式崩溃，它会降低。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:question/which-seed", "type": "Question", "label": {"ko": "같은 설정인데 왜 씨앗마다 다른가?", "en": "Why do identical settings differ by seed?", "zh": "设置相同，为什么每颗种子却不同？"}, "definition": {"ko": "가장 좋은 씨앗만 보고하지 않고 다섯 개의 평균과 흔들림을 함께 보고하는 까닭을 묻는다.", "zh": "询问为什么不只报告最好的种子，而要同时报告五个种子的平均值与种子间波动。"}, "anchor": "#m4", "coverage": "mentioned", "confidence": "medium"}, {"id": "lab:sim/gan-browser", "type": "Simulation", "label": {"ko": "브라우저 GAN 학습", "en": "GAN training in the browser", "zh": "在浏览器中学习 GAN"}, "definition": {"ko": "씨앗 0, 3,000걸음(Colab의 10분의 1)으로 고정한 잡음 16개의 글씨가 바뀌는 모습과 두 손실의 줄다리기를 본다.", "zh": "观察固定种子 0、3,000 步（Colab 的十分之一）下 16 个噪声所生成数字图像的变化，以及两个损失的拉锯。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/forger", "type": "Analogy", "label": {"ko": "위조지폐범과 은행 감별사", "en": "Counterfeiter and bank inspector", "zh": "伪造纸币者与银行鉴定师"}, "definition": {"ko": "위조범이 감별사를 속이려 배우고 감별사는 속지 않으려 배우는 끝없는 겨루기. 모드 붕괴는 잘 속는 지폐 한 가지만 찍는 일이다.", "zh": "伪造者为骗过鉴定师而学习，鉴定师为不被骗而学习的无尽较量。模式崩溃是指只印出一种容易被骗的纸币。"}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:bio/courtship-song", "type": "BioAnalogue", "label": {"ko": "초파리 구애 노래와 가려듣기", "en": "Fly courtship song and female choice", "zh": "果蝇求偶歌与分辨聆听"}, "definition": {"ko": "수컷이 노래하고 암컷이 같은 종의 노래인지 가려 받아들이며 만드는 쪽과 가리는 쪽이 함께 다듬어진다. 다만 이는 수많은 세대의 진화이고 GAN은 몇 분의 학습이다.", "zh": "雄性唱歌，雌性辨别接受同种的歌声，制造歌的一方与分辨的一方共同被打磨。但这是无数世代的进化，而 GAN 只是几分钟的学习。"}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "coen2014"}]}], "edges": [{"s": "lab:method/gan", "p": "lab:broader", "o": "lab:topic/gan"}, {"s": "lab:method/vae", "p": "lab:broader", "o": "lab:topic/vae"}, {"s": "lab:method/gmm-senior", "p": "lab:broader", "o": "lab:topic/density-estimation"}, {"s": "lab:method/discriminator", "p": "lab:broader", "o": "lab:topic/supervised-learning"}, {"s": "lab:concept/minimax", "p": "lab:broader", "o": "lab:topic/loss-function"}, {"s": "lab:metric/recognizable-ratio", "p": "lab:broader", "o": "lab:topic/accuracy-metrics"}, {"s": "lab:method/generator", "p": "lab:partOf", "o": "lab:method/gan"}, {"s": "lab:method/discriminator", "p": "lab:partOf", "o": "lab:method/gan"}, {"s": "lab:concept/minimax", "p": "lab:partOf", "o": "lab:method/gan"}, {"s": "lab:concept/alternating-training", "p": "lab:partOf", "o": "lab:method/gan"}, {"s": "lab:concept/detach", "p": "lab:partOf", "o": "lab:concept/alternating-training"}, {"s": "lab:concept/label-smoothing", "p": "lab:partOf", "o": "lab:method/discriminator"}, {"s": "lab:concept/intermediate-record", "p": "lab:partOf", "o": "lab:metric/recognizable-ratio"}, {"s": "lab:method/discriminator", "p": "lab:prerequisiteOf", "o": "lab:concept/alternating-training"}, {"s": "lab:method/vae", "p": "lab:prerequisiteOf", "o": "lab:method/gan"}, {"s": "lab:method/vae", "p": "lab:hasLimitation", "o": "lab:limitation/vae-blurry"}, {"s": "lab:limitation/vae-blurry", "p": "lab:addressedBy", "o": "lab:method/gan"}, {"s": "lab:method/gan", "p": "lab:hasLimitation", "o": "lab:limitation/mode-collapse"}, {"s": "lab:method/gan", "p": "lab:hasLimitation", "o": "lab:limitation/instability"}, {"s": "lab:limitation/instability", "p": "lab:addressedBy", "o": "lab:concept/label-smoothing"}, {"s": "lab:limitation/instability", "p": "lab:raises", "o": "lab:question/which-seed"}, {"s": "lab:limitation/mode-collapse", "p": "lab:raises", "o": "lab:question/which-seed"}, {"s": "lab:method/gan", "p": "lab:contrastsWith", "o": "lab:method/vae"}, {"s": "lab:method/gan", "p": "lab:contrastsWith", "o": "lab:method/gmm-senior"}, {"s": "lab:method/gan", "p": "lab:solves", "o": "lab:task/generate-digits"}, {"s": "lab:method/gmm-senior", "p": "lab:solves", "o": "lab:task/generate-digits"}, {"s": "lab:task/generate-digits", "p": "lab:evaluatedOn", "o": "lab:dataset/digits"}, {"s": "lab:method/gan", "p": "lab:evaluatedBy", "o": "lab:metric/recognizable-ratio"}, {"s": "lab:method/gan", "p": "lab:evaluatedBy", "o": "lab:metric/evenness"}, {"s": "lab:claim/loss-not-quality", "p": "lab:supports", "o": "lab:concept/intermediate-record"}, {"s": "lab:claim/seed-variance", "p": "lab:supports", "o": "lab:limitation/instability"}, {"s": "lab:claim/adversarial-instability", "p": "lab:supports", "o": "lab:limitation/instability"}, {"s": "lab:metric/evenness", "p": "lab:supports", "o": "lab:limitation/mode-collapse"}, {"s": "lab:metric/recognizable-ratio", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/gmm-senior", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/gan", "p": "lab:demonstratedBy", "o": "lab:sim/gan-browser"}, {"s": "lab:analogy/forger", "p": "lab:analogyOf", "o": "lab:method/gan"}, {"s": "lab:bio/courtship-song", "p": "lab:bioAnalogueOf", "o": "lab:method/gan"}], "topicLabels": {"lab:area/math": "数学基础", "lab:topic/linear-algebra": "线性代数", "lab:topic/probability-statistics": "概率·统计", "lab:topic/calculus-optimization-math": "微积分与优化数学", "lab:topic/information-theory": "信息论", "lab:area/ml-basics": "机器学习基础", "lab:topic/supervised-learning": "监督学习", "lab:topic/unsupervised-learning": "无监督学习概念", "lab:topic/generalization": "泛化·过拟合", "lab:topic/bias-variance": "偏差-方差平衡", "lab:topic/data-splitting": "训练·验证·测试划分", "lab:topic/feature-engineering": "特征工程", "lab:topic/rule-vs-learning": "基于规则 vs 基于学习", "lab:area/classical": "经典模型", "lab:topic/linear-regression": "线性回归", "lab:topic/logistic-regression": "逻辑回归", "lab:topic/svm": "支持向量机", "lab:topic/knn": "k-近邻", "lab:topic/decision-tree": "决策树", "lab:topic/naive-bayes": "朴素贝叶斯", "lab:area/ensemble": "集成", "lab:topic/bagging": "装袋（Bagging）", "lab:topic/random-forest": "随机森林", "lab:topic/boosting": "提升（Boosting）", "lab:topic/stacking": "堆叠（Stacking）", "lab:area/nn-basics": "神经网络基础", "lab:topic/weights-and-biases": "权重与偏置", "lab:topic/perceptron": "感知机", "lab:topic/mlp": "多层感知机", "lab:topic/activation-function": "激活函数", "lab:topic/loss-function": "损失函数", "lab:topic/backpropagation": "反向传播", "lab:topic/universal-approximation": "通用近似定理", "lab:area/optimization": "优化", "lab:topic/gradient-descent": "梯度下降法", "lab:topic/sgd-minibatch": "随机梯度下降·小批量", "lab:topic/momentum-adam": "动量·Adam", "lab:topic/learning-rate-schedule": "学习率调整", "lab:area/regularization": "正则化与泛化技术", "lab:topic/weight-decay": "权重衰减（L2）", "lab:topic/dropout": "Dropout", "lab:topic/early-stopping": "早停", "lab:topic/normalization-layers": "归一化层", "lab:topic/data-augmentation": "数据增强", "lab:area/vision": "卷积·视觉", "lab:topic/convolution": "卷积·权重共享", "lab:topic/pooling": "池化", "lab:topic/receptive-field": "感受野", "lab:topic/residual-connections": "残差连接", "lab:topic/object-detection": "目标检测", "lab:topic/segmentation": "分割", "lab:area/sequence": "序列模型", "lab:topic/rnn": "循环神经网络", "lab:topic/lstm-gru": "LSTM·GRU", "lab:topic/seq2seq": "序列到序列", "lab:topic/time-series": "时间序列预测", "lab:area/attention": "注意力·Transformer", "lab:topic/attention-mechanism": "注意力机制", "lab:topic/self-attention": "自注意力", "lab:topic/multi-head-attention": "多头注意力", "lab:topic/positional-encoding": "位置编码", "lab:topic/transformer": "Transformer", "lab:area/language": "语言模型·自然语言处理", "lab:topic/tokenization": "词元化（Tokenization）", "lab:topic/word-embedding": "词嵌入", "lab:topic/pretrained-lm": "预训练语言模型", "lab:topic/transfer-learning": "迁移学习·微调", "lab:topic/lora": "LoRA·适配器", "lab:topic/prompting": "提示（Prompting）", "lab:topic/rag": "检索增强生成", "lab:area/generative": "生成模型", "lab:topic/autoencoder": "自编码器", "lab:topic/vae": "变分自编码器", "lab:topic/gan": "生成对抗网络", "lab:topic/diffusion": "扩散模型", "lab:topic/autoregressive-generation": "自回归生成", "lab:area/representation": "表示学习", "lab:topic/embedding-space": "嵌入空间", "lab:topic/self-supervised": "自监督学习", "lab:topic/contrastive": "对比学习", "lab:topic/sparse-representation": "稀疏表示", "lab:topic/random-features": "随机特征", "lab:topic/multi-task-learning": "多任务学习", "lab:area/rl": "强化学习", "lab:topic/mdp": "马尔可夫决策过程", "lab:topic/reward": "奖励", "lab:topic/value-function": "价值函数", "lab:topic/q-learning": "Q-学习", "lab:topic/policy-gradient": "策略梯度", "lab:topic/exploration": "探索与利用", "lab:topic/reward-prediction-error": "奖励预测误差", "lab:area/unsupervised": "无监督方法", "lab:topic/clustering": "聚类", "lab:topic/pca": "主成分分析", "lab:topic/tsne-umap": "t-SNE·UMAP", "lab:topic/density-estimation": "密度估计", "lab:topic/anomaly-detection": "异常检测", "lab:area/evaluation": "评估", "lab:topic/accuracy-metrics": "准确率·损失指标", "lab:topic/precision-recall": "精确率·召回率", "lab:topic/roc-auc": "ROC·AUC", "lab:topic/confusion-matrix": "混淆矩阵", "lab:topic/data-leakage": "数据泄露", "lab:topic/ablation": "消融实验", "lab:area/graph": "图学习", "lab:topic/gnn": "图神经网络", "lab:topic/message-passing": "消息传递", "lab:topic/knowledge-graph": "知识图谱", "lab:area/systems": "系统·MLOps", "lab:topic/deployment": "部署", "lab:topic/distribution-shift": "分布偏移", "lab:topic/monitoring": "监控", "lab:topic/reproducibility": "可复现性", "lab:area/responsible": "负责任的 AI", "lab:topic/fairness": "公平性", "lab:topic/interpretability": "可解释性·解释", "lab:topic/ai-safety": "安全性", "lab:topic/privacy": "隐私", "lab:area/neuro": "神经科学与 AI", "lab:topic/biological-neuron": "生物神经元与脉冲", "lab:topic/synaptic-plasticity": "突触可塑性", "lab:topic/connectome": "连接组", "lab:topic/sensory-processing": "感觉处理", "lab:topic/learning-memory-circuits": "学习·记忆回路", "lab:topic/circuit-methods": "神经回路实验技术"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/6-14","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"모델 채용 위원회 2차 공채 · 6-14 GAN","schema:inLanguage":"ko","schema:dateCreated":"2026-10-24","schema:version":"1.0","dct:isPartOf":"모델 채용 위원회 2차 공채","schema:about":[{"@id":"lab:topic/gan"}],"schema:educationalLevel":"대학 학부 · 입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/goodfellow2014"},{"@id":"lab:work/radford2016"},{"@id":"lab:work/salimans2016"},{"@id":"lab:work/arjovsky2017"},{"@id":"lab:work/coen2014"},{"@id":"lab:work/alpaydin1998"}]},{"@id":"lab:method/gan","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"생성적 적대 신경망","@language":"ko"},{"@value":"Generative adversarial network (GAN)","@language":"en"}],"skos:definition":[{"@value":"잡음에서 표본을 만드는 생성자와 진짜·생성 표본을 가리는 판별자를 맞붙여 번갈아 학습하는 생성 모델. 이 편의 위조범과 감별사다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/gan"}],"skos:broader":[{"@id":"lab:topic/gan"}],"lab:hasLimitation":[{"@id":"lab:limitation/mode-collapse"},{"@id":"lab:limitation/instability"}],"lab:contrastsWith":[{"@id":"lab:method/vae"},{"@id":"lab:method/gmm-senior"}],"lab:solves":[{"@id":"lab:task/generate-digits"}],"lab:evaluatedBy":[{"@id":"lab:metric/recognizable-ratio"},{"@id":"lab:metric/evenness"}],"lab:demonstratedBy":[{"@id":"lab:sim/gan-browser"}]},{"@id":"lab:method/generator","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"생성자 (위조범)","@language":"ko"},{"@value":"Generator","@language":"en"}],"skos:definition":[{"@value":"잡음 z 16칸을 받아 글씨 64칸을 만드는 망. 진짜 글씨는 보지 못하고 감별사를 거쳐 오는 기울기로만 배운다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/gan"}]},{"@id":"lab:method/discriminator","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"판별자 (감별사)","@language":"ko"},{"@value":"Discriminator","@language":"en"}],"skos:definition":[{"@value":"글씨 64칸을 받아 진짜일 점수 1칸을 내는 분류기. 학습에만 쓰고 글씨를 쓸 때는 필요 없다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/supervised-learning"}],"skos:broader":[{"@id":"lab:topic/supervised-learning"}],"lab:partOf":[{"@id":"lab:method/gan"}],"lab:prerequisiteOf":[{"@id":"lab:concept/alternating-training"}]},{"@id":"lab:method/vae","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"VAE (후배, 6-13)","@language":"ko"},{"@value":"VAE (junior, 6-13)","@language":"en"}],"skos:definition":[{"@value":"6-13의 생성팀 지원자. 매끈한 잠재 지도를 그렸지만 글씨가 흐릿했다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#overview","lab:broader":[{"@id":"lab:topic/vae"}],"skos:broader":[{"@id":"lab:topic/vae"}],"lab:prerequisiteOf":[{"@id":"lab:method/gan"}],"lab:hasLimitation":[{"@id":"lab:limitation/vae-blurry"}]},{"@id":"lab:method/gmm-senior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"GMM 40묶음 (선배)","@language":"ko"},{"@value":"GMM with 40 clusters (senior)","@language":"en"}],"skos:definition":[{"@value":"1차 공채의 선배. 종 모양 40개에서 표본을 뽑아 새 글씨를 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/density-estimation"}],"skos:broader":[{"@id":"lab:topic/density-estimation"}],"lab:solves":[{"@id":"lab:task/generate-digits"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:concept/minimax","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"미니맥스 목적","@language":"ko"},{"@value":"Minimax objective","@language":"en"}],"skos:definition":[{"@value":"판별자는 올리고 생성자는 내리려는 min-max 식. 실제로는 생성자가 −log D(G(z))를 줄인다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#overview","lab:broader":[{"@id":"lab:topic/loss-function"}],"skos:broader":[{"@id":"lab:topic/loss-function"}],"lab:partOf":[{"@id":"lab:method/gan"}]},{"@id":"lab:concept/alternating-training","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"번갈아 학습","@language":"ko"},{"@value":"Alternating updates","@language":"en"}],"skos:definition":[{"@value":"감별사 한 걸음(위조범 고정), 위조범 한 걸음(감별사 고정)을 30,000번 되풀이한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/gan"}]},{"@id":"lab:concept/detach","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"detach","@language":"ko"},{"@value":"detach","@language":"en"}],"skos:definition":[{"@value":"텐서를 계산 그래프에서 떼어 내 기울기가 그 뒤로 흐르지 않게 한다. 감별사 걸음에서 위조범이 함께 배우지 않게 하는 데 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m3","lab:partOf":[{"@id":"lab:concept/alternating-training"}]},{"@id":"lab:concept/label-smoothing","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"한쪽 라벨 누그러뜨리기","@language":"ko"},{"@value":"One-sided label smoothing","@language":"en"}],"skos:definition":[{"@value":"진짜 라벨을 1 대신 0.9로 주어 판별자가 지나치게 확신하지 않게 하는 방법.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m3","lab:partOf":[{"@id":"lab:method/discriminator"}]},{"@id":"lab:concept/intermediate-record","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"중간 기록","@language":"ko"},{"@value":"Intermediate checkpoints scoring","@language":"en"}],"skos:definition":[{"@value":"8,000 · 15,000 · 30,000걸음마다 새 글씨를 채점해 남긴 기록. 판정은 30,000걸음으로 한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:partOf":[{"@id":"lab:metric/recognizable-ratio"}]},{"@id":"lab:claim/loss-not-quality","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"손실이 줄어도 글씨가 좋아지지 않는다","@language":"ko"},{"@value":"Loss does not track sample quality","@language":"en"}],"skos:definition":[{"@value":"두 손실은 서로를 따라 오르내려서 손실만으로는 품질을 알 수 없다. 그래서 중간 기록을 직접 채점한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:supports":[{"@id":"lab:concept/intermediate-record"}]},{"@id":"lab:claim/seed-variance","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"씨앗마다 다르게 흘러간다","@language":"ko"},{"@value":"Runs differ by seed","@language":"en"}],"skos:definition":[{"@value":"같은 설정이어도 8,000걸음의 알아볼 수 있는 비율이 11.6% ± 5.8로 씨앗마다 크게 다르다. 그래서 씨앗 다섯 개의 평균으로 판정한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:limitation/instability"}]},{"@id":"lab:claim/adversarial-instability","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"적대적 학습은 균형을 잃기 쉽다","@language":"ko"},{"@value":"Adversarial training is fragile","@language":"en"}],"skos:definition":[{"@value":"생성자와 판별자의 줄다리기가 기울면 학습이 무너지고, 한쪽이 너무 약하거나 강하면 생성자가 배울 신호가 없다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m4","lab:supports":[{"@id":"lab:limitation/instability"}]},{"@id":"lab:claim/verdict","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"판정: 보류","@language":"ko"},{"@value":"Verdict: on hold","@language":"en"}],"skos:definition":[{"@value":"GAN은 30,000걸음에서 알아볼 수 있는 비율 55.3%로 GMM 40묶음의 84.9%에 못 미쳐 보류. 8,000걸음에서는 11.6% ± 5.8에 모드 붕괴도 보였다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5"},{"@id":"lab:limitation/mode-collapse","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"모드 붕괴","@language":"ko"},{"@value":"Mode collapse","@language":"en"}],"skos:definition":[{"@value":"생성자가 일부 숫자 꼴로만 몰려 다양성을 잃는 현상. 고른 정도가 낮아진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:raises":[{"@id":"lab:question/which-seed"}]},{"@id":"lab:limitation/instability","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"불안정한 학습","@language":"ko"},{"@value":"Unstable training","@language":"en"}],"skos:definition":[{"@value":"두 손실이 서로를 따라 오르내려 씨앗마다 결과가 다르고, 학습을 한 번에 믿고 맡기기 어렵다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:addressedBy":[{"@id":"lab:concept/label-smoothing"}],"lab:raises":[{"@id":"lab:question/which-seed"}]},{"@id":"lab:limitation/vae-blurry","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"VAE의 흐릿한 글씨","@language":"ko"},{"@value":"Blurriness of VAE","@language":"en"}],"skos:definition":[{"@value":"복원 오차를 줄이려다 애매한 곳에서 평균 글씨를 그려 채점관이 확신하지 못한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#overview","lab:addressedBy":[{"@id":"lab:method/gan"}]},{"@id":"lab:task/generate-digits","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"새 글씨 1,000장 쓰기","@language":"ko"},{"@value":"Generating 1,000 new digits","@language":"en"}],"skos:definition":[{"@value":"6-13과 같은 채점으로 새 글씨 1,000장을 만들어 채점관에게 읽히는 일.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:evaluatedOn":[{"@id":"lab:dataset/digits"}]},{"@id":"lab:dataset/digits","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"손글씨 숫자 1,797장","@language":"ko"},{"@value":"Optical Recognition of Handwritten Digits (1,797)","@language":"en"}],"skos:definition":[{"@value":"8×8(64칸) 손글씨 숫자 데이터. 채점관과 천장은 6-13과 같다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:metric/recognizable-ratio","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"알아볼 수 있는 비율","@language":"ko"},{"@value":"Recognizable ratio","@language":"en"}],"skos:definition":[{"@value":"채점관이 최고 확률 0.9를 넘게 읽은 새 글씨의 비율. 판정의 기준이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:broader":[{"@id":"lab:topic/accuracy-metrics"}],"skos:broader":[{"@id":"lab:topic/accuracy-metrics"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:metric/evenness","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"고른 정도","@language":"ko"},{"@value":"Evenness (normalized entropy)","@language":"en"}],"skos:definition":[{"@value":"채점관이 읽은 숫자 분포의 정규화 엔트로피. 모드 붕괴가 있으면 낮아진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:limitation/mode-collapse"}]},{"@id":"lab:question/which-seed","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"같은 설정인데 왜 씨앗마다 다른가?","@language":"ko"},{"@value":"Why do identical settings differ by seed?","@language":"en"}],"skos:definition":[{"@value":"가장 좋은 씨앗만 보고하지 않고 다섯 개의 평균과 흔들림을 함께 보고하는 까닭을 묻는다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m4"},{"@id":"lab:sim/gan-browser","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"브라우저 GAN 학습","@language":"ko"},{"@value":"GAN training in the browser","@language":"en"}],"skos:definition":[{"@value":"씨앗 0, 3,000걸음(Colab의 10분의 1)으로 고정한 잡음 16개의 글씨가 바뀌는 모습과 두 손실의 줄다리기를 본다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:analogy/forger","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"위조지폐범과 은행 감별사","@language":"ko"},{"@value":"Counterfeiter and bank inspector","@language":"en"}],"skos:definition":[{"@value":"위조범이 감별사를 속이려 배우고 감별사는 속지 않으려 배우는 끝없는 겨루기. 모드 붕괴는 잘 속는 지폐 한 가지만 찍는 일이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:method/gan"}]},{"@id":"lab:bio/courtship-song","@type":["lab:BioAnalogue","skos:Concept"],"skos:prefLabel":[{"@value":"초파리 구애 노래와 가려듣기","@language":"ko"},{"@value":"Fly courtship song and female choice","@language":"en"}],"skos:definition":[{"@value":"수컷이 노래하고 암컷이 같은 종의 노래인지 가려 받아들이며 만드는 쪽과 가리는 쪽이 함께 다듬어진다. 다만 이는 수많은 세대의 진화이고 GAN은 몇 분의 학습이다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:bioAnalogueOf":[{"@id":"lab:method/gan"}]}]}</script>
+<script type="application/json" id="refs-csl">[{"id":"goodfellow2014","type":"paper-conference","title":"Generative Adversarial Nets","author":[{"family":"Goodfellow","given":"I., et al."}],"issued":{"date-parts":[[2014]]},"container-title":"NeurIPS","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"radford2016","type":"paper-conference","title":"Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks","author":[{"family":"Radford","given":"A."},{"family":"Metz","given":"L."},{"family":"Chintala","given":"S."}],"issued":{"date-parts":[[2016]]},"container-title":"ICLR","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"salimans2016","type":"paper-conference","title":"Improved Techniques for Training GANs","author":[{"family":"Salimans","given":"T., et al."}],"issued":{"date-parts":[[2016]]},"container-title":"NeurIPS","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"arjovsky2017","type":"paper-conference","title":"Wasserstein GAN","author":[{"family":"Arjovsky","given":"M."},{"family":"Chintala","given":"S."},{"family":"Bottou","given":"L."}],"issued":{"date-parts":[[2017]]},"container-title":"ICML","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"coen2014","type":"article-journal","title":"Dynamic sensory cues shape song structure in Drosophila","author":[{"family":"Coen","given":"P., et al."}],"issued":{"date-parts":[[2014]]},"container-title":"Nature","volume":"507","page":"233–237","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"alpaydin1998","type":"dataset","title":"Optical Recognition of Handwritten Digits","author":[{"family":"Alpaydin","given":"E."},{"family":"Kaynak","given":"C."}],"issued":{"date-parts":[[1998]]},"publisher":"UCI Machine Learning Repository","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}}]</script>
+<script type="application/json" id="page-meta">{"title": "模型招聘委员会第二次公开招聘 · 6-14 GAN", "number": "6-14", "date": "2026-10-24", "version": "1.0", "series": "模型招聘委员会 第二次公开招聘", "language": "ko", "creator": [{"name": "Ahn Sangsun", "affiliation": "M-Robo Co., Ltd."}], "about": ["lab:topic/gan"], "educationalLevel": "대학 학부 · 입문", "learningResourceType": "interactive explainer", "description": "위조범(생성자)과 감별사(판별자)가 번갈아 배우며 새 손글씨를 쓰는 지원자 GAN의 면접. 두 손실의 줄다리기, 학습 중간마다 달라지는 새 글씨, 씨앗마다 다른 학습(불안정), 열 숫자를 고르게 못 쓰는 모드 붕괴, 생성팀 선배 GMM과 후배 VAE와의 비교. 모델 채용 위원회 2차 공채 6-14.", "basedOn": ["goodfellow2014", "radford2016", "salimans2016", "arjovsky2017", "coen2014", "alpaydin1998"]}</script>
+<!-- /lab-kg:body -->
 <footer>
   <div class="wrap">
     <p><b style="color:var(--text)">模型招聘委员会第二次公开招聘 · 6-14 GAN</b> · <a href="6-0_job_posting.html#m8">完整地图（6-0）</a> — 作者 Sangsun Ahn（M-Robo 公司代表）</p>
@@ -1648,5 +1677,408 @@ var CODE={title:'GAN 面试——伪造者与鉴定师、中间记录、各随�
 
 boot();
 </script>
+<!-- lab-kg:script -->
+<script>
+/* ai-lab-retrofit 휴대판 (색 변수가 없는 페이지에서도 동작) */
+/* ══ KG: 지식 색인(#kg) + 온톨로지·서지 꾸러미(#export) — 공용 모듈 ══
+   데이터 블록: #kg-raw(중립 JSON), #refs-csl(CSL-JSON), #page-meta, #kg-ld(빌드 때 생성)
+   외부 라이브러리 없음. 모든 내보내기는 kg-raw에서 만든다. */
+var KGX=(function(){
+'use strict';
+function $id(i){return document.getElementById(i);}
+function J(id){var e=$id(id); return e?JSON.parse(e.textContent):null;}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function el(tag,cls,html){var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+
+var TYPE={Concept:['概念','#82b8ff'],Method:['方法','#5ee39c'],BioAnalogue:['生物对应','#ef5b5b'],Claim:['主张','#f1b646'],
+  Question:['开放问题','#d672d6'],Limitation:['局限','#ff9a7a'],Task:['任务','#7fe0c8'],Metric:['指标','#b9a8ff'],
+  Dataset:['数据','#c9c4a4'],Simulation:['模拟','#8a88a8'],QuizItem:['测验','#6f6d8c'],Work:['文献','#e0d7a8'],
+  Area:['领域','#eceaf3'],Topic:['主题','#9d9bb8'],Analogy:['类比','#ff86b8'],Term:['术语','#82b8ff']};
+var REL={prerequisiteOf:'需先掌握',hasLimitation:'局限',addressedBy:'已解决',partOf:'部分',bioAnalogueOf:'生物对应',
+  contrastsWith:'对比',supports:'支持',assertedIn:'出处',evaluatedBy:'以指标评估',evaluatedOn:'以数据评估',
+  demonstratedBy:'模拟',raises:'引出问题',relatedTo:'相关',solves:'解决任务',analogyOf:'类比',assesses:'测验检验',
+  broader:'上位主题',explainedIn:'说明位置'};
+function tl(t){return (TYPE[t]||[t])[0];} function tc(t){return (TYPE[t]||[0,'#9d9bb8'])[1];}
+function pn(p){return p.replace(/^lab:/,'');}
+function lab(n){return n.label?(n.label[LANG]||n.label.en||n.label.ko):n.id;}
+
+/* ── 변환기 ─────────────────────────────────────────── */
+var NS='urn:lab:';
+var CTX={'@vocab':NS,lab:NS,skos:'http://www.w3.org/2004/02/skos/core#',schema:'https://schema.org/',
+  dct:'http://purl.org/dc/terms/',prov:'http://www.w3.org/ns/prov#',rdfs:'http://www.w3.org/2000/01/rdf-schema#'};
+var SKOS_T={Concept:1,Method:1,Task:1,Term:1,Limitation:1,BioAnalogue:1,Metric:1,Area:1,Topic:1};
+var SCH_T={Work:'schema:ScholarlyArticle',Claim:'schema:Claim',Dataset:'schema:Dataset',QuizItem:'schema:Question',Question:'schema:Question',Simulation:'schema:SoftwareApplication'};
+function lit(o){var a=[]; Object.keys(o||{}).forEach(function(k){ var v=o[k]; (Array.isArray(v)?v:[v]).forEach(function(x){a.push({'@value':x,'@language':k});});}); return a;}
+function toJsonLd(g,meta){
+  var graph=g.nodes.map(function(n){
+    var t=['lab:'+n.type]; if(SKOS_T[n.type])t.push('skos:Concept'); if(SCH_T[n.type])t.push(SCH_T[n.type]);
+    var o={'@id':n.id,'@type':t,'skos:prefLabel':lit(n.label)};
+    if(n.altLabel)o['skos:altLabel']=lit(n.altLabel);
+    if(n.definition)o['skos:definition']=lit(n.definition);
+    ['level','status','confidence','coverage','family','page','anchor'].forEach(function(k){ if(n[k]!=null)o['lab:'+k]=n[k];});
+    (n.match||[]).forEach(function(m){ var p=m.rel==='exact'?'skos:exactMatch':'skos:closeMatch'; (o[p]=o[p]||[]).push({'@id':m.iri});});
+    return o;});
+  var byS={}; graph.forEach(function(o){byS[o['@id']]=o;});
+  g.edges.forEach(function(e){ var s=byS[e.s]; if(!s)return; var k=e.p; (s[k]=s[k]||[]).push({'@id':e.o});
+    if(e.p==='lab:broader')(s['skos:broader']=s['skos:broader']||[]).push({'@id':e.o});
+    if(e.p==='lab:assertedIn')(s['prov:wasDerivedFrom']=s['prov:wasDerivedFrom']||[]).push({'@id':e.o});
+    if(e.p==='lab:relatedTo')(s['skos:related']=s['skos:related']||[]).push({'@id':e.o}); });
+  if(meta)graph.unshift({'@id':NS+'page/'+meta.number,'@type':['schema:LearningResource','schema:WebPage'],'schema:name':meta.title,
+    'schema:inLanguage':meta.language,'schema:dateCreated':meta.date,'schema:version':meta.version,'dct:isPartOf':meta.series,
+    'schema:about':(meta.about||[]).map(function(a){return {'@id':a};}),'schema:educationalLevel':meta.educationalLevel,
+    'schema:learningResourceType':meta.learningResourceType,'dct:source':(meta.basedOn||[]).map(function(b){return {'@id':'lab:work/'+b};})});
+  return {'@context':CTX,'@graph':graph};
+}
+function ttlS(s){return '"'+String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\n/g,'\\n')+'"';}
+function ttlI(id){return id.indexOf('lab:')===0?'lab:'+id.slice(4).replace(/[^A-Za-z0-9_\-]/g,function(c){return c==='/'?'_':encodeURIComponent(c).replace(/%/g,'_');}):'<'+id+'>';}
+function toTurtle(g){
+  var L=['@prefix lab: <'+NS+'> .','@prefix skos: <http://www.w3.org/2004/02/skos/core#> .','@prefix schema: <https://schema.org/> .',
+    '@prefix prov: <http://www.w3.org/ns/prov#> .',''];
+  var out={}; g.edges.forEach(function(e){(out[e.s]=out[e.s]||[]).push(e);});
+  g.nodes.forEach(function(n){
+    var P=['a lab:'+n.type+(SKOS_T[n.type]?', skos:Concept':'')];
+    Object.keys(n.label||{}).forEach(function(k){P.push('skos:prefLabel '+ttlS(n.label[k])+'@'+k);});
+    Object.keys(n.altLabel||{}).forEach(function(k){[].concat(n.altLabel[k]).forEach(function(v){P.push('skos:altLabel '+ttlS(v)+'@'+k);});});
+    Object.keys(n.definition||{}).forEach(function(k){P.push('skos:definition '+ttlS(n.definition[k])+'@'+k);});
+    if(n.status)P.push('lab:status '+ttlS(n.status)); if(n.level!=null)P.push('lab:level '+n.level);
+    if(n.anchor)P.push('lab:anchor '+ttlS(n.anchor));
+    (out[n.id]||[]).forEach(function(e){P.push(ttlI(e.p)+' '+ttlI(e.o)); if(e.p==='lab:broader')P.push('skos:broader '+ttlI(e.o));});
+    L.push(ttlI(n.id)+'\n  '+P.join(' ;\n  ')+' .\n');});
+  return L.join('\n');
+}
+function csvq(v){v=v==null?'':String(v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toNodesCsv(g){return ['id,type,label_ko,label_en,status,level,family,page,anchor,coverage,confidence'].concat(g.nodes.map(function(n){
+  return [n.id,n.type,n.label&&n.label.ko,n.label&&n.label.en,n.status,n.level,n.family,n.page,n.anchor,n.coverage,n.confidence].map(csvq).join(',');})).join('\r\n');}
+function toEdgesCsv(g){return ['source,predicate,target,anchor,confidence'].concat(g.edges.map(function(e){return [e.s,e.p,e.o,e.anchor,e.confidence].map(csvq).join(',');})).join('\r\n');}
+function toMermaid(g){
+  var keep=g.nodes.filter(function(n){return n.type!=='QuizItem'&&n.type!=='Simulation'&&n.type!=='Work';}).slice(0,40);
+  var ix={}; keep.forEach(function(n,i){ix[n.id]='n'+i;});
+  var L=['graph LR']; keep.forEach(function(n){L.push('  '+ix[n.id]+'["'+lab(n).replace(/"/g,"'")+'"]');});
+  g.edges.forEach(function(e){ if(ix[e.s]&&ix[e.o])L.push('  '+ix[e.s]+' -- '+(REL[pn(e.p)]||pn(e.p))+' --> '+ix[e.o]);});
+  return L.join('\n');
+}
+function toProvCsv(g,refs){
+  var R={}; refs.forEach(function(r){R[r.id]=r;});
+  var L=['item,kind,work,loc,confidence,verified,pageAnchor'];
+  g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){ var r=R[s.ref]; var v=r&&r.lab&&r.lab.verified;
+    L.push([n.id,'node',s.ref,s.loc||'',n.confidence,v?(v.title&&v.year&&v.venue?'bib-checked':'partial'):'no',n.anchor].map(csvq).join(','));});});
+  g.edges.forEach(function(e){ if(e.p==='lab:assertedIn')L.push([e.s+' '+e.p+' '+e.o,'edge',e.o.replace('lab:work/',''),'',e.confidence,'',e.anchor].map(csvq).join(','));});
+  return L.join('\r\n');
+}
+/* CSL → BibTeX · RIS · 문장 */
+var BIBT={'article-journal':'article','paper-conference':'inproceedings','book':'book','chapter':'incollection','webpage':'misc','dataset':'misc','report':'techreport','thesis':'phdthesis','software':'misc'};
+var RIST={'article-journal':'JOUR','paper-conference':'CPAPER','book':'BOOK','chapter':'CHAP','webpage':'ELEC','dataset':'DATA','report':'RPRT','thesis':'THES','software':'COMP'};
+function names(a){return (a||[]).map(function(p){return p.literal||(p.family+(p.given?', '+p.given:''));});}
+function yr(r){return r.issued&&r.issued['date-parts']&&r.issued['date-parts'][0][0];}
+function toBib(r){var f=[],add=function(k,v){ if(v!==undefined&&v!==null&&v!=='')f.push('  '+k+' = {'+v+'}');};
+  add('title',r.title); add('author',names(r.author).map(function(n){return n==='et al.'?'others':n;}).join(' and ')); add('year',yr(r));
+  add(r.type==='article-journal'?'journal':'booktitle',r['container-title']); add('volume',r.volume); add('number',r.issue);
+  add('pages',(r.page||'').replace('-','--')); add('publisher',r.publisher); add('doi',r.DOI); add('url',r.URL);
+  if(r.lab&&r.lab.note)add('note',r.lab.note);
+  return '@'+(BIBT[r.type]||'misc')+'{'+r.id+',\n'+f.join(',\n')+'\n}';}
+function toRis(r){var L=['TY  - '+(RIST[r.type]||'GEN')],add=function(t,v){ if(v)L.push(t+'  - '+v);};
+  add('TI',r.title); names(r.author).forEach(function(n){add('AU',n);}); add('PY',yr(r)); add('T2',r['container-title']);
+  add('VL',r.volume); add('IS',r.issue); var pg=(r.page||'').split('-'); add('SP',pg[0]); add('EP',pg[1]); add('DO',r.DOI); add('UR',r.URL);
+  if(r.lab&&r.lab.note)add('N1',r.lab.note); L.push('ER  - '); return L.join('\r\n');}
+function toText(r){ var a=names(r.author), first=a[0]?a[0].split(',')[0]:''; var au=a.length>2||a.indexOf('et al.')>=0?first+' 等':a.map(function(x){return x.split(',')[0];}).join(' & ');
+  return au+' ('+(yr(r)||'年份不详')+'). '+r.title+'. '+(r['container-title']||'')+(r.volume?', '+r.volume:'')+(r.issue?'('+r.issue+')':'')+(r.page?', '+r.page:'')+'.'+(r.DOI?' https://doi.org/'+r.DOI:'');}
+function pageBib(m){var f=['  title = {'+m.title+'}','  year = {'+m.date.slice(0,4)+'}','  howpublished = {'+m.series+' '+m.number+', v'+m.version+'}'];
+  if(m.creator&&m.creator.length&&m.creator[0].name)f.unshift('  author = {'+m.creator.map(function(c){return c.name;}).join(' and ')+'}'); if(m.url)f.push('  url = {'+m.url+'}');
+  return '@misc{lab_page_'+m.number+',\n'+f.join(',\n')+'\n}';}
+function pageRis(m){var L=['TY  - ELEC','TI  - '+m.title]; (m.creator||[]).forEach(function(c){ if(c.name)L.push('AU  - '+c.name);}); L.push('PY  - '+m.date.slice(0,4),'T2  - '+m.series,'ET  - '+m.version); if(m.url)L.push('UR  - '+m.url); L.push('ER  - '); return L.join('\r\n');}
+function pageText(m){ var who=(m.creator||[]).filter(function(c){return c.name;}).map(function(c){return c.name;}).join(', ')||'{作者}';
+  return who+' ('+m.date.slice(0,4)+'). '+m.title+'. '+m.series+' '+m.number+', v'+m.version+'.'+(m.url?' '+m.url:'');}
+
+/* ── ZIP (압축 없음) ─────────────────────────────────── */
+var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}
+  return function(u8){var x=0xFFFFFFFF;for(var i=0;i<u8.length;i++)x=t[(x^u8[i])&255]^(x>>>8);return (x^0xFFFFFFFF)>>>0;};})();
+function makeZip(files){
+  var enc=new TextEncoder(),parts=[],central=[],off=0;
+  function u16(v){return [v&255,(v>>8)&255];} function u32(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255];}
+  files.forEach(function(f){var name=enc.encode(f.name),data=enc.encode(f.text),crc=CRC(data);
+    var head=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0));
+    parts.push(new Uint8Array(head),name,data);
+    central.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),
+      u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),name);
+    off+=head.length+name.length+data.length;});
+  var cdLen=0; central.forEach(function(c){parts.push(c); cdLen+=c.length;});
+  parts.push(new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cdLen),u32(off),u16(0))));
+  return new Blob(parts,{type:'application/zip'});
+}
+/* 내려받기: claude.ai 아티팩트 안에서는 downloads 능력, 파일로 열면 일반 링크 */
+var DLP=(window.claude&&typeof window.claude.use==='function')?window.claude.use('downloads').catch(function(){return null;}):Promise.resolve(null);
+var OKX=/\.(json|txt|csv|md|zip|html|svg|pdf)$/i;
+function anchorSave(blob,name){var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name;
+  document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},800);}
+function download(blob,name){
+  return DLP.then(function(d){
+    if(!d){anchorSave(blob,name); return;}
+    var fn=OKX.test(name)?name:name+'.txt';   // .bib .ris .ttl .jsonld 은 .txt를 붙여 저장 (확장자만 지우면 원래 형식)
+    return d.save({filename:fn,data:blob}).catch(function(e){ if(e&&e.code==='declined')return;
+      if(e&&(e.code==='unavailable'||e.code==='not_granted'))anchorSave(blob,name);
+      else console.warn('保存失败',e&&e.code);});
+  });
+}
+function dlText(text,name,type){download(new Blob([text],{type:(type||'text/plain')+';charset=utf-8'}),name);}
+
+/* ── 범위 ───────────────────────────────────────────── */
+function filterScope(KG,scope){
+  if(scope==='all')return KG;
+  var keepT={terms:{Concept:1,Method:1,BioAnalogue:1,Limitation:1,Task:1,Metric:1,Dataset:1},
+             claims:{Claim:1,Work:1},prereq:null}[scope];
+  var nodes,edges;
+  if(scope==='prereq'){ edges=KG.edges.filter(function(e){return e.p==='lab:prerequisiteOf'||e.p==='lab:hasLimitation'||e.p==='lab:addressedBy';});
+    var ids={}; edges.forEach(function(e){ids[e.s]=1;ids[e.o]=1;}); nodes=KG.nodes.filter(function(n){return ids[n.id];}); }
+  else { nodes=KG.nodes.filter(function(n){return keepT[n.type];}); var ix={}; nodes.forEach(function(n){ix[n.id]=1;});
+    if(scope==='claims'){ KG.edges.forEach(function(e){ if(e.p==='lab:supports'&&ix[e.s])ix[e.o]=2;});
+      nodes=KG.nodes.filter(function(n){return ix[n.id];}); }
+    edges=KG.edges.filter(function(e){return ix[e.s]&&(ix[e.o]||/^lab:(topic|area)\//.test(e.o));}); }
+  return {version:KG.version,page:KG.page,scope:scope,nodes:nodes,edges:edges};
+}
+function readme(meta,g,refs){
+  var un=refs.filter(function(r){var v=r.lab&&r.lab.verified; return !v||Object.keys(v).some(function(k){return !v[k];});});
+  return ['本体·书目资料包 — '+meta.title,'系列： '+meta.series+' '+meta.number+' · 版本 '+meta.version+' · 制作日期 '+meta.date,'',
+   '范围： '+(g.scope||'all')+' · 节点 '+g.nodes.length+' · 关系 '+g.edges.length+' · 文献 '+refs.length,'',
+   '[파일]','manifest.json 清单 · page_meta.json 页面书目 · kg.json 中立图（原始）· kg.jsonld JSON-LD · kg.ttl Turtle',
+   'nodes.csv / edges.csv 表格（UTF-8 BOM）· references.csl.json 参考文献原文 · references.bib BibTeX · references.ris RIS',
+   'provenance.csv 主张↔文献对应 · mermaid.md 图用','',
+   '[이 페이지 인용]',pageText(meta),'',
+   '[확인 필요]',(un.length?un.map(function(r){var v=r.lab.verified;return '- '+r.id+': '+Object.keys(v).filter(function(k){return !v[k];}).join(', ');}).join('\n'):'- 文献书目条目均已确认'),
+   '- 主张（Claim）的原文位置（页·图号）尚空缺。请对照原文填写 provenance.csv 的 loc。',
+   '- 页面作者姓名、许可证和公开地址暂留空白。请用户自行填写。','',
+   '[규칙] lab: 접두어 IRI는 '+NS+' （临时）。外部本体 ID 仅在确认后以 skos:exactMatch/closeMatch 写入。',
+   '[주의] 뼈대 영역(lab:topic/*, lab:area/*)은 작성자 초안이며 공식 분류 체계가 아니다.'].join('\n');
+}
+function buildPackage(scope){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); var g=filterScope(KG,scope);
+  var used={}; g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){used[s.ref]=1;}); if(n.type==='Work')used[n.id.replace('lab:work/','')]=1;});
+  var refs=scope==='all'?REF:REF.filter(function(r){return used[r.id];});
+  var files=[{name:'page_meta.json',text:JSON.stringify(META,null,2)},{name:'kg.json',text:JSON.stringify(g,null,2)},
+    {name:'kg.jsonld',text:JSON.stringify(toJsonLd(g,META),null,2)},{name:'kg.ttl',text:toTurtle(g)},
+    {name:'nodes.csv',text:'﻿'+toNodesCsv(g)},{name:'edges.csv',text:'﻿'+toEdgesCsv(g)},
+    {name:'references.csl.json',text:JSON.stringify(refs,null,2)},{name:'references.bib',text:[pageBib(META)].concat(refs.map(toBib)).join('\n\n')},
+    {name:'references.ris',text:[pageRis(META)].concat(refs.map(toRis)).join('\r\n')},{name:'provenance.csv',text:'﻿'+toProvCsv(g,refs)},
+    {name:'mermaid.md',text:'```mermaid\n'+toMermaid(g)+'\n```\n'},{name:'README.txt',text:readme(META,g,refs)}];
+  files.unshift({name:'manifest.json',text:JSON.stringify({package:'lab-kg',packageVersion:'1.0',page:META.number,pageId:KG.page,pageVersion:META.version,
+    registry:META.registry||'',created:META.date,scope:scope,counts:{nodes:g.nodes.length,edges:g.edges.length,refs:refs.length},
+    files:files.map(function(f){return f.name;})},null,2)});
+  return files;
+}
+
+/* ── 공통 화면 조각 ─────────────────────────────────── */
+var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding:48px 0;font-family:inherit}.kgx-sec .kgx-wrap{max-width:1080px;margin:0 auto;padding:0 16px}.kgx-sec h2{margin:0 0 6px;font-size:24px}.kgx-sec .kgx-sub{color:var(--muted,#9d9bb8);margin:0 0 18px}\
+\
+.kgx .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}\
+.kgx input[type=search]{flex:1 1 220px;min-width:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);color:var(--text,#eceaf3);border-radius:8px;padding:8px 12px;font:inherit;font-size:15px}\
+.kgx .tchip{font-size:12.5px;border-radius:999px;padding:3px 10px;border:1px solid var(--rule,#363a52);background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);cursor:pointer}\
+.kgx .tchip[aria-pressed=true]{color:#13141f;font-weight:700}\
+.kgx .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}\
+@media (max-width:860px){.kgx .grid2{grid-template-columns:1fr}}\
+.kgx .list{max-height:520px;overflow:auto;border:1px solid var(--rule,#363a52);border-radius:10px;background:var(--panel,#1c1e2d)}\
+.kgx .it{padding:10px 14px;border-bottom:1px solid var(--rule,#363a52);cursor:pointer}\
+.kgx .it:last-child{border-bottom:0}.kgx .it:hover{background:var(--panel2,#25283a)}\
+.kgx .it.sel{background:var(--panel2,#25283a);box-shadow:inset 3px 0 0 var(--gfp,#5ee39c)}\
+.kgx .it .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}\
+.kgx .it .nm{font-weight:700}.kgx .it .en{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .ty{font-size:11.5px;border-radius:5px;padding:0 6px;color:#13141f;font-weight:700;white-space:nowrap}\
+.kgx .it .df{color:#d7d4e6;font-size:14px;margin:3px 0 0}\
+.kgx .it .more{display:none;margin-top:6px;font-size:13.5px;color:var(--muted,#9d9bb8)}.kgx .it.sel .more{display:block}\
+.kgx .it a{color:var(--gfp,#5ee39c)}\
+.kgx .rel{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:6px;background:var(--bg,#13141f);border:1px solid var(--rule,#363a52);font-size:12.5px;cursor:pointer;color:var(--text,#eceaf3)}\
+.kgx .gbox{position:relative;border:1px solid var(--rule,#363a52);border-radius:10px;background:#101119;overflow:hidden}\
+.kgx .gbox canvas{display:block;width:100%;height:420px}\
+.kgx .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted,#9d9bb8);margin-top:8px}\
+.kgx .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}\
+.kgx .path{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\
+.kgx .path span.s{background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:8px;padding:4px 10px;font-size:14px}\
+.kgx .path span.a{color:var(--muted,#9d9bb8)}.kgx .path span.lim{border-color:#ff9a7a;color:#ffbda8}\
+.kgx .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}\
+.kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
+.kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
+.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
+.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
+.kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
+.kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
+.kgx .badge.role{background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);border:1px solid var(--rule,#363a52)}\
+.kgx pre.cite{white-space:pre-wrap;word-break:break-word;background:#101119;border:1px solid var(--rule,#363a52);border-radius:8px;padding:10px 12px;font-size:13px;margin:8px 0;max-height:220px;overflow:auto}\
+.kgx .files{display:flex;flex-wrap:wrap;gap:6px}\
+.kgx .todo li{margin:4px 0;color:#d7d4e6}\
+.kgx h3{font-size:17px;margin:20px 0 8px}\
+';
+function addCss(){ if($id('kgx-css'))return; var s=el('style'); s.id='kgx-css'; s.textContent=CSS; document.head.appendChild(s);}
+function copy(text,btn){ function ok(){var o=btn.textContent; btn.textContent='已复制'; setTimeout(function(){btn.textContent=o;},1200);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback();
+  function fallback(){var p=btn.parentNode.parentNode.querySelector('pre.cite'); if(p){var r=document.createRange(); r.selectNodeContents(p); var s=getSelection(); s.removeAllRanges(); s.addRange(r);} btn.textContent='已选择 — Ctrl+C';}}
+
+/* ── 지식 색인 ──────────────────────────────────────── */
+function mountIndex(root){
+  var KG=J('kg-raw'); var N={},OUT={},IN={};
+  KG.nodes.forEach(function(n){N[n.id]=n;OUT[n.id]=[];IN[n.id]=[];});
+  KG.edges.forEach(function(e){ if(OUT[e.s])OUT[e.s].push(e); if(IN[e.o])IN[e.o].push(e);});
+  var types=Object.keys(KG.nodes.reduce(function(a,n){a[n.type]=(a[n.type]||0)+1;return a;},{}));
+  var count={}; KG.nodes.forEach(function(n){count[n.type]=(count[n.type]||0)+1;});
+  var on={}; types.forEach(function(t){on[t]=t!=='QuizItem'&&t!=='Simulation'&&t!=='Work';});
+  var sel=null,q='';
+  root.classList.add('kgx');
+  var topics=0; KG.edges.forEach(function(e){if(e.p==='lab:broader')topics++;});
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';}), csrc=claims.filter(function(n){return (n.source||[]).length;}).length;
+  root.innerHTML='<div class="stats"><div><b>'+KG.nodes.length+'</b><span>条目（节点）</span></div><div><b>'+KG.edges.length+'</b><span>关系</span></div>'+
+    '<div><b>'+(count.Concept||0)+(count.Method||0)+'</b><span>概念·方法</span></div><div><b>'+(count.BioAnalogue||0)+'</b><span>生物对应</span></div>'+
+    '<div><b>'+csrc+'/'+claims.length+'</b><span>有出处的主张</span></div><div><b>'+topics+'</b><span>骨架主题连接</span></div></div>'+
+    '<div class="tools"><input type="search" placeholder="查找 — 权重、overfitting、蘑菇体、气味记忆笔记 …" aria-label="知识索引搜索"></div>'+
+    '<div class="tools chips" role="group" aria-label="类型"></div>'+
+    '<div class="grid2"><div class="list" role="listbox" aria-label="搜索结果"></div>'+
+    '<div><div class="gbox"><canvas aria-label="所选条目及邻接关系图"></canvas></div><div class="legend"></div>'+
+    '<p class="note gnote">选择条目后，只显示与其直接相连的邻居。也可以点击图中的点。</p></div></div>'+
+    '<h3>阶梯路径 — 先修内容与局限的链条</h3><div class="path ladder"></div>'+
+    '<h3>开放问题 · 需确认</h3><ul class="todo qs"></ul>';
+  // 칸 수 계산 오류 방지: 개념+방법 합
+  root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);
+  var inp=root.querySelector('input'), chips=root.querySelector('.chips'), list=root.querySelector('.list'), cv=root.querySelector('canvas');
+  types.forEach(function(t){var b=el('button','tchip',tl(t)+' '+count[t]); b.type='button'; b.setAttribute('aria-pressed',on[t]);
+    if(on[t])b.style.background=tc(t),b.style.borderColor=tc(t);
+    b.onclick=function(){on[t]=!on[t]; b.setAttribute('aria-pressed',on[t]); b.style.background=on[t]?tc(t):''; b.style.borderColor=on[t]?tc(t):''; render();};
+    chips.appendChild(b);});
+  var lg=root.querySelector('.legend'); types.forEach(function(t){lg.insertAdjacentHTML('beforeend','<span><i style="background:'+tc(t)+'"></i>'+tl(t)+'</span>');});
+  lg.insertAdjacentHTML('beforeend','<span>── 箭头：关系方向</span>');
+  inp.addEventListener('input',function(){q=inp.value.trim().toLowerCase(); render();});
+  function hay(n){return [n.id,n.label&&n.label.ko,n.label&&n.label.en,n.definition&&n.definition.ko,n.label&&n.label[LANG],n.definition&&n.definition[LANG],n.altLabel&&[].concat(n.altLabel.ko||[]).join(' ')].join(' ').toLowerCase();}
+  function relHtml(n){
+    var h=[]; OUT[n.id].forEach(function(e){ var o=N[e.o]; var nm=o?lab(o):((KG.topicLabels||{})[e.o]||e.o.replace(/^lab:(topic|area)\//,'').replace(/-/g,' '));
+      h.push('<span class="rel" data-go="'+esc(o?e.o:'')+'">'+esc(REL[pn(e.p)]||pn(e.p))+' → '+esc(nm)+'</span>');});
+    IN[n.id].forEach(function(e){ var s=N[e.s]; if(!s)return; h.push('<span class="rel" data-go="'+esc(e.s)+'">'+esc(lab(s))+' → '+esc(REL[pn(e.p)]||pn(e.p))+'</span>');});
+    return h.join('');}
+  function render(){
+    var arr=KG.nodes.filter(function(n){return on[n.type]&&(!q||hay(n).indexOf(q)>=0);});
+    list.innerHTML=arr.length?'':'<div class="it">没有找到条目。请检查类型标签是否已关闭。</div>';
+    arr.forEach(function(n){var d=el('div','it'+(sel===n.id?' sel':'')); d.setAttribute('role','option'); d.dataset.id=n.id;
+      var alt=LANG==='ko'&&n.altLabel&&n.altLabel.ko?' · '+[].concat(n.altLabel.ko).join(', '):'';
+      var src=(n.source||[]).length?' · 出处 '+n.source.length:'';
+      d.innerHTML='<div class="h"><span class="ty" style="background:'+tc(n.type)+'">'+tl(n.type)+'</span><span class="nm">'+esc(lab(n))+'</span><span class="en">'+esc((LANG!=='en'&&n.label&&n.label.en&&n.label.en!==lab(n)&&n.label.en)||'')+esc(alt)+'</span></div>'+
+        (n.definition?'<p class="df">'+esc(n.definition[LANG]||n.definition.ko)+'</p>':'')+
+        '<div class="more">'+(n.anchor?'<a href="'+n.anchor+'">查看说明 →</a>':'')+' <span>'+esc(src)+(n.confidence&&n.confidence!=='high'?' · 确信度 '+n.confidence:'')+'</span><div style="margin-top:6px">'+relHtml(n)+'</div></div>';
+      d.onclick=function(ev){var g=ev.target.closest('.rel'); if(g){ if(g.dataset.go)pick(g.dataset.go,true); ev.stopPropagation(); return;}
+        if(ev.target.tagName==='A')return; pick(n.id);};
+      list.appendChild(d);});
+    draw();
+  }
+  function pick(id,scroll){ sel=id; var n=N[id]; if(n&&!on[n.type]){on[n.type]=true; var b=[].slice.call(chips.children)[types.indexOf(n.type)]; b.setAttribute('aria-pressed',true); b.style.background=tc(n.type); b.style.borderColor=tc(n.type);}
+    if(scroll&&q){q='';inp.value='';} render(); var it=list.querySelector('.it.sel'); if(it)it.scrollIntoView({block:'nearest'});}
+  // 그래프
+  var G={pts:[]};
+  function layout(){
+    var center=sel||KG.edges.reduce(function(best,e){return best;},null);
+    var ids={},pts=[];
+    if(!sel){ // 개요: 퀴즈·시뮬·문헌 빼고 연결 많은 순 최대 60
+      var deg={}; KG.edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.o]=(deg[e.o]||0)+1;});
+      KG.nodes.filter(function(n){return on[n.type];}).sort(function(a,b){return (deg[b.id]||0)-(deg[a.id]||0);}).slice(0,60).forEach(function(n){ids[n.id]=1;});
+    } else { ids[sel]=1; OUT[sel].forEach(function(e){if(N[e.o])ids[e.o]=1;}); IN[sel].forEach(function(e){ids[e.s]=1;}); }
+    var r=mulberry(7); Object.keys(ids).forEach(function(id){pts.push({id:id,x:r()-.5,y:r()-.5,vx:0,vy:0});});
+    var ix={}; pts.forEach(function(p,i){ix[p.id]=i;});
+    var es=KG.edges.filter(function(e){return ix[e.s]!=null&&ix[e.o]!=null;});
+    for(var it=0;it<220;it++){
+      for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+1e-4,f=0.0016/d2;
+        a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+      es.forEach(function(e){var a=pts[ix[e.s]],b=pts[ix[e.o]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+1e-6,f=(d-0.22)*0.04;
+        a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+      pts.forEach(function(p){ if(p.id===sel){p.x*=.9;p.y*=.9;} p.vx-=p.x*0.004;p.vy-=p.y*0.004; p.x+=p.vx;p.y+=p.vy;p.vx*=.6;p.vy*=.6;});
+    }
+    G={pts:pts,es:es,ix:ix};
+  }
+  function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    layout(); var dpr=Math.min(2,window.devicePixelRatio||1), W=cv.clientWidth||600, H=cv.clientHeight||420;
+    cv.width=W*dpr; cv.height=H*dpr; var c=cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,W,H);
+    var xs=G.pts.map(function(p){return p.x;}),ys=G.pts.map(function(p){return p.y;});
+    var mx=Math.min.apply(0,xs),Mx=Math.max.apply(0,xs),my=Math.min.apply(0,ys),My=Math.max.apply(0,ys);
+    var pad=54, sx=(W-2*pad)/Math.max(1e-3,Mx-mx), sy=(H-2*pad)/Math.max(1e-3,My-my);
+    G.pts.forEach(function(p){p.X=pad+(p.x-mx)*sx; p.Y=pad+(p.y-my)*sy; if(G.pts.length===1){p.X=W/2;p.Y=H/2;}});
+    c.lineWidth=1;
+    G.es.forEach(function(e){var a=G.pts[G.ix[e.s]],b=G.pts[G.ix[e.o]]; var hot=sel&&(e.s===sel||e.o===sel);
+      c.strokeStyle=hot?'rgba(236,234,243,.55)':'rgba(157,155,184,.22)'; c.beginPath(); c.moveTo(a.X,a.Y); c.lineTo(b.X,b.Y); c.stroke();
+      var ang=Math.atan2(b.Y-a.Y,b.X-a.X), ex=b.X-Math.cos(ang)*9, ey=b.Y-Math.sin(ang)*9;
+      c.fillStyle=c.strokeStyle; c.beginPath(); c.moveTo(ex,ey); c.lineTo(ex-Math.cos(ang-.4)*7,ey-Math.sin(ang-.4)*7); c.lineTo(ex-Math.cos(ang+.4)*7,ey-Math.sin(ang+.4)*7); c.fill();
+      if(sel&&hot&&G.pts.length<26){c.fillStyle='#9d9bb8'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='center';
+        c.fillText(REL[pn(e.p)]||pn(e.p),(a.X+b.X)/2,(a.Y+b.Y)/2-4);} });
+    c.textAlign='center'; c.font='12.5px '+getComputedStyle(document.body).fontFamily;
+    G.pts.forEach(function(p){var n=N[p.id]; var R=p.id===sel?9:6; c.fillStyle=tc(n.type); c.beginPath(); c.arc(p.X,p.Y,R,0,7); c.fill();
+      if(p.id===sel){c.strokeStyle='#eceaf3';c.lineWidth=2;c.stroke();c.lineWidth=1;}
+      var t=lab(n); if(t.length>14)t=t.slice(0,13)+'…'; c.fillStyle=p.id===sel?'#fff':'#d7d4e6'; c.fillText(t,p.X,p.Y-R-5);});
+    c.fillStyle='rgba(241,182,70,.9)'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='left';
+    c.fillText(sel?'邻居 '+(G.pts.length-1)+'个':'概览 — 连接较多的条目 '+G.pts.length+'个',10,18);
+  }
+  cv.addEventListener('click',function(ev){var r=cv.getBoundingClientRect(),x=ev.clientX-r.left,y=ev.clientY-r.top,best=null,bd=400;
+    G.pts.forEach(function(p){var d=(p.X-x)*(p.X-x)+(p.Y-y)*(p.Y-y); if(d<bd){bd=d;best=p;}}); if(best)pick(best.id,true);});
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(draw,150);});
+  // 사다리 경로
+  var lad=root.querySelector('.ladder'), chainE=KG.edges.filter(function(e){return (e.p==='lab:prerequisiteOf'&&N[e.s].type==='Method'&&N[e.o]&&N[e.o].type==='Method');});
+  var nexts={},has={}; chainE.forEach(function(e){nexts[e.s]=e.o;has[e.o]=1;});
+  var start=Object.keys(nexts).filter(function(k){return !has[k];})[0], seen={};
+  var html=[]; for(var cur=start;cur&&!seen[cur];cur=nexts[cur]){ seen[cur]=1;
+    html.push('<span class="s" data-go="'+cur+'" style="border-color:'+tc('Method')+'">'+esc(lab(N[cur]))+'</span>');
+    var lim=OUT[cur].filter(function(e){return e.p==='lab:hasLimitation';})[0];
+    if(lim)html.push('<span class="a">→ 局限</span><span class="s lim" data-go="'+lim.o+'">'+esc(lab(N[lim.o]))+'</span>');
+    if(nexts[cur])html.push('<span class="a">→ 解决</span>');}
+  lad.innerHTML=html.length?html.join(''):'<span class="note">本页没有阶梯链条。</span>';
+  lad.addEventListener('click',function(ev){var s=ev.target.closest('[data-go]'); if(s)pick(s.dataset.go,true);});
+  var qs=root.querySelector('.qs'); KG.nodes.filter(function(n){return n.type==='Question';}).forEach(function(n){
+    var li=el('li',null,'<b>'+esc(lab(n))+'</b>'+(n.definition?' — '+esc(n.definition[LANG]||n.definition.ko):'')+(n.confidence==='low'?' <span class="badge no">需确认</span>':'')+(n.anchor?' <a href="'+n.anchor+'" style="color:var(--gfp,#5ee39c)">正文</a>':''));
+    qs.appendChild(li);});
+  render();
+}
+
+/* ── 꾸러미 ─────────────────────────────────────────── */
+function mountExport(root){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); root.classList.add('kgx');
+  var verifiedAll=function(r){var v=r.lab&&r.lab.verified; return v&&Object.keys(v).every(function(k){return v[k];});};
+  var vb=REF.filter(verifiedAll).length;
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';});
+  var todo=[]; REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; Object.keys(v).forEach(function(k){if(!v[k])todo.push(r.id+' — '+k+' 未确认（留空）');});});
+  todo.push('主张 '+claims.length+'个原文位置（页·图号）— provenance.csv 的 loc 栏为空');
+  todo.push('页面作者姓名·许可证·公开地址 — 在 page_meta.json 中留空');
+  var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
+  KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
+  var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
+  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">助手</div><p>没有出处的主张未放入资料包。需要人工确认的条目 '+todo.length+'个，请见下方。</p></div>'+
+    '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>节点</span></div><div><b>'+KG.edges.length+'</b><span>关系</span></div><div><b>'+REF.length+'</b><span>文献</span></div>'+
+    '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>书目全部确认的文献</span></div>'+
+    '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>有出处的主张</span></div></div>'+
+    '<h3>引用本页</h3><div class="tools"><button class="tchip cf" data-f="text" aria-pressed="true" style="background:var(--gfp,#5ee39c);border-color:var(--gfp,#5ee39c)">普通文本</button><button class="tchip cf" data-f="bib" aria-pressed="false">BibTeX</button><button class="tchip cf" data-f="ris" aria-pressed="false">RIS</button><button class="bt cp" type="button">复制</button></div><pre class="cite pc"></pre>'+
+    '<h3>参考文献 — 确认标识与所支持的概念</h3><div class="refs list"></div>'+
+    '<h3>选择范围与格式</h3><div class="tools sc" role="group" aria-label="范围"></div><div class="tools"><button class="bt primary zip" type="button">下载资料包 ZIP</button><span class="note zc"></span></div>'+
+    '<div class="files"></div><p class="note">在 claude.ai 页面单独下载文件时，.bib·.ris·.ttl·.jsonld 文件名末尾会附加 .txt（删除末尾的 .txt 即可恢复原格式）。ZIP 内的文件保持原名。</p>'+
+    (META.seeAlso?'<p class="note">若要合并多个页面的资料包并与领域地图对照，请前往 → <a style="color:var(--gfp,#5ee39c)" href="'+esc(META.seeAlso)+'"'+(/^https?:/.test(META.seeAlso)?' target="_blank" rel="noopener"':'')+'>合并领域地图 (KG_00)</a></p>':'')+
+    '<h3>需人工确认的条目</h3><ul class="todo">'+todo.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>'+
+    '<p class="note">资料包版本 1.0 · 制作日期 '+esc(META.date)+' · 登记表 '+esc(META.registry||'KG_00_registry （原型）')+' · lab: 前缀 '+NS+' （临时）· 骨架主题（lab:topic/*）为作者草稿</p>';
+  var fmt='text', pc=root.querySelector('.pc');
+  function cite(){pc.textContent=fmt==='bib'?pageBib(META):fmt==='ris'?pageRis(META):pageText(META);}
+  [].forEach.call(root.querySelectorAll('.cf'),function(b){b.onclick=function(){fmt=b.dataset.f; [].forEach.call(root.querySelectorAll('.cf'),function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); cite();};});
+  root.querySelector('.cp').onclick=function(){copy(pc.textContent,this);}; cite();
+  var RL=root.querySelector('.refs');
+  REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; var bad=Object.keys(v).filter(function(k){return !v[k];});
+    var d=el('div','r','<div>'+esc(toText(r))+'<span class="badge role">'+esc({primary:'主资料',background:'背景',data:'数值',figure:'图'}[r.lab&&r.lab.role]||'背景')+'</span>'+
+      (bad.length?'<span class="badge no">需确认：'+esc(bad.join(', '))+'</span>':'<span class="badge ok">书目已确认</span>')+'</div>'+
+      '<div style="margin-top:6px">'+(sup[r.id]||[]).map(function(id){var n=N[id]; return n?'<a class="rel" href="'+(n.anchor||'#kg')+'">'+esc(lab(n))+'</a>':'';}).join('')+'</div>');
+    RL.appendChild(d);});
+  var scope='all', SC=root.querySelector('.sc'), zc=root.querySelector('.zc');
+  [['all','全部'],['terms','仅概念·方法'],['claims','仅主张 + 出处'],['prereq','仅先修关系']].forEach(function(s,i){
+    var b=el('button','tchip',s[1]); b.type='button'; b.setAttribute('aria-pressed',i===0); if(i===0)b.style.background='var(--gfp,#5ee39c)',b.style.borderColor='var(--gfp,#5ee39c)';
+    b.onclick=function(){scope=s[0]; [].forEach.call(SC.children,function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); info();};
+    SC.appendChild(b);});
+  var FL=root.querySelector('.files');
+  function info(){var f=buildPackage(scope), m=JSON.parse(f[0].text); zc.textContent='节点 '+m.counts.nodes+' · 关系 '+m.counts.edges+' · 文献 '+m.counts.refs+' · 文件 '+f.length+'个';
+    FL.innerHTML=''; f.forEach(function(x){var b=el('button','bt',esc(x.name)); b.type='button'; b.onclick=function(){dlText(x.text,x.name);}; FL.appendChild(b);});}
+  root.querySelector('.zip').onclick=function(){download(makeZip(buildPackage(scope)),'kg_'+META.number+'_'+scope+'.zip');};
+  info();
+}
+function init(){addCss(); var a=$id('kg-mount'),b=$id('export-mount'); if(a)mountIndex(a); if(b)mountExport(b);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+return {download:download,buildPackage:buildPackage,makeZip:makeZip,toJsonLd:toJsonLd,toTurtle:toTurtle,toBib:toBib,toRis:toRis};
+})();
+
+</script>
+<!-- /lab-kg:script -->
 </body>
 </html>

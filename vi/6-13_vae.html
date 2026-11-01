@@ -571,7 +571,20 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
 .vt.pass{color:var(--stamp);border-color:var(--stamp)}
 .vt.hold{color:var(--muted)}
 .runshot pre{overflow-wrap:anywhere;word-break:break-all}
+/* 꼬리표(지식 색인·꾸러미): 조립기 스타일의 색 변수를 시리즈 테마에 맞춘다 */
+body .kgx{--gfp:var(--ok)}
+body .kgx .it .df,body .kgx .todo li{color:var(--soft)}
+body .kgx .path span.lim{color:var(--stamp)}
 :root{--font:"Be Vietnam Pro",system-ui,sans-serif;--stampf:"Be Vietnam Pro",sans-serif}body,p,h1,h2,h3,h4,li,td,th,.lede{word-break:normal}</style>
+<!-- lab-kg:head -->
+<meta name="citation_title" content="Hội đồng Tuyển dụng Mô hình · Đợt tuyển dụng thứ hai · 6-13 VAE">
+<meta name="dc.title" content="Hội đồng Tuyển dụng Mô hình · Đợt tuyển dụng thứ hai · 6-13 VAE">
+<meta name="dc.date" content="2026-10-24">
+<meta name="dc.language" content="ko">
+<meta name="dc.type" content="InteractiveResource">
+<meta name="citation_author" content="Sangsun Ahn">
+<meta name="dcterms.isPartOf" content="Hội đồng Tuyển dụng Mô hình – Đợt tuyển dụng thứ hai">
+<!-- /lab-kg:head -->
 </head>
 <body>
 <nav class="top" aria-label="Mục lục trang này">
@@ -831,6 +844,22 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
   <div class="card"><ul class="reflist"><li><b>Dữ liệu và tính toán.</b> Nhóm Sinh dữ liệu học từ toàn bộ 1,797 chữ số viết tay. Giám khảo chấm (SVM học từ các chữ số huấn luyện theo quy định niêm phong, có đầu ra xác suất) đọc 1,000 chữ số mới và đo 'tỉ lệ nhận ra được' (xác suất cao nhất > 0.9) và 'độ đồng đều' (entropy chuẩn hóa của phân bố chữ số mà giám khảo chấm đọc, 1 = cả mười chữ số được viết như nhau). Mẫu của tiền bối GMM cũng được đo theo cách tương tự. Đường cơ sở là chữ số trung bình 8 nhóm của Ông Sổ Tay (6-0). Thiết lập ban đầu ở mức tối thiểu; thiết lập chuẩn theo sách giáo khoa được định trước khi đo và chỉ đo lại một lần. Các con số phán quyết do trang đọc từ kết quả chạy mã Colab ở phần A. Bản đồ ẩn ở mục 01 là VAE có nút thắt 2 ô được trình duyệt huấn luyện chỉ vài epoch. 'Mã do AI viết' ở mục 03 là ví dụ được cố ý làm ra.</li><li><b>Quy tắc phán quyết.</b> Trong Đợt tuyển dụng thứ hai, phán quyết dựa trên trung bình của các mô hình được huấn luyện trên Colab với 5 hạt giống (seed, số ngẫu nhiên). Muốn trúng tuyển, ứng viên phải vượt cả đường cơ sở (Ông Sổ Tay) lẫn thành tích của tiền bối (người trúng tuyển đợt thứ nhất hiện đang làm cùng công việc). Nếu chênh lệch so với tiền bối nhỏ hơn độ dao động giữa các seed (độ lệch chuẩn) thì coi là hòa và tiền bối giữ vị trí. Mục "Tự huấn luyện" trong trang chỉ huấn luyện lại một lần trong trình duyệt với một seed, nên giá trị có thể lệch đôi chút so với các con số phán quyết.</li><li><b>Thi lại.</b> Ứng viên bị tạm hoãn có thể xin thi lại một lần. Trước khi thi, ứng viên nêu lý do và dự đoán, còn tiền bối cũng thi lại trong cùng điều kiện. Kết quả thi lại cũng là trung bình của 5 seed, và nếu thua thì ghi đúng như vậy.</li><li><b>Hình ảnh.</b> Hình các nhân vật được dùng lại từ 「Sơ đồ tổ chức Gia đình Thuật toán AI」. Cảnh phòng phỏng vấn, thẻ nhân viên và biểu đồ đều do chính trang này vẽ bằng mã.</li><li><b>Ý tưởng "Hội đồng Tuyển dụng".</b> Đây là phép ẩn dụ: mô hình là ứng viên, còn huấn luyện và đánh giá là phỏng vấn. Nó không mô tả quy trình tuyển dụng thực tế hay một công ty cụ thể nào. "Tạm hoãn" chỉ có nghĩa là "với công việc này và dữ liệu này, tiền bối làm tốt hơn", chứ không phải xếp hạng hơn kém giữa các mô hình.</li><li><b>Nhân vật.</b> Money-Robo là nhân vật linh vật của một dịch vụ do tác giả vận hành. Tiến sĩ, Trợ lý, nhà nghiên cứu Ruồi Giấm, Ông Sổ Tay, các nhân viên tiền bối và các ứng viên không đại diện cho người thật. Những câu nói về tiền và ngân sách trong lời thoại là cách nói quen miệng để ví với chi phí tính toán.</li><li><b>Dữ liệu.</b> Đề thực hành của Nhóm Dữ liệu bảng là bộ dữ liệu Concrete Compressive Strength của UCI Machine Learning Repository (Yeh, 1998, 1,030 mẫu, CC BY 4.0), và đề thi theo cùng quy định với Đợt tuyển dụng thứ nhất (test_size=0.25, stratify=3 hạng cường độ, random_state=42; 772 huấn luyện · 258 kiểm tra). Đề thực hành phía hình ảnh là các chữ số viết tay đi kèm scikit-learn (load_digits, 1,797 ảnh; dữ liệu gốc là UCI Optical Recognition of Handwritten Digits, CC BY 4.0), còn đề thi của các tập có giám sát là test_size=0.25, stratify=y, random_state=42 (1,347 huấn luyện · 450 kiểm tra).</li><li><b>Ngôn ngữ.</b> Loạt bài này được viết bằng tiếng Hàn. Bản dịch sẽ được thêm dưới cùng tên tệp sau khi bản tiếng Hàn được chốt. Chú thích và kết quả chạy trong mã Colab được giữ nguyên bản tiếng Hàn.</li></ul></div>
 </div>
 </section>
+<!-- lab-kg:body -->
+<section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
+<h2>Chỉ mục tri thức — tra cứu trong trang này</h2>
+<p class="kgx-sub">Các khái niệm, phương pháp, đối ứng sinh học, luận điểm và câu hỏi mở xuất hiện trong trang này được gom về một chỗ. Bạn có thể tìm kiếm, bấm vào một mục để xem các mối quan hệ lân cận, rồi bấm "Xem phần giải thích" để quay lại nội dung chính.</p>
+<div id="kg-mount"></div>
+</div></section>
+<section class="kgx kgx-sec" id="export"><div class="kgx-wrap">
+<h2>Gói ontology và thư mục — mang tri thức của trang này đi</h2>
+<p class="kgx-sub">Tải chỉ mục tri thức về dưới dạng tệp, kèm nguồn gốc. Dùng cho Zotero (BibTeX, RIS), Protégé (Turtle), Neo4j và Gephi (CSV), và gộp nhiều trang (kg.json).</p>
+<div id="export-mount"></div>
+</div></section>
+<script type="application/json" id="kg-raw">{"version": "1.0", "page": "6-13", "nodes": [{"id": "lab:method/vae", "type": "Method", "label": {"ko": "변분 오토인코더", "en": "Variational autoencoder (VAE)", "vi": "Bộ tự mã hóa biến phân"}, "definition": {"ko": "글씨를 병목의 점이 아니라 작은 구름(평균과 흩어짐)으로 줄이고, 구름이 표준 정규분포를 닮도록 벌점(KL)을 주는 생성 모델. 표준 정규분포에서 뽑은 z를 디코더에 넣으면 새 글씨가 나온다.", "vi": "Mô hình sinh nén chữ số thành một đám mây nhỏ (trung bình và độ phân tán) thay vì một điểm ở nút thắt, và phạt (KL) để đám mây giống phân phối chuẩn tắc. Đưa z lấy từ phân phối chuẩn tắc vào bộ giải mã thì ra chữ số mới."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "kingma2014"}, {"ref": "rezende2014"}]}, {"id": "lab:method/autoencoder", "type": "Method", "label": {"ko": "오토인코더 (6-11)", "en": "Autoencoder (6-11)", "vi": "Bộ tự mã hóa (6-11)"}, "definition": {"ko": "입력을 병목으로 줄였다가 되살리는 망. 병목이 점 하나라서 점들 사이에 빈 곳이 있다.", "vi": "Mạng nén đầu vào qua nút thắt rồi khôi phục lại. Nút thắt chỉ là một điểm nên giữa các điểm có khoảng trống."}, "anchor": "#m1", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:method/gmm-senior", "type": "Method", "label": {"ko": "GMM 40묶음 (선배)", "en": "GMM with 40 clusters (senior)", "vi": "GMM 40 cụm (tiền bối)"}, "definition": {"ko": "1차 공채의 선배. 종 모양 40개를 덮어 두고 거기서 표본을 뽑아 새 글씨를 쓴다.", "vi": "Tiền bối của Đợt tuyển dụng thứ nhất. Phủ 40 hình chuông rồi lấy mẫu từ đó để viết chữ số mới."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/latent-space", "type": "Concept", "label": {"ko": "잠재 공간", "en": "Latent space", "vi": "Không gian ẩn"}, "definition": {"ko": "병목 z가 사는 공간. VAE에서는 표준 정규분포 모양으로 맞춘다.", "vi": "Không gian nơi nút thắt z tồn tại. Ở VAE, nó được điều chỉnh theo hình dạng phân phối chuẩn tắc."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/reparameterization", "type": "Concept", "label": {"ko": "재매개변수화", "en": "Reparameterization trick", "vi": "Tái tham số hóa"}, "definition": {"ko": "z = μ + σε로 써서 뽑기(ε)를 바깥으로 빼는 방법. 기울기가 μ와 σ로 흐른다.", "vi": "Viết z = μ + σε để đưa phép lấy mẫu (ε) ra ngoài. Gradient chảy về μ và σ."}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "kingma2014"}]}, {"id": "lab:concept/kl-divergence", "type": "Concept", "label": {"ko": "KL 발산", "en": "KL divergence", "vi": "Độ phân kỳ KL"}, "definition": {"ko": "두 분포가 얼마나 다른지 재는 값. VAE에서는 각 구름과 표준 정규분포의 차이다.", "vi": "Giá trị đo hai phân phối khác nhau bao nhiêu. Trong VAE, đó là độ chênh giữa mỗi đám mây và phân phối chuẩn tắc."}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/elbo", "type": "Concept", "label": {"ko": "ELBO", "en": "Evidence lower bound (ELBO)"}, "definition": {"ko": "복원 항과 KL 항을 합친 VAE의 목적 함수(증거 하한).", "vi": "Hàm mục tiêu của VAE kết hợp số hạng tái tạo và số hạng KL (cận dưới bằng chứng)."}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "kingma2014"}, {"ref": "doersch2016"}]}, {"id": "lab:concept/reconstruction-loss", "type": "Concept", "label": {"ko": "복원 손실", "en": "Reconstruction loss", "vi": "Mất mát tái tạo"}, "definition": {"ko": "원래 글씨를 잘 되살리게 하는 이진 교차 엔트로피 항. KL과 당기는 방향이 다르다.", "vi": "Hạng tử entropy chéo nhị phân giúp khôi phục tốt chữ số gốc. Hướng kéo khác với KL."}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/kl-weight", "type": "Concept", "label": {"ko": "KL 무게 β", "en": "KL weight (β)", "vi": "Trọng số KL β"}, "definition": {"ko": "KL 항에 곱하는 무게. 이 편은 β = 1로 쓰고 0인 경우와 비교한다.", "vi": "Trọng số nhân vào hạng tử KL. Bài này dùng β = 1 và so sánh với trường hợp bằng 0."}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "higgins2017"}]}, {"id": "lab:task/generate-digits", "type": "Task", "label": {"ko": "새 글씨 1,000장 쓰기", "en": "Generating 1,000 new digits", "vi": "Viết 1,000 chữ số mới"}, "definition": {"ko": "진짜처럼 보이는 새 손글씨를 만들어 채점관에게 읽히는 일.", "vi": "Việc tạo ra chữ số viết tay mới trông như thật rồi cho giám khảo chấm đọc."}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:dataset/digits", "type": "Dataset", "label": {"ko": "손글씨 숫자 1,797장", "en": "Optical Recognition of Handwritten Digits (1,797)", "vi": "1,797 ảnh chữ số viết tay"}, "definition": {"ko": "8×8(64칸) 손글씨 숫자 데이터. 훈련 글씨로 채점관 SVM을 배우고 봉인 시험지로 천장을 잰다.", "vi": "Dữ liệu chữ số viết tay 8×8 (64 ô). Học SVM giám khảo chấm bằng chữ số huấn luyện, rồi đo trần bằng đề thi niêm phong."}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "alpaydin1998"}]}, {"id": "lab:metric/recognizable-ratio", "type": "Metric", "label": {"ko": "알아볼 수 있는 비율", "en": "Recognizable ratio", "vi": "Tỉ lệ nhận ra được"}, "definition": {"ko": "채점관이 최고 확률 0.9를 넘게 읽은 새 글씨의 비율. 진짜 글씨 1,000장이 천장이다.", "vi": "Tỉ lệ chữ số mới mà giám khảo chấm đọc được với xác suất cao nhất vượt 0.9. Mức trần là 1,000 chữ số thật."}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:metric/evenness", "type": "Metric", "label": {"ko": "고른 정도", "en": "Evenness (normalized entropy)", "vi": "Độ đồng đều"}, "definition": {"ko": "채점관이 읽은 숫자 분포의 정규화 엔트로피. 1이면 열 숫자를 똑같이 쓴다.", "vi": "Entropy chuẩn hóa của phân bố chữ số mà giám khảo chấm đọc. Bằng 1 nghĩa là cả mười chữ số được viết như nhau."}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:metric/nearest-train-distance", "type": "Metric", "label": {"ko": "가장 가까운 훈련 글씨까지의 거리", "en": "Distance to nearest training digit", "vi": "Khoảng cách tới chữ số huấn luyện gần nhất"}, "definition": {"ko": "새 글씨 200장마다 가장 가까운 훈련 글씨까지의 제곱 거리 평균. 너무 작으면 베낀 것은 아닌지 그림으로 확인한다.", "vi": "Trung bình bình phương khoảng cách từ mỗi 200 chữ số mới tới chữ số huấn luyện gần nhất. Nếu quá nhỏ, kiểm tra bằng hình xem có phải chép lại không."}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/verdict", "type": "Claim", "label": {"ko": "판정: 보류", "en": "Verdict: on hold", "vi": "Phán định: Tạm hoãn"}, "definition": {"ko": "VAE의 알아볼 수 있는 비율은 61.8%(처음 설정 38.1%, KL 없음 1.7%)로 GMM 40묶음의 84.9%(GMM 10묶음은 68.3%)에 못 미쳐 보류.", "vi": "Tỉ lệ nhận ra được của VAE là 61.8% (thiết lập ban đầu 38.1%, không có KL 1.7%), chưa đạt 84.9% của GMM 40 cụm (GMM 10 cụm là 68.3%), nên Tạm hoãn."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/no-kl-collapse", "type": "Claim", "label": {"ko": "KL이 없으면 새 글씨가 안 나온다", "en": "Without KL, sampling fails", "vi": "Không có KL thì không ra chữ số mới"}, "definition": {"ko": "KL 무게를 0으로 하면 알아볼 수 있는 비율이 1.7%로 떨어진다. 구름이 흩어져 표준 정규분포에서 뽑은 점이 빈 곳에 떨어지기 때문이다.", "vi": "Nếu đặt trọng số KL bằng 0, tỉ lệ nhận ra được giảm xuống 1.7%. Lý do là các đám mây phân tán, nên điểm lấy từ phân phối chuẩn tắc rơi vào vùng trống."}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/smooth-latent", "type": "Claim", "label": {"ko": "KL이 잠재 공간을 매끈하게 한다", "en": "KL makes the latent space smooth", "vi": "KL làm không gian ẩn mượt"}, "definition": {"ko": "구름이 표준 정규분포 쪽으로 모여 있어 격자 어디를 찍어도 글씨가 나오고 이웃한 점의 글씨는 조금씩만 다르다.", "vi": "Các đám mây tụ về phía phân phối chuẩn tắc nên chấm vào chỗ nào trên lưới cũng ra chữ số, và chữ số của các điểm kề nhau chỉ khác nhau chút ít."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "kingma2014"}]}, {"id": "lab:limitation/ae-holes", "type": "Limitation", "label": {"ko": "점 병목의 빈 곳", "en": "Gaps in a point bottleneck", "vi": "Khoảng trống của nút thắt dạng điểm"}, "definition": {"ko": "오토인코더는 글씨를 점 하나로 줄여서 점들 사이에 빈 곳이 생기고, 아무 점이나 뽑으면 글씨가 되지 않는다.", "vi": "Bộ tự mã hóa nén chữ số thành một điểm nên giữa các điểm có khoảng trống, và lấy điểm bất kỳ thì không thành chữ số."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/blurry", "type": "Limitation", "label": {"ko": "글씨가 흐릿하다", "en": "Blurry output", "vi": "Chữ số bị mờ"}, "definition": {"ko": "복원 오차를 줄이다 보면 애매한 곳에서 평균을 그리게 되어 글씨가 흐릿해지고 채점관이 확신하지 못한다.", "vi": "Khi giảm sai số tái tạo, mô hình vẽ trung bình ở những chỗ mơ hồ nên chữ số bị mờ và giám khảo chấm không chắc chắn."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/below-gmm", "type": "Limitation", "label": {"ko": "선배 GMM에 못 미친다", "en": "Below the GMM senior", "vi": "Chưa bằng tiền bối GMM"}, "definition": {"ko": "알아볼 수 있는 비율 61.8%가 GMM 40묶음의 84.9%에 못 미친다.", "vi": "Tỉ lệ nhận ra được 61.8% chưa đạt 84.9% của GMM 40 cụm."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:question/copying", "type": "Question", "label": {"ko": "새 글씨는 훈련 글씨를 베낀 것인가?", "en": "Are new digits copies of training digits?", "vi": "Chữ số mới có phải chép lại chữ số huấn luyện không?"}, "definition": {"ko": "가장 가까운 훈련 글씨까지의 거리가 너무 작으면 베낀 것일 수 있어, 새 글씨와 가장 가까운 훈련 글씨를 나란히 보고 확인한다.", "vi": "Nếu khoảng cách tới chữ số huấn luyện gần nhất quá nhỏ thì có thể là chép lại, nên đặt chữ số mới cạnh chữ số huấn luyện gần nhất để kiểm tra."}, "anchor": "#m2", "coverage": "mentioned", "confidence": "medium"}, {"id": "lab:sim/latent-2d", "type": "Simulation", "label": {"ko": "잠재 2칸 VAE 학습", "en": "Latent-2D VAE in the browser", "vi": "Học VAE ẩn 2 ô"}, "definition": {"ko": "잠재 2칸 VAE를 브라우저에서 25에포크 학습하고 잠재 지도와 뽑은 글씨 16개를 본다.", "vi": "Học VAE ẩn 2 ô trong trình duyệt 25 epoch, rồi xem bản đồ ẩn và 16 chữ số được lấy ra."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/cloud-map", "type": "Analogy", "label": {"ko": "'이 근처 어딘가'라고 적은 약도", "en": "A sketch map saying 'somewhere around here'", "vi": "Bản phác đường ghi \"đâu đó gần đây\""}, "definition": {"ko": "구름은 점 하나가 아니라 이 근처 어딘가를 가리키는 약도이고, KL은 약도들을 한 지도 가운데로 모으는 일이다.", "vi": "Đám mây không phải một điểm mà là bản phác chỉ \"đâu đó gần đây\", còn KL là việc gom các bản phác về giữa một tấm bản đồ."}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:bio/kenyon-cells", "type": "BioAnalogue", "label": {"ko": "초파리 버섯체 케년 세포 묶음", "en": "Fruit-fly mushroom body Kenyon cells", "vi": "Cụm tế bào Kenyon ở thể nấm của Ruồi Giấm"}, "definition": {"ko": "같은 냄새도 시도마다 조금씩 다른 케년 세포 묶음이 켜져 점이 아니라 흩어진 구름 같은 표현이 된다. 다만 흩어짐은 신경 잡음이고 VAE의 σ는 배운 값이다.", "vi": "Cùng một mùi, mỗi lần thử lại bật một cụm tế bào Kenyon hơi khác, nên biểu diễn giống một đám mây tản ra chứ không phải một điểm. Có điều sự tản ra là nhiễu thần kinh, còn σ của VAE là giá trị học được."}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "turner2008"}]}], "edges": [{"s": "lab:method/vae", "p": "lab:broader", "o": "lab:topic/vae"}, {"s": "lab:method/autoencoder", "p": "lab:broader", "o": "lab:topic/autoencoder"}, {"s": "lab:method/gmm-senior", "p": "lab:broader", "o": "lab:topic/density-estimation"}, {"s": "lab:concept/latent-space", "p": "lab:broader", "o": "lab:topic/embedding-space"}, {"s": "lab:concept/kl-divergence", "p": "lab:broader", "o": "lab:topic/information-theory"}, {"s": "lab:concept/reconstruction-loss", "p": "lab:broader", "o": "lab:topic/loss-function"}, {"s": "lab:metric/recognizable-ratio", "p": "lab:broader", "o": "lab:topic/accuracy-metrics"}, {"s": "lab:concept/latent-space", "p": "lab:partOf", "o": "lab:method/vae"}, {"s": "lab:concept/reparameterization", "p": "lab:partOf", "o": "lab:method/vae"}, {"s": "lab:concept/elbo", "p": "lab:partOf", "o": "lab:method/vae"}, {"s": "lab:concept/reconstruction-loss", "p": "lab:partOf", "o": "lab:concept/elbo"}, {"s": "lab:concept/kl-divergence", "p": "lab:partOf", "o": "lab:concept/elbo"}, {"s": "lab:concept/kl-weight", "p": "lab:partOf", "o": "lab:concept/elbo"}, {"s": "lab:method/autoencoder", "p": "lab:prerequisiteOf", "o": "lab:method/vae"}, {"s": "lab:concept/kl-divergence", "p": "lab:prerequisiteOf", "o": "lab:concept/elbo"}, {"s": "lab:concept/reparameterization", "p": "lab:prerequisiteOf", "o": "lab:concept/elbo"}, {"s": "lab:method/autoencoder", "p": "lab:hasLimitation", "o": "lab:limitation/ae-holes"}, {"s": "lab:limitation/ae-holes", "p": "lab:addressedBy", "o": "lab:method/vae"}, {"s": "lab:method/vae", "p": "lab:hasLimitation", "o": "lab:limitation/blurry"}, {"s": "lab:method/vae", "p": "lab:hasLimitation", "o": "lab:limitation/below-gmm"}, {"s": "lab:limitation/below-gmm", "p": "lab:raises", "o": "lab:question/copying"}, {"s": "lab:method/vae", "p": "lab:contrastsWith", "o": "lab:method/gmm-senior"}, {"s": "lab:method/vae", "p": "lab:solves", "o": "lab:task/generate-digits"}, {"s": "lab:method/gmm-senior", "p": "lab:solves", "o": "lab:task/generate-digits"}, {"s": "lab:task/generate-digits", "p": "lab:evaluatedOn", "o": "lab:dataset/digits"}, {"s": "lab:method/vae", "p": "lab:evaluatedBy", "o": "lab:metric/recognizable-ratio"}, {"s": "lab:method/vae", "p": "lab:evaluatedBy", "o": "lab:metric/evenness"}, {"s": "lab:method/vae", "p": "lab:evaluatedBy", "o": "lab:metric/nearest-train-distance"}, {"s": "lab:metric/recognizable-ratio", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/gmm-senior", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:claim/no-kl-collapse", "p": "lab:supports", "o": "lab:concept/kl-weight"}, {"s": "lab:claim/smooth-latent", "p": "lab:supports", "o": "lab:method/vae"}, {"s": "lab:concept/latent-space", "p": "lab:demonstratedBy", "o": "lab:sim/latent-2d"}, {"s": "lab:analogy/cloud-map", "p": "lab:analogyOf", "o": "lab:method/vae"}, {"s": "lab:bio/kenyon-cells", "p": "lab:bioAnalogueOf", "o": "lab:method/vae"}], "topicLabels": {"lab:area/math": "Toán nền tảng", "lab:topic/linear-algebra": "Đại số tuyến tính", "lab:topic/probability-statistics": "Xác suất và thống kê", "lab:topic/calculus-optimization-math": "Giải tích và toán tối ưu", "lab:topic/information-theory": "Lý thuyết thông tin", "lab:area/ml-basics": "Nền tảng học máy", "lab:topic/supervised-learning": "Học có giám sát", "lab:topic/unsupervised-learning": "Khái niệm học không giám sát", "lab:topic/generalization": "Tổng quát hóa và quá khớp", "lab:topic/bias-variance": "Cân bằng độ lệch và phương sai", "lab:topic/data-splitting": "Tách tập huấn luyện, kiểm định, kiểm tra", "lab:topic/feature-engineering": "Kỹ thuật đặc trưng", "lab:topic/rule-vs-learning": "Dựa trên quy tắc và dựa trên học", "lab:area/classical": "Mô hình cổ điển", "lab:topic/linear-regression": "Hồi quy tuyến tính", "lab:topic/logistic-regression": "hồi quy logistic", "lab:topic/svm": "Máy vectơ hỗ trợ", "lab:topic/knn": "k láng giềng gần nhất", "lab:topic/decision-tree": "Cây quyết định", "lab:topic/naive-bayes": "Naive Bayes", "lab:area/ensemble": "Ensemble", "lab:topic/bagging": "Bagging", "lab:topic/random-forest": "Rừng ngẫu nhiên", "lab:topic/boosting": "Boosting", "lab:topic/stacking": "Stacking", "lab:area/nn-basics": "Nền tảng mạng nơ-ron", "lab:topic/weights-and-biases": "Trọng số và độ lệch", "lab:topic/perceptron": "Perceptron", "lab:topic/mlp": "Perceptron nhiều lớp", "lab:topic/activation-function": "Hàm kích hoạt", "lab:topic/loss-function": "Hàm mất mát", "lab:topic/backpropagation": "Lan truyền ngược", "lab:topic/universal-approximation": "Định lý xấp xỉ phổ quát", "lab:area/optimization": "Tối ưu hóa", "lab:topic/gradient-descent": "Hạ gradient", "lab:topic/sgd-minibatch": "Hạ gradient ngẫu nhiên và minibatch", "lab:topic/momentum-adam": "Momentum và Adam", "lab:topic/learning-rate-schedule": "Điều chỉnh tốc độ học", "lab:area/regularization": "Chuẩn hóa và các kỹ thuật tổng quát hóa", "lab:topic/weight-decay": "Suy giảm trọng số (L2)", "lab:topic/dropout": "Dropout", "lab:topic/early-stopping": "Dừng sớm", "lab:topic/normalization-layers": "Tầng chuẩn hóa", "lab:topic/data-augmentation": "Tăng cường dữ liệu", "lab:area/vision": "Tích chập và thị giác", "lab:topic/convolution": "Tích chập và chia sẻ trọng số", "lab:topic/pooling": "Gộp (pooling)", "lab:topic/receptive-field": "Vùng tiếp nhận", "lab:topic/residual-connections": "Kết nối phần dư", "lab:topic/object-detection": "Phát hiện đối tượng", "lab:topic/segmentation": "Phân đoạn", "lab:area/sequence": "Mô hình chuỗi", "lab:topic/rnn": "Mạng nơ-ron hồi quy", "lab:topic/lstm-gru": "LSTM·GRU", "lab:topic/seq2seq": "Chuỗi sang chuỗi", "lab:topic/time-series": "Dự báo chuỗi thời gian", "lab:area/attention": "Attention và Transformer", "lab:topic/attention-mechanism": "Cơ chế attention", "lab:topic/self-attention": "tự chú ý (self-attention)", "lab:topic/multi-head-attention": "Attention nhiều đầu", "lab:topic/positional-encoding": "Mã hóa vị trí", "lab:topic/transformer": "Transformer", "lab:area/language": "Mô hình ngôn ngữ và xử lý ngôn ngữ tự nhiên", "lab:topic/tokenization": "Tách token", "lab:topic/word-embedding": "Embedding từ", "lab:topic/pretrained-lm": "Mô hình ngôn ngữ tiền huấn luyện", "lab:topic/transfer-learning": "Học chuyển giao và tinh chỉnh", "lab:topic/lora": "LoRA và adapter", "lab:topic/prompting": "Prompting", "lab:topic/rag": "Sinh văn bản có truy xuất bổ trợ", "lab:area/generative": "Mô hình sinh", "lab:topic/autoencoder": "Autoencoder", "lab:topic/vae": "Bộ tự mã hóa biến phân", "lab:topic/gan": "Mạng sinh đối nghịch", "lab:topic/diffusion": "Mô hình khuếch tán", "lab:topic/autoregressive-generation": "Sinh tự hồi quy", "lab:area/representation": "Học biểu diễn", "lab:topic/embedding-space": "Không gian embedding", "lab:topic/self-supervised": "Học tự giám sát", "lab:topic/contrastive": "Học tương phản", "lab:topic/sparse-representation": "Biểu diễn thưa", "lab:topic/random-features": "Đặc trưng ngẫu nhiên", "lab:topic/multi-task-learning": "Học đa nhiệm", "lab:area/rl": "Học tăng cường", "lab:topic/mdp": "Quá trình quyết định Markov", "lab:topic/reward": "Phần thưởng", "lab:topic/value-function": "Hàm giá trị", "lab:topic/q-learning": "Q-learning", "lab:topic/policy-gradient": "Gradient chính sách", "lab:topic/exploration": "Khám phá và khai thác", "lab:topic/reward-prediction-error": "Sai số dự đoán phần thưởng", "lab:area/unsupervised": "Kỹ thuật không giám sát", "lab:topic/clustering": "Phân cụm", "lab:topic/pca": "Phân tích thành phần chính", "lab:topic/tsne-umap": "t-SNE·UMAP", "lab:topic/density-estimation": "Ước lượng mật độ", "lab:topic/anomaly-detection": "Phát hiện bất thường", "lab:area/evaluation": "Đánh giá", "lab:topic/accuracy-metrics": "Chỉ số độ chính xác và mất mát", "lab:topic/precision-recall": "Precision và recall", "lab:topic/roc-auc": "ROC·AUC", "lab:topic/confusion-matrix": "Ma trận nhầm lẫn", "lab:topic/data-leakage": "Rò rỉ dữ liệu", "lab:topic/ablation": "Thí nghiệm cắt bỏ", "lab:area/graph": "Học trên đồ thị", "lab:topic/gnn": "Mạng nơ-ron đồ thị", "lab:topic/message-passing": "Truyền thông điệp", "lab:topic/knowledge-graph": "Đồ thị tri thức", "lab:area/systems": "Hệ thống và MLOps", "lab:topic/deployment": "Triển khai", "lab:topic/distribution-shift": "Dịch chuyển phân phối", "lab:topic/monitoring": "Giám sát", "lab:topic/reproducibility": "Khả năng tái lập", "lab:area/responsible": "AI có trách nhiệm", "lab:topic/fairness": "Tính công bằng", "lab:topic/interpretability": "Khả năng giải thích và diễn giải", "lab:topic/ai-safety": "An toàn", "lab:topic/privacy": "Quyền riêng tư", "lab:area/neuro": "Khoa học thần kinh và AI", "lab:topic/biological-neuron": "Nơ-ron sinh học và xung", "lab:topic/synaptic-plasticity": "Tính dẻo của synapse", "lab:topic/connectome": "Connectome", "lab:topic/sensory-processing": "Xử lý cảm giác", "lab:topic/learning-memory-circuits": "Mạch học tập và ghi nhớ", "lab:topic/circuit-methods": "Kỹ thuật thí nghiệm mạch thần kinh"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/6-13","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"모델 채용 위원회 2차 공채 · 6-13 VAE","schema:inLanguage":"ko","schema:dateCreated":"2026-10-24","schema:version":"1.0","dct:isPartOf":"모델 채용 위원회 2차 공채","schema:about":[{"@id":"lab:topic/vae"}],"schema:educationalLevel":"대학 학부 · 입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/kingma2014"},{"@id":"lab:work/rezende2014"},{"@id":"lab:work/higgins2017"},{"@id":"lab:work/doersch2016"},{"@id":"lab:work/turner2008"},{"@id":"lab:work/alpaydin1998"}]},{"@id":"lab:method/vae","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"변분 오토인코더","@language":"ko"},{"@value":"Variational autoencoder (VAE)","@language":"en"}],"skos:definition":[{"@value":"글씨를 병목의 점이 아니라 작은 구름(평균과 흩어짐)으로 줄이고, 구름이 표준 정규분포를 닮도록 벌점(KL)을 주는 생성 모델. 표준 정규분포에서 뽑은 z를 디코더에 넣으면 새 글씨가 나온다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/vae"}],"skos:broader":[{"@id":"lab:topic/vae"}],"lab:hasLimitation":[{"@id":"lab:limitation/blurry"},{"@id":"lab:limitation/below-gmm"}],"lab:contrastsWith":[{"@id":"lab:method/gmm-senior"}],"lab:solves":[{"@id":"lab:task/generate-digits"}],"lab:evaluatedBy":[{"@id":"lab:metric/recognizable-ratio"},{"@id":"lab:metric/evenness"},{"@id":"lab:metric/nearest-train-distance"}]},{"@id":"lab:method/autoencoder","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"오토인코더 (6-11)","@language":"ko"},{"@value":"Autoencoder (6-11)","@language":"en"}],"skos:definition":[{"@value":"입력을 병목으로 줄였다가 되살리는 망. 병목이 점 하나라서 점들 사이에 빈 곳이 있다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/autoencoder"}],"skos:broader":[{"@id":"lab:topic/autoencoder"}],"lab:prerequisiteOf":[{"@id":"lab:method/vae"}],"lab:hasLimitation":[{"@id":"lab:limitation/ae-holes"}]},{"@id":"lab:method/gmm-senior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"GMM 40묶음 (선배)","@language":"ko"},{"@value":"GMM with 40 clusters (senior)","@language":"en"}],"skos:definition":[{"@value":"1차 공채의 선배. 종 모양 40개를 덮어 두고 거기서 표본을 뽑아 새 글씨를 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/density-estimation"}],"skos:broader":[{"@id":"lab:topic/density-estimation"}],"lab:solves":[{"@id":"lab:task/generate-digits"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:concept/latent-space","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"잠재 공간","@language":"ko"},{"@value":"Latent space","@language":"en"}],"skos:definition":[{"@value":"병목 z가 사는 공간. VAE에서는 표준 정규분포 모양으로 맞춘다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/embedding-space"}],"skos:broader":[{"@id":"lab:topic/embedding-space"}],"lab:partOf":[{"@id":"lab:method/vae"}],"lab:demonstratedBy":[{"@id":"lab:sim/latent-2d"}]},{"@id":"lab:concept/reparameterization","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"재매개변수화","@language":"ko"},{"@value":"Reparameterization trick","@language":"en"}],"skos:definition":[{"@value":"z = μ + σε로 써서 뽑기(ε)를 바깥으로 빼는 방법. 기울기가 μ와 σ로 흐른다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:partOf":[{"@id":"lab:method/vae"}],"lab:prerequisiteOf":[{"@id":"lab:concept/elbo"}]},{"@id":"lab:concept/kl-divergence","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"KL 발산","@language":"ko"},{"@value":"KL divergence","@language":"en"}],"skos:definition":[{"@value":"두 분포가 얼마나 다른지 재는 값. VAE에서는 각 구름과 표준 정규분포의 차이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:broader":[{"@id":"lab:topic/information-theory"}],"skos:broader":[{"@id":"lab:topic/information-theory"}],"lab:partOf":[{"@id":"lab:concept/elbo"}],"lab:prerequisiteOf":[{"@id":"lab:concept/elbo"}]},{"@id":"lab:concept/elbo","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"ELBO","@language":"ko"},{"@value":"Evidence lower bound (ELBO)","@language":"en"}],"skos:definition":[{"@value":"복원 항과 KL 항을 합친 VAE의 목적 함수(증거 하한).","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:partOf":[{"@id":"lab:method/vae"}]},{"@id":"lab:concept/reconstruction-loss","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"복원 손실","@language":"ko"},{"@value":"Reconstruction loss","@language":"en"}],"skos:definition":[{"@value":"원래 글씨를 잘 되살리게 하는 이진 교차 엔트로피 항. KL과 당기는 방향이 다르다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:broader":[{"@id":"lab:topic/loss-function"}],"skos:broader":[{"@id":"lab:topic/loss-function"}],"lab:partOf":[{"@id":"lab:concept/elbo"}]},{"@id":"lab:concept/kl-weight","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"KL 무게 β","@language":"ko"},{"@value":"KL weight (β)","@language":"en"}],"skos:definition":[{"@value":"KL 항에 곱하는 무게. 이 편은 β = 1로 쓰고 0인 경우와 비교한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:partOf":[{"@id":"lab:concept/elbo"}]},{"@id":"lab:task/generate-digits","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"새 글씨 1,000장 쓰기","@language":"ko"},{"@value":"Generating 1,000 new digits","@language":"en"}],"skos:definition":[{"@value":"진짜처럼 보이는 새 손글씨를 만들어 채점관에게 읽히는 일.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:evaluatedOn":[{"@id":"lab:dataset/digits"}]},{"@id":"lab:dataset/digits","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"손글씨 숫자 1,797장","@language":"ko"},{"@value":"Optical Recognition of Handwritten Digits (1,797)","@language":"en"}],"skos:definition":[{"@value":"8×8(64칸) 손글씨 숫자 데이터. 훈련 글씨로 채점관 SVM을 배우고 봉인 시험지로 천장을 잰다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:metric/recognizable-ratio","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"알아볼 수 있는 비율","@language":"ko"},{"@value":"Recognizable ratio","@language":"en"}],"skos:definition":[{"@value":"채점관이 최고 확률 0.9를 넘게 읽은 새 글씨의 비율. 진짜 글씨 1,000장이 천장이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:broader":[{"@id":"lab:topic/accuracy-metrics"}],"skos:broader":[{"@id":"lab:topic/accuracy-metrics"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:metric/evenness","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"고른 정도","@language":"ko"},{"@value":"Evenness (normalized entropy)","@language":"en"}],"skos:definition":[{"@value":"채점관이 읽은 숫자 분포의 정규화 엔트로피. 1이면 열 숫자를 똑같이 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:metric/nearest-train-distance","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"가장 가까운 훈련 글씨까지의 거리","@language":"ko"},{"@value":"Distance to nearest training digit","@language":"en"}],"skos:definition":[{"@value":"새 글씨 200장마다 가장 가까운 훈련 글씨까지의 제곱 거리 평균. 너무 작으면 베낀 것은 아닌지 그림으로 확인한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:claim/verdict","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"판정: 보류","@language":"ko"},{"@value":"Verdict: on hold","@language":"en"}],"skos:definition":[{"@value":"VAE의 알아볼 수 있는 비율은 61.8%(처음 설정 38.1%, KL 없음 1.7%)로 GMM 40묶음의 84.9%(GMM 10묶음은 68.3%)에 못 미쳐 보류.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5"},{"@id":"lab:claim/no-kl-collapse","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"KL이 없으면 새 글씨가 안 나온다","@language":"ko"},{"@value":"Without KL, sampling fails","@language":"en"}],"skos:definition":[{"@value":"KL 무게를 0으로 하면 알아볼 수 있는 비율이 1.7%로 떨어진다. 구름이 흩어져 표준 정규분포에서 뽑은 점이 빈 곳에 떨어지기 때문이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:concept/kl-weight"}]},{"@id":"lab:claim/smooth-latent","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"KL이 잠재 공간을 매끈하게 한다","@language":"ko"},{"@value":"KL makes the latent space smooth","@language":"en"}],"skos:definition":[{"@value":"구름이 표준 정규분포 쪽으로 모여 있어 격자 어디를 찍어도 글씨가 나오고 이웃한 점의 글씨는 조금씩만 다르다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:supports":[{"@id":"lab:method/vae"}]},{"@id":"lab:limitation/ae-holes","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"점 병목의 빈 곳","@language":"ko"},{"@value":"Gaps in a point bottleneck","@language":"en"}],"skos:definition":[{"@value":"오토인코더는 글씨를 점 하나로 줄여서 점들 사이에 빈 곳이 생기고, 아무 점이나 뽑으면 글씨가 되지 않는다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:addressedBy":[{"@id":"lab:method/vae"}]},{"@id":"lab:limitation/blurry","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"글씨가 흐릿하다","@language":"ko"},{"@value":"Blurry output","@language":"en"}],"skos:definition":[{"@value":"복원 오차를 줄이다 보면 애매한 곳에서 평균을 그리게 되어 글씨가 흐릿해지고 채점관이 확신하지 못한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5"},{"@id":"lab:limitation/below-gmm","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"선배 GMM에 못 미친다","@language":"ko"},{"@value":"Below the GMM senior","@language":"en"}],"skos:definition":[{"@value":"알아볼 수 있는 비율 61.8%가 GMM 40묶음의 84.9%에 못 미친다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:raises":[{"@id":"lab:question/copying"}]},{"@id":"lab:question/copying","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"새 글씨는 훈련 글씨를 베낀 것인가?","@language":"ko"},{"@value":"Are new digits copies of training digits?","@language":"en"}],"skos:definition":[{"@value":"가장 가까운 훈련 글씨까지의 거리가 너무 작으면 베낀 것일 수 있어, 새 글씨와 가장 가까운 훈련 글씨를 나란히 보고 확인한다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m2"},{"@id":"lab:sim/latent-2d","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"잠재 2칸 VAE 학습","@language":"ko"},{"@value":"Latent-2D VAE in the browser","@language":"en"}],"skos:definition":[{"@value":"잠재 2칸 VAE를 브라우저에서 25에포크 학습하고 잠재 지도와 뽑은 글씨 16개를 본다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:analogy/cloud-map","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"'이 근처 어딘가'라고 적은 약도","@language":"ko"},{"@value":"A sketch map saying 'somewhere around here'","@language":"en"}],"skos:definition":[{"@value":"구름은 점 하나가 아니라 이 근처 어딘가를 가리키는 약도이고, KL은 약도들을 한 지도 가운데로 모으는 일이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:method/vae"}]},{"@id":"lab:bio/kenyon-cells","@type":["lab:BioAnalogue","skos:Concept"],"skos:prefLabel":[{"@value":"초파리 버섯체 케년 세포 묶음","@language":"ko"},{"@value":"Fruit-fly mushroom body Kenyon cells","@language":"en"}],"skos:definition":[{"@value":"같은 냄새도 시도마다 조금씩 다른 케년 세포 묶음이 켜져 점이 아니라 흩어진 구름 같은 표현이 된다. 다만 흩어짐은 신경 잡음이고 VAE의 σ는 배운 값이다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:bioAnalogueOf":[{"@id":"lab:method/vae"}]}]}</script>
+<script type="application/json" id="refs-csl">[{"id":"kingma2014","type":"paper-conference","title":"Auto-Encoding Variational Bayes","author":[{"family":"Kingma","given":"D. P."},{"family":"Welling","given":"M."}],"issued":{"date-parts":[[2014]]},"container-title":"ICLR","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"rezende2014","type":"paper-conference","title":"Stochastic Backpropagation and Approximate Inference in Deep Generative Models","author":[{"family":"Rezende","given":"D. J."},{"family":"Mohamed","given":"S."},{"family":"Wierstra","given":"D."}],"issued":{"date-parts":[[2014]]},"container-title":"ICML","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"higgins2017","type":"paper-conference","title":"β-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework","author":[{"family":"Higgins","given":"I., et al."}],"issued":{"date-parts":[[2017]]},"container-title":"ICLR","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"doersch2016","type":"paper-conference","title":"Tutorial on Variational Autoencoders","author":[{"family":"Doersch","given":"C."}],"issued":{"date-parts":[[2016]]},"container-title":"arXiv:1606.05908","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"turner2008","type":"article-journal","title":"Olfactory representations by Drosophila mushroom body neurons","author":[{"family":"Turner","given":"G. C."},{"family":"Bazhenov","given":"M."},{"family":"Laurent","given":"G."}],"issued":{"date-parts":[[2008]]},"container-title":"Journal of Neurophysiology","volume":"99","page":"734–746","issue":"2","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"alpaydin1998","type":"dataset","title":"Optical Recognition of Handwritten Digits","author":[{"family":"Alpaydin","given":"E."},{"family":"Kaynak","given":"C."}],"issued":{"date-parts":[[1998]]},"publisher":"UCI Machine Learning Repository","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}}]</script>
+<script type="application/json" id="page-meta">{"title": "Hội đồng Tuyển dụng Mô hình · Đợt tuyển dụng thứ hai · 6-13 VAE", "number": "6-13", "date": "2026-10-24", "version": "1.0", "series": "Hội đồng Tuyển dụng Mô hình – Đợt tuyển dụng thứ hai", "language": "ko", "creator": [{"name": "Ahn Sangsun", "affiliation": "M-Robo Co., Ltd."}], "about": ["lab:topic/vae"], "educationalLevel": "대학 학부 · 입문", "learningResourceType": "interactive explainer", "description": "글씨를 점이 아니라 작은 구름으로 줄이고, 구름이 표준 정규분포를 닮게 배워 새 글씨를 쓰는 지원자 VAE(변분 오토인코더)의 면접. 재매개변수화, 복원 + KL 손실, 잠재 공간 지도와 걷기, 처음 설정과 표준 설정, KL을 뺀 비교, 채점관이 읽는 새 글씨 1,000장으로 생성팀 선배 GMM과 겨룬다. 모델 채용 위원회 2차 공채 6-13.", "basedOn": ["kingma2014", "rezende2014", "higgins2017", "doersch2016", "turner2008", "alpaydin1998"]}</script>
+<!-- /lab-kg:body -->
 <footer>
   <div class="wrap">
     <p><b style="color:var(--text)">Hội đồng Tuyển dụng Mô hình · Đợt tuyển dụng thứ hai · 6-13 VAE</b> · <a href="6-0_job_posting.html#m8">Bản đồ tổng thể (6-0)</a> — Tác giả: Sangsun Ahn (CEO M-Robo Inc.)</p>
@@ -1659,5 +1688,408 @@ var CODE={title:'Phỏng vấn VAE — đám mây và KL, thiết lập ban đ�
 
 boot();
 </script>
+<!-- lab-kg:script -->
+<script>
+/* ai-lab-retrofit 휴대판 (색 변수가 없는 페이지에서도 동작) */
+/* ══ KG: 지식 색인(#kg) + 온톨로지·서지 꾸러미(#export) — 공용 모듈 ══
+   데이터 블록: #kg-raw(중립 JSON), #refs-csl(CSL-JSON), #page-meta, #kg-ld(빌드 때 생성)
+   외부 라이브러리 없음. 모든 내보내기는 kg-raw에서 만든다. */
+var KGX=(function(){
+'use strict';
+function $id(i){return document.getElementById(i);}
+function J(id){var e=$id(id); return e?JSON.parse(e.textContent):null;}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function el(tag,cls,html){var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+
+var TYPE={Concept:['Khái niệm','#82b8ff'],Method:['Phương pháp','#5ee39c'],BioAnalogue:['Đối ứng sinh học','#ef5b5b'],Claim:['Luận điểm','#f1b646'],
+  Question:['Câu hỏi mở','#d672d6'],Limitation:['Hạn chế','#ff9a7a'],Task:['bài tập','#7fe0c8'],Metric:['Chỉ số','#b9a8ff'],
+  Dataset:['Dữ liệu','#c9c4a4'],Simulation:['Mô phỏng','#8a88a8'],QuizItem:['Câu đố','#6f6d8c'],Work:['Tài liệu','#e0d7a8'],
+  Area:['Lĩnh vực','#eceaf3'],Topic:['Chủ đề','#9d9bb8'],Analogy:['Phép ví von','#ff86b8'],Term:['Thuật ngữ','#82b8ff']};
+var REL={prerequisiteOf:'Cần biết trước',hasLimitation:'Hạn chế',addressedBy:'Được giải quyết',partOf:'Một phần',bioAnalogueOf:'Đối ứng sinh học',
+  contrastsWith:'Đối lập',supports:'Củng cố',assertedIn:'Nguồn',evaluatedBy:'Đánh giá bằng chỉ số',evaluatedOn:'Đánh giá bằng dữ liệu',
+  demonstratedBy:'Mô phỏng',raises:'Gợi ra câu hỏi',relatedTo:'Liên quan',solves:'Bài toán giải quyết',analogyOf:'Phép ví von',assesses:'Kiểm tra bằng câu đố',
+  broader:'Chủ đề cấp trên',explainedIn:'Nơi giải thích'};
+function tl(t){return (TYPE[t]||[t])[0];} function tc(t){return (TYPE[t]||[0,'#9d9bb8'])[1];}
+function pn(p){return p.replace(/^lab:/,'');}
+function lab(n){return n.label?(n.label[LANG]||n.label.en||n.label.ko):n.id;}
+
+/* ── 변환기 ─────────────────────────────────────────── */
+var NS='urn:lab:';
+var CTX={'@vocab':NS,lab:NS,skos:'http://www.w3.org/2004/02/skos/core#',schema:'https://schema.org/',
+  dct:'http://purl.org/dc/terms/',prov:'http://www.w3.org/ns/prov#',rdfs:'http://www.w3.org/2000/01/rdf-schema#'};
+var SKOS_T={Concept:1,Method:1,Task:1,Term:1,Limitation:1,BioAnalogue:1,Metric:1,Area:1,Topic:1};
+var SCH_T={Work:'schema:ScholarlyArticle',Claim:'schema:Claim',Dataset:'schema:Dataset',QuizItem:'schema:Question',Question:'schema:Question',Simulation:'schema:SoftwareApplication'};
+function lit(o){var a=[]; Object.keys(o||{}).forEach(function(k){ var v=o[k]; (Array.isArray(v)?v:[v]).forEach(function(x){a.push({'@value':x,'@language':k});});}); return a;}
+function toJsonLd(g,meta){
+  var graph=g.nodes.map(function(n){
+    var t=['lab:'+n.type]; if(SKOS_T[n.type])t.push('skos:Concept'); if(SCH_T[n.type])t.push(SCH_T[n.type]);
+    var o={'@id':n.id,'@type':t,'skos:prefLabel':lit(n.label)};
+    if(n.altLabel)o['skos:altLabel']=lit(n.altLabel);
+    if(n.definition)o['skos:definition']=lit(n.definition);
+    ['level','status','confidence','coverage','family','page','anchor'].forEach(function(k){ if(n[k]!=null)o['lab:'+k]=n[k];});
+    (n.match||[]).forEach(function(m){ var p=m.rel==='exact'?'skos:exactMatch':'skos:closeMatch'; (o[p]=o[p]||[]).push({'@id':m.iri});});
+    return o;});
+  var byS={}; graph.forEach(function(o){byS[o['@id']]=o;});
+  g.edges.forEach(function(e){ var s=byS[e.s]; if(!s)return; var k=e.p; (s[k]=s[k]||[]).push({'@id':e.o});
+    if(e.p==='lab:broader')(s['skos:broader']=s['skos:broader']||[]).push({'@id':e.o});
+    if(e.p==='lab:assertedIn')(s['prov:wasDerivedFrom']=s['prov:wasDerivedFrom']||[]).push({'@id':e.o});
+    if(e.p==='lab:relatedTo')(s['skos:related']=s['skos:related']||[]).push({'@id':e.o}); });
+  if(meta)graph.unshift({'@id':NS+'page/'+meta.number,'@type':['schema:LearningResource','schema:WebPage'],'schema:name':meta.title,
+    'schema:inLanguage':meta.language,'schema:dateCreated':meta.date,'schema:version':meta.version,'dct:isPartOf':meta.series,
+    'schema:about':(meta.about||[]).map(function(a){return {'@id':a};}),'schema:educationalLevel':meta.educationalLevel,
+    'schema:learningResourceType':meta.learningResourceType,'dct:source':(meta.basedOn||[]).map(function(b){return {'@id':'lab:work/'+b};})});
+  return {'@context':CTX,'@graph':graph};
+}
+function ttlS(s){return '"'+String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\n/g,'\\n')+'"';}
+function ttlI(id){return id.indexOf('lab:')===0?'lab:'+id.slice(4).replace(/[^A-Za-z0-9_\-]/g,function(c){return c==='/'?'_':encodeURIComponent(c).replace(/%/g,'_');}):'<'+id+'>';}
+function toTurtle(g){
+  var L=['@prefix lab: <'+NS+'> .','@prefix skos: <http://www.w3.org/2004/02/skos/core#> .','@prefix schema: <https://schema.org/> .',
+    '@prefix prov: <http://www.w3.org/ns/prov#> .',''];
+  var out={}; g.edges.forEach(function(e){(out[e.s]=out[e.s]||[]).push(e);});
+  g.nodes.forEach(function(n){
+    var P=['a lab:'+n.type+(SKOS_T[n.type]?', skos:Concept':'')];
+    Object.keys(n.label||{}).forEach(function(k){P.push('skos:prefLabel '+ttlS(n.label[k])+'@'+k);});
+    Object.keys(n.altLabel||{}).forEach(function(k){[].concat(n.altLabel[k]).forEach(function(v){P.push('skos:altLabel '+ttlS(v)+'@'+k);});});
+    Object.keys(n.definition||{}).forEach(function(k){P.push('skos:definition '+ttlS(n.definition[k])+'@'+k);});
+    if(n.status)P.push('lab:status '+ttlS(n.status)); if(n.level!=null)P.push('lab:level '+n.level);
+    if(n.anchor)P.push('lab:anchor '+ttlS(n.anchor));
+    (out[n.id]||[]).forEach(function(e){P.push(ttlI(e.p)+' '+ttlI(e.o)); if(e.p==='lab:broader')P.push('skos:broader '+ttlI(e.o));});
+    L.push(ttlI(n.id)+'\n  '+P.join(' ;\n  ')+' .\n');});
+  return L.join('\n');
+}
+function csvq(v){v=v==null?'':String(v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toNodesCsv(g){return ['id,type,label_ko,label_en,status,level,family,page,anchor,coverage,confidence'].concat(g.nodes.map(function(n){
+  return [n.id,n.type,n.label&&n.label.ko,n.label&&n.label.en,n.status,n.level,n.family,n.page,n.anchor,n.coverage,n.confidence].map(csvq).join(',');})).join('\r\n');}
+function toEdgesCsv(g){return ['source,predicate,target,anchor,confidence'].concat(g.edges.map(function(e){return [e.s,e.p,e.o,e.anchor,e.confidence].map(csvq).join(',');})).join('\r\n');}
+function toMermaid(g){
+  var keep=g.nodes.filter(function(n){return n.type!=='QuizItem'&&n.type!=='Simulation'&&n.type!=='Work';}).slice(0,40);
+  var ix={}; keep.forEach(function(n,i){ix[n.id]='n'+i;});
+  var L=['graph LR']; keep.forEach(function(n){L.push('  '+ix[n.id]+'["'+lab(n).replace(/"/g,"'")+'"]');});
+  g.edges.forEach(function(e){ if(ix[e.s]&&ix[e.o])L.push('  '+ix[e.s]+' -- '+(REL[pn(e.p)]||pn(e.p))+' --> '+ix[e.o]);});
+  return L.join('\n');
+}
+function toProvCsv(g,refs){
+  var R={}; refs.forEach(function(r){R[r.id]=r;});
+  var L=['item,kind,work,loc,confidence,verified,pageAnchor'];
+  g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){ var r=R[s.ref]; var v=r&&r.lab&&r.lab.verified;
+    L.push([n.id,'node',s.ref,s.loc||'',n.confidence,v?(v.title&&v.year&&v.venue?'bib-checked':'partial'):'no',n.anchor].map(csvq).join(','));});});
+  g.edges.forEach(function(e){ if(e.p==='lab:assertedIn')L.push([e.s+' '+e.p+' '+e.o,'edge',e.o.replace('lab:work/',''),'',e.confidence,'',e.anchor].map(csvq).join(','));});
+  return L.join('\r\n');
+}
+/* CSL → BibTeX · RIS · 문장 */
+var BIBT={'article-journal':'article','paper-conference':'inproceedings','book':'book','chapter':'incollection','webpage':'misc','dataset':'misc','report':'techreport','thesis':'phdthesis','software':'misc'};
+var RIST={'article-journal':'JOUR','paper-conference':'CPAPER','book':'BOOK','chapter':'CHAP','webpage':'ELEC','dataset':'DATA','report':'RPRT','thesis':'THES','software':'COMP'};
+function names(a){return (a||[]).map(function(p){return p.literal||(p.family+(p.given?', '+p.given:''));});}
+function yr(r){return r.issued&&r.issued['date-parts']&&r.issued['date-parts'][0][0];}
+function toBib(r){var f=[],add=function(k,v){ if(v!==undefined&&v!==null&&v!=='')f.push('  '+k+' = {'+v+'}');};
+  add('title',r.title); add('author',names(r.author).map(function(n){return n==='et al.'?'others':n;}).join(' and ')); add('year',yr(r));
+  add(r.type==='article-journal'?'journal':'booktitle',r['container-title']); add('volume',r.volume); add('number',r.issue);
+  add('pages',(r.page||'').replace('-','--')); add('publisher',r.publisher); add('doi',r.DOI); add('url',r.URL);
+  if(r.lab&&r.lab.note)add('note',r.lab.note);
+  return '@'+(BIBT[r.type]||'misc')+'{'+r.id+',\n'+f.join(',\n')+'\n}';}
+function toRis(r){var L=['TY  - '+(RIST[r.type]||'GEN')],add=function(t,v){ if(v)L.push(t+'  - '+v);};
+  add('TI',r.title); names(r.author).forEach(function(n){add('AU',n);}); add('PY',yr(r)); add('T2',r['container-title']);
+  add('VL',r.volume); add('IS',r.issue); var pg=(r.page||'').split('-'); add('SP',pg[0]); add('EP',pg[1]); add('DO',r.DOI); add('UR',r.URL);
+  if(r.lab&&r.lab.note)add('N1',r.lab.note); L.push('ER  - '); return L.join('\r\n');}
+function toText(r){ var a=names(r.author), first=a[0]?a[0].split(',')[0]:''; var au=a.length>2||a.indexOf('et al.')>=0?first+' và cộng sự':a.map(function(x){return x.split(',')[0];}).join(' & ');
+  return au+' ('+(yr(r)||'không rõ năm')+'). '+r.title+'. '+(r['container-title']||'')+(r.volume?', '+r.volume:'')+(r.issue?'('+r.issue+')':'')+(r.page?', '+r.page:'')+'.'+(r.DOI?' https://doi.org/'+r.DOI:'');}
+function pageBib(m){var f=['  title = {'+m.title+'}','  year = {'+m.date.slice(0,4)+'}','  howpublished = {'+m.series+' '+m.number+', v'+m.version+'}'];
+  if(m.creator&&m.creator.length&&m.creator[0].name)f.unshift('  author = {'+m.creator.map(function(c){return c.name;}).join(' and ')+'}'); if(m.url)f.push('  url = {'+m.url+'}');
+  return '@misc{lab_page_'+m.number+',\n'+f.join(',\n')+'\n}';}
+function pageRis(m){var L=['TY  - ELEC','TI  - '+m.title]; (m.creator||[]).forEach(function(c){ if(c.name)L.push('AU  - '+c.name);}); L.push('PY  - '+m.date.slice(0,4),'T2  - '+m.series,'ET  - '+m.version); if(m.url)L.push('UR  - '+m.url); L.push('ER  - '); return L.join('\r\n');}
+function pageText(m){ var who=(m.creator||[]).filter(function(c){return c.name;}).map(function(c){return c.name;}).join(', ')||'{tác giả}';
+  return who+' ('+m.date.slice(0,4)+'). '+m.title+'. '+m.series+' '+m.number+', v'+m.version+'.'+(m.url?' '+m.url:'');}
+
+/* ── ZIP (압축 없음) ─────────────────────────────────── */
+var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}
+  return function(u8){var x=0xFFFFFFFF;for(var i=0;i<u8.length;i++)x=t[(x^u8[i])&255]^(x>>>8);return (x^0xFFFFFFFF)>>>0;};})();
+function makeZip(files){
+  var enc=new TextEncoder(),parts=[],central=[],off=0;
+  function u16(v){return [v&255,(v>>8)&255];} function u32(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255];}
+  files.forEach(function(f){var name=enc.encode(f.name),data=enc.encode(f.text),crc=CRC(data);
+    var head=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0));
+    parts.push(new Uint8Array(head),name,data);
+    central.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),
+      u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),name);
+    off+=head.length+name.length+data.length;});
+  var cdLen=0; central.forEach(function(c){parts.push(c); cdLen+=c.length;});
+  parts.push(new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cdLen),u32(off),u16(0))));
+  return new Blob(parts,{type:'application/zip'});
+}
+/* 내려받기: claude.ai 아티팩트 안에서는 downloads 능력, 파일로 열면 일반 링크 */
+var DLP=(window.claude&&typeof window.claude.use==='function')?window.claude.use('downloads').catch(function(){return null;}):Promise.resolve(null);
+var OKX=/\.(json|txt|csv|md|zip|html|svg|pdf)$/i;
+function anchorSave(blob,name){var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name;
+  document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},800);}
+function download(blob,name){
+  return DLP.then(function(d){
+    if(!d){anchorSave(blob,name); return;}
+    var fn=OKX.test(name)?name:name+'.txt';   // .bib .ris .ttl .jsonld 은 .txt를 붙여 저장 (확장자만 지우면 원래 형식)
+    return d.save({filename:fn,data:blob}).catch(function(e){ if(e&&e.code==='declined')return;
+      if(e&&(e.code==='unavailable'||e.code==='not_granted'))anchorSave(blob,name);
+      else console.warn('lưu không thành công',e&&e.code);});
+  });
+}
+function dlText(text,name,type){download(new Blob([text],{type:(type||'text/plain')+';charset=utf-8'}),name);}
+
+/* ── 범위 ───────────────────────────────────────────── */
+function filterScope(KG,scope){
+  if(scope==='all')return KG;
+  var keepT={terms:{Concept:1,Method:1,BioAnalogue:1,Limitation:1,Task:1,Metric:1,Dataset:1},
+             claims:{Claim:1,Work:1},prereq:null}[scope];
+  var nodes,edges;
+  if(scope==='prereq'){ edges=KG.edges.filter(function(e){return e.p==='lab:prerequisiteOf'||e.p==='lab:hasLimitation'||e.p==='lab:addressedBy';});
+    var ids={}; edges.forEach(function(e){ids[e.s]=1;ids[e.o]=1;}); nodes=KG.nodes.filter(function(n){return ids[n.id];}); }
+  else { nodes=KG.nodes.filter(function(n){return keepT[n.type];}); var ix={}; nodes.forEach(function(n){ix[n.id]=1;});
+    if(scope==='claims'){ KG.edges.forEach(function(e){ if(e.p==='lab:supports'&&ix[e.s])ix[e.o]=2;});
+      nodes=KG.nodes.filter(function(n){return ix[n.id];}); }
+    edges=KG.edges.filter(function(e){return ix[e.s]&&(ix[e.o]||/^lab:(topic|area)\//.test(e.o));}); }
+  return {version:KG.version,page:KG.page,scope:scope,nodes:nodes,edges:edges};
+}
+function readme(meta,g,refs){
+  var un=refs.filter(function(r){var v=r.lab&&r.lab.verified; return !v||Object.keys(v).some(function(k){return !v[k];});});
+  return ['Gói ontology và thư mục — '+meta.title,'Loạt bài: '+meta.series+' '+meta.number+' · Phiên bản '+meta.version+' · Ngày tạo '+meta.date,'',
+   'Phạm vi: '+(g.scope||'all')+' · Nút '+g.nodes.length+' · Quan hệ '+g.edges.length+' · Tài liệu '+refs.length,'',
+   '[파일]','manifest.json danh mục · page_meta.json thư mục của trang · kg.json đồ thị trung lập (bản gốc) · kg.jsonld JSON-LD · kg.ttl Turtle',
+   'nodes.csv / edges.csv bảng (UTF-8 BOM) · references.csl.json tài liệu tham khảo gốc · references.bib BibTeX · references.ris RIS',
+   'provenance.csv đối chiếu luận điểm với tài liệu · mermaid.md dùng để vẽ hình','',
+   '[이 페이지 인용]',pageText(meta),'',
+   '[확인 필요]',(un.length?un.map(function(r){var v=r.lab.verified;return '- '+r.id+': '+Object.keys(v).filter(function(k){return !v[k];}).join(', ');}).join('\n'):'- Mọi mục thư mục của tài liệu đều đã được xác nhận'),
+   '- Vị trí trong nguyên văn (trang, số hình) của các luận điểm (Claim) vẫn còn trống. Hãy xem nguyên văn và điền vào cột loc của provenance.csv.',
+   '- Tên tác giả trang, giấy phép và địa chỉ công khai được để trống. Người dùng hãy tự điền.','',
+   '[규칙] lab: 접두어 IRI는 '+NS+' (tạm thời). ID ontology bên ngoài chỉ được đưa vào skos:exactMatch/closeMatch khi đã xác nhận.',
+   '[주의] 뼈대 영역(lab:topic/*, lab:area/*)은 작성자 초안이며 공식 분류 체계가 아니다.'].join('\n');
+}
+function buildPackage(scope){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); var g=filterScope(KG,scope);
+  var used={}; g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){used[s.ref]=1;}); if(n.type==='Work')used[n.id.replace('lab:work/','')]=1;});
+  var refs=scope==='all'?REF:REF.filter(function(r){return used[r.id];});
+  var files=[{name:'page_meta.json',text:JSON.stringify(META,null,2)},{name:'kg.json',text:JSON.stringify(g,null,2)},
+    {name:'kg.jsonld',text:JSON.stringify(toJsonLd(g,META),null,2)},{name:'kg.ttl',text:toTurtle(g)},
+    {name:'nodes.csv',text:'﻿'+toNodesCsv(g)},{name:'edges.csv',text:'﻿'+toEdgesCsv(g)},
+    {name:'references.csl.json',text:JSON.stringify(refs,null,2)},{name:'references.bib',text:[pageBib(META)].concat(refs.map(toBib)).join('\n\n')},
+    {name:'references.ris',text:[pageRis(META)].concat(refs.map(toRis)).join('\r\n')},{name:'provenance.csv',text:'﻿'+toProvCsv(g,refs)},
+    {name:'mermaid.md',text:'```mermaid\n'+toMermaid(g)+'\n```\n'},{name:'README.txt',text:readme(META,g,refs)}];
+  files.unshift({name:'manifest.json',text:JSON.stringify({package:'lab-kg',packageVersion:'1.0',page:META.number,pageId:KG.page,pageVersion:META.version,
+    registry:META.registry||'',created:META.date,scope:scope,counts:{nodes:g.nodes.length,edges:g.edges.length,refs:refs.length},
+    files:files.map(function(f){return f.name;})},null,2)});
+  return files;
+}
+
+/* ── 공통 화면 조각 ─────────────────────────────────── */
+var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding:48px 0;font-family:inherit}.kgx-sec .kgx-wrap{max-width:1080px;margin:0 auto;padding:0 16px}.kgx-sec h2{margin:0 0 6px;font-size:24px}.kgx-sec .kgx-sub{color:var(--muted,#9d9bb8);margin:0 0 18px}\
+\
+.kgx .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}\
+.kgx input[type=search]{flex:1 1 220px;min-width:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);color:var(--text,#eceaf3);border-radius:8px;padding:8px 12px;font:inherit;font-size:15px}\
+.kgx .tchip{font-size:12.5px;border-radius:999px;padding:3px 10px;border:1px solid var(--rule,#363a52);background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);cursor:pointer}\
+.kgx .tchip[aria-pressed=true]{color:#13141f;font-weight:700}\
+.kgx .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}\
+@media (max-width:860px){.kgx .grid2{grid-template-columns:1fr}}\
+.kgx .list{max-height:520px;overflow:auto;border:1px solid var(--rule,#363a52);border-radius:10px;background:var(--panel,#1c1e2d)}\
+.kgx .it{padding:10px 14px;border-bottom:1px solid var(--rule,#363a52);cursor:pointer}\
+.kgx .it:last-child{border-bottom:0}.kgx .it:hover{background:var(--panel2,#25283a)}\
+.kgx .it.sel{background:var(--panel2,#25283a);box-shadow:inset 3px 0 0 var(--gfp,#5ee39c)}\
+.kgx .it .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}\
+.kgx .it .nm{font-weight:700}.kgx .it .en{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .ty{font-size:11.5px;border-radius:5px;padding:0 6px;color:#13141f;font-weight:700;white-space:nowrap}\
+.kgx .it .df{color:#d7d4e6;font-size:14px;margin:3px 0 0}\
+.kgx .it .more{display:none;margin-top:6px;font-size:13.5px;color:var(--muted,#9d9bb8)}.kgx .it.sel .more{display:block}\
+.kgx .it a{color:var(--gfp,#5ee39c)}\
+.kgx .rel{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:6px;background:var(--bg,#13141f);border:1px solid var(--rule,#363a52);font-size:12.5px;cursor:pointer;color:var(--text,#eceaf3)}\
+.kgx .gbox{position:relative;border:1px solid var(--rule,#363a52);border-radius:10px;background:#101119;overflow:hidden}\
+.kgx .gbox canvas{display:block;width:100%;height:420px}\
+.kgx .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted,#9d9bb8);margin-top:8px}\
+.kgx .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}\
+.kgx .path{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\
+.kgx .path span.s{background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:8px;padding:4px 10px;font-size:14px}\
+.kgx .path span.a{color:var(--muted,#9d9bb8)}.kgx .path span.lim{border-color:#ff9a7a;color:#ffbda8}\
+.kgx .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}\
+.kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
+.kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
+.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
+.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
+.kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
+.kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
+.kgx .badge.role{background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);border:1px solid var(--rule,#363a52)}\
+.kgx pre.cite{white-space:pre-wrap;word-break:break-word;background:#101119;border:1px solid var(--rule,#363a52);border-radius:8px;padding:10px 12px;font-size:13px;margin:8px 0;max-height:220px;overflow:auto}\
+.kgx .files{display:flex;flex-wrap:wrap;gap:6px}\
+.kgx .todo li{margin:4px 0;color:#d7d4e6}\
+.kgx h3{font-size:17px;margin:20px 0 8px}\
+';
+function addCss(){ if($id('kgx-css'))return; var s=el('style'); s.id='kgx-css'; s.textContent=CSS; document.head.appendChild(s);}
+function copy(text,btn){ function ok(){var o=btn.textContent; btn.textContent='Đã sao chép'; setTimeout(function(){btn.textContent=o;},1200);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback();
+  function fallback(){var p=btn.parentNode.parentNode.querySelector('pre.cite'); if(p){var r=document.createRange(); r.selectNodeContents(p); var s=getSelection(); s.removeAllRanges(); s.addRange(r);} btn.textContent='Đã chọn — Ctrl+C';}}
+
+/* ── 지식 색인 ──────────────────────────────────────── */
+function mountIndex(root){
+  var KG=J('kg-raw'); var N={},OUT={},IN={};
+  KG.nodes.forEach(function(n){N[n.id]=n;OUT[n.id]=[];IN[n.id]=[];});
+  KG.edges.forEach(function(e){ if(OUT[e.s])OUT[e.s].push(e); if(IN[e.o])IN[e.o].push(e);});
+  var types=Object.keys(KG.nodes.reduce(function(a,n){a[n.type]=(a[n.type]||0)+1;return a;},{}));
+  var count={}; KG.nodes.forEach(function(n){count[n.type]=(count[n.type]||0)+1;});
+  var on={}; types.forEach(function(t){on[t]=t!=='QuizItem'&&t!=='Simulation'&&t!=='Work';});
+  var sel=null,q='';
+  root.classList.add('kgx');
+  var topics=0; KG.edges.forEach(function(e){if(e.p==='lab:broader')topics++;});
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';}), csrc=claims.filter(function(n){return (n.source||[]).length;}).length;
+  root.innerHTML='<div class="stats"><div><b>'+KG.nodes.length+'</b><span>mục (nút)</span></div><div><b>'+KG.edges.length+'</b><span>quan hệ</span></div>'+
+    '<div><b>'+(count.Concept||0)+(count.Method||0)+'</b><span>khái niệm, phương pháp</span></div><div><b>'+(count.BioAnalogue||0)+'</b><span>đối ứng sinh học</span></div>'+
+    '<div><b>'+csrc+'/'+claims.length+'</b><span>luận điểm có nguồn</span></div><div><b>'+topics+'</b><span>liên kết chủ đề khung</span></div></div>'+
+    '<div class="tools"><input type="search" placeholder="Tìm — trọng số, overfitting, Kenyon, ghi chú ký ức mùi …" aria-label="Tìm trong chỉ mục tri thức"></div>'+
+    '<div class="tools chips" role="group" aria-label="Loại"></div>'+
+    '<div class="grid2"><div class="list" role="listbox" aria-label="Kết quả tìm kiếm"></div>'+
+    '<div><div class="gbox"><canvas aria-label="Đồ thị mục đã chọn và các quan hệ lân cận"></canvas></div><div class="legend"></div>'+
+    '<p class="note gnote">Khi bạn chọn một mục, chỉ các mục lân cận nối trực tiếp với nó được hiển thị. Bạn cũng có thể bấm vào một điểm trên đồ thị.</p></div></div>'+
+    '<h3>Đường bậc thang — chuỗi những điều cần biết trước và các hạn chế</h3><div class="path ladder"></div>'+
+    '<h3>Câu hỏi mở · cần xác nhận</h3><ul class="todo qs"></ul>';
+  // 칸 수 계산 오류 방지: 개념+방법 합
+  root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);
+  var inp=root.querySelector('input'), chips=root.querySelector('.chips'), list=root.querySelector('.list'), cv=root.querySelector('canvas');
+  types.forEach(function(t){var b=el('button','tchip',tl(t)+' '+count[t]); b.type='button'; b.setAttribute('aria-pressed',on[t]);
+    if(on[t])b.style.background=tc(t),b.style.borderColor=tc(t);
+    b.onclick=function(){on[t]=!on[t]; b.setAttribute('aria-pressed',on[t]); b.style.background=on[t]?tc(t):''; b.style.borderColor=on[t]?tc(t):''; render();};
+    chips.appendChild(b);});
+  var lg=root.querySelector('.legend'); types.forEach(function(t){lg.insertAdjacentHTML('beforeend','<span><i style="background:'+tc(t)+'"></i>'+tl(t)+'</span>');});
+  lg.insertAdjacentHTML('beforeend','<span>── Mũi tên: chiều của quan hệ</span>');
+  inp.addEventListener('input',function(){q=inp.value.trim().toLowerCase(); render();});
+  function hay(n){return [n.id,n.label&&n.label.ko,n.label&&n.label.en,n.definition&&n.definition.ko,n.label&&n.label[LANG],n.definition&&n.definition[LANG],n.altLabel&&[].concat(n.altLabel.ko||[]).join(' ')].join(' ').toLowerCase();}
+  function relHtml(n){
+    var h=[]; OUT[n.id].forEach(function(e){ var o=N[e.o]; var nm=o?lab(o):((KG.topicLabels||{})[e.o]||e.o.replace(/^lab:(topic|area)\//,'').replace(/-/g,' '));
+      h.push('<span class="rel" data-go="'+esc(o?e.o:'')+'">'+esc(REL[pn(e.p)]||pn(e.p))+' → '+esc(nm)+'</span>');});
+    IN[n.id].forEach(function(e){ var s=N[e.s]; if(!s)return; h.push('<span class="rel" data-go="'+esc(e.s)+'">'+esc(lab(s))+' → '+esc(REL[pn(e.p)]||pn(e.p))+'</span>');});
+    return h.join('');}
+  function render(){
+    var arr=KG.nodes.filter(function(n){return on[n.type]&&(!q||hay(n).indexOf(q)>=0);});
+    list.innerHTML=arr.length?'':'<div class="it">Không có mục nào cần tìm. Hãy kiểm tra xem các chip loại có đang bị tắt không.</div>';
+    arr.forEach(function(n){var d=el('div','it'+(sel===n.id?' sel':'')); d.setAttribute('role','option'); d.dataset.id=n.id;
+      var alt=LANG==='ko'&&n.altLabel&&n.altLabel.ko?' · '+[].concat(n.altLabel.ko).join(', '):'';
+      var src=(n.source||[]).length?' · nguồn '+n.source.length:'';
+      d.innerHTML='<div class="h"><span class="ty" style="background:'+tc(n.type)+'">'+tl(n.type)+'</span><span class="nm">'+esc(lab(n))+'</span><span class="en">'+esc((LANG!=='en'&&n.label&&n.label.en&&n.label.en!==lab(n)&&n.label.en)||'')+esc(alt)+'</span></div>'+
+        (n.definition?'<p class="df">'+esc(n.definition[LANG]||n.definition.ko)+'</p>':'')+
+        '<div class="more">'+(n.anchor?'<a href="'+n.anchor+'">Xem phần giải thích →</a>':'')+' <span>'+esc(src)+(n.confidence&&n.confidence!=='high'?' · độ tin cậy '+n.confidence:'')+'</span><div style="margin-top:6px">'+relHtml(n)+'</div></div>';
+      d.onclick=function(ev){var g=ev.target.closest('.rel'); if(g){ if(g.dataset.go)pick(g.dataset.go,true); ev.stopPropagation(); return;}
+        if(ev.target.tagName==='A')return; pick(n.id);};
+      list.appendChild(d);});
+    draw();
+  }
+  function pick(id,scroll){ sel=id; var n=N[id]; if(n&&!on[n.type]){on[n.type]=true; var b=[].slice.call(chips.children)[types.indexOf(n.type)]; b.setAttribute('aria-pressed',true); b.style.background=tc(n.type); b.style.borderColor=tc(n.type);}
+    if(scroll&&q){q='';inp.value='';} render(); var it=list.querySelector('.it.sel'); if(it)it.scrollIntoView({block:'nearest'});}
+  // 그래프
+  var G={pts:[]};
+  function layout(){
+    var center=sel||KG.edges.reduce(function(best,e){return best;},null);
+    var ids={},pts=[];
+    if(!sel){ // 개요: 퀴즈·시뮬·문헌 빼고 연결 많은 순 최대 60
+      var deg={}; KG.edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.o]=(deg[e.o]||0)+1;});
+      KG.nodes.filter(function(n){return on[n.type];}).sort(function(a,b){return (deg[b.id]||0)-(deg[a.id]||0);}).slice(0,60).forEach(function(n){ids[n.id]=1;});
+    } else { ids[sel]=1; OUT[sel].forEach(function(e){if(N[e.o])ids[e.o]=1;}); IN[sel].forEach(function(e){ids[e.s]=1;}); }
+    var r=mulberry(7); Object.keys(ids).forEach(function(id){pts.push({id:id,x:r()-.5,y:r()-.5,vx:0,vy:0});});
+    var ix={}; pts.forEach(function(p,i){ix[p.id]=i;});
+    var es=KG.edges.filter(function(e){return ix[e.s]!=null&&ix[e.o]!=null;});
+    for(var it=0;it<220;it++){
+      for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+1e-4,f=0.0016/d2;
+        a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+      es.forEach(function(e){var a=pts[ix[e.s]],b=pts[ix[e.o]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+1e-6,f=(d-0.22)*0.04;
+        a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+      pts.forEach(function(p){ if(p.id===sel){p.x*=.9;p.y*=.9;} p.vx-=p.x*0.004;p.vy-=p.y*0.004; p.x+=p.vx;p.y+=p.vy;p.vx*=.6;p.vy*=.6;});
+    }
+    G={pts:pts,es:es,ix:ix};
+  }
+  function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    layout(); var dpr=Math.min(2,window.devicePixelRatio||1), W=cv.clientWidth||600, H=cv.clientHeight||420;
+    cv.width=W*dpr; cv.height=H*dpr; var c=cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,W,H);
+    var xs=G.pts.map(function(p){return p.x;}),ys=G.pts.map(function(p){return p.y;});
+    var mx=Math.min.apply(0,xs),Mx=Math.max.apply(0,xs),my=Math.min.apply(0,ys),My=Math.max.apply(0,ys);
+    var pad=54, sx=(W-2*pad)/Math.max(1e-3,Mx-mx), sy=(H-2*pad)/Math.max(1e-3,My-my);
+    G.pts.forEach(function(p){p.X=pad+(p.x-mx)*sx; p.Y=pad+(p.y-my)*sy; if(G.pts.length===1){p.X=W/2;p.Y=H/2;}});
+    c.lineWidth=1;
+    G.es.forEach(function(e){var a=G.pts[G.ix[e.s]],b=G.pts[G.ix[e.o]]; var hot=sel&&(e.s===sel||e.o===sel);
+      c.strokeStyle=hot?'rgba(236,234,243,.55)':'rgba(157,155,184,.22)'; c.beginPath(); c.moveTo(a.X,a.Y); c.lineTo(b.X,b.Y); c.stroke();
+      var ang=Math.atan2(b.Y-a.Y,b.X-a.X), ex=b.X-Math.cos(ang)*9, ey=b.Y-Math.sin(ang)*9;
+      c.fillStyle=c.strokeStyle; c.beginPath(); c.moveTo(ex,ey); c.lineTo(ex-Math.cos(ang-.4)*7,ey-Math.sin(ang-.4)*7); c.lineTo(ex-Math.cos(ang+.4)*7,ey-Math.sin(ang+.4)*7); c.fill();
+      if(sel&&hot&&G.pts.length<26){c.fillStyle='#9d9bb8'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='center';
+        c.fillText(REL[pn(e.p)]||pn(e.p),(a.X+b.X)/2,(a.Y+b.Y)/2-4);} });
+    c.textAlign='center'; c.font='12.5px '+getComputedStyle(document.body).fontFamily;
+    G.pts.forEach(function(p){var n=N[p.id]; var R=p.id===sel?9:6; c.fillStyle=tc(n.type); c.beginPath(); c.arc(p.X,p.Y,R,0,7); c.fill();
+      if(p.id===sel){c.strokeStyle='#eceaf3';c.lineWidth=2;c.stroke();c.lineWidth=1;}
+      var t=lab(n); if(t.length>14)t=t.slice(0,13)+'…'; c.fillStyle=p.id===sel?'#fff':'#d7d4e6'; c.fillText(t,p.X,p.Y-R-5);});
+    c.fillStyle='rgba(241,182,70,.9)'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='left';
+    c.fillText(sel?'Lân cận '+(G.pts.length-1)+'':'Tổng quan — các mục có nhiều liên kết '+G.pts.length+'',10,18);
+  }
+  cv.addEventListener('click',function(ev){var r=cv.getBoundingClientRect(),x=ev.clientX-r.left,y=ev.clientY-r.top,best=null,bd=400;
+    G.pts.forEach(function(p){var d=(p.X-x)*(p.X-x)+(p.Y-y)*(p.Y-y); if(d<bd){bd=d;best=p;}}); if(best)pick(best.id,true);});
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(draw,150);});
+  // 사다리 경로
+  var lad=root.querySelector('.ladder'), chainE=KG.edges.filter(function(e){return (e.p==='lab:prerequisiteOf'&&N[e.s].type==='Method'&&N[e.o]&&N[e.o].type==='Method');});
+  var nexts={},has={}; chainE.forEach(function(e){nexts[e.s]=e.o;has[e.o]=1;});
+  var start=Object.keys(nexts).filter(function(k){return !has[k];})[0], seen={};
+  var html=[]; for(var cur=start;cur&&!seen[cur];cur=nexts[cur]){ seen[cur]=1;
+    html.push('<span class="s" data-go="'+cur+'" style="border-color:'+tc('Method')+'">'+esc(lab(N[cur]))+'</span>');
+    var lim=OUT[cur].filter(function(e){return e.p==='lab:hasLimitation';})[0];
+    if(lim)html.push('<span class="a">→ hạn chế</span><span class="s lim" data-go="'+lim.o+'">'+esc(lab(N[lim.o]))+'</span>');
+    if(nexts[cur])html.push('<span class="a">→ cách giải quyết</span>');}
+  lad.innerHTML=html.length?html.join(''):'<span class="note">Trang này không có chuỗi bậc thang.</span>';
+  lad.addEventListener('click',function(ev){var s=ev.target.closest('[data-go]'); if(s)pick(s.dataset.go,true);});
+  var qs=root.querySelector('.qs'); KG.nodes.filter(function(n){return n.type==='Question';}).forEach(function(n){
+    var li=el('li',null,'<b>'+esc(lab(n))+'</b>'+(n.definition?' — '+esc(n.definition[LANG]||n.definition.ko):'')+(n.confidence==='low'?' <span class="badge no">cần xác nhận</span>':'')+(n.anchor?' <a href="'+n.anchor+'" style="color:var(--gfp,#5ee39c)">nội dung chính</a>':''));
+    qs.appendChild(li);});
+  render();
+}
+
+/* ── 꾸러미 ─────────────────────────────────────────── */
+function mountExport(root){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); root.classList.add('kgx');
+  var verifiedAll=function(r){var v=r.lab&&r.lab.verified; return v&&Object.keys(v).every(function(k){return v[k];});};
+  var vb=REF.filter(verifiedAll).length;
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';});
+  var todo=[]; REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; Object.keys(v).forEach(function(k){if(!v[k])todo.push(r.id+' — '+k+' chưa xác nhận (để trống)');});});
+  todo.push('Vị trí nguyên văn (trang, số hình) của '+claims.length+' luận điểm — cột loc trong provenance.csv đang để trống');
+  todo.push('Tên tác giả trang, giấy phép, địa chỉ công khai — được để trống trong page_meta.json');
+  var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
+  KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
+  var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
+  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">Trợ lý</div><p>Tôi không đưa các luận điểm không có nguồn vào gói. Có '+todo.length+' mục cần người kiểm tra, nằm ở bên dưới.</p></div>'+
+    '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>nút</span></div><div><b>'+KG.edges.length+'</b><span>quan hệ</span></div><div><b>'+REF.length+'</b><span>tài liệu</span></div>'+
+    '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>tài liệu có thư mục được xác nhận đầy đủ</span></div>'+
+    '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>luận điểm có nguồn</span></div></div>'+
+    '<h3>Trích dẫn trang này</h3><div class="tools"><button class="tchip cf" data-f="text" aria-pressed="true" style="background:var(--gfp,#5ee39c);border-color:var(--gfp,#5ee39c)">Câu văn thường</button><button class="tchip cf" data-f="bib" aria-pressed="false">BibTeX</button><button class="tchip cf" data-f="ris" aria-pressed="false">RIS</button><button class="bt cp" type="button">Sao chép</button></div><pre class="cite pc"></pre>'+
+    '<h3>Tài liệu tham khảo — huy hiệu xác nhận và các khái niệm được củng cố</h3><div class="refs list"></div>'+
+    '<h3>Chọn phạm vi và định dạng</h3><div class="tools sc" role="group" aria-label="Phạm vi"></div><div class="tools"><button class="bt primary zip" type="button">Tải gói ZIP</button><span class="note zc"></span></div>'+
+    '<div class="files"></div><p class="note">Khi tải từng tệp riêng lẻ trên màn hình claude.ai, đuôi .txt sẽ được thêm vào sau tên .bib, .ris, .ttl, .jsonld (chỉ cần xóa .txt ở cuối là có lại định dạng gốc). Các tệp trong ZIP giữ nguyên tên gốc.</p>'+
+    (META.seeAlso?'<p class="note">Để gộp các gói của nhiều trang và đối chiếu với bản đồ lĩnh vực → <a style="color:var(--gfp,#5ee39c)" href="'+esc(META.seeAlso)+'"'+(/^https?:/.test(META.seeAlso)?' target="_blank" rel="noopener"':'')+'>Gộp bản đồ lĩnh vực (KG_00)</a></p>':'')+
+    '<h3>Các mục cần người xác nhận</h3><ul class="todo">'+todo.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>'+
+    '<p class="note">Phiên bản gói 1.0 · ngày tạo '+esc(META.date)+' · sổ đăng ký '+esc(META.registry||'KG_00_registry (nguyên mẫu)')+' · tiền tố lab: '+NS+' (tạm thời) · chủ đề khung (lab:topic/*) là bản nháp của tác giả</p>';
+  var fmt='text', pc=root.querySelector('.pc');
+  function cite(){pc.textContent=fmt==='bib'?pageBib(META):fmt==='ris'?pageRis(META):pageText(META);}
+  [].forEach.call(root.querySelectorAll('.cf'),function(b){b.onclick=function(){fmt=b.dataset.f; [].forEach.call(root.querySelectorAll('.cf'),function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); cite();};});
+  root.querySelector('.cp').onclick=function(){copy(pc.textContent,this);}; cite();
+  var RL=root.querySelector('.refs');
+  REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; var bad=Object.keys(v).filter(function(k){return !v[k];});
+    var d=el('div','r','<div>'+esc(toText(r))+'<span class="badge role">'+esc({primary:'tài liệu chính',background:'bối cảnh',data:'số liệu',figure:'hình'}[r.lab&&r.lab.role]||'bối cảnh')+'</span>'+
+      (bad.length?'<span class="badge no">cần xác nhận: '+esc(bad.join(', '))+'</span>':'<span class="badge ok">thư mục đã xác nhận</span>')+'</div>'+
+      '<div style="margin-top:6px">'+(sup[r.id]||[]).map(function(id){var n=N[id]; return n?'<a class="rel" href="'+(n.anchor||'#kg')+'">'+esc(lab(n))+'</a>':'';}).join('')+'</div>');
+    RL.appendChild(d);});
+  var scope='all', SC=root.querySelector('.sc'), zc=root.querySelector('.zc');
+  [['all','Tất cả'],['terms','Chỉ khái niệm, phương pháp'],['claims','Chỉ luận điểm + nguồn'],['prereq','Chỉ quan hệ tiên quyết']].forEach(function(s,i){
+    var b=el('button','tchip',s[1]); b.type='button'; b.setAttribute('aria-pressed',i===0); if(i===0)b.style.background='var(--gfp,#5ee39c)',b.style.borderColor='var(--gfp,#5ee39c)';
+    b.onclick=function(){scope=s[0]; [].forEach.call(SC.children,function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); info();};
+    SC.appendChild(b);});
+  var FL=root.querySelector('.files');
+  function info(){var f=buildPackage(scope), m=JSON.parse(f[0].text); zc.textContent='Nút '+m.counts.nodes+' · Quan hệ '+m.counts.edges+' · Tài liệu '+m.counts.refs+' · tệp '+f.length+'';
+    FL.innerHTML=''; f.forEach(function(x){var b=el('button','bt',esc(x.name)); b.type='button'; b.onclick=function(){dlText(x.text,x.name);}; FL.appendChild(b);});}
+  root.querySelector('.zip').onclick=function(){download(makeZip(buildPackage(scope)),'kg_'+META.number+'_'+scope+'.zip');};
+  info();
+}
+function init(){addCss(); var a=$id('kg-mount'),b=$id('export-mount'); if(a)mountIndex(a); if(b)mountExport(b);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+return {download:download,buildPackage:buildPackage,makeZip:makeZip,toJsonLd:toJsonLd,toTurtle:toTurtle,toBib:toBib,toRis:toRis};
+})();
+
+</script>
+<!-- /lab-kg:script -->
 </body>
 </html>

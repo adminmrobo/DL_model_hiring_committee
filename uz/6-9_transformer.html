@@ -571,7 +571,20 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
 .vt.pass{color:var(--stamp);border-color:var(--stamp)}
 .vt.hold{color:var(--muted)}
 .runshot pre{overflow-wrap:anywhere;word-break:break-all}
+/* 꼬리표(지식 색인·꾸러미): 조립기 스타일의 색 변수를 시리즈 테마에 맞춘다 */
+body .kgx{--gfp:var(--ok)}
+body .kgx .it .df,body .kgx .todo li{color:var(--soft)}
+body .kgx .path span.lim{color:var(--stamp)}
 :root{--font:"IBM Plex Sans",system-ui,sans-serif;--stampf:"IBM Plex Sans",sans-serif}body,p,h1,h2,h3,h4,li,td,th,.lede{word-break:normal}</style>
+<!-- lab-kg:head -->
+<meta name="citation_title" content="Modellarni ishga olish qoʻmitasi · Ikkinchi ochiq tanlov · 6-9 Transformer">
+<meta name="dc.title" content="Modellarni ishga olish qoʻmitasi · Ikkinchi ochiq tanlov · 6-9 Transformer">
+<meta name="dc.date" content="2026-10-24">
+<meta name="dc.language" content="ko">
+<meta name="dc.type" content="InteractiveResource">
+<meta name="citation_author" content="Sangsun Ahn">
+<meta name="dcterms.isPartOf" content="Modellarni ishga olish qoʻmitasi Ikkinchi ochiq tanlov">
+<!-- /lab-kg:head -->
 </head>
 <body>
 <nav class="top" aria-label="Ushbu sahifa mundarijasi">
@@ -827,6 +840,22 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
   <div class="card"><ul class="reflist"><li><b>Maʼlumotlar va hisoblar.</b> Qoʻlyozma raqamlarning 450 ta muhrlangan imtihon varagʻi va siljigan imtihon varagʻi 6-0 dagi bilan bir xil qoidalar. Taqqoslanayotgan CNN natijasi 6-4 Colab natijasidan aynan olingan. Hukm raqamlarini sahifa A boʻlimidagi Colab kodining natijasidan oʻqib yozadi. 01-boʻlimdagi «oʻqitishdan oldingi diqqat» brauzer boʻlak piksellarini bevosita skalyar koʻpaytirib hisoblagan misol, «oʻqitishdan keyingi diqqat» esa Colab seed 0 modelining oxirgi qatlamida [CLS] boʻlaklarga qarash nisbati (toʻrt head oʻrtachasi). Qayta sinov sharti va bashorat oʻlchashdan oldin qoʻmita hujjatiga yozilgan. 03-boʻlimdagi «AI bergan kod» ataylab yaratilgan misol.</li><li><b>Hukm qoidalari.</b> Ikkinchi ochiq tanlovda hukm Colabda 5 ta seed (tasodifiy son) bilan oʻqitilgan modellarning oʻrtachasiga qarab chiqariladi. Nomzod ishga olinishi uchun ham bazaviy chiziqdan (Manual janob), ham katta hamkasb natijasidan (xuddi shu ishni hozir bajarayotgan birinchi tanlovda olingan xodim) oshishi kerak. Katta hamkasb bilan farq seedlar orasidagi tebranishdan (standart chetlanish) kichik boʻlsa, durang hisoblanadi va katta hamkasb oʻrnini saqlab qoladi. Sahifadagi «Oʻzingiz oʻqitib koʻring» bitta seed bilan brauzerda yangidan oʻqitilgan qiymat boʻlgani uchun hukm raqamlaridan biroz farq qilishi mumkin.</li><li><b>Qayta sinov.</b> Kutishda turgan nomzod bir marta qayta sinov soʻrashi mumkin. Nomzod sinovdan oldin sabab va bashoratini aytadi, katta hamkasb ham xuddi shu sharoitda qayta sinovdan oʻtadi. Qayta sinov natijasi ham 5 ta seed oʻrtachasi boʻladi; yutqazilsa, shunday yoziladi.</li><li><b>Rasmlar.</b> Qahramonlar rasmlari «Sunʼiy intellekt algoritmlari oilasi tashkiliy sxemasi»dan qayta olingan. Suhbat xonasi sahnalari, xodim guvohnomalari va diagrammalarni bu sahifa kod orqali oʻzi chizadi.</li><li><b>«Ishga olish qoʻmitasi» konsepsiyasi.</b> Bu — modellarni nomzodga, oʻqitish va baholashni suhbatga oʻxshatadigan metafora. Haqiqiy ishga olish jarayonini yoki biror kompaniyani ifodalamaydi. «Kutishda» faqat «bu ish va bu maʼlumotlarda katta hamkasb yaxshiroq» degan maʼnoni bildiradi, modellarning ustun-pastligini emas.</li><li><b>Qahramonlar.</b> Money-Robo — muallif yuritadigan xizmatning maskot qahramoni. Doktor, Yordamchi, Meva pashshasi tadqiqotchi, Manual janob, katta hamkasblar va nomzodlar haqiqiy shaxslarni ifodalamaydi. Dialoglardagi pul va byudjet haqidagi gaplar hisoblash xarajatiga ishora qiluvchi odat.</li><li><b>Maʼlumotlar.</b> Jadval maʼlumotlari jamoasining amaliy imtihoni — UCI Machine Learning Repository saytidagi Concrete Compressive Strength maʼlumotlari (Yeh, 1998, 1,030 ta yozuv, CC BY 4.0); imtihon varagʻi birinchi ochiq tanlovdagi qoidalar bilan bir xil (test_size=0.25, stratify=mustahkamlikning 3 darajasi, random_state=42; oʻqitish 772 · sinov 258). Tasvir tomonidagi amaliy imtihon — scikit-learn bilan birga keladigan qoʻlyozma raqamlar (load_digits, 1,797 ta tasvir, asl manba UCI Optical Recognition of Handwritten Digits, CC BY 4.0); nazoratli qismlarning imtihon varagʻi test_size=0.25, stratify=y, random_state=42 (oʻqitish 1,347 · sinov 450).</li><li><b>Til.</b> Bu seriya koreys tilida yozilgan. Tarjimalar koreyscha nusxa tasdiqlangandan keyin xuddi shu fayl nomi bilan qoʻshiladi. Colab kodidagi izohlar va ishga tushirish natijalari asl koreyscha holida qoldiriladi.</li></ul></div>
 </div>
 </section>
+<!-- lab-kg:body -->
+<section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
+<h2>Bilimlar indeksi — shu sahifadan izlash</h2>
+<p class="kgx-sub">Shu sahifadagi tushunchalar, usullar, biologik moslik, daʼvolar va ochiq savollar bir joyga jamlangan. Qidiring, yaqin aloqalarni koʻrish uchun bandni bosing, "Tushuntirishga oʻtish" orqali asosiy matnga qayting.</p>
+<div id="kg-mount"></div>
+</div></section>
+<section class="kgx kgx-sec" id="export"><div class="kgx-wrap">
+<h2>Ontologiya va bibliografiya toʻplami — shu sahifadagi bilimlarni olib ketish</h2>
+<p class="kgx-sub">Bilimlar indeksi manbalari bilan birga fayl sifatida yuklab olinadi. Zotero (BibTeX, RIS), Protégé (Turtle), Neo4j va Gephi (CSV), bir necha sahifani birlashtirish (kg.json) uchun ishlatiladi.</p>
+<div id="export-mount"></div>
+</div></section>
+<script type="application/json" id="kg-raw">{"version": "1.0", "page": "6-9", "nodes": [{"id": "lab:method/vit", "type": "Method", "label": {"ko": "ViT (Vision Transformer)", "en": "Vision Transformer"}, "definition": {"ko": "그림을 조각으로 잘라 토큰으로 쓰고, 맨 앞에 [CLS] 칸을 붙여 인코더 층을 지난 [CLS]로 답하는 Transformer.", "uz": "Rasmni patchlarga (boʻlak) boʻlib token qilib ishlatadigan, eng oldiga [CLS] katagini qoʻshib, enkoder qatlamlaridan oʻtgan [CLS] bilan javob beradigan Transformer."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "dosovitskiy2021"}]}, {"id": "lab:method/svm-senior", "type": "Method", "label": {"ko": "SVM (선배)", "en": "SVM (senior)", "uz": "SVM (katta hamkasb)"}, "definition": {"ko": "봉인 시험지에서 99.1%를 낸 선배. 밀린 시험지에서는 늘인 사본으로 다시 배운 선배(6-4: KNN 98.7%, SVM 98.4%)가 강하다.", "uz": "Muhrlangan varaqda 99.1% olgan katta hamkasb. Siljigan imtihon varagʻida choʻzilgan nusxalar bilan qayta oʻrgangan katta hamkasb (6-4: KNN 98.7%, SVM 98.4%) kuchli."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/cnn-junior", "type": "Method", "label": {"ko": "CNN (후배, 6-4)", "en": "CNN (junior, 6-4)", "uz": "CNN (kichik hamkasb, 6-4)"}, "definition": {"ko": "작은 필터가 이웃 칸을 함께 보는 합성곱 신경망. 같은 시험지에서 봉인 97.6%를 기록한 6-4의 후배다.", "uz": "Kichik filtr qoʻshni kataklarni birga koʻradigan svyortka neyron tarmogʻi. Shu varaqda muhrlangan 97.6% qayd etgan 6-4ning kichik hamkasbi."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/self-attention", "type": "Concept", "label": {"ko": "셀프 어텐션", "en": "Self-attention", "uz": "oʻz-oʻziga diqqat"}, "definition": {"ko": "같은 줄의 토큰끼리 질문(Q)·열쇠(K)·내용(V)으로 서로를 얼마나 볼지 정해 섞는 계산. softmax(QKᵀ/√d)V.", "uz": "Bir qatordagi tokenlar soʻrov (Q), kalit (K) va mazmun (V) orqali bir-biriga qanchalik qarashini belgilab aralashtiradigan hisob. softmax(QKᵀ/√d)V."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "vaswani2017"}]}, {"id": "lab:concept/qkv", "type": "Concept", "label": {"ko": "질문·열쇠·내용 (Q·K·V)", "en": "Query, key, value", "uz": "Soʻrov, kalit, mazmun (Q·K·V)"}, "definition": {"ko": "조각마다 만드는 세 가지. Q와 K의 내적을 소프트맥스로 비율로 바꾸고 그 비율대로 V를 섞어 새 내용으로 쓴다.", "uz": "Har patch uchun yaratiladigan uch narsa. Q va K skalyar koʻpaytmasini softmax bilan nisbatga aylantirib, shu nisbatda V ni aralashtirib yangi mazmun qilib ishlatadi."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/multi-head", "type": "Concept", "label": {"ko": "머리 (멀티헤드)", "en": "Multi-head attention", "uz": "Bosh (multi-head)"}, "definition": {"ko": "셀프 어텐션을 서로 다른 Q·K·V로 여러 번 하는 갈래. 이 편은 머리 4개를 쓴다.", "uz": "Oʻz-oʻziga diqqat (self-attention)ni har xil Q·K·V bilan bir necha marta bajaradigan shoxlar. Bu qismda 4 bosh ishlatiladi."}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "vaswani2017"}]}, {"id": "lab:concept/cls-token", "type": "Concept", "label": {"ko": "[CLS] 토큰", "en": "[CLS] token", "uz": "[CLS] token"}, "definition": {"ko": "답을 낼 자리로 맨 앞에 붙이는 배우는 토큰. 다른 조각을 보며 내용을 모으고 마지막 층의 [CLS]로 숫자를 답한다.", "uz": "Javob chiqariladigan oʻrin sifatida eng oldiga qoʻshiladigan oʻrganiladigan token. Boshqa patchlarga qarab mazmunni yigʻadi va oxirgi qatlamdagi [CLS] bilan raqamni javob qiladi."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/patch", "type": "Concept", "label": {"ko": "조각", "en": "Patch", "uz": "boʻlaklarga"}, "definition": {"ko": "그림을 p×p 칸으로 자른 토큰. 2×2는 16개, 4×4는 4개이며 조각마다 32칸 숫자로 바꾼다.", "uz": "Rasmni p×p katakka boʻlgan tokenlar. 2×2 da 16 ta, 4×4 da 4 ta boʻladi va har patch 32 katakli songa aylantiriladi."}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/position-embedding", "type": "Concept", "label": {"ko": "위치 임베딩", "en": "Position embedding", "uz": "Pozitsiya embeddingi"}, "definition": {"ko": "조각의 자리를 알려 주는 배우는 숫자. 셀프 어텐션이 순서를 모르기 때문에 더한다.", "uz": "Patch oʻrnini bildiradigan oʻrganiladigan sonlar. Oʻz-oʻziga diqqat tartibni bilmagani uchun qoʻshiladi."}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "vaswani2017"}]}, {"id": "lab:claim/order-blind", "type": "Claim", "label": {"ko": "셀프 어텐션은 순서를 모른다", "en": "Self-attention is order-blind", "uz": "Oʻz-oʻziga diqqat tartibni bilmaydi"}, "definition": {"ko": "위치 정보가 없으면 토큰 순서를 바꿔도 같은 결과가 나온다. ViT는 조각을 주머니 속 더미로 보아 6과 9를 가르기 어렵다.", "uz": "Joylashuv maʼlumoti boʻlmasa, token tartibini oʻzgartirsa ham bir xil natija chiqadi. ViT patchlarni xalta ichidagi uyum deb qaragani uchun 6 bilan 9ni ajratish qiyin."}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "vaswani2017"}]}, {"id": "lab:concept/inductive-bias", "type": "Concept", "label": {"ko": "귀납 편향", "en": "Inductive bias", "uz": "Induktiv bias"}, "definition": {"ko": "모델이 데이터를 보기 전에 구조로 갖고 있는 가정. CNN은 가까운 칸을 함께 보지만 ViT는 조각 사이의 관계까지 데이터로 배운다.", "uz": "Model maʼlumotni koʻrishdan oldin tuzilmasi bilan olib yuradigan taxmin. CNN yaqin kataklarni birga koʻradi, ViT esa patchlar orasidagi munosabatni ham maʼlumotdan oʻrganadi."}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/data-hungry", "type": "Claim", "label": {"ko": "데이터가 많을수록 ViT가 유리하다", "en": "ViT needs more data", "uz": "Maʼlumot qancha koʻp boʻlsa, ViT shuncha foydali"}, "definition": {"ko": "어디를 볼지까지 배워야 하므로 데이터가 많으면 자유가 힘이 되고 적으면 짐이 된다.", "uz": "Qayerga qarashni ham oʻrganishi kerak, shuning uchun maʼlumot koʻp boʻlsa erkinlik kuch, kam boʻlsa yuk boʻladi."}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "dosovitskiy2021"}]}, {"id": "lab:limitation/small-data", "type": "Limitation", "label": {"ko": "적은 데이터에서 약하다", "en": "Weak on small data", "uz": "Kam maʼlumotda zaif"}, "definition": {"ko": "1,347장의 8×8 글씨에서는 이웃 관계를 미리 아는 SVM과 CNN이 유리하다.", "uz": "1,347 ta 8×8 raqam tasvirida qoʻshni munosabatni oldindan biladigan SVM va CNN ustun."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/retest-recipe", "type": "Method", "label": {"ko": "재시험 처방: AdamW·300에포크·코사인", "en": "Retest recipe: AdamW, 300 epochs, cosine", "uz": "Qayta sinov retsepti: AdamW, 300 epoxa, kosinus"}, "definition": {"ko": "사전 등록한 재시험 설정. 가중치 감쇠를 기울기와 따로 적용하는 AdamW로 300에포크를 코사인 학습률로 돌린다.", "uz": "Oldindan roʻyxatga olingan qayta sinov sozlamasi. Ogʻirlik pasayishini gradientdan alohida qoʻllaydigan AdamW bilan 300 epoxani kosinus oʻrganish tezligida yuritadi."}, "anchor": "#m5", "coverage": "explained", "confidence": "high", "source": [{"ref": "loshchilov2019"}]}, {"id": "lab:limitation/quadratic-cost", "type": "Limitation", "label": {"ko": "토큰이 늘면 계산이 제곱으로 는다", "en": "Cost grows with the square of tokens", "uz": "Token koʻpaysa, hisob kvadrat boʻyicha oshadi"}, "definition": {"ko": "조각이 작아 토큰이 많아지면 서로 보는 쌍이 늘어난다. 2×2 조각 16개는 16 × 16 = 256쌍이다.", "uz": "Patch kichik boʻlib tokenlar koʻpaysa, bir-biriga qaraydigan juftlar koʻpayadi. 2×2 patchdan 16 tasi 16 × 16 = 256 juft."}, "anchor": "#m6", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/shift-fragile", "type": "Limitation", "label": {"ko": "밀린 시험지에 쉽게 무너진다", "en": "Fragile on shifted test papers", "uz": "Siljigan imtihon varagʻida oson yiqiladi"}, "definition": {"ko": "ViT는 이웃과 이동에 대한 가정이 없어 밀린 시험지에서 쉽게 무너진다.", "uz": "ViTda qoʻshnilik va siljish haqida taxmin yoʻq, shuning uchun siljigan imtihon varagʻida oson yiqiladi."}, "anchor": "#m6", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:task/handwritten-digits", "type": "Task", "label": {"ko": "8×8 손글씨 0~9 분류", "en": "8×8 handwritten digit classification", "uz": "8×8 qoʻlyozma raqamlar 0~9 tasnifi"}, "definition": {"ko": "6-4와 같은 1,347장 훈련, 봉인된 시험지와 밀린 시험지로 숫자를 가리는 이미지 분류.", "uz": "6-4dagi bilan bir xil 1,347 ta oʻqitish tasviri, muhrlangan va siljigan imtihon varagʻi bilan raqamni ajratadigan tasvir tasnifi."}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:dataset/optical-digits", "type": "Dataset", "label": {"ko": "손글씨 8×8 숫자", "en": "Optical Recognition of Handwritten Digits", "uz": "Qoʻlyozma raqamlar 8×8"}, "definition": {"ko": "6-4와 같은 8×8 손글씨 데이터. 훈련 1,347장을 쓴다.", "uz": "6-4dagi bilan bir xil 8×8 qoʻlyozma raqamlar maʼlumoti. 1,347 ta oʻqitish tasviri ishlatiladi."}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "alpaydin1998"}]}, {"id": "lab:metric/test-accuracy", "type": "Metric", "label": {"ko": "봉인 시험지 정확도 (씨앗 5개 평균)", "en": "Sealed test accuracy (mean of 5 seeds)", "uz": "Muhrlangan varaq aniqligi (5 ta seed oʻrtachasi)"}, "definition": {"ko": "봉인된 시험지에서 맞힌 비율. 판정은 4×4 조각 기준 씨앗 다섯 개의 평균으로 하고 2×2와 증강은 함께 보인다.", "uz": "Muhrlangan imtihon varagʻida topilgan ulush. Baho 4×4 patch asosida beshta seed oʻrtachasi bilan beriladi, 2×2 va augmentatsiya birga koʻrsatiladi."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/verdict", "type": "Claim", "label": {"ko": "판정: 보류 확정", "en": "Verdict: on hold, confirmed", "uz": "Qaror: Kutishda (yakuniy)"}, "definition": {"ko": "ViT 4×4는 봉인 96.6%, 재시험 97.1%로 선배 SVM의 99.1%와 후배 CNN의 97.6%에 못 미쳐 보류가 확정되었다.", "uz": "ViT 4×4 muhrlangan varaqda 96.6%, qayta sinovda 97.1% bilan katta hamkasb SVMning 99.1% va kichik hamkasb CNNning 97.6% natijasiga yetmadi, kutishda holati qatʼiylashdi."}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:sim/attention-map", "type": "Simulation", "label": {"ko": "조각 주의 지도", "en": "Patch attention map", "uz": "Patch diqqat xaritasi"}, "definition": {"ko": "2×2 조각 16개 중 하나를 눌러 그 조각이 다른 조각을 얼마나 보는지, 학습 전 픽셀 내적과 학습 뒤 [CLS]를 비교한다.", "uz": "2×2 patchning 16 tasidan birini bosib, u boshqa patchlarga qanchalik qarashini oʻrganishdan oldingi piksel skalyar koʻpaytmasi va oʻrganishdan keyingi [CLS] bilan taqqoslaymiz."}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/meeting", "type": "Analogy", "label": {"ko": "회의에서 누구 말을 얼마나 들을지 정하기", "en": "Choosing whom to listen to in a meeting", "uz": "Yigʻilishda kimning gapiga qancha quloq solishni belgilash"}, "definition": {"ko": "각자 누구의 말에 얼마나 귀를 기울일지 정하는 모습이 셀프 어텐션과 닮았다. 실제 계산은 내적과 소프트맥스다.", "uz": "Har kim kimning gapiga qancha quloq solishni belgilashi oʻz-oʻziga diqqatga oʻxshaydi. Haqiqiy hisob skalyar koʻpaytma va softmax."}, "anchor": "#analogy-sec", "coverage": "explained", "confidence": "high"}, {"id": "lab:bio/fly-attention", "type": "BioAnalogue", "label": {"ko": "초파리의 시각 주의", "en": "Fly visual attention", "uz": "Meva pashshasining koʻrish diqqati"}, "definition": {"ko": "초파리는 시야의 여러 곳 가운데 중요한 대상에 시각 처리를 모으는 주의 같은 현상을 보인다. 다만 이는 신경 회로의 이득 조절이고 셀프 어텐션과 계산이 다르다.", "uz": "Meva pashshasi koʻrish maydonidagi koʻp joydan muhim obyektga koʻrish ishlovini jamlaydigan diqqatga oʻxshash hodisani koʻrsatadi. Biroq bu neyron zanjirdagi kuchaytirish boshqaruvi va hisobi oʻz-oʻziga diqqatdan farq qiladi."}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "sareen2011"}]}, {"id": "lab:question/when-vit-wins", "type": "Question", "label": {"ko": "데이터가 얼마나 많아야 ViT가 CNN을 넘나?", "en": "How much data until ViT beats CNN?", "uz": "ViT CNNdan oshishi uchun maʼlumot qancha boʻlishi kerak?"}, "definition": {"ko": "1,347장에서는 SVM과 CNN이 앞섰다. 어느 규모부터 뒤집히는지는 이 실험이 답하지 않는다.", "uz": "1,347 tada SVM va CNN oldinda boʻldi. Qaysi hajmdan boshlab oʻzgarishini bu tajriba aytmaydi."}, "anchor": "#m4", "coverage": "mentioned", "confidence": "medium"}], "edges": [{"s": "lab:method/vit", "p": "lab:broader", "o": "lab:topic/transformer"}, {"s": "lab:method/svm-senior", "p": "lab:broader", "o": "lab:topic/svm"}, {"s": "lab:method/cnn-junior", "p": "lab:broader", "o": "lab:topic/convolution"}, {"s": "lab:concept/self-attention", "p": "lab:broader", "o": "lab:topic/self-attention"}, {"s": "lab:concept/multi-head", "p": "lab:broader", "o": "lab:topic/multi-head-attention"}, {"s": "lab:concept/position-embedding", "p": "lab:broader", "o": "lab:topic/positional-encoding"}, {"s": "lab:metric/test-accuracy", "p": "lab:broader", "o": "lab:topic/accuracy-metrics"}, {"s": "lab:method/retest-recipe", "p": "lab:broader", "o": "lab:topic/weight-decay"}, {"s": "lab:limitation/shift-fragile", "p": "lab:broader", "o": "lab:topic/distribution-shift"}, {"s": "lab:concept/self-attention", "p": "lab:partOf", "o": "lab:method/vit"}, {"s": "lab:concept/multi-head", "p": "lab:partOf", "o": "lab:method/vit"}, {"s": "lab:concept/cls-token", "p": "lab:partOf", "o": "lab:method/vit"}, {"s": "lab:concept/patch", "p": "lab:partOf", "o": "lab:method/vit"}, {"s": "lab:concept/position-embedding", "p": "lab:partOf", "o": "lab:method/vit"}, {"s": "lab:concept/qkv", "p": "lab:partOf", "o": "lab:concept/self-attention"}, {"s": "lab:concept/qkv", "p": "lab:prerequisiteOf", "o": "lab:concept/multi-head"}, {"s": "lab:concept/patch", "p": "lab:prerequisiteOf", "o": "lab:concept/self-attention"}, {"s": "lab:concept/self-attention", "p": "lab:prerequisiteOf", "o": "lab:concept/position-embedding"}, {"s": "lab:claim/order-blind", "p": "lab:supports", "o": "lab:concept/position-embedding"}, {"s": "lab:concept/self-attention", "p": "lab:prerequisiteOf", "o": "lab:claim/order-blind"}, {"s": "lab:concept/inductive-bias", "p": "lab:prerequisiteOf", "o": "lab:claim/data-hungry"}, {"s": "lab:claim/data-hungry", "p": "lab:supports", "o": "lab:limitation/small-data"}, {"s": "lab:method/cnn-junior", "p": "lab:prerequisiteOf", "o": "lab:method/vit"}, {"s": "lab:method/cnn-junior", "p": "lab:contrastsWith", "o": "lab:method/vit"}, {"s": "lab:method/vit", "p": "lab:contrastsWith", "o": "lab:method/svm-senior"}, {"s": "lab:method/vit", "p": "lab:hasLimitation", "o": "lab:limitation/small-data"}, {"s": "lab:limitation/small-data", "p": "lab:addressedBy", "o": "lab:method/retest-recipe"}, {"s": "lab:method/vit", "p": "lab:hasLimitation", "o": "lab:limitation/quadratic-cost"}, {"s": "lab:method/vit", "p": "lab:hasLimitation", "o": "lab:limitation/shift-fragile"}, {"s": "lab:limitation/small-data", "p": "lab:raises", "o": "lab:question/when-vit-wins"}, {"s": "lab:method/vit", "p": "lab:solves", "o": "lab:task/handwritten-digits"}, {"s": "lab:method/svm-senior", "p": "lab:solves", "o": "lab:task/handwritten-digits"}, {"s": "lab:method/cnn-junior", "p": "lab:solves", "o": "lab:task/handwritten-digits"}, {"s": "lab:task/handwritten-digits", "p": "lab:evaluatedOn", "o": "lab:dataset/optical-digits"}, {"s": "lab:method/vit", "p": "lab:evaluatedBy", "o": "lab:metric/test-accuracy"}, {"s": "lab:metric/test-accuracy", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/retest-recipe", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:concept/self-attention", "p": "lab:demonstratedBy", "o": "lab:sim/attention-map"}, {"s": "lab:concept/cls-token", "p": "lab:demonstratedBy", "o": "lab:sim/attention-map"}, {"s": "lab:analogy/meeting", "p": "lab:analogyOf", "o": "lab:concept/self-attention"}, {"s": "lab:bio/fly-attention", "p": "lab:bioAnalogueOf", "o": "lab:concept/self-attention"}], "topicLabels": {"lab:area/math": "Matematika asoslari", "lab:topic/linear-algebra": "Chiziqli algebra", "lab:topic/probability-statistics": "Ehtimollik va statistika", "lab:topic/calculus-optimization-math": "Hisob va optimallashtirish matematikasi", "lab:topic/information-theory": "Axborot nazariyasi", "lab:area/ml-basics": "Mashinaviy oʻrganish asoslari", "lab:topic/supervised-learning": "Nazoratli oʻrganish", "lab:topic/unsupervised-learning": "Nazoratsiz oʻrganish tushunchasi", "lab:topic/generalization": "Umumlashtirish va haddan tashqari moslashish", "lab:topic/bias-variance": "Siljish va dispersiya muvozanati", "lab:topic/data-splitting": "Oʻqitish, validatsiya va sinov ajratilishi", "lab:topic/feature-engineering": "Xususiyat muhandisligi", "lab:topic/rule-vs-learning": "Qoidaga asoslangan va oʻrganishga asoslangan", "lab:area/classical": "Klassik modellar", "lab:topic/linear-regression": "Chiziqli regressiya", "lab:topic/logistic-regression": "logistik regressiya", "lab:topic/svm": "Tayanch vektorlar mashinasi", "lab:topic/knn": "k-eng yaqin qoʻshnilar", "lab:topic/decision-tree": "Qaror daraxti", "lab:topic/naive-bayes": "Sodda Bayes", "lab:area/ensemble": "Ansambl", "lab:topic/bagging": "Bagging", "lab:topic/random-forest": "Tasodifiy oʻrmon", "lab:topic/boosting": "Busting", "lab:topic/stacking": "Stekking", "lab:area/nn-basics": "Neyron tarmoq asoslari", "lab:topic/weights-and-biases": "Ogʻirliklar va siljish", "lab:topic/perceptron": "Perseptron", "lab:topic/mlp": "Koʻp qatlamli perseptron", "lab:topic/activation-function": "Aktivatsiya funksiyasi", "lab:topic/loss-function": "Yoʻqotish funksiyasi", "lab:topic/backpropagation": "Teskari tarqalish", "lab:topic/universal-approximation": "Universal yaqinlashish teoremasi", "lab:area/optimization": "Optimallashtirish", "lab:topic/gradient-descent": "Gradiyent tushish", "lab:topic/sgd-minibatch": "Stoxastik gradiyent tushish va mini-batch", "lab:topic/momentum-adam": "Momentum va Adam", "lab:topic/learning-rate-schedule": "Oʻrganish tezligini sozlash", "lab:area/regularization": "Regulyarizatsiya va umumlashtirish usullari", "lab:topic/weight-decay": "Ogʻirlik susayishi (L2)", "lab:topic/dropout": "Dropout", "lab:topic/early-stopping": "Erta toʻxtatish", "lab:topic/normalization-layers": "Normallashtirish qatlami", "lab:topic/data-augmentation": "Maʼlumotlar augmentatsiyasi", "lab:area/vision": "Svyortka va koʻrish", "lab:topic/convolution": "Svyortka va ogʻirlik almashinuvi", "lab:topic/pooling": "Pooling", "lab:topic/receptive-field": "Qabul qilish maydoni", "lab:topic/residual-connections": "Qoldiq ulanish", "lab:topic/object-detection": "Obyektni aniqlash", "lab:topic/segmentation": "Segmentatsiya", "lab:area/sequence": "Ketma-ketlik modellari", "lab:topic/rnn": "Rekurrent neyron tarmoq", "lab:topic/lstm-gru": "LSTM·GRU", "lab:topic/seq2seq": "Ketma-ketlikdan ketma-ketlikka", "lab:topic/time-series": "Vaqt qatori bashorati", "lab:area/attention": "Attention va transformer", "lab:topic/attention-mechanism": "Attention mexanizmi", "lab:topic/self-attention": "oʻz-oʻziga diqqat", "lab:topic/multi-head-attention": "Koʻp boshli attention", "lab:topic/positional-encoding": "Oʻrin kodlash", "lab:topic/transformer": "Transformer", "lab:area/language": "Til modellari va tabiiy tilni qayta ishlash", "lab:topic/tokenization": "Tokenizatsiya", "lab:topic/word-embedding": "Soʻz embeddinglari", "lab:topic/pretrained-lm": "Oldindan oʻqitilgan til modellari", "lab:topic/transfer-learning": "Transfer oʻrganish va fine-tuning", "lab:topic/lora": "LoRA va adapterlar", "lab:topic/prompting": "Prompting", "lab:topic/rag": "Qidiruv bilan boyitilgan generatsiya", "lab:area/generative": "Generativ modellar", "lab:topic/autoencoder": "Avtoenkoder", "lab:topic/vae": "Variatsion avtoenkoder", "lab:topic/gan": "Generativ raqobatchi tarmoqlar", "lab:topic/diffusion": "Diffuziya modeli", "lab:topic/autoregressive-generation": "Avtoregressiv generatsiya", "lab:area/representation": "Tasvirlarni oʻrganish", "lab:topic/embedding-space": "Embedding fazosi", "lab:topic/self-supervised": "Oʻzini oʻzi nazorat qiluvchi oʻrganish", "lab:topic/contrastive": "Kontrastiv oʻrganish", "lab:topic/sparse-representation": "Siyrak tasvir", "lab:topic/random-features": "Tasodifiy xususiyatlar", "lab:topic/multi-task-learning": "Koʻp vazifali oʻrganish", "lab:area/rl": "Mustahkamlovchi oʻrganish", "lab:topic/mdp": "Markov qaror jarayoni", "lab:topic/reward": "Mukofot", "lab:topic/value-function": "Qiymat funksiyasi", "lab:topic/q-learning": "Q-oʻrganish", "lab:topic/policy-gradient": "Siyosat gradiyenti", "lab:topic/exploration": "Izlanish va foydalanish", "lab:topic/reward-prediction-error": "Mukofotni bashorat qilish xatosi", "lab:area/unsupervised": "Nazoratsiz usullar", "lab:topic/clustering": "Klasterlash", "lab:topic/pca": "Bosh komponentalar tahlili", "lab:topic/tsne-umap": "t-SNE·UMAP", "lab:topic/density-estimation": "Zichlikni baholash", "lab:topic/anomaly-detection": "Anomaliyani aniqlash", "lab:area/evaluation": "Baholash", "lab:topic/accuracy-metrics": "Aniqlik va yoʻqotish koʻrsatkichlari", "lab:topic/precision-recall": "Precision va recall", "lab:topic/roc-auc": "ROC·AUC", "lab:topic/confusion-matrix": "Chalkashlik matritsasi", "lab:topic/data-leakage": "Maʼlumot sizib chiqishi", "lab:topic/ablation": "Ablyatsiya tajribasi", "lab:area/graph": "Graf asosida oʻrganish", "lab:topic/gnn": "Graf neyron tarmoqlari", "lab:topic/message-passing": "Xabar uzatish", "lab:topic/knowledge-graph": "Bilimlar grafi", "lab:area/systems": "Tizimlar va MLOps", "lab:topic/deployment": "Joylashtirish", "lab:topic/distribution-shift": "Taqsimot siljishi", "lab:topic/monitoring": "Monitoring", "lab:topic/reproducibility": "Takrorlanuvchanlik", "lab:area/responsible": "Masʼuliyatli sunʼiy intellekt", "lab:topic/fairness": "Adolatlilik", "lab:topic/interpretability": "Tushuntirib berish va sharhlash", "lab:topic/ai-safety": "Xavfsizlik", "lab:topic/privacy": "Maxfiylik", "lab:area/neuro": "Neyrobiologiya va sunʼiy intellekt", "lab:topic/biological-neuron": "Biologik neyron va spayk", "lab:topic/synaptic-plasticity": "Sinaptik plastiklik", "lab:topic/connectome": "Konnektom", "lab:topic/sensory-processing": "Sezgilarni qayta ishlash", "lab:topic/learning-memory-circuits": "Oʻrganish va xotira zanjirlari", "lab:topic/circuit-methods": "Neyron zanjir tajriba usullari"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/6-9","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"모델 채용 위원회 2차 공채 · 6-9 Transformer","schema:inLanguage":"ko","schema:dateCreated":"2026-10-24","schema:version":"1.0","dct:isPartOf":"모델 채용 위원회 2차 공채","schema:about":[{"@id":"lab:topic/transformer"},{"@id":"lab:topic/self-attention"},{"@id":"lab:topic/positional-encoding"}],"schema:educationalLevel":"대학 학부 · 입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/vaswani2017"},{"@id":"lab:work/dosovitskiy2021"},{"@id":"lab:work/touvron2021"},{"@id":"lab:work/loshchilov2019"},{"@id":"lab:work/sareen2011"},{"@id":"lab:work/alpaydin1998"}]},{"@id":"lab:method/vit","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"ViT (Vision Transformer)","@language":"ko"},{"@value":"Vision Transformer","@language":"en"}],"skos:definition":[{"@value":"그림을 조각으로 잘라 토큰으로 쓰고, 맨 앞에 [CLS] 칸을 붙여 인코더 층을 지난 [CLS]로 답하는 Transformer.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/transformer"}],"skos:broader":[{"@id":"lab:topic/transformer"}],"lab:contrastsWith":[{"@id":"lab:method/svm-senior"}],"lab:hasLimitation":[{"@id":"lab:limitation/small-data"},{"@id":"lab:limitation/quadratic-cost"},{"@id":"lab:limitation/shift-fragile"}],"lab:solves":[{"@id":"lab:task/handwritten-digits"}],"lab:evaluatedBy":[{"@id":"lab:metric/test-accuracy"}]},{"@id":"lab:method/svm-senior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"SVM (선배)","@language":"ko"},{"@value":"SVM (senior)","@language":"en"}],"skos:definition":[{"@value":"봉인 시험지에서 99.1%를 낸 선배. 밀린 시험지에서는 늘인 사본으로 다시 배운 선배(6-4: KNN 98.7%, SVM 98.4%)가 강하다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/svm"}],"skos:broader":[{"@id":"lab:topic/svm"}],"lab:solves":[{"@id":"lab:task/handwritten-digits"}]},{"@id":"lab:method/cnn-junior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"CNN (후배, 6-4)","@language":"ko"},{"@value":"CNN (junior, 6-4)","@language":"en"}],"skos:definition":[{"@value":"작은 필터가 이웃 칸을 함께 보는 합성곱 신경망. 같은 시험지에서 봉인 97.6%를 기록한 6-4의 후배다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/convolution"}],"skos:broader":[{"@id":"lab:topic/convolution"}],"lab:prerequisiteOf":[{"@id":"lab:method/vit"}],"lab:contrastsWith":[{"@id":"lab:method/vit"}],"lab:solves":[{"@id":"lab:task/handwritten-digits"}]},{"@id":"lab:concept/self-attention","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"셀프 어텐션","@language":"ko"},{"@value":"Self-attention","@language":"en"}],"skos:definition":[{"@value":"같은 줄의 토큰끼리 질문(Q)·열쇠(K)·내용(V)으로 서로를 얼마나 볼지 정해 섞는 계산. softmax(QKᵀ/√d)V.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/self-attention"}],"skos:broader":[{"@id":"lab:topic/self-attention"}],"lab:partOf":[{"@id":"lab:method/vit"}],"lab:prerequisiteOf":[{"@id":"lab:concept/position-embedding"},{"@id":"lab:claim/order-blind"}],"lab:demonstratedBy":[{"@id":"lab:sim/attention-map"}]},{"@id":"lab:concept/qkv","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"질문·열쇠·내용 (Q·K·V)","@language":"ko"},{"@value":"Query, key, value","@language":"en"}],"skos:definition":[{"@value":"조각마다 만드는 세 가지. Q와 K의 내적을 소프트맥스로 비율로 바꾸고 그 비율대로 V를 섞어 새 내용으로 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:concept/self-attention"}],"lab:prerequisiteOf":[{"@id":"lab:concept/multi-head"}]},{"@id":"lab:concept/multi-head","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"머리 (멀티헤드)","@language":"ko"},{"@value":"Multi-head attention","@language":"en"}],"skos:definition":[{"@value":"셀프 어텐션을 서로 다른 Q·K·V로 여러 번 하는 갈래. 이 편은 머리 4개를 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/multi-head-attention"}],"skos:broader":[{"@id":"lab:topic/multi-head-attention"}],"lab:partOf":[{"@id":"lab:method/vit"}]},{"@id":"lab:concept/cls-token","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"[CLS] 토큰","@language":"ko"},{"@value":"[CLS] token","@language":"en"}],"skos:definition":[{"@value":"답을 낼 자리로 맨 앞에 붙이는 배우는 토큰. 다른 조각을 보며 내용을 모으고 마지막 층의 [CLS]로 숫자를 답한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/vit"}],"lab:demonstratedBy":[{"@id":"lab:sim/attention-map"}]},{"@id":"lab:concept/patch","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"조각","@language":"ko"},{"@value":"Patch","@language":"en"}],"skos:definition":[{"@value":"그림을 p×p 칸으로 자른 토큰. 2×2는 16개, 4×4는 4개이며 조각마다 32칸 숫자로 바꾼다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:partOf":[{"@id":"lab:method/vit"}],"lab:prerequisiteOf":[{"@id":"lab:concept/self-attention"}]},{"@id":"lab:concept/position-embedding","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"위치 임베딩","@language":"ko"},{"@value":"Position embedding","@language":"en"}],"skos:definition":[{"@value":"조각의 자리를 알려 주는 배우는 숫자. 셀프 어텐션이 순서를 모르기 때문에 더한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:broader":[{"@id":"lab:topic/positional-encoding"}],"skos:broader":[{"@id":"lab:topic/positional-encoding"}],"lab:partOf":[{"@id":"lab:method/vit"}]},{"@id":"lab:claim/order-blind","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"셀프 어텐션은 순서를 모른다","@language":"ko"},{"@value":"Self-attention is order-blind","@language":"en"}],"skos:definition":[{"@value":"위치 정보가 없으면 토큰 순서를 바꿔도 같은 결과가 나온다. ViT는 조각을 주머니 속 더미로 보아 6과 9를 가르기 어렵다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:concept/position-embedding"}]},{"@id":"lab:concept/inductive-bias","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"귀납 편향","@language":"ko"},{"@value":"Inductive bias","@language":"en"}],"skos:definition":[{"@value":"모델이 데이터를 보기 전에 구조로 갖고 있는 가정. CNN은 가까운 칸을 함께 보지만 ViT는 조각 사이의 관계까지 데이터로 배운다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:prerequisiteOf":[{"@id":"lab:claim/data-hungry"}]},{"@id":"lab:claim/data-hungry","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"데이터가 많을수록 ViT가 유리하다","@language":"ko"},{"@value":"ViT needs more data","@language":"en"}],"skos:definition":[{"@value":"어디를 볼지까지 배워야 하므로 데이터가 많으면 자유가 힘이 되고 적으면 짐이 된다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:limitation/small-data"}]},{"@id":"lab:limitation/small-data","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"적은 데이터에서 약하다","@language":"ko"},{"@value":"Weak on small data","@language":"en"}],"skos:definition":[{"@value":"1,347장의 8×8 글씨에서는 이웃 관계를 미리 아는 SVM과 CNN이 유리하다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:addressedBy":[{"@id":"lab:method/retest-recipe"}],"lab:raises":[{"@id":"lab:question/when-vit-wins"}]},{"@id":"lab:method/retest-recipe","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"재시험 처방: AdamW·300에포크·코사인","@language":"ko"},{"@value":"Retest recipe: AdamW, 300 epochs, cosine","@language":"en"}],"skos:definition":[{"@value":"사전 등록한 재시험 설정. 가중치 감쇠를 기울기와 따로 적용하는 AdamW로 300에포크를 코사인 학습률로 돌린다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/weight-decay"}],"skos:broader":[{"@id":"lab:topic/weight-decay"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:limitation/quadratic-cost","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"토큰이 늘면 계산이 제곱으로 는다","@language":"ko"},{"@value":"Cost grows with the square of tokens","@language":"en"}],"skos:definition":[{"@value":"조각이 작아 토큰이 많아지면 서로 보는 쌍이 늘어난다. 2×2 조각 16개는 16 × 16 = 256쌍이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m6"},{"@id":"lab:limitation/shift-fragile","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"밀린 시험지에 쉽게 무너진다","@language":"ko"},{"@value":"Fragile on shifted test papers","@language":"en"}],"skos:definition":[{"@value":"ViT는 이웃과 이동에 대한 가정이 없어 밀린 시험지에서 쉽게 무너진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m6","lab:broader":[{"@id":"lab:topic/distribution-shift"}],"skos:broader":[{"@id":"lab:topic/distribution-shift"}]},{"@id":"lab:task/handwritten-digits","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"8×8 손글씨 0~9 분류","@language":"ko"},{"@value":"8×8 handwritten digit classification","@language":"en"}],"skos:definition":[{"@value":"6-4와 같은 1,347장 훈련, 봉인된 시험지와 밀린 시험지로 숫자를 가리는 이미지 분류.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:evaluatedOn":[{"@id":"lab:dataset/optical-digits"}]},{"@id":"lab:dataset/optical-digits","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"손글씨 8×8 숫자","@language":"ko"},{"@value":"Optical Recognition of Handwritten Digits","@language":"en"}],"skos:definition":[{"@value":"6-4와 같은 8×8 손글씨 데이터. 훈련 1,347장을 쓴다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:metric/test-accuracy","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"봉인 시험지 정확도 (씨앗 5개 평균)","@language":"ko"},{"@value":"Sealed test accuracy (mean of 5 seeds)","@language":"en"}],"skos:definition":[{"@value":"봉인된 시험지에서 맞힌 비율. 판정은 4×4 조각 기준 씨앗 다섯 개의 평균으로 하고 2×2와 증강은 함께 보인다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/accuracy-metrics"}],"skos:broader":[{"@id":"lab:topic/accuracy-metrics"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:claim/verdict","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"판정: 보류 확정","@language":"ko"},{"@value":"Verdict: on hold, confirmed","@language":"en"}],"skos:definition":[{"@value":"ViT 4×4는 봉인 96.6%, 재시험 97.1%로 선배 SVM의 99.1%와 후배 CNN의 97.6%에 못 미쳐 보류가 확정되었다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5"},{"@id":"lab:sim/attention-map","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"조각 주의 지도","@language":"ko"},{"@value":"Patch attention map","@language":"en"}],"skos:definition":[{"@value":"2×2 조각 16개 중 하나를 눌러 그 조각이 다른 조각을 얼마나 보는지, 학습 전 픽셀 내적과 학습 뒤 [CLS]를 비교한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:analogy/meeting","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"회의에서 누구 말을 얼마나 들을지 정하기","@language":"ko"},{"@value":"Choosing whom to listen to in a meeting","@language":"en"}],"skos:definition":[{"@value":"각자 누구의 말에 얼마나 귀를 기울일지 정하는 모습이 셀프 어텐션과 닮았다. 실제 계산은 내적과 소프트맥스다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:concept/self-attention"}]},{"@id":"lab:bio/fly-attention","@type":["lab:BioAnalogue","skos:Concept"],"skos:prefLabel":[{"@value":"초파리의 시각 주의","@language":"ko"},{"@value":"Fly visual attention","@language":"en"}],"skos:definition":[{"@value":"초파리는 시야의 여러 곳 가운데 중요한 대상에 시각 처리를 모으는 주의 같은 현상을 보인다. 다만 이는 신경 회로의 이득 조절이고 셀프 어텐션과 계산이 다르다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:bioAnalogueOf":[{"@id":"lab:concept/self-attention"}]},{"@id":"lab:question/when-vit-wins","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"데이터가 얼마나 많아야 ViT가 CNN을 넘나?","@language":"ko"},{"@value":"How much data until ViT beats CNN?","@language":"en"}],"skos:definition":[{"@value":"1,347장에서는 SVM과 CNN이 앞섰다. 어느 규모부터 뒤집히는지는 이 실험이 답하지 않는다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m4"}]}</script>
+<script type="application/json" id="refs-csl">[{"id":"vaswani2017","type":"paper-conference","title":"Attention Is All You Need","author":[{"family":"Vaswani","given":"A., et al."}],"issued":{"date-parts":[[2017]]},"container-title":"NeurIPS","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"dosovitskiy2021","type":"paper-conference","title":"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale","author":[{"family":"Dosovitskiy","given":"A., et al."}],"issued":{"date-parts":[[2021]]},"container-title":"ICLR","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"touvron2021","type":"paper-conference","title":"Training data-efficient image transformers & distillation through attention","author":[{"family":"Touvron","given":"H., et al."}],"issued":{"date-parts":[[2021]]},"container-title":"ICML","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"loshchilov2019","type":"paper-conference","title":"Decoupled Weight Decay Regularization","author":[{"family":"Loshchilov","given":"I."},{"family":"Hutter","given":"F."}],"issued":{"date-parts":[[2019]]},"container-title":"ICLR","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"sareen2011","type":"article-journal","title":"Attracting the attention of a fly","author":[{"family":"Sareen","given":"P."},{"family":"Wolf","given":"R."},{"family":"Heisenberg","given":"M."}],"issued":{"date-parts":[[2011]]},"container-title":"PNAS","volume":"108","page":"7230–7235","issue":"17","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"alpaydin1998","type":"dataset","title":"Optical Recognition of Handwritten Digits","author":[{"family":"Alpaydin","given":"E."},{"family":"Kaynak","given":"C."}],"issued":{"date-parts":[[1998]]},"publisher":"UCI Machine Learning Repository","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}}]</script>
+<script type="application/json" id="page-meta">{"title": "Modellarni ishga olish qoʻmitasi · Ikkinchi ochiq tanlov · 6-9 Transformer", "number": "6-9", "date": "2026-10-24", "version": "1.0", "series": "Modellarni ishga olish qoʻmitasi Ikkinchi ochiq tanlov", "language": "ko", "creator": [{"name": "Ahn Sangsun", "affiliation": "M-Robo Co., Ltd."}], "about": ["lab:topic/transformer", "lab:topic/self-attention", "lab:topic/positional-encoding"], "educationalLevel": "대학 학부 · 입문", "learningResourceType": "interactive explainer", "description": "손글씨를 조각으로 나눠 조각끼리 서로 얼마나 볼지(셀프 어텐션) 배우는 지원자 Transformer(ViT)의 면접. 조각 나누기와 위치 정보, 쿼리·키·값과 주의 지도, [CLS] 토큰, 2×2 · 4×4 조각, 데이터가 적을 때의 약점, 선배 SVM과 후배 CNN과의 비교, 오래·덜 외우게 배우는 재시험. 모델 채용 위원회 2차 공채 6-9.", "basedOn": ["vaswani2017", "dosovitskiy2021", "touvron2021", "loshchilov2019", "sareen2011", "alpaydin1998"]}</script>
+<!-- /lab-kg:body -->
 <footer>
   <div class="wrap">
     <p><b style="color:var(--text)">Modellarni ishga olish qoʻmitasi · Ikkinchi ochiq tanlov · 6-9 Transformer</b> · <a href="6-0_job_posting.html#m8">Umumiy xarita (6-0)</a> — Muallif: Sangsun Ahn (M-Robo kompaniyasi rahbari)</p>
@@ -1658,5 +1687,408 @@ var CODE={title:'Transformer (ViT) suhbati — boʻlaklar, oʻz-oʻziga diqqat, 
 
 boot();
 </script>
+<!-- lab-kg:script -->
+<script>
+/* ai-lab-retrofit 휴대판 (색 변수가 없는 페이지에서도 동작) */
+/* ══ KG: 지식 색인(#kg) + 온톨로지·서지 꾸러미(#export) — 공용 모듈 ══
+   데이터 블록: #kg-raw(중립 JSON), #refs-csl(CSL-JSON), #page-meta, #kg-ld(빌드 때 생성)
+   외부 라이브러리 없음. 모든 내보내기는 kg-raw에서 만든다. */
+var KGX=(function(){
+'use strict';
+function $id(i){return document.getElementById(i);}
+function J(id){var e=$id(id); return e?JSON.parse(e.textContent):null;}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function el(tag,cls,html){var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+
+var TYPE={Concept:['Tushuncha','#82b8ff'],Method:['Usul','#5ee39c'],BioAnalogue:['Biologik moslik','#ef5b5b'],Claim:['Daʼvo','#f1b646'],
+  Question:['Ochiq savol','#d672d6'],Limitation:['Cheklov','#ff9a7a'],Task:['topshiriq','#7fe0c8'],Metric:['Koʻrsatkich','#b9a8ff'],
+  Dataset:['Maʼlumotlar','#c9c4a4'],Simulation:['Simulyatsiya','#8a88a8'],QuizItem:['Viktorina','#6f6d8c'],Work:['Adabiyot','#e0d7a8'],
+  Area:['Soha','#eceaf3'],Topic:['Mavzu','#9d9bb8'],Analogy:['Taqqoslash','#ff86b8'],Term:['Atamalar','#82b8ff']};
+var REL={prerequisiteOf:'Avval bilish kerak',hasLimitation:'Cheklov',addressedBy:'Hal qilingan',partOf:'Qisman',bioAnalogueOf:'Biologik moslik',
+  contrastsWith:'Qarama-qarshi qoʻyish',supports:'Qoʻllab-quvvatlaydi',assertedIn:'Manba',evaluatedBy:'Koʻrsatkich bilan baholanadi',evaluatedOn:'Maʼlumot bilan baholanadi',
+  demonstratedBy:'Simulyatsiya',raises:'Savol tugʻdiradi',relatedTo:'Aloqador',solves:'Hal qilinadigan vazifa',analogyOf:'Taqqoslash',assesses:'Viktorina bilan tekshirish',
+  broader:'Yuqori mavzu',explainedIn:'Tushuntirish oʻrni'};
+function tl(t){return (TYPE[t]||[t])[0];} function tc(t){return (TYPE[t]||[0,'#9d9bb8'])[1];}
+function pn(p){return p.replace(/^lab:/,'');}
+function lab(n){return n.label?(n.label[LANG]||n.label.en||n.label.ko):n.id;}
+
+/* ── 변환기 ─────────────────────────────────────────── */
+var NS='urn:lab:';
+var CTX={'@vocab':NS,lab:NS,skos:'http://www.w3.org/2004/02/skos/core#',schema:'https://schema.org/',
+  dct:'http://purl.org/dc/terms/',prov:'http://www.w3.org/ns/prov#',rdfs:'http://www.w3.org/2000/01/rdf-schema#'};
+var SKOS_T={Concept:1,Method:1,Task:1,Term:1,Limitation:1,BioAnalogue:1,Metric:1,Area:1,Topic:1};
+var SCH_T={Work:'schema:ScholarlyArticle',Claim:'schema:Claim',Dataset:'schema:Dataset',QuizItem:'schema:Question',Question:'schema:Question',Simulation:'schema:SoftwareApplication'};
+function lit(o){var a=[]; Object.keys(o||{}).forEach(function(k){ var v=o[k]; (Array.isArray(v)?v:[v]).forEach(function(x){a.push({'@value':x,'@language':k});});}); return a;}
+function toJsonLd(g,meta){
+  var graph=g.nodes.map(function(n){
+    var t=['lab:'+n.type]; if(SKOS_T[n.type])t.push('skos:Concept'); if(SCH_T[n.type])t.push(SCH_T[n.type]);
+    var o={'@id':n.id,'@type':t,'skos:prefLabel':lit(n.label)};
+    if(n.altLabel)o['skos:altLabel']=lit(n.altLabel);
+    if(n.definition)o['skos:definition']=lit(n.definition);
+    ['level','status','confidence','coverage','family','page','anchor'].forEach(function(k){ if(n[k]!=null)o['lab:'+k]=n[k];});
+    (n.match||[]).forEach(function(m){ var p=m.rel==='exact'?'skos:exactMatch':'skos:closeMatch'; (o[p]=o[p]||[]).push({'@id':m.iri});});
+    return o;});
+  var byS={}; graph.forEach(function(o){byS[o['@id']]=o;});
+  g.edges.forEach(function(e){ var s=byS[e.s]; if(!s)return; var k=e.p; (s[k]=s[k]||[]).push({'@id':e.o});
+    if(e.p==='lab:broader')(s['skos:broader']=s['skos:broader']||[]).push({'@id':e.o});
+    if(e.p==='lab:assertedIn')(s['prov:wasDerivedFrom']=s['prov:wasDerivedFrom']||[]).push({'@id':e.o});
+    if(e.p==='lab:relatedTo')(s['skos:related']=s['skos:related']||[]).push({'@id':e.o}); });
+  if(meta)graph.unshift({'@id':NS+'page/'+meta.number,'@type':['schema:LearningResource','schema:WebPage'],'schema:name':meta.title,
+    'schema:inLanguage':meta.language,'schema:dateCreated':meta.date,'schema:version':meta.version,'dct:isPartOf':meta.series,
+    'schema:about':(meta.about||[]).map(function(a){return {'@id':a};}),'schema:educationalLevel':meta.educationalLevel,
+    'schema:learningResourceType':meta.learningResourceType,'dct:source':(meta.basedOn||[]).map(function(b){return {'@id':'lab:work/'+b};})});
+  return {'@context':CTX,'@graph':graph};
+}
+function ttlS(s){return '"'+String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\n/g,'\\n')+'"';}
+function ttlI(id){return id.indexOf('lab:')===0?'lab:'+id.slice(4).replace(/[^A-Za-z0-9_\-]/g,function(c){return c==='/'?'_':encodeURIComponent(c).replace(/%/g,'_');}):'<'+id+'>';}
+function toTurtle(g){
+  var L=['@prefix lab: <'+NS+'> .','@prefix skos: <http://www.w3.org/2004/02/skos/core#> .','@prefix schema: <https://schema.org/> .',
+    '@prefix prov: <http://www.w3.org/ns/prov#> .',''];
+  var out={}; g.edges.forEach(function(e){(out[e.s]=out[e.s]||[]).push(e);});
+  g.nodes.forEach(function(n){
+    var P=['a lab:'+n.type+(SKOS_T[n.type]?', skos:Concept':'')];
+    Object.keys(n.label||{}).forEach(function(k){P.push('skos:prefLabel '+ttlS(n.label[k])+'@'+k);});
+    Object.keys(n.altLabel||{}).forEach(function(k){[].concat(n.altLabel[k]).forEach(function(v){P.push('skos:altLabel '+ttlS(v)+'@'+k);});});
+    Object.keys(n.definition||{}).forEach(function(k){P.push('skos:definition '+ttlS(n.definition[k])+'@'+k);});
+    if(n.status)P.push('lab:status '+ttlS(n.status)); if(n.level!=null)P.push('lab:level '+n.level);
+    if(n.anchor)P.push('lab:anchor '+ttlS(n.anchor));
+    (out[n.id]||[]).forEach(function(e){P.push(ttlI(e.p)+' '+ttlI(e.o)); if(e.p==='lab:broader')P.push('skos:broader '+ttlI(e.o));});
+    L.push(ttlI(n.id)+'\n  '+P.join(' ;\n  ')+' .\n');});
+  return L.join('\n');
+}
+function csvq(v){v=v==null?'':String(v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toNodesCsv(g){return ['id,type,label_ko,label_en,status,level,family,page,anchor,coverage,confidence'].concat(g.nodes.map(function(n){
+  return [n.id,n.type,n.label&&n.label.ko,n.label&&n.label.en,n.status,n.level,n.family,n.page,n.anchor,n.coverage,n.confidence].map(csvq).join(',');})).join('\r\n');}
+function toEdgesCsv(g){return ['source,predicate,target,anchor,confidence'].concat(g.edges.map(function(e){return [e.s,e.p,e.o,e.anchor,e.confidence].map(csvq).join(',');})).join('\r\n');}
+function toMermaid(g){
+  var keep=g.nodes.filter(function(n){return n.type!=='QuizItem'&&n.type!=='Simulation'&&n.type!=='Work';}).slice(0,40);
+  var ix={}; keep.forEach(function(n,i){ix[n.id]='n'+i;});
+  var L=['graph LR']; keep.forEach(function(n){L.push('  '+ix[n.id]+'["'+lab(n).replace(/"/g,"'")+'"]');});
+  g.edges.forEach(function(e){ if(ix[e.s]&&ix[e.o])L.push('  '+ix[e.s]+' -- '+(REL[pn(e.p)]||pn(e.p))+' --> '+ix[e.o]);});
+  return L.join('\n');
+}
+function toProvCsv(g,refs){
+  var R={}; refs.forEach(function(r){R[r.id]=r;});
+  var L=['item,kind,work,loc,confidence,verified,pageAnchor'];
+  g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){ var r=R[s.ref]; var v=r&&r.lab&&r.lab.verified;
+    L.push([n.id,'node',s.ref,s.loc||'',n.confidence,v?(v.title&&v.year&&v.venue?'bib-checked':'partial'):'no',n.anchor].map(csvq).join(','));});});
+  g.edges.forEach(function(e){ if(e.p==='lab:assertedIn')L.push([e.s+' '+e.p+' '+e.o,'edge',e.o.replace('lab:work/',''),'',e.confidence,'',e.anchor].map(csvq).join(','));});
+  return L.join('\r\n');
+}
+/* CSL → BibTeX · RIS · 문장 */
+var BIBT={'article-journal':'article','paper-conference':'inproceedings','book':'book','chapter':'incollection','webpage':'misc','dataset':'misc','report':'techreport','thesis':'phdthesis','software':'misc'};
+var RIST={'article-journal':'JOUR','paper-conference':'CPAPER','book':'BOOK','chapter':'CHAP','webpage':'ELEC','dataset':'DATA','report':'RPRT','thesis':'THES','software':'COMP'};
+function names(a){return (a||[]).map(function(p){return p.literal||(p.family+(p.given?', '+p.given:''));});}
+function yr(r){return r.issued&&r.issued['date-parts']&&r.issued['date-parts'][0][0];}
+function toBib(r){var f=[],add=function(k,v){ if(v!==undefined&&v!==null&&v!=='')f.push('  '+k+' = {'+v+'}');};
+  add('title',r.title); add('author',names(r.author).map(function(n){return n==='et al.'?'others':n;}).join(' and ')); add('year',yr(r));
+  add(r.type==='article-journal'?'journal':'booktitle',r['container-title']); add('volume',r.volume); add('number',r.issue);
+  add('pages',(r.page||'').replace('-','--')); add('publisher',r.publisher); add('doi',r.DOI); add('url',r.URL);
+  if(r.lab&&r.lab.note)add('note',r.lab.note);
+  return '@'+(BIBT[r.type]||'misc')+'{'+r.id+',\n'+f.join(',\n')+'\n}';}
+function toRis(r){var L=['TY  - '+(RIST[r.type]||'GEN')],add=function(t,v){ if(v)L.push(t+'  - '+v);};
+  add('TI',r.title); names(r.author).forEach(function(n){add('AU',n);}); add('PY',yr(r)); add('T2',r['container-title']);
+  add('VL',r.volume); add('IS',r.issue); var pg=(r.page||'').split('-'); add('SP',pg[0]); add('EP',pg[1]); add('DO',r.DOI); add('UR',r.URL);
+  if(r.lab&&r.lab.note)add('N1',r.lab.note); L.push('ER  - '); return L.join('\r\n');}
+function toText(r){ var a=names(r.author), first=a[0]?a[0].split(',')[0]:''; var au=a.length>2||a.indexOf('et al.')>=0?first+' va boshqalar':a.map(function(x){return x.split(',')[0];}).join(' & ');
+  return au+' ('+(yr(r)||'yil nomaʼlum')+'). '+r.title+'. '+(r['container-title']||'')+(r.volume?', '+r.volume:'')+(r.issue?'('+r.issue+')':'')+(r.page?', '+r.page:'')+'.'+(r.DOI?' https://doi.org/'+r.DOI:'');}
+function pageBib(m){var f=['  title = {'+m.title+'}','  year = {'+m.date.slice(0,4)+'}','  howpublished = {'+m.series+' '+m.number+', v'+m.version+'}'];
+  if(m.creator&&m.creator.length&&m.creator[0].name)f.unshift('  author = {'+m.creator.map(function(c){return c.name;}).join(' and ')+'}'); if(m.url)f.push('  url = {'+m.url+'}');
+  return '@misc{lab_page_'+m.number+',\n'+f.join(',\n')+'\n}';}
+function pageRis(m){var L=['TY  - ELEC','TI  - '+m.title]; (m.creator||[]).forEach(function(c){ if(c.name)L.push('AU  - '+c.name);}); L.push('PY  - '+m.date.slice(0,4),'T2  - '+m.series,'ET  - '+m.version); if(m.url)L.push('UR  - '+m.url); L.push('ER  - '); return L.join('\r\n');}
+function pageText(m){ var who=(m.creator||[]).filter(function(c){return c.name;}).map(function(c){return c.name;}).join(', ')||'{muallif}';
+  return who+' ('+m.date.slice(0,4)+'). '+m.title+'. '+m.series+' '+m.number+', v'+m.version+'.'+(m.url?' '+m.url:'');}
+
+/* ── ZIP (압축 없음) ─────────────────────────────────── */
+var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}
+  return function(u8){var x=0xFFFFFFFF;for(var i=0;i<u8.length;i++)x=t[(x^u8[i])&255]^(x>>>8);return (x^0xFFFFFFFF)>>>0;};})();
+function makeZip(files){
+  var enc=new TextEncoder(),parts=[],central=[],off=0;
+  function u16(v){return [v&255,(v>>8)&255];} function u32(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255];}
+  files.forEach(function(f){var name=enc.encode(f.name),data=enc.encode(f.text),crc=CRC(data);
+    var head=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0));
+    parts.push(new Uint8Array(head),name,data);
+    central.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),
+      u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),name);
+    off+=head.length+name.length+data.length;});
+  var cdLen=0; central.forEach(function(c){parts.push(c); cdLen+=c.length;});
+  parts.push(new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cdLen),u32(off),u16(0))));
+  return new Blob(parts,{type:'application/zip'});
+}
+/* 내려받기: claude.ai 아티팩트 안에서는 downloads 능력, 파일로 열면 일반 링크 */
+var DLP=(window.claude&&typeof window.claude.use==='function')?window.claude.use('downloads').catch(function(){return null;}):Promise.resolve(null);
+var OKX=/\.(json|txt|csv|md|zip|html|svg|pdf)$/i;
+function anchorSave(blob,name){var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name;
+  document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},800);}
+function download(blob,name){
+  return DLP.then(function(d){
+    if(!d){anchorSave(blob,name); return;}
+    var fn=OKX.test(name)?name:name+'.txt';   // .bib .ris .ttl .jsonld 은 .txt를 붙여 저장 (확장자만 지우면 원래 형식)
+    return d.save({filename:fn,data:blob}).catch(function(e){ if(e&&e.code==='declined')return;
+      if(e&&(e.code==='unavailable'||e.code==='not_granted'))anchorSave(blob,name);
+      else console.warn('Saqlab boʻlmadi',e&&e.code);});
+  });
+}
+function dlText(text,name,type){download(new Blob([text],{type:(type||'text/plain')+';charset=utf-8'}),name);}
+
+/* ── 범위 ───────────────────────────────────────────── */
+function filterScope(KG,scope){
+  if(scope==='all')return KG;
+  var keepT={terms:{Concept:1,Method:1,BioAnalogue:1,Limitation:1,Task:1,Metric:1,Dataset:1},
+             claims:{Claim:1,Work:1},prereq:null}[scope];
+  var nodes,edges;
+  if(scope==='prereq'){ edges=KG.edges.filter(function(e){return e.p==='lab:prerequisiteOf'||e.p==='lab:hasLimitation'||e.p==='lab:addressedBy';});
+    var ids={}; edges.forEach(function(e){ids[e.s]=1;ids[e.o]=1;}); nodes=KG.nodes.filter(function(n){return ids[n.id];}); }
+  else { nodes=KG.nodes.filter(function(n){return keepT[n.type];}); var ix={}; nodes.forEach(function(n){ix[n.id]=1;});
+    if(scope==='claims'){ KG.edges.forEach(function(e){ if(e.p==='lab:supports'&&ix[e.s])ix[e.o]=2;});
+      nodes=KG.nodes.filter(function(n){return ix[n.id];}); }
+    edges=KG.edges.filter(function(e){return ix[e.s]&&(ix[e.o]||/^lab:(topic|area)\//.test(e.o));}); }
+  return {version:KG.version,page:KG.page,scope:scope,nodes:nodes,edges:edges};
+}
+function readme(meta,g,refs){
+  var un=refs.filter(function(r){var v=r.lab&&r.lab.verified; return !v||Object.keys(v).some(function(k){return !v[k];});});
+  return ['Ontologiya va bibliografiya toʻplami — '+meta.title,'Turkum: '+meta.series+' '+meta.number+' · versiya '+meta.version+' · yaratilgan sana '+meta.date,'',
+   'Qamrov: '+(g.scope||'all')+' · tugun '+g.nodes.length+' · aloqa '+g.edges.length+' · adabiyot '+refs.length,'',
+   '[파일]','manifest.json roʻyxat · page_meta.json sahifa bibliografiyasi · kg.json betaraf graf (asl nusxa) · kg.jsonld JSON-LD · kg.ttl Turtle',
+   'nodes.csv / edges.csv jadval (UTF-8 BOM) · references.csl.json adabiyotlar asl nusxasi · references.bib BibTeX · references.ris RIS',
+   'provenance.csv daʼvo↔adabiyot moslik jadvali · mermaid.md chizma uchun','',
+   '[이 페이지 인용]',pageText(meta),'',
+   '[확인 필요]',(un.length?un.map(function(r){var v=r.lab.verified;return '- '+r.id+': '+Object.keys(v).filter(function(k){return !v[k];}).join(', ');}).join('\n'):'- Barcha adabiyotlarning bibliografik maʼlumotlari tasdiqlangan'),
+   '- Daʼvo (Claim)ning asl matndagi oʻrni (sahifa, rasm raqami) hali boʻsh. Asl matnga qarab provenance.csv dagi loc ustunini toʻldiring.',
+   '- Sahifa muallifining ismi, litsenziya va ochiq manzil boʻsh qoldirilgan. Foydalanuvchi toʻldirishi kerak.','',
+   '[규칙] lab: 접두어 IRI는 '+NS+' (vaqtincha). Tashqi ontologiya ID lari faqat tekshirilganlari skos:exactMatch/closeMatch sifatida qoʻshiladi.',
+   '[주의] 뼈대 영역(lab:topic/*, lab:area/*)은 작성자 초안이며 공식 분류 체계가 아니다.'].join('\n');
+}
+function buildPackage(scope){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); var g=filterScope(KG,scope);
+  var used={}; g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){used[s.ref]=1;}); if(n.type==='Work')used[n.id.replace('lab:work/','')]=1;});
+  var refs=scope==='all'?REF:REF.filter(function(r){return used[r.id];});
+  var files=[{name:'page_meta.json',text:JSON.stringify(META,null,2)},{name:'kg.json',text:JSON.stringify(g,null,2)},
+    {name:'kg.jsonld',text:JSON.stringify(toJsonLd(g,META),null,2)},{name:'kg.ttl',text:toTurtle(g)},
+    {name:'nodes.csv',text:'﻿'+toNodesCsv(g)},{name:'edges.csv',text:'﻿'+toEdgesCsv(g)},
+    {name:'references.csl.json',text:JSON.stringify(refs,null,2)},{name:'references.bib',text:[pageBib(META)].concat(refs.map(toBib)).join('\n\n')},
+    {name:'references.ris',text:[pageRis(META)].concat(refs.map(toRis)).join('\r\n')},{name:'provenance.csv',text:'﻿'+toProvCsv(g,refs)},
+    {name:'mermaid.md',text:'```mermaid\n'+toMermaid(g)+'\n```\n'},{name:'README.txt',text:readme(META,g,refs)}];
+  files.unshift({name:'manifest.json',text:JSON.stringify({package:'lab-kg',packageVersion:'1.0',page:META.number,pageId:KG.page,pageVersion:META.version,
+    registry:META.registry||'',created:META.date,scope:scope,counts:{nodes:g.nodes.length,edges:g.edges.length,refs:refs.length},
+    files:files.map(function(f){return f.name;})},null,2)});
+  return files;
+}
+
+/* ── 공통 화면 조각 ─────────────────────────────────── */
+var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding:48px 0;font-family:inherit}.kgx-sec .kgx-wrap{max-width:1080px;margin:0 auto;padding:0 16px}.kgx-sec h2{margin:0 0 6px;font-size:24px}.kgx-sec .kgx-sub{color:var(--muted,#9d9bb8);margin:0 0 18px}\
+\
+.kgx .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}\
+.kgx input[type=search]{flex:1 1 220px;min-width:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);color:var(--text,#eceaf3);border-radius:8px;padding:8px 12px;font:inherit;font-size:15px}\
+.kgx .tchip{font-size:12.5px;border-radius:999px;padding:3px 10px;border:1px solid var(--rule,#363a52);background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);cursor:pointer}\
+.kgx .tchip[aria-pressed=true]{color:#13141f;font-weight:700}\
+.kgx .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}\
+@media (max-width:860px){.kgx .grid2{grid-template-columns:1fr}}\
+.kgx .list{max-height:520px;overflow:auto;border:1px solid var(--rule,#363a52);border-radius:10px;background:var(--panel,#1c1e2d)}\
+.kgx .it{padding:10px 14px;border-bottom:1px solid var(--rule,#363a52);cursor:pointer}\
+.kgx .it:last-child{border-bottom:0}.kgx .it:hover{background:var(--panel2,#25283a)}\
+.kgx .it.sel{background:var(--panel2,#25283a);box-shadow:inset 3px 0 0 var(--gfp,#5ee39c)}\
+.kgx .it .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}\
+.kgx .it .nm{font-weight:700}.kgx .it .en{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .ty{font-size:11.5px;border-radius:5px;padding:0 6px;color:#13141f;font-weight:700;white-space:nowrap}\
+.kgx .it .df{color:#d7d4e6;font-size:14px;margin:3px 0 0}\
+.kgx .it .more{display:none;margin-top:6px;font-size:13.5px;color:var(--muted,#9d9bb8)}.kgx .it.sel .more{display:block}\
+.kgx .it a{color:var(--gfp,#5ee39c)}\
+.kgx .rel{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:6px;background:var(--bg,#13141f);border:1px solid var(--rule,#363a52);font-size:12.5px;cursor:pointer;color:var(--text,#eceaf3)}\
+.kgx .gbox{position:relative;border:1px solid var(--rule,#363a52);border-radius:10px;background:#101119;overflow:hidden}\
+.kgx .gbox canvas{display:block;width:100%;height:420px}\
+.kgx .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted,#9d9bb8);margin-top:8px}\
+.kgx .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}\
+.kgx .path{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\
+.kgx .path span.s{background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:8px;padding:4px 10px;font-size:14px}\
+.kgx .path span.a{color:var(--muted,#9d9bb8)}.kgx .path span.lim{border-color:#ff9a7a;color:#ffbda8}\
+.kgx .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}\
+.kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
+.kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
+.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
+.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
+.kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
+.kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
+.kgx .badge.role{background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);border:1px solid var(--rule,#363a52)}\
+.kgx pre.cite{white-space:pre-wrap;word-break:break-word;background:#101119;border:1px solid var(--rule,#363a52);border-radius:8px;padding:10px 12px;font-size:13px;margin:8px 0;max-height:220px;overflow:auto}\
+.kgx .files{display:flex;flex-wrap:wrap;gap:6px}\
+.kgx .todo li{margin:4px 0;color:#d7d4e6}\
+.kgx h3{font-size:17px;margin:20px 0 8px}\
+';
+function addCss(){ if($id('kgx-css'))return; var s=el('style'); s.id='kgx-css'; s.textContent=CSS; document.head.appendChild(s);}
+function copy(text,btn){ function ok(){var o=btn.textContent; btn.textContent='Nusxalandi'; setTimeout(function(){btn.textContent=o;},1200);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback();
+  function fallback(){var p=btn.parentNode.parentNode.querySelector('pre.cite'); if(p){var r=document.createRange(); r.selectNodeContents(p); var s=getSelection(); s.removeAllRanges(); s.addRange(r);} btn.textContent='Tanlandi — Ctrl+C';}}
+
+/* ── 지식 색인 ──────────────────────────────────────── */
+function mountIndex(root){
+  var KG=J('kg-raw'); var N={},OUT={},IN={};
+  KG.nodes.forEach(function(n){N[n.id]=n;OUT[n.id]=[];IN[n.id]=[];});
+  KG.edges.forEach(function(e){ if(OUT[e.s])OUT[e.s].push(e); if(IN[e.o])IN[e.o].push(e);});
+  var types=Object.keys(KG.nodes.reduce(function(a,n){a[n.type]=(a[n.type]||0)+1;return a;},{}));
+  var count={}; KG.nodes.forEach(function(n){count[n.type]=(count[n.type]||0)+1;});
+  var on={}; types.forEach(function(t){on[t]=t!=='QuizItem'&&t!=='Simulation'&&t!=='Work';});
+  var sel=null,q='';
+  root.classList.add('kgx');
+  var topics=0; KG.edges.forEach(function(e){if(e.p==='lab:broader')topics++;});
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';}), csrc=claims.filter(function(n){return (n.source||[]).length;}).length;
+  root.innerHTML='<div class="stats"><div><b>'+KG.nodes.length+'</b><span>bandlar (tugunlar)</span></div><div><b>'+KG.edges.length+'</b><span>aloqalar</span></div>'+
+    '<div><b>'+(count.Concept||0)+(count.Method||0)+'</b><span>tushuncha va usullar</span></div><div><b>'+(count.BioAnalogue||0)+'</b><span>biologik moslik</span></div>'+
+    '<div><b>'+csrc+'/'+claims.length+'</b><span>manbali daʼvolar</span></div><div><b>'+topics+'</b><span>asosiy mavzu bilan bogʻlanishlar</span></div></div>'+
+    '<div class="tools"><input type="search" placeholder="Qidirish — ogʻirliklar, overfitting, Kenyon, hid xotirasi yozuvi …" aria-label="Bilimlar indeksidan qidirish"></div>'+
+    '<div class="tools chips" role="group" aria-label="Turi"></div>'+
+    '<div class="grid2"><div class="list" role="listbox" aria-label="Qidiruv natijalari"></div>'+
+    '<div><div class="gbox"><canvas aria-label="Tanlangan band va unga yaqin aloqalar grafi"></canvas></div><div class="legend"></div>'+
+    '<p class="note gnote">Band tanlansa, faqat u bilan bevosita bogʻlangan qoʻshnilar koʻrsatiladi. Grafdagi nuqtani bosish ham mumkin.</p></div></div>'+
+    '<h3>Zina yoʻli — avval bilish kerak boʻlganlar va cheklovlar zanjiri</h3><div class="path ladder"></div>'+
+    '<h3>Ochiq savollar · tekshirish kerak</h3><ul class="todo qs"></ul>';
+  // 칸 수 계산 오류 방지: 개념+방법 합
+  root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);
+  var inp=root.querySelector('input'), chips=root.querySelector('.chips'), list=root.querySelector('.list'), cv=root.querySelector('canvas');
+  types.forEach(function(t){var b=el('button','tchip',tl(t)+' '+count[t]); b.type='button'; b.setAttribute('aria-pressed',on[t]);
+    if(on[t])b.style.background=tc(t),b.style.borderColor=tc(t);
+    b.onclick=function(){on[t]=!on[t]; b.setAttribute('aria-pressed',on[t]); b.style.background=on[t]?tc(t):''; b.style.borderColor=on[t]?tc(t):''; render();};
+    chips.appendChild(b);});
+  var lg=root.querySelector('.legend'); types.forEach(function(t){lg.insertAdjacentHTML('beforeend','<span><i style="background:'+tc(t)+'"></i>'+tl(t)+'</span>');});
+  lg.insertAdjacentHTML('beforeend','<span>── strelka: aloqa yoʻnalishi</span>');
+  inp.addEventListener('input',function(){q=inp.value.trim().toLowerCase(); render();});
+  function hay(n){return [n.id,n.label&&n.label.ko,n.label&&n.label.en,n.definition&&n.definition.ko,n.label&&n.label[LANG],n.definition&&n.definition[LANG],n.altLabel&&[].concat(n.altLabel.ko||[]).join(' ')].join(' ').toLowerCase();}
+  function relHtml(n){
+    var h=[]; OUT[n.id].forEach(function(e){ var o=N[e.o]; var nm=o?lab(o):((KG.topicLabels||{})[e.o]||e.o.replace(/^lab:(topic|area)\//,'').replace(/-/g,' '));
+      h.push('<span class="rel" data-go="'+esc(o?e.o:'')+'">'+esc(REL[pn(e.p)]||pn(e.p))+' → '+esc(nm)+'</span>');});
+    IN[n.id].forEach(function(e){ var s=N[e.s]; if(!s)return; h.push('<span class="rel" data-go="'+esc(e.s)+'">'+esc(lab(s))+' → '+esc(REL[pn(e.p)]||pn(e.p))+'</span>');});
+    return h.join('');}
+  function render(){
+    var arr=KG.nodes.filter(function(n){return on[n.type]&&(!q||hay(n).indexOf(q)>=0);});
+    list.innerHTML=arr.length?'':'<div class="it">Band topilmadi. Tur chiplari oʻchirilmaganini tekshiring.</div>';
+    arr.forEach(function(n){var d=el('div','it'+(sel===n.id?' sel':'')); d.setAttribute('role','option'); d.dataset.id=n.id;
+      var alt=LANG==='ko'&&n.altLabel&&n.altLabel.ko?' · '+[].concat(n.altLabel.ko).join(', '):'';
+      var src=(n.source||[]).length?' · manba '+n.source.length:'';
+      d.innerHTML='<div class="h"><span class="ty" style="background:'+tc(n.type)+'">'+tl(n.type)+'</span><span class="nm">'+esc(lab(n))+'</span><span class="en">'+esc((LANG!=='en'&&n.label&&n.label.en&&n.label.en!==lab(n)&&n.label.en)||'')+esc(alt)+'</span></div>'+
+        (n.definition?'<p class="df">'+esc(n.definition[LANG]||n.definition.ko)+'</p>':'')+
+        '<div class="more">'+(n.anchor?'<a href="'+n.anchor+'">Tushuntirishga oʻtish →</a>':'')+' <span>'+esc(src)+(n.confidence&&n.confidence!=='high'?' · ishonch darajasi '+n.confidence:'')+'</span><div style="margin-top:6px">'+relHtml(n)+'</div></div>';
+      d.onclick=function(ev){var g=ev.target.closest('.rel'); if(g){ if(g.dataset.go)pick(g.dataset.go,true); ev.stopPropagation(); return;}
+        if(ev.target.tagName==='A')return; pick(n.id);};
+      list.appendChild(d);});
+    draw();
+  }
+  function pick(id,scroll){ sel=id; var n=N[id]; if(n&&!on[n.type]){on[n.type]=true; var b=[].slice.call(chips.children)[types.indexOf(n.type)]; b.setAttribute('aria-pressed',true); b.style.background=tc(n.type); b.style.borderColor=tc(n.type);}
+    if(scroll&&q){q='';inp.value='';} render(); var it=list.querySelector('.it.sel'); if(it)it.scrollIntoView({block:'nearest'});}
+  // 그래프
+  var G={pts:[]};
+  function layout(){
+    var center=sel||KG.edges.reduce(function(best,e){return best;},null);
+    var ids={},pts=[];
+    if(!sel){ // 개요: 퀴즈·시뮬·문헌 빼고 연결 많은 순 최대 60
+      var deg={}; KG.edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.o]=(deg[e.o]||0)+1;});
+      KG.nodes.filter(function(n){return on[n.type];}).sort(function(a,b){return (deg[b.id]||0)-(deg[a.id]||0);}).slice(0,60).forEach(function(n){ids[n.id]=1;});
+    } else { ids[sel]=1; OUT[sel].forEach(function(e){if(N[e.o])ids[e.o]=1;}); IN[sel].forEach(function(e){ids[e.s]=1;}); }
+    var r=mulberry(7); Object.keys(ids).forEach(function(id){pts.push({id:id,x:r()-.5,y:r()-.5,vx:0,vy:0});});
+    var ix={}; pts.forEach(function(p,i){ix[p.id]=i;});
+    var es=KG.edges.filter(function(e){return ix[e.s]!=null&&ix[e.o]!=null;});
+    for(var it=0;it<220;it++){
+      for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+1e-4,f=0.0016/d2;
+        a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+      es.forEach(function(e){var a=pts[ix[e.s]],b=pts[ix[e.o]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+1e-6,f=(d-0.22)*0.04;
+        a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+      pts.forEach(function(p){ if(p.id===sel){p.x*=.9;p.y*=.9;} p.vx-=p.x*0.004;p.vy-=p.y*0.004; p.x+=p.vx;p.y+=p.vy;p.vx*=.6;p.vy*=.6;});
+    }
+    G={pts:pts,es:es,ix:ix};
+  }
+  function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    layout(); var dpr=Math.min(2,window.devicePixelRatio||1), W=cv.clientWidth||600, H=cv.clientHeight||420;
+    cv.width=W*dpr; cv.height=H*dpr; var c=cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,W,H);
+    var xs=G.pts.map(function(p){return p.x;}),ys=G.pts.map(function(p){return p.y;});
+    var mx=Math.min.apply(0,xs),Mx=Math.max.apply(0,xs),my=Math.min.apply(0,ys),My=Math.max.apply(0,ys);
+    var pad=54, sx=(W-2*pad)/Math.max(1e-3,Mx-mx), sy=(H-2*pad)/Math.max(1e-3,My-my);
+    G.pts.forEach(function(p){p.X=pad+(p.x-mx)*sx; p.Y=pad+(p.y-my)*sy; if(G.pts.length===1){p.X=W/2;p.Y=H/2;}});
+    c.lineWidth=1;
+    G.es.forEach(function(e){var a=G.pts[G.ix[e.s]],b=G.pts[G.ix[e.o]]; var hot=sel&&(e.s===sel||e.o===sel);
+      c.strokeStyle=hot?'rgba(236,234,243,.55)':'rgba(157,155,184,.22)'; c.beginPath(); c.moveTo(a.X,a.Y); c.lineTo(b.X,b.Y); c.stroke();
+      var ang=Math.atan2(b.Y-a.Y,b.X-a.X), ex=b.X-Math.cos(ang)*9, ey=b.Y-Math.sin(ang)*9;
+      c.fillStyle=c.strokeStyle; c.beginPath(); c.moveTo(ex,ey); c.lineTo(ex-Math.cos(ang-.4)*7,ey-Math.sin(ang-.4)*7); c.lineTo(ex-Math.cos(ang+.4)*7,ey-Math.sin(ang+.4)*7); c.fill();
+      if(sel&&hot&&G.pts.length<26){c.fillStyle='#9d9bb8'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='center';
+        c.fillText(REL[pn(e.p)]||pn(e.p),(a.X+b.X)/2,(a.Y+b.Y)/2-4);} });
+    c.textAlign='center'; c.font='12.5px '+getComputedStyle(document.body).fontFamily;
+    G.pts.forEach(function(p){var n=N[p.id]; var R=p.id===sel?9:6; c.fillStyle=tc(n.type); c.beginPath(); c.arc(p.X,p.Y,R,0,7); c.fill();
+      if(p.id===sel){c.strokeStyle='#eceaf3';c.lineWidth=2;c.stroke();c.lineWidth=1;}
+      var t=lab(n); if(t.length>14)t=t.slice(0,13)+'…'; c.fillStyle=p.id===sel?'#fff':'#d7d4e6'; c.fillText(t,p.X,p.Y-R-5);});
+    c.fillStyle='rgba(241,182,70,.9)'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='left';
+    c.fillText(sel?'Qoʻshni '+(G.pts.length-1)+' ta':'Umumiy koʻrinish — aloqasi koʻp bandlar '+G.pts.length+' ta',10,18);
+  }
+  cv.addEventListener('click',function(ev){var r=cv.getBoundingClientRect(),x=ev.clientX-r.left,y=ev.clientY-r.top,best=null,bd=400;
+    G.pts.forEach(function(p){var d=(p.X-x)*(p.X-x)+(p.Y-y)*(p.Y-y); if(d<bd){bd=d;best=p;}}); if(best)pick(best.id,true);});
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(draw,150);});
+  // 사다리 경로
+  var lad=root.querySelector('.ladder'), chainE=KG.edges.filter(function(e){return (e.p==='lab:prerequisiteOf'&&N[e.s].type==='Method'&&N[e.o]&&N[e.o].type==='Method');});
+  var nexts={},has={}; chainE.forEach(function(e){nexts[e.s]=e.o;has[e.o]=1;});
+  var start=Object.keys(nexts).filter(function(k){return !has[k];})[0], seen={};
+  var html=[]; for(var cur=start;cur&&!seen[cur];cur=nexts[cur]){ seen[cur]=1;
+    html.push('<span class="s" data-go="'+cur+'" style="border-color:'+tc('Method')+'">'+esc(lab(N[cur]))+'</span>');
+    var lim=OUT[cur].filter(function(e){return e.p==='lab:hasLimitation';})[0];
+    if(lim)html.push('<span class="a">→ cheklov</span><span class="s lim" data-go="'+lim.o+'">'+esc(lab(N[lim.o]))+'</span>');
+    if(nexts[cur])html.push('<span class="a">→ yechim</span>');}
+  lad.innerHTML=html.length?html.join(''):'<span class="note">Bu sahifada zina zanjiri yoʻq.</span>';
+  lad.addEventListener('click',function(ev){var s=ev.target.closest('[data-go]'); if(s)pick(s.dataset.go,true);});
+  var qs=root.querySelector('.qs'); KG.nodes.filter(function(n){return n.type==='Question';}).forEach(function(n){
+    var li=el('li',null,'<b>'+esc(lab(n))+'</b>'+(n.definition?' — '+esc(n.definition[LANG]||n.definition.ko):'')+(n.confidence==='low'?' <span class="badge no">tekshirish kerak</span>':'')+(n.anchor?' <a href="'+n.anchor+'" style="color:var(--gfp,#5ee39c)">asosiy matn</a>':''));
+    qs.appendChild(li);});
+  render();
+}
+
+/* ── 꾸러미 ─────────────────────────────────────────── */
+function mountExport(root){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); root.classList.add('kgx');
+  var verifiedAll=function(r){var v=r.lab&&r.lab.verified; return v&&Object.keys(v).every(function(k){return v[k];});};
+  var vb=REF.filter(verifiedAll).length;
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';});
+  var todo=[]; REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; Object.keys(v).forEach(function(k){if(!v[k])todo.push(r.id+' — '+k+' tasdiqlanmagan (boʻsh qoldirildi)');});});
+  todo.push('daʼvo '+claims.length+' ta daʼvoning asl matndagi oʻrni (sahifa, rasm raqami) — provenance.csv dagi loc ustuni boʻsh');
+  todo.push('Sahifa muallifining ismi, litsenziya va ochiq manzil — page_meta.json da boʻsh qoldirilgan');
+  var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
+  KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
+  var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
+  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">Yordamchi</div><p>Manbasiz daʼvolar toʻplamga kiritilmadi. Inson tekshirishi kerak boʻlgan bandlar: '+todo.length+' ta, quyida keltirilgan.</p></div>'+
+    '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>tugunlar</span></div><div><b>'+KG.edges.length+'</b><span>aloqalar</span></div><div><b>'+REF.length+'</b><span>adabiyotlar</span></div>'+
+    '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>bibliografiyasi toʻliq tasdiqlangan adabiyotlar</span></div>'+
+    '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>manbali daʼvolar</span></div></div>'+
+    '<h3>Shu sahifani keltirish</h3><div class="tools"><button class="tchip cf" data-f="text" aria-pressed="true" style="background:var(--gfp,#5ee39c);border-color:var(--gfp,#5ee39c)">Oddiy matn</button><button class="tchip cf" data-f="bib" aria-pressed="false">BibTeX</button><button class="tchip cf" data-f="ris" aria-pressed="false">RIS</button><button class="bt cp" type="button">Nusxalash</button></div><pre class="cite pc"></pre>'+
+    '<h3>Adabiyotlar — tasdiq belgisi va qoʻllab-quvvatlanadigan tushunchalar</h3><div class="refs list"></div>'+
+    '<h3>Qamrov va format tanlash</h3><div class="tools sc" role="group" aria-label="Qamrov"></div><div class="tools"><button class="bt primary zip" type="button">Toʻplam ZIP faylini yuklab olish</button><span class="note zc"></span></div>'+
+    '<div class="files"></div><p class="note">claude.ai oynasida alohida fayl yuklab olinsa, .bib, .ris, .ttl, .jsonld nomi oxiriga .txt qoʻshiladi (oxiridagi .txt ni oʻchirsangiz, asl format qaytadi). ZIP ichidagi fayllar asl nomi bilan qoladi.</p>'+
+    (META.seeAlso?'<p class="note">Bir necha sahifaning toʻplamlarini birlashtirib, soha xaritasi bilan solishtirish uchun → <a style="color:var(--gfp,#5ee39c)" href="'+esc(META.seeAlso)+'"'+(/^https?:/.test(META.seeAlso)?' target="_blank" rel="noopener"':'')+'>Soha xaritasini birlashtirish (KG_00)</a></p>':'')+
+    '<h3>Inson tekshirishi kerak boʻlgan bandlar</h3><ul class="todo">'+todo.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>'+
+    '<p class="note">Toʻplam versiyasi 1.0 · yaratilgan sana '+esc(META.date)+' · reyestr '+esc(META.registry||'KG_00_registry (prototip)')+' · lab: prefiksi '+NS+' (vaqtincha) · asosiy mavzular (lab:topic/*) muallifning qoralamasi</p>';
+  var fmt='text', pc=root.querySelector('.pc');
+  function cite(){pc.textContent=fmt==='bib'?pageBib(META):fmt==='ris'?pageRis(META):pageText(META);}
+  [].forEach.call(root.querySelectorAll('.cf'),function(b){b.onclick=function(){fmt=b.dataset.f; [].forEach.call(root.querySelectorAll('.cf'),function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); cite();};});
+  root.querySelector('.cp').onclick=function(){copy(pc.textContent,this);}; cite();
+  var RL=root.querySelector('.refs');
+  REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; var bad=Object.keys(v).filter(function(k){return !v[k];});
+    var d=el('div','r','<div>'+esc(toText(r))+'<span class="badge role">'+esc({primary:'Asosiy manba',background:'Fon',data:'Raqamlar',figure:'Rasm'}[r.lab&&r.lab.role]||'Fon')+'</span>'+
+      (bad.length?'<span class="badge no">Tekshirish kerak: '+esc(bad.join(', '))+'</span>':'<span class="badge ok">Bibliografiya tasdiqlangan</span>')+'</div>'+
+      '<div style="margin-top:6px">'+(sup[r.id]||[]).map(function(id){var n=N[id]; return n?'<a class="rel" href="'+(n.anchor||'#kg')+'">'+esc(lab(n))+'</a>':'';}).join('')+'</div>');
+    RL.appendChild(d);});
+  var scope='all', SC=root.querySelector('.sc'), zc=root.querySelector('.zc');
+  [['all','Hammasi'],['terms','Faqat tushuncha va usullar'],['claims','Faqat daʼvo + manba'],['prereq','Faqat old shart aloqalari']].forEach(function(s,i){
+    var b=el('button','tchip',s[1]); b.type='button'; b.setAttribute('aria-pressed',i===0); if(i===0)b.style.background='var(--gfp,#5ee39c)',b.style.borderColor='var(--gfp,#5ee39c)';
+    b.onclick=function(){scope=s[0]; [].forEach.call(SC.children,function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); info();};
+    SC.appendChild(b);});
+  var FL=root.querySelector('.files');
+  function info(){var f=buildPackage(scope), m=JSON.parse(f[0].text); zc.textContent='Tugun '+m.counts.nodes+' · aloqa '+m.counts.edges+' · adabiyot '+m.counts.refs+' · fayl '+f.length+' ta';
+    FL.innerHTML=''; f.forEach(function(x){var b=el('button','bt',esc(x.name)); b.type='button'; b.onclick=function(){dlText(x.text,x.name);}; FL.appendChild(b);});}
+  root.querySelector('.zip').onclick=function(){download(makeZip(buildPackage(scope)),'kg_'+META.number+'_'+scope+'.zip');};
+  info();
+}
+function init(){addCss(); var a=$id('kg-mount'),b=$id('export-mount'); if(a)mountIndex(a); if(b)mountExport(b);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+return {download:download,buildPackage:buildPackage,makeZip:makeZip,toJsonLd:toJsonLd,toTurtle:toTurtle,toBib:toBib,toRis:toRis};
+})();
+
+</script>
+<!-- /lab-kg:script -->
 </body>
 </html>

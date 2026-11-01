@@ -571,7 +571,20 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
 .vt.pass{color:var(--stamp);border-color:var(--stamp)}
 .vt.hold{color:var(--muted)}
 .runshot pre{overflow-wrap:anywhere;word-break:break-all}
+/* 꼬리표(지식 색인·꾸러미): 조립기 스타일의 색 변수를 시리즈 테마에 맞춘다 */
+body .kgx{--gfp:var(--ok)}
+body .kgx .it .df,body .kgx .todo li{color:var(--soft)}
+body .kgx .path span.lim{color:var(--stamp)}
 :root{--font:"Noto Sans JP",system-ui,sans-serif;--stampf:"Noto Sans JP",sans-serif}*{word-break:normal!important;line-break:strict}</style>
+<!-- lab-kg:head -->
+<meta name="citation_title" content="モデル採用委員会 第2次公募 · 6-12 デノイジング・オートエンコーダ">
+<meta name="dc.title" content="モデル採用委員会 第2次公募 · 6-12 デノイジング・オートエンコーダ">
+<meta name="dc.date" content="2026-10-24">
+<meta name="dc.language" content="ko">
+<meta name="dc.type" content="InteractiveResource">
+<meta name="citation_author" content="Sangsun Ahn">
+<meta name="dcterms.isPartOf" content="モデル採用委員会 第2次公募">
+<!-- /lab-kg:head -->
 </head>
 <body>
 <nav class="top" aria-label="このページの目次">
@@ -827,6 +840,22 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
   <div class="card"><ul class="reflist"><li><b>データと計算。</b> 封印規定（6-0）に従い、訓練用1,347枚で学習し、封印された試験用紙450枚にガウスノイズσをシード42で1回加え、0~1にクリップした「にじんだ試験用紙」で測る。復元誤差は、復元した数字画像ときれいな原本の画素あたりの二乗誤差（0~1の明るさ）である。採点官は、訓練用数字画像で学んだSVMである。判定の数字は、A章のColabコードの実行結果をページが読み取って使う。01章の図は、ブラウザが同じ構造で数エポックだけ学習した値で、ブラウザのPCA 16成分は同じ訓練用数字画像で計算した。03章の「AIが出したコード」はわざと作った例である。</li><li><b>判定規則。</b> 第2次公募の判定は、Colabでシード(乱数)5つを使って学習した平均値で行う。基準線(マニュアルさん)と先輩の記録(同じ仕事を現在担当している第1次採用者)の両方を超えて初めて採用となる。先輩との差がシード間のばらつき(標準偏差)より小さければ同点とみなし、先輩が席を守る。ページ内の「自分で学習してみる」は、シード1つでブラウザ上で新しく学習した値なので、判定の数字とは少し異なることがある。</li><li><b>再試験。</b> 保留となった応募者は、1回に限り再試験を求めることができる。応募者は試験の前に根拠と予測を述べ、先輩も同じ条件でもう一度受ける。再試験の結果もシード5つの平均であり、負ければそのまま記す。</li><li><b>図。</b> 登場人物の図は「人工知能アルゴリズム・ファミリー組織図」から再利用した。面接室の場面、社員証、図表はこのページがコードで直接描いている。</li><li><b>「採用委員会」コンセプト。</b> モデルを応募者に、学習と評価を面接になぞらえた比喩である。実際の採用手続きや特定の企業を表すものではない。保留は「この仕事とこのデータでは先輩のほうが上だ」という意味にすぎず、モデルの優劣ではない。</li><li><b>登場人物。</b> Money-Roboは著者が運営するサービスのマスコットキャラクターである。博士・助手・ショウジョウバエ研究員・マニュアルさん・先輩社員・応募者は実在の人物を表すものではない。セリフの中のお金・予算に関する表現は、計算コストにかけた口癖である。</li><li><b>データ。</b> 表データチームの実技課題は、UCI Machine Learning RepositoryのConcrete Compressive Strengthデータ(Yeh, 1998, 1,030件, CC BY 4.0)で、試験用紙は第1次公募と同じ規定(test_size=0.25, stratify=強度3等級, random_state=42; 訓練 772 · 試験 258)である。画像側の実技課題はscikit-learnに入っている手書き数字(load_digits, 1,797枚, 原データ UCI Optical Recognition of Handwritten Digits, CC BY 4.0)で、教師ありの回の試験用紙はtest_size=0.25, stratify=y, random_state=42(訓練 1,347 · 試験 450)である。</li><li><b>言語。</b> このシリーズは韓国語で書かれている。翻訳版は韓国語版の内容が確定した後、同じファイル名で追加する。Colabコードのコメントと実行結果は韓国語の原文のままにしてある。</li></ul></div>
 </div>
 </section>
+<!-- lab-kg:body -->
+<section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
+<h2>知識索引 — このページで探す</h2>
+<p class="kgx-sub">このページに出てきた概念、方法、生物対応、主張、未解決の問いを一か所にまとめた。検索し、項目を押して隣接関係を見て、「解説を見る」で本文に戻る。</p>
+<div id="kg-mount"></div>
+</div></section>
+<section class="kgx kgx-sec" id="export"><div class="kgx-wrap">
+<h2>オントロジー・書誌パッケージ — このページの知識を持ち帰る</h2>
+<p class="kgx-sub">知識索引を出典とともにファイルでダウンロードする。Zotero（BibTeX・RIS）、Protégé（Turtle）、Neo4j・Gephi（CSV）、複数ページの統合（kg.json）に使う。</p>
+<div id="export-mount"></div>
+</div></section>
+<script type="application/json" id="kg-raw">{"version": "1.0", "page": "6-12", "nodes": [{"id": "lab:method/dae", "type": "Method", "label": {"ko": "디노이징 오토인코더", "en": "Denoising autoencoder", "ja": "デノイジングオートエンコーダ"}, "definition": {"ko": "학습 때 일부러 잡음을 섞은 입력을 넣고 정답 자리에는 깨끗한 원본을 두는 오토인코더. 구조는 보통 오토인코더와 같다.", "ja": "学習時にわざとノイズを混ぜた入力を入れ、正解の位置には、きれいな原本を置くオートエンコーダである。構造は通常のオートエンコーダと同じである。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "vincent2008"}, {"ref": "vincent2010"}]}, {"id": "lab:method/autoencoder", "type": "Method", "label": {"ko": "오토인코더", "en": "Autoencoder", "ja": "オートエンコーダ"}, "definition": {"ko": "6-11의 지원자. 깨끗한 글씨만 보고 배워 번진 글씨를 번진 채로 되살린다. 이 편은 입력만 바꾼다.", "ja": "6-11の応募者である。きれいな数字画像だけを見て学び、にじんだ数字画像をにじんだまま復元する。この回では入力だけを変える。"}, "anchor": "#m1", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:method/pca16", "type": "Method", "label": {"ko": "PCA 16성분 투영 복원", "en": "PCA 16-component projection", "ja": "PCA 16成分への射影による復元"}, "definition": {"ko": "깨끗한 훈련 글씨로 성분 16개를 구해 번진 글씨를 투영했다가 되살린다. 성분 밖으로 흔들린 잡음이 버려진다.", "ja": "きれいな訓練用の数字画像で成分16個を求め、にじんだ数字画像を射影してから復元する。成分の外にゆれたノイズが捨てられる。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/corruption", "type": "Concept", "label": {"ko": "데이터 오염", "en": "Input corruption", "ja": "データの汚染"}, "definition": {"ko": "학습 입력을 일부러 바꾸는 일(잡음, 칸 지우기). 증강과 닮았지만 정답이 깨끗한 원본이다.", "ja": "学習時の入力をわざと変えること（ノイズ、マスの消去）。拡張に似ているが、正解はきれいな原本である。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "vincent2008"}]}, {"id": "lab:concept/gaussian-noise", "type": "Concept", "label": {"ko": "가우스 잡음", "en": "Gaussian noise", "ja": "ガウスノイズ"}, "definition": {"ko": "정규분포를 따르는 잡음. 세기는 표준편차 σ이고, 0~1 밝기에서 σ 0.3이면 칸마다 ±0.3 안팎이 흔들린다.", "ja": "正規分布に従うノイズである。強さは標準偏差σであり、0～1の明るさでσ 0.3なら、マスごとに±0.3前後揺れる。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/bottleneck-filters-noise", "type": "Concept", "label": {"ko": "병목이 잡음을 거른다", "en": "Bottleneck filters noise", "ja": "ボトルネックがノイズを除く"}, "definition": {"ko": "잡음은 칸마다 제멋대로 흔들리고 글씨의 꼴은 여러 칸이 함께 움직인다. 병목 16칸은 함께 움직이는 것만 싣는다.", "ja": "ノイズはマスごとに勝手に揺れ、数字画像の形は複数のマスが一緒に動く。ボトルネック16マスは、一緒に動くものだけを運ぶ。"}, "anchor": "#m1", "coverage": "explained", "confidence": "medium"}, {"id": "lab:concept/clean-target", "type": "Concept", "label": {"ko": "정답 자리는 깨끗한 원본", "en": "Clean target", "ja": "正解の位置はきれいな原本"}, "definition": {"ko": "잡음은 입력에만 섞고 손실의 정답은 깨끗한 원본으로 둔다. 잡음을 정답에도 섞는 것이 흔한 실수다.", "ja": "ノイズは入力にだけ混ぜ、損失の正解はきれいな原本にする。ノイズを正解にも混ぜるのは、よくある間違いである。"}, "anchor": "#m3", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/noise-mismatch", "type": "Concept", "label": {"ko": "잡음 어긋남", "en": "Noise mismatch", "ja": "ノイズのずれ"}, "definition": {"ko": "배운 잡음과 시험 잡음의 세기나 종류가 다른 상황. 이때 디노이징은 약해진다.", "ja": "学習したノイズと試験のノイズの強さや種類が異なる状況である。このとき、ノイズ除去の効果は弱くなる。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/identity-baseline", "type": "Method", "label": {"ko": "그대로 둠", "en": "Leave as is", "ja": "そのまま残す"}, "definition": {"ko": "아무것도 하지 않고 번진 글씨를 그대로 쓰는 기본선. 되살린다고 하면서 이보다 오차가 크면 오히려 망친 것이다.", "ja": "何もせず、にじんだ数字画像をそのまま使う基準線である。復元すると言いながら、これより誤差が大きいなら、かえって悪くしたことになる。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:task/denoising", "type": "Task", "label": {"ko": "번진 시험지 되살리기", "en": "Restoring noisy test papers", "ja": "にじんだ試験用紙の復元"}, "definition": {"ko": "봉인 450장에 가우스 잡음을 한 번 더하고 0~1로 잘라 만든 번진 시험지를 깨끗한 원본에 가깝게 되살린다.", "ja": "封印された450枚にガウスノイズを一度加え、0～1に切り取って作ったにじんだ試験用紙を、きれいな原本に近づけて復元する。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:task/digit-reading", "type": "Task", "label": {"ko": "채점관 판독", "en": "Reading by a grader SVM", "ja": "採点官による判読"}, "definition": {"ko": "훈련 글씨로 배운 SVM 채점관이 되살린 글씨를 얼마나 읽는지 본다. 깨끗해 보이는 것과 잘 읽히는 것은 다르다.", "ja": "訓練用の数字画像で学んだSVM採点官が、復元した数字画像をどれだけ読めるかを見る。きれいに見えることと、よく読めることは異なる。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:dataset/digits-1797", "type": "Dataset", "label": {"ko": "손글씨 1,797장", "en": "Optical Recognition of Handwritten Digits", "ja": "手書き数字1,797枚"}, "definition": {"ko": "8×8 손글씨(64칸). 봉인 규정으로 나눠 시험 450장에 잡음을 한 번 더한다.", "ja": "8×8の手書き数字（64マス）である。封印の規定に従って分け、試験の450枚にノイズをもう一度加える。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "alpaydin1998"}]}, {"id": "lab:metric/reconstruction-error", "type": "Metric", "label": {"ko": "복원 오차", "en": "Reconstruction error", "ja": "復元誤差"}, "definition": {"ko": "되살린 글씨와 깨끗한 원본의 픽셀당 제곱 오차 평균. 작을수록 좋다.", "ja": "復元した数字画像ときれいな原本のピクセルあたりの二乗誤差の平均である。小さいほど良い。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:metric/grader-accuracy", "type": "Metric", "label": {"ko": "채점관 정확도", "en": "Grader accuracy", "ja": "採点官の精度"}, "definition": {"ko": "SVM 채점관이 되살린 글씨를 맞게 읽는 비율. 복원 오차와 별개로 판독 업무를 잰다.", "ja": "SVM採点官が復元した数字画像を正しく読む割合である。復元誤差とは別に、判読の仕事を測る。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/verdict", "type": "Claim", "label": {"ko": "판정: 합격", "en": "Verdict: hired", "ja": "判定：採用"}, "definition": {"ko": "번진 시험지 복원 오차는 σ 0.3에서 0.0229, σ 0.5에서 0.0344로 선배 PCA 16의 0.0268, 0.0463보다 낮아 합격.", "ja": "にじんだ試験用紙の復元誤差は、σ 0.3で0.0229、σ 0.5で0.0344となり、先輩（第1次採用者）のPCA 16の0.0268、0.0463より低いため、採用となる。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/pca-also-denoises", "type": "Claim", "label": {"ko": "PCA 16도 잡음을 걷는다", "en": "PCA projection also removes noise", "ja": "PCA 16もノイズを取り除く"}, "definition": {"ko": "성분 16개로 투영했다가 되살려도 성분 밖의 잡음이 버려진다. 다만 방향이 곧은 직선뿐이다.", "ja": "成分16個に射影してから復元しても、成分の外にあるノイズは捨てられる。ただし、方向がまっすぐな直線だけである。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/clean-trained-weak", "type": "Claim", "label": {"ko": "깨끗이만 배우면 번진 글씨에 약하다", "en": "Clean-trained AE is weak on noisy input", "ja": "きれいなものだけを学ぶと、にじんだ数字画像に弱い"}, "definition": {"ko": "잡음을 본 적 없는 오토인코더는 낯선 병목 값을 받아 엉뚱한 꼴을 그리고, 그대로 두는 것보다 채점관이 덜 읽는다.", "ja": "ノイズを見たことのないオートエンコーダは、見慣れないボトルネックの値を受け取って妙な形を描き、そのまま残すよりも採点官に読まれにくくなる。"}, "anchor": "#m4", "coverage": "explained", "confidence": "medium"}, {"id": "lab:claim/denoising-generative", "type": "Claim", "label": {"ko": "디노이징 오토인코더는 분포를 배운다", "en": "Denoising AEs learn the data distribution", "ja": "ノイズ除去オートエンコーダは分布を学ぶ"}, "definition": {"ko": "일반화된 디노이징 오토인코더는 데이터 분포에서 표본을 뽑는 생성 모델로도 볼 수 있다.", "ja": "一般化されたデノイジング・オートエンコーダは、データ分布から標本を抽出する生成モデルとしても見ることができる。"}, "anchor": "#m6", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "bengio2013"}]}, {"id": "lab:limitation/clean-only", "type": "Limitation", "label": {"ko": "깨끗한 글씨만 보고 배워 번진 글씨에 약하다", "en": "Trained only on clean input", "ja": "きれいな数字画像だけで学んだため、にじんだ数字に弱い。"}, "definition": {"ko": "6-11 방식은 잡음을 본 적이 없어 번진 글씨를 번진 채로 되살린다. 학습 입력에 잡음을 넣는 디노이징이 이를 고친다.", "ja": "6-11の方式は、ノイズを見たことがないため、にじんだ数字をにじんだまま復元する。学習入力にノイズを入れるデノイジングがこれを直す。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/noise-mismatch-weak", "type": "Limitation", "label": {"ko": "배운 잡음과 다르면 약하다", "en": "Weak on unseen noise", "ja": "学習したノイズと異なると弱い。"}, "definition": {"ko": "배운 잡음과 다른 세기나 종류에는 약해진다. 잡음의 종류를 미리 알아야 학습에 넣을 수 있다.", "ja": "学習したノイズと異なる強さや種類には弱くなる。ノイズの種類をあらかじめ知っておいて初めて学習に組み込める。"}, "anchor": "#m6", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/readability", "type": "Limitation", "label": {"ko": "깨끗해 보여도 판독이 늘지 않는다", "en": "Cleaner-looking does not mean better reading", "ja": "きれいに見えても判読は向上しない。"}, "definition": {"ko": "약한 잡음에서는 채점관이 번진 원본을 더 잘 읽었다. 판독이 목적이면 판독기를 번진 글씨로 함께 훈련하는 편이 나을 수 있다.", "ja": "弱いノイズでは、採点官はにじんだ元の数字をよりよく読めた。判読が目的なら、判読器をにじんだ数字とともに訓練する方がよい場合がある。"}, "anchor": "#m6", "coverage": "explained", "confidence": "high"}, {"id": "lab:question/which-metric", "type": "Question", "label": {"ko": "업무에 맞는 채점 기준은 무엇인가?", "en": "Which metric fits the job?", "ja": "業務に合った採点基準は何か？"}, "definition": {"ko": "사람이 보기 좋은 사본이 목적이면 복원 오차, 숫자를 읽는 것이 목적이면 판독 정확도로 잰다. 업무가 기준을 정한다.", "ja": "人が見て良い複製が目的なら再構成誤差、数字を読むことが目的なら判読精度で測る。業務が基準を決める。"}, "anchor": "#m5", "coverage": "mentioned", "confidence": "medium"}, {"id": "lab:sim/dae-lab", "type": "Simulation", "label": {"ko": "브라우저에서 디노이징 학습", "en": "Denoising in the browser", "ja": "ブラウザでのデノイジング学習"}, "definition": {"ko": "σ 0.3으로 15에포크 학습하고 σ 0.1, 0.3, 0.5의 번진 글씨를 원본, PCA 16과 나란히 되살려 본다.", "ja": "σ 0.3で15エポック学習し、σ 0.1、0.3、0.5のにじんだ数字を、元の画像、PCA 16と並べて復元してみる。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/blurry-face", "type": "Analogy", "label": {"ko": "흐릿한 사진만 보고 원래 얼굴 그리기", "en": "Drawing the original face from a blurry photo", "ja": "ぼやけた写真だけを見て元の顔を描く"}, "definition": {"ko": "일부러 더럽힌 입력에서 깨끗한 원본을 그리는 연습에 빗댄다.", "ja": "わざと汚した入力から、きれいな原画を描く練習にたとえる。"}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:bio/fly-olfaction", "type": "BioAnalogue", "label": {"ko": "초파리 후각계", "en": "Fly olfactory system", "ja": "ショウジョウバエの嗅覚系"}, "definition": {"ko": "바람 따라 끊기고 흔들리는 냄새 신호에서도 같은 냄새를 알아보는 것과 닮았다. 다만 초파리는 이 강건함을 진화로 얻었고 디노이징은 데이터로 배운다.", "ja": "風に流され途切れたり揺れたりするにおいの信号からでも、同じにおいを見分けることに似ている。ただし、ショウジョウバエはこの頑健さを進化によって得たのに対し、デノイジングはデータから学ぶ。"}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "vergassola2007"}]}], "edges": [{"s": "lab:method/dae", "p": "lab:broader", "o": "lab:topic/autoencoder"}, {"s": "lab:method/autoencoder", "p": "lab:broader", "o": "lab:topic/autoencoder"}, {"s": "lab:method/pca16", "p": "lab:broader", "o": "lab:topic/pca"}, {"s": "lab:concept/corruption", "p": "lab:broader", "o": "lab:topic/data-augmentation"}, {"s": "lab:metric/reconstruction-error", "p": "lab:broader", "o": "lab:topic/loss-function"}, {"s": "lab:method/autoencoder", "p": "lab:prerequisiteOf", "o": "lab:method/dae"}, {"s": "lab:method/autoencoder", "p": "lab:hasLimitation", "o": "lab:limitation/clean-only"}, {"s": "lab:limitation/clean-only", "p": "lab:addressedBy", "o": "lab:method/dae"}, {"s": "lab:concept/corruption", "p": "lab:partOf", "o": "lab:method/dae"}, {"s": "lab:concept/gaussian-noise", "p": "lab:partOf", "o": "lab:concept/corruption"}, {"s": "lab:concept/clean-target", "p": "lab:partOf", "o": "lab:method/dae"}, {"s": "lab:concept/bottleneck-filters-noise", "p": "lab:partOf", "o": "lab:method/dae"}, {"s": "lab:concept/gaussian-noise", "p": "lab:prerequisiteOf", "o": "lab:concept/noise-mismatch"}, {"s": "lab:concept/corruption", "p": "lab:prerequisiteOf", "o": "lab:concept/clean-target"}, {"s": "lab:claim/clean-trained-weak", "p": "lab:supports", "o": "lab:method/dae"}, {"s": "lab:method/dae", "p": "lab:hasLimitation", "o": "lab:limitation/noise-mismatch-weak"}, {"s": "lab:limitation/noise-mismatch-weak", "p": "lab:raises", "o": "lab:question/which-metric"}, {"s": "lab:method/dae", "p": "lab:hasLimitation", "o": "lab:limitation/readability"}, {"s": "lab:limitation/readability", "p": "lab:raises", "o": "lab:question/which-metric"}, {"s": "lab:claim/clean-trained-weak", "p": "lab:supports", "o": "lab:limitation/clean-only"}, {"s": "lab:concept/noise-mismatch", "p": "lab:supports", "o": "lab:limitation/noise-mismatch-weak"}, {"s": "lab:method/dae", "p": "lab:contrastsWith", "o": "lab:method/autoencoder"}, {"s": "lab:method/dae", "p": "lab:contrastsWith", "o": "lab:method/pca16"}, {"s": "lab:method/identity-baseline", "p": "lab:contrastsWith", "o": "lab:method/dae"}, {"s": "lab:method/identity-baseline", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/dae", "p": "lab:solves", "o": "lab:task/denoising"}, {"s": "lab:task/digit-reading", "p": "lab:evaluatedOn", "o": "lab:dataset/digits-1797"}, {"s": "lab:method/dae", "p": "lab:evaluatedBy", "o": "lab:metric/reconstruction-error"}, {"s": "lab:method/dae", "p": "lab:evaluatedBy", "o": "lab:metric/grader-accuracy"}, {"s": "lab:method/dae", "p": "lab:evaluatedOn", "o": "lab:dataset/digits-1797"}, {"s": "lab:task/denoising", "p": "lab:evaluatedOn", "o": "lab:dataset/digits-1797"}, {"s": "lab:method/dae", "p": "lab:demonstratedBy", "o": "lab:sim/dae-lab"}, {"s": "lab:method/pca16", "p": "lab:demonstratedBy", "o": "lab:sim/dae-lab"}, {"s": "lab:claim/verdict", "p": "lab:supports", "o": "lab:method/dae"}, {"s": "lab:metric/reconstruction-error", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:claim/pca-also-denoises", "p": "lab:supports", "o": "lab:method/pca16"}, {"s": "lab:claim/denoising-generative", "p": "lab:supports", "o": "lab:method/dae"}, {"s": "lab:metric/grader-accuracy", "p": "lab:supports", "o": "lab:limitation/readability"}, {"s": "lab:analogy/blurry-face", "p": "lab:analogyOf", "o": "lab:method/dae"}, {"s": "lab:bio/fly-olfaction", "p": "lab:bioAnalogueOf", "o": "lab:method/dae"}, {"s": "lab:task/digit-reading", "p": "lab:relatedTo", "o": "lab:metric/grader-accuracy"}], "topicLabels": {"lab:area/math": "数学の基礎", "lab:topic/linear-algebra": "線形代数", "lab:topic/probability-statistics": "確率・統計", "lab:topic/calculus-optimization-math": "微積分と最適化の数学", "lab:topic/information-theory": "情報理論", "lab:area/ml-basics": "機械学習の基礎", "lab:topic/supervised-learning": "教師あり学習", "lab:topic/unsupervised-learning": "教師なし学習の概念", "lab:topic/generalization": "汎化・過学習", "lab:topic/bias-variance": "バイアス・バリアンスの均衡", "lab:topic/data-splitting": "訓練・検証・試験の分割", "lab:topic/feature-engineering": "特徴量エンジニアリング", "lab:topic/rule-vs-learning": "ルールベース vs 学習ベース", "lab:area/classical": "古典的モデル", "lab:topic/linear-regression": "線形回帰", "lab:topic/logistic-regression": "ロジスティック回帰", "lab:topic/svm": "サポートベクターマシン", "lab:topic/knn": "k近傍法", "lab:topic/decision-tree": "決定木", "lab:topic/naive-bayes": "ナイーブベイズ", "lab:area/ensemble": "アンサンブル", "lab:topic/bagging": "バギング", "lab:topic/random-forest": "ランダムフォレスト", "lab:topic/boosting": "ブースティング", "lab:topic/stacking": "スタッキング", "lab:area/nn-basics": "ニューラルネットワークの基礎", "lab:topic/weights-and-biases": "重みとバイアス", "lab:topic/perceptron": "パーセプトロン", "lab:topic/mlp": "多層パーセプトロン", "lab:topic/activation-function": "活性化関数", "lab:topic/loss-function": "損失関数", "lab:topic/backpropagation": "誤差逆伝播", "lab:topic/universal-approximation": "万能近似定理", "lab:area/optimization": "最適化", "lab:topic/gradient-descent": "勾配降下法", "lab:topic/sgd-minibatch": "確率的勾配降下法・ミニバッチ", "lab:topic/momentum-adam": "モメンタム・Adam", "lab:topic/learning-rate-schedule": "学習率の調整", "lab:area/regularization": "正則化・汎化の手法", "lab:topic/weight-decay": "重み減衰(L2)", "lab:topic/dropout": "ドロップアウト", "lab:topic/early-stopping": "早期終了", "lab:topic/normalization-layers": "正規化層", "lab:topic/data-augmentation": "データ拡張", "lab:area/vision": "畳み込み・視覚", "lab:topic/convolution": "畳み込み・重み共有", "lab:topic/pooling": "プーリング", "lab:topic/receptive-field": "受容野", "lab:topic/residual-connections": "残差接続", "lab:topic/object-detection": "物体検出", "lab:topic/segmentation": "セグメンテーション", "lab:area/sequence": "系列モデル", "lab:topic/rnn": "再帰型ニューラルネットワーク", "lab:topic/lstm-gru": "LSTM·GRU", "lab:topic/seq2seq": "シーケンス・トゥ・シーケンス", "lab:topic/time-series": "時系列予測", "lab:area/attention": "アテンション・トランスフォーマー", "lab:topic/attention-mechanism": "アテンション機構", "lab:topic/self-attention": "セルフアテンション", "lab:topic/multi-head-attention": "マルチヘッドアテンション", "lab:topic/positional-encoding": "位置エンコーディング", "lab:topic/transformer": "トランスフォーマー", "lab:area/language": "言語モデル・自然言語処理", "lab:topic/tokenization": "トークン化", "lab:topic/word-embedding": "単語埋め込み", "lab:topic/pretrained-lm": "事前学習言語モデル", "lab:topic/transfer-learning": "転移学習・ファインチューニング", "lab:topic/lora": "LoRA・アダプタ", "lab:topic/prompting": "プロンプティング", "lab:topic/rag": "検索拡張生成", "lab:area/generative": "生成モデル", "lab:topic/autoencoder": "オートエンコーダ", "lab:topic/vae": "変分オートエンコーダ", "lab:topic/gan": "敵対的生成ネットワーク", "lab:topic/diffusion": "拡散モデル", "lab:topic/autoregressive-generation": "自己回帰生成", "lab:area/representation": "表現学習", "lab:topic/embedding-space": "埋め込み空間", "lab:topic/self-supervised": "自己教師あり学習", "lab:topic/contrastive": "対照学習", "lab:topic/sparse-representation": "疎表現", "lab:topic/random-features": "ランダム特徴量", "lab:topic/multi-task-learning": "マルチタスク学習", "lab:area/rl": "強化学習", "lab:topic/mdp": "マルコフ決定過程", "lab:topic/reward": "報酬", "lab:topic/value-function": "価値関数", "lab:topic/q-learning": "Q学習", "lab:topic/policy-gradient": "方策勾配", "lab:topic/exploration": "探索と活用", "lab:topic/reward-prediction-error": "報酬予測誤差", "lab:area/unsupervised": "教師なし手法", "lab:topic/clustering": "クラスタリング", "lab:topic/pca": "主成分分析", "lab:topic/tsne-umap": "t-SNE·UMAP", "lab:topic/density-estimation": "密度推定", "lab:topic/anomaly-detection": "異常検知", "lab:area/evaluation": "評価", "lab:topic/accuracy-metrics": "正解率・損失指標", "lab:topic/precision-recall": "適合率・再現率", "lab:topic/roc-auc": "ROC·AUC", "lab:topic/confusion-matrix": "混同行列", "lab:topic/data-leakage": "データリーケージ", "lab:topic/ablation": "アブレーション実験", "lab:area/graph": "グラフ学習", "lab:topic/gnn": "グラフニューラルネットワーク", "lab:topic/message-passing": "メッセージパッシング", "lab:topic/knowledge-graph": "知識グラフ", "lab:area/systems": "システム・MLOps", "lab:topic/deployment": "デプロイ", "lab:topic/distribution-shift": "分布シフト", "lab:topic/monitoring": "モニタリング", "lab:topic/reproducibility": "再現性", "lab:area/responsible": "責任ある AI", "lab:topic/fairness": "公平性", "lab:topic/interpretability": "説明可能性・解釈", "lab:topic/ai-safety": "安全性", "lab:topic/privacy": "プライバシー", "lab:area/neuro": "神経科学と AI", "lab:topic/biological-neuron": "生物のニューロンとスパイク", "lab:topic/synaptic-plasticity": "シナプス可塑性", "lab:topic/connectome": "コネクトーム", "lab:topic/sensory-processing": "感覚処理", "lab:topic/learning-memory-circuits": "学習・記憶回路", "lab:topic/circuit-methods": "神経回路の実験手法"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/6-12","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"모델 채용 위원회 2차 공채 · 6-12 디노이징 오토인코더","schema:inLanguage":"ko","schema:dateCreated":"2026-10-24","schema:version":"1.0","dct:isPartOf":"모델 채용 위원회 2차 공채","schema:about":[{"@id":"lab:topic/autoencoder"}],"schema:educationalLevel":"대학 학부 · 입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/vincent2008"},{"@id":"lab:work/vincent2010"},{"@id":"lab:work/bengio2013"},{"@id":"lab:work/vergassola2007"},{"@id":"lab:work/alpaydin1998"}]},{"@id":"lab:method/dae","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"디노이징 오토인코더","@language":"ko"},{"@value":"Denoising autoencoder","@language":"en"}],"skos:definition":[{"@value":"학습 때 일부러 잡음을 섞은 입력을 넣고 정답 자리에는 깨끗한 원본을 두는 오토인코더. 구조는 보통 오토인코더와 같다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/autoencoder"}],"skos:broader":[{"@id":"lab:topic/autoencoder"}],"lab:hasLimitation":[{"@id":"lab:limitation/noise-mismatch-weak"},{"@id":"lab:limitation/readability"}],"lab:contrastsWith":[{"@id":"lab:method/autoencoder"},{"@id":"lab:method/pca16"}],"lab:solves":[{"@id":"lab:task/denoising"}],"lab:evaluatedBy":[{"@id":"lab:metric/reconstruction-error"},{"@id":"lab:metric/grader-accuracy"}],"lab:evaluatedOn":[{"@id":"lab:dataset/digits-1797"}],"lab:demonstratedBy":[{"@id":"lab:sim/dae-lab"}]},{"@id":"lab:method/autoencoder","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"오토인코더","@language":"ko"},{"@value":"Autoencoder","@language":"en"}],"skos:definition":[{"@value":"6-11의 지원자. 깨끗한 글씨만 보고 배워 번진 글씨를 번진 채로 되살린다. 이 편은 입력만 바꾼다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/autoencoder"}],"skos:broader":[{"@id":"lab:topic/autoencoder"}],"lab:prerequisiteOf":[{"@id":"lab:method/dae"}],"lab:hasLimitation":[{"@id":"lab:limitation/clean-only"}]},{"@id":"lab:method/pca16","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"PCA 16성분 투영 복원","@language":"ko"},{"@value":"PCA 16-component projection","@language":"en"}],"skos:definition":[{"@value":"깨끗한 훈련 글씨로 성분 16개를 구해 번진 글씨를 투영했다가 되살린다. 성분 밖으로 흔들린 잡음이 버려진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/pca"}],"skos:broader":[{"@id":"lab:topic/pca"}],"lab:demonstratedBy":[{"@id":"lab:sim/dae-lab"}]},{"@id":"lab:concept/corruption","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"데이터 오염","@language":"ko"},{"@value":"Input corruption","@language":"en"}],"skos:definition":[{"@value":"학습 입력을 일부러 바꾸는 일(잡음, 칸 지우기). 증강과 닮았지만 정답이 깨끗한 원본이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/data-augmentation"}],"skos:broader":[{"@id":"lab:topic/data-augmentation"}],"lab:partOf":[{"@id":"lab:method/dae"}],"lab:prerequisiteOf":[{"@id":"lab:concept/clean-target"}]},{"@id":"lab:concept/gaussian-noise","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"가우스 잡음","@language":"ko"},{"@value":"Gaussian noise","@language":"en"}],"skos:definition":[{"@value":"정규분포를 따르는 잡음. 세기는 표준편차 σ이고, 0~1 밝기에서 σ 0.3이면 칸마다 ±0.3 안팎이 흔들린다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:partOf":[{"@id":"lab:concept/corruption"}],"lab:prerequisiteOf":[{"@id":"lab:concept/noise-mismatch"}]},{"@id":"lab:concept/bottleneck-filters-noise","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"병목이 잡음을 거른다","@language":"ko"},{"@value":"Bottleneck filters noise","@language":"en"}],"skos:definition":[{"@value":"잡음은 칸마다 제멋대로 흔들리고 글씨의 꼴은 여러 칸이 함께 움직인다. 병목 16칸은 함께 움직이는 것만 싣는다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/dae"}]},{"@id":"lab:concept/clean-target","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"정답 자리는 깨끗한 원본","@language":"ko"},{"@value":"Clean target","@language":"en"}],"skos:definition":[{"@value":"잡음은 입력에만 섞고 손실의 정답은 깨끗한 원본으로 둔다. 잡음을 정답에도 섞는 것이 흔한 실수다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m3","lab:partOf":[{"@id":"lab:method/dae"}]},{"@id":"lab:concept/noise-mismatch","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"잡음 어긋남","@language":"ko"},{"@value":"Noise mismatch","@language":"en"}],"skos:definition":[{"@value":"배운 잡음과 시험 잡음의 세기나 종류가 다른 상황. 이때 디노이징은 약해진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:limitation/noise-mismatch-weak"}]},{"@id":"lab:method/identity-baseline","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"그대로 둠","@language":"ko"},{"@value":"Leave as is","@language":"en"}],"skos:definition":[{"@value":"아무것도 하지 않고 번진 글씨를 그대로 쓰는 기본선. 되살린다고 하면서 이보다 오차가 크면 오히려 망친 것이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:contrastsWith":[{"@id":"lab:method/dae"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:task/denoising","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"번진 시험지 되살리기","@language":"ko"},{"@value":"Restoring noisy test papers","@language":"en"}],"skos:definition":[{"@value":"봉인 450장에 가우스 잡음을 한 번 더하고 0~1로 잘라 만든 번진 시험지를 깨끗한 원본에 가깝게 되살린다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:evaluatedOn":[{"@id":"lab:dataset/digits-1797"}]},{"@id":"lab:task/digit-reading","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"채점관 판독","@language":"ko"},{"@value":"Reading by a grader SVM","@language":"en"}],"skos:definition":[{"@value":"훈련 글씨로 배운 SVM 채점관이 되살린 글씨를 얼마나 읽는지 본다. 깨끗해 보이는 것과 잘 읽히는 것은 다르다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:evaluatedOn":[{"@id":"lab:dataset/digits-1797"}],"lab:relatedTo":[{"@id":"lab:metric/grader-accuracy"}],"skos:related":[{"@id":"lab:metric/grader-accuracy"}]},{"@id":"lab:dataset/digits-1797","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"손글씨 1,797장","@language":"ko"},{"@value":"Optical Recognition of Handwritten Digits","@language":"en"}],"skos:definition":[{"@value":"8×8 손글씨(64칸). 봉인 규정으로 나눠 시험 450장에 잡음을 한 번 더한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:metric/reconstruction-error","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"복원 오차","@language":"ko"},{"@value":"Reconstruction error","@language":"en"}],"skos:definition":[{"@value":"되살린 글씨와 깨끗한 원본의 픽셀당 제곱 오차 평균. 작을수록 좋다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:broader":[{"@id":"lab:topic/loss-function"}],"skos:broader":[{"@id":"lab:topic/loss-function"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:metric/grader-accuracy","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"채점관 정확도","@language":"ko"},{"@value":"Grader accuracy","@language":"en"}],"skos:definition":[{"@value":"SVM 채점관이 되살린 글씨를 맞게 읽는 비율. 복원 오차와 별개로 판독 업무를 잰다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:limitation/readability"}]},{"@id":"lab:claim/verdict","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"판정: 합격","@language":"ko"},{"@value":"Verdict: hired","@language":"en"}],"skos:definition":[{"@value":"번진 시험지 복원 오차는 σ 0.3에서 0.0229, σ 0.5에서 0.0344로 선배 PCA 16의 0.0268, 0.0463보다 낮아 합격.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:supports":[{"@id":"lab:method/dae"}]},{"@id":"lab:claim/pca-also-denoises","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"PCA 16도 잡음을 걷는다","@language":"ko"},{"@value":"PCA projection also removes noise","@language":"en"}],"skos:definition":[{"@value":"성분 16개로 투영했다가 되살려도 성분 밖의 잡음이 버려진다. 다만 방향이 곧은 직선뿐이다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:supports":[{"@id":"lab:method/pca16"}]},{"@id":"lab:claim/clean-trained-weak","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"깨끗이만 배우면 번진 글씨에 약하다","@language":"ko"},{"@value":"Clean-trained AE is weak on noisy input","@language":"en"}],"skos:definition":[{"@value":"잡음을 본 적 없는 오토인코더는 낯선 병목 값을 받아 엉뚱한 꼴을 그리고, 그대로 두는 것보다 채점관이 덜 읽는다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"explained","lab:anchor":"#m4","lab:supports":[{"@id":"lab:method/dae"},{"@id":"lab:limitation/clean-only"}]},{"@id":"lab:claim/denoising-generative","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"디노이징 오토인코더는 분포를 배운다","@language":"ko"},{"@value":"Denoising AEs learn the data distribution","@language":"en"}],"skos:definition":[{"@value":"일반화된 디노이징 오토인코더는 데이터 분포에서 표본을 뽑는 생성 모델로도 볼 수 있다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m6","lab:supports":[{"@id":"lab:method/dae"}]},{"@id":"lab:limitation/clean-only","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"깨끗한 글씨만 보고 배워 번진 글씨에 약하다","@language":"ko"},{"@value":"Trained only on clean input","@language":"en"}],"skos:definition":[{"@value":"6-11 방식은 잡음을 본 적이 없어 번진 글씨를 번진 채로 되살린다. 학습 입력에 잡음을 넣는 디노이징이 이를 고친다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:addressedBy":[{"@id":"lab:method/dae"}]},{"@id":"lab:limitation/noise-mismatch-weak","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"배운 잡음과 다르면 약하다","@language":"ko"},{"@value":"Weak on unseen noise","@language":"en"}],"skos:definition":[{"@value":"배운 잡음과 다른 세기나 종류에는 약해진다. 잡음의 종류를 미리 알아야 학습에 넣을 수 있다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m6","lab:raises":[{"@id":"lab:question/which-metric"}]},{"@id":"lab:limitation/readability","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"깨끗해 보여도 판독이 늘지 않는다","@language":"ko"},{"@value":"Cleaner-looking does not mean better reading","@language":"en"}],"skos:definition":[{"@value":"약한 잡음에서는 채점관이 번진 원본을 더 잘 읽었다. 판독이 목적이면 판독기를 번진 글씨로 함께 훈련하는 편이 나을 수 있다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m6","lab:raises":[{"@id":"lab:question/which-metric"}]},{"@id":"lab:question/which-metric","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"업무에 맞는 채점 기준은 무엇인가?","@language":"ko"},{"@value":"Which metric fits the job?","@language":"en"}],"skos:definition":[{"@value":"사람이 보기 좋은 사본이 목적이면 복원 오차, 숫자를 읽는 것이 목적이면 판독 정확도로 잰다. 업무가 기준을 정한다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m5"},{"@id":"lab:sim/dae-lab","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"브라우저에서 디노이징 학습","@language":"ko"},{"@value":"Denoising in the browser","@language":"en"}],"skos:definition":[{"@value":"σ 0.3으로 15에포크 학습하고 σ 0.1, 0.3, 0.5의 번진 글씨를 원본, PCA 16과 나란히 되살려 본다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:analogy/blurry-face","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"흐릿한 사진만 보고 원래 얼굴 그리기","@language":"ko"},{"@value":"Drawing the original face from a blurry photo","@language":"en"}],"skos:definition":[{"@value":"일부러 더럽힌 입력에서 깨끗한 원본을 그리는 연습에 빗댄다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:method/dae"}]},{"@id":"lab:bio/fly-olfaction","@type":["lab:BioAnalogue","skos:Concept"],"skos:prefLabel":[{"@value":"초파리 후각계","@language":"ko"},{"@value":"Fly olfactory system","@language":"en"}],"skos:definition":[{"@value":"바람 따라 끊기고 흔들리는 냄새 신호에서도 같은 냄새를 알아보는 것과 닮았다. 다만 초파리는 이 강건함을 진화로 얻었고 디노이징은 데이터로 배운다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:bioAnalogueOf":[{"@id":"lab:method/dae"}]}]}</script>
+<script type="application/json" id="refs-csl">[{"id":"vincent2008","type":"paper-conference","title":"Extracting and composing robust features with denoising autoencoders","author":[{"family":"Vincent","given":"P."},{"family":"Larochelle","given":"H."},{"family":"Bengio","given":"Y."},{"family":"Manzagol","given":"P.-A."}],"issued":{"date-parts":[[2008]]},"container-title":"ICML","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"vincent2010","type":"article-journal","title":"Stacked denoising autoencoders","author":[{"family":"Vincent","given":"P."},{"family":"Larochelle","given":"H."},{"family":"Lajoie","given":"I."},{"family":"Bengio","given":"Y."},{"family":"Manzagol","given":"P.-A."}],"issued":{"date-parts":[[2010]]},"container-title":"JMLR","volume":"11","page":"3371–3408","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"bengio2013","type":"paper-conference","title":"Generalized denoising auto-encoders as generative models","author":[{"family":"Bengio","given":"Y."},{"family":"Yao","given":"L."},{"family":"Alain","given":"G."},{"family":"Vincent","given":"P."}],"issued":{"date-parts":[[2013]]},"container-title":"NeurIPS","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"vergassola2007","type":"article-journal","title":"‘Infotaxis’ as a strategy for searching without gradients","author":[{"family":"Vergassola","given":"M."},{"family":"Villermaux","given":"E."},{"family":"Shraiman","given":"B. I."}],"issued":{"date-parts":[[2007]]},"container-title":"Nature","volume":"445","page":"406–409","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"alpaydin1998","type":"dataset","title":"Optical Recognition of Handwritten Digits","author":[{"family":"Alpaydin","given":"E."},{"family":"Kaynak","given":"C."}],"issued":{"date-parts":[[1998]]},"publisher":"UCI Machine Learning Repository","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}}]</script>
+<script type="application/json" id="page-meta">{"title": "モデル採用委員会 第2次公募 · 6-12 デノイジング・オートエンコーダ", "number": "6-12", "date": "2026-10-24", "version": "1.0", "series": "モデル採用委員会 第2次公募", "language": "ko", "creator": [{"name": "Ahn Sangsun", "affiliation": "M-Robo Co., Ltd."}], "about": ["lab:topic/autoencoder"], "educationalLevel": "대학 학부 · 입문", "learningResourceType": "interactive explainer", "description": "일부러 더럽힌 글씨를 넣고 깨끗한 원본을 되살리게 배우는 지원자 디노이징 오토인코더의 면접. 번진 시험지(가우스 잡음 σ)를 되살린 오차로 압축팀 선배 PCA와 깨끗이 배운 오토인코더와 겨루고, 되살린 글씨를 채점관이 얼마나 읽는지, 학습 잡음과 시험 잡음이 어긋나면 어떻게 되는지 본다. 모델 채용 위원회 2차 공채 6-12.", "basedOn": ["vincent2008", "vincent2010", "bengio2013", "vergassola2007", "alpaydin1998"]}</script>
+<!-- /lab-kg:body -->
 <footer>
   <div class="wrap">
     <p><b style="color:var(--text)">モデル採用委員会 第2次公募 · 6-12 デノイジング・オートエンコーダ</b> · <a href="6-0_job_posting.html#m8">全体マップ (6-0)</a> — 文 Sangsun Ahn（M-Robo 代表）</p>
@@ -1632,5 +1661,408 @@ var CODE={title:'デノイジング・オートエンコーダ面接 — にじ�
 
 boot();
 </script>
+<!-- lab-kg:script -->
+<script>
+/* ai-lab-retrofit 휴대판 (색 변수가 없는 페이지에서도 동작) */
+/* ══ KG: 지식 색인(#kg) + 온톨로지·서지 꾸러미(#export) — 공용 모듈 ══
+   데이터 블록: #kg-raw(중립 JSON), #refs-csl(CSL-JSON), #page-meta, #kg-ld(빌드 때 생성)
+   외부 라이브러리 없음. 모든 내보내기는 kg-raw에서 만든다. */
+var KGX=(function(){
+'use strict';
+function $id(i){return document.getElementById(i);}
+function J(id){var e=$id(id); return e?JSON.parse(e.textContent):null;}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function el(tag,cls,html){var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+
+var TYPE={Concept:['概念','#82b8ff'],Method:['方法','#5ee39c'],BioAnalogue:['生物対応','#ef5b5b'],Claim:['主張','#f1b646'],
+  Question:['未解決の問い','#d672d6'],Limitation:['限界','#ff9a7a'],Task:['タスク','#7fe0c8'],Metric:['指標','#b9a8ff'],
+  Dataset:['データ','#c9c4a4'],Simulation:['シミュレーション','#8a88a8'],QuizItem:['クイズ','#6f6d8c'],Work:['文献','#e0d7a8'],
+  Area:['領域','#eceaf3'],Topic:['トピック','#9d9bb8'],Analogy:['たとえ','#ff86b8'],Term:['用語','#82b8ff']};
+var REL={prerequisiteOf:'前提',hasLimitation:'限界',addressedBy:'解決済み',partOf:'部分',bioAnalogueOf:'生物対応',
+  contrastsWith:'対比',supports:'裏づけ',assertedIn:'出典',evaluatedBy:'指標で評価',evaluatedOn:'データで評価',
+  demonstratedBy:'シミュレーション',raises:'問いを生む',relatedTo:'関連',solves:'解決する課題',analogyOf:'たとえ',assesses:'クイズで確認',
+  broader:'上位トピック',explainedIn:'解説の位置'};
+function tl(t){return (TYPE[t]||[t])[0];} function tc(t){return (TYPE[t]||[0,'#9d9bb8'])[1];}
+function pn(p){return p.replace(/^lab:/,'');}
+function lab(n){return n.label?(n.label[LANG]||n.label.en||n.label.ko):n.id;}
+
+/* ── 변환기 ─────────────────────────────────────────── */
+var NS='urn:lab:';
+var CTX={'@vocab':NS,lab:NS,skos:'http://www.w3.org/2004/02/skos/core#',schema:'https://schema.org/',
+  dct:'http://purl.org/dc/terms/',prov:'http://www.w3.org/ns/prov#',rdfs:'http://www.w3.org/2000/01/rdf-schema#'};
+var SKOS_T={Concept:1,Method:1,Task:1,Term:1,Limitation:1,BioAnalogue:1,Metric:1,Area:1,Topic:1};
+var SCH_T={Work:'schema:ScholarlyArticle',Claim:'schema:Claim',Dataset:'schema:Dataset',QuizItem:'schema:Question',Question:'schema:Question',Simulation:'schema:SoftwareApplication'};
+function lit(o){var a=[]; Object.keys(o||{}).forEach(function(k){ var v=o[k]; (Array.isArray(v)?v:[v]).forEach(function(x){a.push({'@value':x,'@language':k});});}); return a;}
+function toJsonLd(g,meta){
+  var graph=g.nodes.map(function(n){
+    var t=['lab:'+n.type]; if(SKOS_T[n.type])t.push('skos:Concept'); if(SCH_T[n.type])t.push(SCH_T[n.type]);
+    var o={'@id':n.id,'@type':t,'skos:prefLabel':lit(n.label)};
+    if(n.altLabel)o['skos:altLabel']=lit(n.altLabel);
+    if(n.definition)o['skos:definition']=lit(n.definition);
+    ['level','status','confidence','coverage','family','page','anchor'].forEach(function(k){ if(n[k]!=null)o['lab:'+k]=n[k];});
+    (n.match||[]).forEach(function(m){ var p=m.rel==='exact'?'skos:exactMatch':'skos:closeMatch'; (o[p]=o[p]||[]).push({'@id':m.iri});});
+    return o;});
+  var byS={}; graph.forEach(function(o){byS[o['@id']]=o;});
+  g.edges.forEach(function(e){ var s=byS[e.s]; if(!s)return; var k=e.p; (s[k]=s[k]||[]).push({'@id':e.o});
+    if(e.p==='lab:broader')(s['skos:broader']=s['skos:broader']||[]).push({'@id':e.o});
+    if(e.p==='lab:assertedIn')(s['prov:wasDerivedFrom']=s['prov:wasDerivedFrom']||[]).push({'@id':e.o});
+    if(e.p==='lab:relatedTo')(s['skos:related']=s['skos:related']||[]).push({'@id':e.o}); });
+  if(meta)graph.unshift({'@id':NS+'page/'+meta.number,'@type':['schema:LearningResource','schema:WebPage'],'schema:name':meta.title,
+    'schema:inLanguage':meta.language,'schema:dateCreated':meta.date,'schema:version':meta.version,'dct:isPartOf':meta.series,
+    'schema:about':(meta.about||[]).map(function(a){return {'@id':a};}),'schema:educationalLevel':meta.educationalLevel,
+    'schema:learningResourceType':meta.learningResourceType,'dct:source':(meta.basedOn||[]).map(function(b){return {'@id':'lab:work/'+b};})});
+  return {'@context':CTX,'@graph':graph};
+}
+function ttlS(s){return '"'+String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\n/g,'\\n')+'"';}
+function ttlI(id){return id.indexOf('lab:')===0?'lab:'+id.slice(4).replace(/[^A-Za-z0-9_\-]/g,function(c){return c==='/'?'_':encodeURIComponent(c).replace(/%/g,'_');}):'<'+id+'>';}
+function toTurtle(g){
+  var L=['@prefix lab: <'+NS+'> .','@prefix skos: <http://www.w3.org/2004/02/skos/core#> .','@prefix schema: <https://schema.org/> .',
+    '@prefix prov: <http://www.w3.org/ns/prov#> .',''];
+  var out={}; g.edges.forEach(function(e){(out[e.s]=out[e.s]||[]).push(e);});
+  g.nodes.forEach(function(n){
+    var P=['a lab:'+n.type+(SKOS_T[n.type]?', skos:Concept':'')];
+    Object.keys(n.label||{}).forEach(function(k){P.push('skos:prefLabel '+ttlS(n.label[k])+'@'+k);});
+    Object.keys(n.altLabel||{}).forEach(function(k){[].concat(n.altLabel[k]).forEach(function(v){P.push('skos:altLabel '+ttlS(v)+'@'+k);});});
+    Object.keys(n.definition||{}).forEach(function(k){P.push('skos:definition '+ttlS(n.definition[k])+'@'+k);});
+    if(n.status)P.push('lab:status '+ttlS(n.status)); if(n.level!=null)P.push('lab:level '+n.level);
+    if(n.anchor)P.push('lab:anchor '+ttlS(n.anchor));
+    (out[n.id]||[]).forEach(function(e){P.push(ttlI(e.p)+' '+ttlI(e.o)); if(e.p==='lab:broader')P.push('skos:broader '+ttlI(e.o));});
+    L.push(ttlI(n.id)+'\n  '+P.join(' ;\n  ')+' .\n');});
+  return L.join('\n');
+}
+function csvq(v){v=v==null?'':String(v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toNodesCsv(g){return ['id,type,label_ko,label_en,status,level,family,page,anchor,coverage,confidence'].concat(g.nodes.map(function(n){
+  return [n.id,n.type,n.label&&n.label.ko,n.label&&n.label.en,n.status,n.level,n.family,n.page,n.anchor,n.coverage,n.confidence].map(csvq).join(',');})).join('\r\n');}
+function toEdgesCsv(g){return ['source,predicate,target,anchor,confidence'].concat(g.edges.map(function(e){return [e.s,e.p,e.o,e.anchor,e.confidence].map(csvq).join(',');})).join('\r\n');}
+function toMermaid(g){
+  var keep=g.nodes.filter(function(n){return n.type!=='QuizItem'&&n.type!=='Simulation'&&n.type!=='Work';}).slice(0,40);
+  var ix={}; keep.forEach(function(n,i){ix[n.id]='n'+i;});
+  var L=['graph LR']; keep.forEach(function(n){L.push('  '+ix[n.id]+'["'+lab(n).replace(/"/g,"'")+'"]');});
+  g.edges.forEach(function(e){ if(ix[e.s]&&ix[e.o])L.push('  '+ix[e.s]+' -- '+(REL[pn(e.p)]||pn(e.p))+' --> '+ix[e.o]);});
+  return L.join('\n');
+}
+function toProvCsv(g,refs){
+  var R={}; refs.forEach(function(r){R[r.id]=r;});
+  var L=['item,kind,work,loc,confidence,verified,pageAnchor'];
+  g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){ var r=R[s.ref]; var v=r&&r.lab&&r.lab.verified;
+    L.push([n.id,'node',s.ref,s.loc||'',n.confidence,v?(v.title&&v.year&&v.venue?'bib-checked':'partial'):'no',n.anchor].map(csvq).join(','));});});
+  g.edges.forEach(function(e){ if(e.p==='lab:assertedIn')L.push([e.s+' '+e.p+' '+e.o,'edge',e.o.replace('lab:work/',''),'',e.confidence,'',e.anchor].map(csvq).join(','));});
+  return L.join('\r\n');
+}
+/* CSL → BibTeX · RIS · 문장 */
+var BIBT={'article-journal':'article','paper-conference':'inproceedings','book':'book','chapter':'incollection','webpage':'misc','dataset':'misc','report':'techreport','thesis':'phdthesis','software':'misc'};
+var RIST={'article-journal':'JOUR','paper-conference':'CPAPER','book':'BOOK','chapter':'CHAP','webpage':'ELEC','dataset':'DATA','report':'RPRT','thesis':'THES','software':'COMP'};
+function names(a){return (a||[]).map(function(p){return p.literal||(p.family+(p.given?', '+p.given:''));});}
+function yr(r){return r.issued&&r.issued['date-parts']&&r.issued['date-parts'][0][0];}
+function toBib(r){var f=[],add=function(k,v){ if(v!==undefined&&v!==null&&v!=='')f.push('  '+k+' = {'+v+'}');};
+  add('title',r.title); add('author',names(r.author).map(function(n){return n==='et al.'?'others':n;}).join(' and ')); add('year',yr(r));
+  add(r.type==='article-journal'?'journal':'booktitle',r['container-title']); add('volume',r.volume); add('number',r.issue);
+  add('pages',(r.page||'').replace('-','--')); add('publisher',r.publisher); add('doi',r.DOI); add('url',r.URL);
+  if(r.lab&&r.lab.note)add('note',r.lab.note);
+  return '@'+(BIBT[r.type]||'misc')+'{'+r.id+',\n'+f.join(',\n')+'\n}';}
+function toRis(r){var L=['TY  - '+(RIST[r.type]||'GEN')],add=function(t,v){ if(v)L.push(t+'  - '+v);};
+  add('TI',r.title); names(r.author).forEach(function(n){add('AU',n);}); add('PY',yr(r)); add('T2',r['container-title']);
+  add('VL',r.volume); add('IS',r.issue); var pg=(r.page||'').split('-'); add('SP',pg[0]); add('EP',pg[1]); add('DO',r.DOI); add('UR',r.URL);
+  if(r.lab&&r.lab.note)add('N1',r.lab.note); L.push('ER  - '); return L.join('\r\n');}
+function toText(r){ var a=names(r.author), first=a[0]?a[0].split(',')[0]:''; var au=a.length>2||a.indexOf('et al.')>=0?first+' 他':a.map(function(x){return x.split(',')[0];}).join(' & ');
+  return au+' ('+(yr(r)||'年不明')+'). '+r.title+'. '+(r['container-title']||'')+(r.volume?', '+r.volume:'')+(r.issue?'('+r.issue+')':'')+(r.page?', '+r.page:'')+'.'+(r.DOI?' https://doi.org/'+r.DOI:'');}
+function pageBib(m){var f=['  title = {'+m.title+'}','  year = {'+m.date.slice(0,4)+'}','  howpublished = {'+m.series+' '+m.number+', v'+m.version+'}'];
+  if(m.creator&&m.creator.length&&m.creator[0].name)f.unshift('  author = {'+m.creator.map(function(c){return c.name;}).join(' and ')+'}'); if(m.url)f.push('  url = {'+m.url+'}');
+  return '@misc{lab_page_'+m.number+',\n'+f.join(',\n')+'\n}';}
+function pageRis(m){var L=['TY  - ELEC','TI  - '+m.title]; (m.creator||[]).forEach(function(c){ if(c.name)L.push('AU  - '+c.name);}); L.push('PY  - '+m.date.slice(0,4),'T2  - '+m.series,'ET  - '+m.version); if(m.url)L.push('UR  - '+m.url); L.push('ER  - '); return L.join('\r\n');}
+function pageText(m){ var who=(m.creator||[]).filter(function(c){return c.name;}).map(function(c){return c.name;}).join(', ')||'{著者}';
+  return who+' ('+m.date.slice(0,4)+'). '+m.title+'. '+m.series+' '+m.number+', v'+m.version+'.'+(m.url?' '+m.url:'');}
+
+/* ── ZIP (압축 없음) ─────────────────────────────────── */
+var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}
+  return function(u8){var x=0xFFFFFFFF;for(var i=0;i<u8.length;i++)x=t[(x^u8[i])&255]^(x>>>8);return (x^0xFFFFFFFF)>>>0;};})();
+function makeZip(files){
+  var enc=new TextEncoder(),parts=[],central=[],off=0;
+  function u16(v){return [v&255,(v>>8)&255];} function u32(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255];}
+  files.forEach(function(f){var name=enc.encode(f.name),data=enc.encode(f.text),crc=CRC(data);
+    var head=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0));
+    parts.push(new Uint8Array(head),name,data);
+    central.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),
+      u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),name);
+    off+=head.length+name.length+data.length;});
+  var cdLen=0; central.forEach(function(c){parts.push(c); cdLen+=c.length;});
+  parts.push(new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cdLen),u32(off),u16(0))));
+  return new Blob(parts,{type:'application/zip'});
+}
+/* 내려받기: claude.ai 아티팩트 안에서는 downloads 능력, 파일로 열면 일반 링크 */
+var DLP=(window.claude&&typeof window.claude.use==='function')?window.claude.use('downloads').catch(function(){return null;}):Promise.resolve(null);
+var OKX=/\.(json|txt|csv|md|zip|html|svg|pdf)$/i;
+function anchorSave(blob,name){var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name;
+  document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},800);}
+function download(blob,name){
+  return DLP.then(function(d){
+    if(!d){anchorSave(blob,name); return;}
+    var fn=OKX.test(name)?name:name+'.txt';   // .bib .ris .ttl .jsonld 은 .txt를 붙여 저장 (확장자만 지우면 원래 형식)
+    return d.save({filename:fn,data:blob}).catch(function(e){ if(e&&e.code==='declined')return;
+      if(e&&(e.code==='unavailable'||e.code==='not_granted'))anchorSave(blob,name);
+      else console.warn('保存失敗',e&&e.code);});
+  });
+}
+function dlText(text,name,type){download(new Blob([text],{type:(type||'text/plain')+';charset=utf-8'}),name);}
+
+/* ── 범위 ───────────────────────────────────────────── */
+function filterScope(KG,scope){
+  if(scope==='all')return KG;
+  var keepT={terms:{Concept:1,Method:1,BioAnalogue:1,Limitation:1,Task:1,Metric:1,Dataset:1},
+             claims:{Claim:1,Work:1},prereq:null}[scope];
+  var nodes,edges;
+  if(scope==='prereq'){ edges=KG.edges.filter(function(e){return e.p==='lab:prerequisiteOf'||e.p==='lab:hasLimitation'||e.p==='lab:addressedBy';});
+    var ids={}; edges.forEach(function(e){ids[e.s]=1;ids[e.o]=1;}); nodes=KG.nodes.filter(function(n){return ids[n.id];}); }
+  else { nodes=KG.nodes.filter(function(n){return keepT[n.type];}); var ix={}; nodes.forEach(function(n){ix[n.id]=1;});
+    if(scope==='claims'){ KG.edges.forEach(function(e){ if(e.p==='lab:supports'&&ix[e.s])ix[e.o]=2;});
+      nodes=KG.nodes.filter(function(n){return ix[n.id];}); }
+    edges=KG.edges.filter(function(e){return ix[e.s]&&(ix[e.o]||/^lab:(topic|area)\//.test(e.o));}); }
+  return {version:KG.version,page:KG.page,scope:scope,nodes:nodes,edges:edges};
+}
+function readme(meta,g,refs){
+  var un=refs.filter(function(r){var v=r.lab&&r.lab.verified; return !v||Object.keys(v).some(function(k){return !v[k];});});
+  return ['オントロジー・書誌パッケージ — '+meta.title,'シリーズ: '+meta.series+' '+meta.number+' · バージョン '+meta.version+' · 作成日 '+meta.date,'',
+   '範囲: '+(g.scope||'all')+' · ノード '+g.nodes.length+' · 関係 '+g.edges.length+' · 文献 '+refs.length,'',
+   '[파일]','manifest.json 一覧 · page_meta.json ページ書誌 · kg.json 中立グラフ（原本） · kg.jsonld JSON-LD · kg.ttl Turtle',
+   'nodes.csv / edges.csv 表（UTF-8 BOM） · references.csl.json 参考文献原本 · references.bib BibTeX · references.ris RIS',
+   'provenance.csv 主張↔文献の対応 · mermaid.md 図用','',
+   '[이 페이지 인용]',pageText(meta),'',
+   '[확인 필요]',(un.length?un.map(function(r){var v=r.lab.verified;return '- '+r.id+': '+Object.keys(v).filter(function(k){return !v[k];}).join(', ');}).join('\n'):'- 文献の書誌項目はすべて確認済み'),
+   '- 主張(Claim)の原文の位置(ページ・図番号)はまだ空欄のままである。原文を見て provenance.csv の loc を埋めること。',
+   '- ページの著者名・ライセンス・公開アドレスは空欄にした。利用者が記入すること。','',
+   '[규칙] lab: 접두어 IRI는 '+NS+' (仮)。外部オントロジーIDは確認したものだけ skos:exactMatch/closeMatch で入れる。',
+   '[주의] 뼈대 영역(lab:topic/*, lab:area/*)은 작성자 초안이며 공식 분류 체계가 아니다.'].join('\n');
+}
+function buildPackage(scope){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); var g=filterScope(KG,scope);
+  var used={}; g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){used[s.ref]=1;}); if(n.type==='Work')used[n.id.replace('lab:work/','')]=1;});
+  var refs=scope==='all'?REF:REF.filter(function(r){return used[r.id];});
+  var files=[{name:'page_meta.json',text:JSON.stringify(META,null,2)},{name:'kg.json',text:JSON.stringify(g,null,2)},
+    {name:'kg.jsonld',text:JSON.stringify(toJsonLd(g,META),null,2)},{name:'kg.ttl',text:toTurtle(g)},
+    {name:'nodes.csv',text:'﻿'+toNodesCsv(g)},{name:'edges.csv',text:'﻿'+toEdgesCsv(g)},
+    {name:'references.csl.json',text:JSON.stringify(refs,null,2)},{name:'references.bib',text:[pageBib(META)].concat(refs.map(toBib)).join('\n\n')},
+    {name:'references.ris',text:[pageRis(META)].concat(refs.map(toRis)).join('\r\n')},{name:'provenance.csv',text:'﻿'+toProvCsv(g,refs)},
+    {name:'mermaid.md',text:'```mermaid\n'+toMermaid(g)+'\n```\n'},{name:'README.txt',text:readme(META,g,refs)}];
+  files.unshift({name:'manifest.json',text:JSON.stringify({package:'lab-kg',packageVersion:'1.0',page:META.number,pageId:KG.page,pageVersion:META.version,
+    registry:META.registry||'',created:META.date,scope:scope,counts:{nodes:g.nodes.length,edges:g.edges.length,refs:refs.length},
+    files:files.map(function(f){return f.name;})},null,2)});
+  return files;
+}
+
+/* ── 공통 화면 조각 ─────────────────────────────────── */
+var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding:48px 0;font-family:inherit}.kgx-sec .kgx-wrap{max-width:1080px;margin:0 auto;padding:0 16px}.kgx-sec h2{margin:0 0 6px;font-size:24px}.kgx-sec .kgx-sub{color:var(--muted,#9d9bb8);margin:0 0 18px}\
+\
+.kgx .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}\
+.kgx input[type=search]{flex:1 1 220px;min-width:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);color:var(--text,#eceaf3);border-radius:8px;padding:8px 12px;font:inherit;font-size:15px}\
+.kgx .tchip{font-size:12.5px;border-radius:999px;padding:3px 10px;border:1px solid var(--rule,#363a52);background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);cursor:pointer}\
+.kgx .tchip[aria-pressed=true]{color:#13141f;font-weight:700}\
+.kgx .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}\
+@media (max-width:860px){.kgx .grid2{grid-template-columns:1fr}}\
+.kgx .list{max-height:520px;overflow:auto;border:1px solid var(--rule,#363a52);border-radius:10px;background:var(--panel,#1c1e2d)}\
+.kgx .it{padding:10px 14px;border-bottom:1px solid var(--rule,#363a52);cursor:pointer}\
+.kgx .it:last-child{border-bottom:0}.kgx .it:hover{background:var(--panel2,#25283a)}\
+.kgx .it.sel{background:var(--panel2,#25283a);box-shadow:inset 3px 0 0 var(--gfp,#5ee39c)}\
+.kgx .it .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}\
+.kgx .it .nm{font-weight:700}.kgx .it .en{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .ty{font-size:11.5px;border-radius:5px;padding:0 6px;color:#13141f;font-weight:700;white-space:nowrap}\
+.kgx .it .df{color:#d7d4e6;font-size:14px;margin:3px 0 0}\
+.kgx .it .more{display:none;margin-top:6px;font-size:13.5px;color:var(--muted,#9d9bb8)}.kgx .it.sel .more{display:block}\
+.kgx .it a{color:var(--gfp,#5ee39c)}\
+.kgx .rel{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:6px;background:var(--bg,#13141f);border:1px solid var(--rule,#363a52);font-size:12.5px;cursor:pointer;color:var(--text,#eceaf3)}\
+.kgx .gbox{position:relative;border:1px solid var(--rule,#363a52);border-radius:10px;background:#101119;overflow:hidden}\
+.kgx .gbox canvas{display:block;width:100%;height:420px}\
+.kgx .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted,#9d9bb8);margin-top:8px}\
+.kgx .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}\
+.kgx .path{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\
+.kgx .path span.s{background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:8px;padding:4px 10px;font-size:14px}\
+.kgx .path span.a{color:var(--muted,#9d9bb8)}.kgx .path span.lim{border-color:#ff9a7a;color:#ffbda8}\
+.kgx .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}\
+.kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
+.kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
+.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
+.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
+.kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
+.kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
+.kgx .badge.role{background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);border:1px solid var(--rule,#363a52)}\
+.kgx pre.cite{white-space:pre-wrap;word-break:break-word;background:#101119;border:1px solid var(--rule,#363a52);border-radius:8px;padding:10px 12px;font-size:13px;margin:8px 0;max-height:220px;overflow:auto}\
+.kgx .files{display:flex;flex-wrap:wrap;gap:6px}\
+.kgx .todo li{margin:4px 0;color:#d7d4e6}\
+.kgx h3{font-size:17px;margin:20px 0 8px}\
+';
+function addCss(){ if($id('kgx-css'))return; var s=el('style'); s.id='kgx-css'; s.textContent=CSS; document.head.appendChild(s);}
+function copy(text,btn){ function ok(){var o=btn.textContent; btn.textContent='コピー済み'; setTimeout(function(){btn.textContent=o;},1200);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback();
+  function fallback(){var p=btn.parentNode.parentNode.querySelector('pre.cite'); if(p){var r=document.createRange(); r.selectNodeContents(p); var s=getSelection(); s.removeAllRanges(); s.addRange(r);} btn.textContent='選択済み — Ctrl+C';}}
+
+/* ── 지식 색인 ──────────────────────────────────────── */
+function mountIndex(root){
+  var KG=J('kg-raw'); var N={},OUT={},IN={};
+  KG.nodes.forEach(function(n){N[n.id]=n;OUT[n.id]=[];IN[n.id]=[];});
+  KG.edges.forEach(function(e){ if(OUT[e.s])OUT[e.s].push(e); if(IN[e.o])IN[e.o].push(e);});
+  var types=Object.keys(KG.nodes.reduce(function(a,n){a[n.type]=(a[n.type]||0)+1;return a;},{}));
+  var count={}; KG.nodes.forEach(function(n){count[n.type]=(count[n.type]||0)+1;});
+  var on={}; types.forEach(function(t){on[t]=t!=='QuizItem'&&t!=='Simulation'&&t!=='Work';});
+  var sel=null,q='';
+  root.classList.add('kgx');
+  var topics=0; KG.edges.forEach(function(e){if(e.p==='lab:broader')topics++;});
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';}), csrc=claims.filter(function(n){return (n.source||[]).length;}).length;
+  root.innerHTML='<div class="stats"><div><b>'+KG.nodes.length+'</b><span>項目(ノード)</span></div><div><b>'+KG.edges.length+'</b><span>関係</span></div>'+
+    '<div><b>'+(count.Concept||0)+(count.Method||0)+'</b><span>概念・方法</span></div><div><b>'+(count.BioAnalogue||0)+'</b><span>生物対応</span></div>'+
+    '<div><b>'+csrc+'/'+claims.length+'</b><span>出典のある主張</span></div><div><b>'+topics+'</b><span>骨格トピックの接続</span></div></div>'+
+    '<div class="tools"><input type="search" placeholder="検索 — 重み, overfitting, ケニオン, におい記憶ノート …" aria-label="知識索引の検索"></div>'+
+    '<div class="tools chips" role="group" aria-label="種類"></div>'+
+    '<div class="grid2"><div class="list" role="listbox" aria-label="検索結果"></div>'+
+    '<div><div class="gbox"><canvas aria-label="選択した項目と隣接関係のグラフ"></canvas></div><div class="legend"></div>'+
+    '<p class="note gnote">項目を選ぶと、その項目と直接つながった隣接項目だけが表示される。グラフの点を押してもよい。</p></div></div>'+
+    '<h3>はしご経路 — 先に知るべきことと限界の連鎖</h3><div class="path ladder"></div>'+
+    '<h3>未解決の問い · 要確認</h3><ul class="todo qs"></ul>';
+  // 칸 수 계산 오류 방지: 개념+방법 합
+  root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);
+  var inp=root.querySelector('input'), chips=root.querySelector('.chips'), list=root.querySelector('.list'), cv=root.querySelector('canvas');
+  types.forEach(function(t){var b=el('button','tchip',tl(t)+' '+count[t]); b.type='button'; b.setAttribute('aria-pressed',on[t]);
+    if(on[t])b.style.background=tc(t),b.style.borderColor=tc(t);
+    b.onclick=function(){on[t]=!on[t]; b.setAttribute('aria-pressed',on[t]); b.style.background=on[t]?tc(t):''; b.style.borderColor=on[t]?tc(t):''; render();};
+    chips.appendChild(b);});
+  var lg=root.querySelector('.legend'); types.forEach(function(t){lg.insertAdjacentHTML('beforeend','<span><i style="background:'+tc(t)+'"></i>'+tl(t)+'</span>');});
+  lg.insertAdjacentHTML('beforeend','<span>── 矢印: 関係の向き</span>');
+  inp.addEventListener('input',function(){q=inp.value.trim().toLowerCase(); render();});
+  function hay(n){return [n.id,n.label&&n.label.ko,n.label&&n.label.en,n.definition&&n.definition.ko,n.label&&n.label[LANG],n.definition&&n.definition[LANG],n.altLabel&&[].concat(n.altLabel.ko||[]).join(' ')].join(' ').toLowerCase();}
+  function relHtml(n){
+    var h=[]; OUT[n.id].forEach(function(e){ var o=N[e.o]; var nm=o?lab(o):((KG.topicLabels||{})[e.o]||e.o.replace(/^lab:(topic|area)\//,'').replace(/-/g,' '));
+      h.push('<span class="rel" data-go="'+esc(o?e.o:'')+'">'+esc(REL[pn(e.p)]||pn(e.p))+' → '+esc(nm)+'</span>');});
+    IN[n.id].forEach(function(e){ var s=N[e.s]; if(!s)return; h.push('<span class="rel" data-go="'+esc(e.s)+'">'+esc(lab(s))+' → '+esc(REL[pn(e.p)]||pn(e.p))+'</span>');});
+    return h.join('');}
+  function render(){
+    var arr=KG.nodes.filter(function(n){return on[n.type]&&(!q||hay(n).indexOf(q)>=0);});
+    list.innerHTML=arr.length?'':'<div class="it">探す項目がない。種類チップがオフになっていないか確かめよう。</div>';
+    arr.forEach(function(n){var d=el('div','it'+(sel===n.id?' sel':'')); d.setAttribute('role','option'); d.dataset.id=n.id;
+      var alt=LANG==='ko'&&n.altLabel&&n.altLabel.ko?' · '+[].concat(n.altLabel.ko).join(', '):'';
+      var src=(n.source||[]).length?' · 出典 '+n.source.length:'';
+      d.innerHTML='<div class="h"><span class="ty" style="background:'+tc(n.type)+'">'+tl(n.type)+'</span><span class="nm">'+esc(lab(n))+'</span><span class="en">'+esc((LANG!=='en'&&n.label&&n.label.en&&n.label.en!==lab(n)&&n.label.en)||'')+esc(alt)+'</span></div>'+
+        (n.definition?'<p class="df">'+esc(n.definition[LANG]||n.definition.ko)+'</p>':'')+
+        '<div class="more">'+(n.anchor?'<a href="'+n.anchor+'">解説を見る →</a>':'')+' <span>'+esc(src)+(n.confidence&&n.confidence!=='high'?' · 確信度 '+n.confidence:'')+'</span><div style="margin-top:6px">'+relHtml(n)+'</div></div>';
+      d.onclick=function(ev){var g=ev.target.closest('.rel'); if(g){ if(g.dataset.go)pick(g.dataset.go,true); ev.stopPropagation(); return;}
+        if(ev.target.tagName==='A')return; pick(n.id);};
+      list.appendChild(d);});
+    draw();
+  }
+  function pick(id,scroll){ sel=id; var n=N[id]; if(n&&!on[n.type]){on[n.type]=true; var b=[].slice.call(chips.children)[types.indexOf(n.type)]; b.setAttribute('aria-pressed',true); b.style.background=tc(n.type); b.style.borderColor=tc(n.type);}
+    if(scroll&&q){q='';inp.value='';} render(); var it=list.querySelector('.it.sel'); if(it)it.scrollIntoView({block:'nearest'});}
+  // 그래프
+  var G={pts:[]};
+  function layout(){
+    var center=sel||KG.edges.reduce(function(best,e){return best;},null);
+    var ids={},pts=[];
+    if(!sel){ // 개요: 퀴즈·시뮬·문헌 빼고 연결 많은 순 최대 60
+      var deg={}; KG.edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.o]=(deg[e.o]||0)+1;});
+      KG.nodes.filter(function(n){return on[n.type];}).sort(function(a,b){return (deg[b.id]||0)-(deg[a.id]||0);}).slice(0,60).forEach(function(n){ids[n.id]=1;});
+    } else { ids[sel]=1; OUT[sel].forEach(function(e){if(N[e.o])ids[e.o]=1;}); IN[sel].forEach(function(e){ids[e.s]=1;}); }
+    var r=mulberry(7); Object.keys(ids).forEach(function(id){pts.push({id:id,x:r()-.5,y:r()-.5,vx:0,vy:0});});
+    var ix={}; pts.forEach(function(p,i){ix[p.id]=i;});
+    var es=KG.edges.filter(function(e){return ix[e.s]!=null&&ix[e.o]!=null;});
+    for(var it=0;it<220;it++){
+      for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+1e-4,f=0.0016/d2;
+        a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+      es.forEach(function(e){var a=pts[ix[e.s]],b=pts[ix[e.o]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+1e-6,f=(d-0.22)*0.04;
+        a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+      pts.forEach(function(p){ if(p.id===sel){p.x*=.9;p.y*=.9;} p.vx-=p.x*0.004;p.vy-=p.y*0.004; p.x+=p.vx;p.y+=p.vy;p.vx*=.6;p.vy*=.6;});
+    }
+    G={pts:pts,es:es,ix:ix};
+  }
+  function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    layout(); var dpr=Math.min(2,window.devicePixelRatio||1), W=cv.clientWidth||600, H=cv.clientHeight||420;
+    cv.width=W*dpr; cv.height=H*dpr; var c=cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,W,H);
+    var xs=G.pts.map(function(p){return p.x;}),ys=G.pts.map(function(p){return p.y;});
+    var mx=Math.min.apply(0,xs),Mx=Math.max.apply(0,xs),my=Math.min.apply(0,ys),My=Math.max.apply(0,ys);
+    var pad=54, sx=(W-2*pad)/Math.max(1e-3,Mx-mx), sy=(H-2*pad)/Math.max(1e-3,My-my);
+    G.pts.forEach(function(p){p.X=pad+(p.x-mx)*sx; p.Y=pad+(p.y-my)*sy; if(G.pts.length===1){p.X=W/2;p.Y=H/2;}});
+    c.lineWidth=1;
+    G.es.forEach(function(e){var a=G.pts[G.ix[e.s]],b=G.pts[G.ix[e.o]]; var hot=sel&&(e.s===sel||e.o===sel);
+      c.strokeStyle=hot?'rgba(236,234,243,.55)':'rgba(157,155,184,.22)'; c.beginPath(); c.moveTo(a.X,a.Y); c.lineTo(b.X,b.Y); c.stroke();
+      var ang=Math.atan2(b.Y-a.Y,b.X-a.X), ex=b.X-Math.cos(ang)*9, ey=b.Y-Math.sin(ang)*9;
+      c.fillStyle=c.strokeStyle; c.beginPath(); c.moveTo(ex,ey); c.lineTo(ex-Math.cos(ang-.4)*7,ey-Math.sin(ang-.4)*7); c.lineTo(ex-Math.cos(ang+.4)*7,ey-Math.sin(ang+.4)*7); c.fill();
+      if(sel&&hot&&G.pts.length<26){c.fillStyle='#9d9bb8'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='center';
+        c.fillText(REL[pn(e.p)]||pn(e.p),(a.X+b.X)/2,(a.Y+b.Y)/2-4);} });
+    c.textAlign='center'; c.font='12.5px '+getComputedStyle(document.body).fontFamily;
+    G.pts.forEach(function(p){var n=N[p.id]; var R=p.id===sel?9:6; c.fillStyle=tc(n.type); c.beginPath(); c.arc(p.X,p.Y,R,0,7); c.fill();
+      if(p.id===sel){c.strokeStyle='#eceaf3';c.lineWidth=2;c.stroke();c.lineWidth=1;}
+      var t=lab(n); if(t.length>14)t=t.slice(0,13)+'…'; c.fillStyle=p.id===sel?'#fff':'#d7d4e6'; c.fillText(t,p.X,p.Y-R-5);});
+    c.fillStyle='rgba(241,182,70,.9)'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='left';
+    c.fillText(sel?'隣接 '+(G.pts.length-1)+'個':'概要 — つながりの多い項目 '+G.pts.length+'個',10,18);
+  }
+  cv.addEventListener('click',function(ev){var r=cv.getBoundingClientRect(),x=ev.clientX-r.left,y=ev.clientY-r.top,best=null,bd=400;
+    G.pts.forEach(function(p){var d=(p.X-x)*(p.X-x)+(p.Y-y)*(p.Y-y); if(d<bd){bd=d;best=p;}}); if(best)pick(best.id,true);});
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(draw,150);});
+  // 사다리 경로
+  var lad=root.querySelector('.ladder'), chainE=KG.edges.filter(function(e){return (e.p==='lab:prerequisiteOf'&&N[e.s].type==='Method'&&N[e.o]&&N[e.o].type==='Method');});
+  var nexts={},has={}; chainE.forEach(function(e){nexts[e.s]=e.o;has[e.o]=1;});
+  var start=Object.keys(nexts).filter(function(k){return !has[k];})[0], seen={};
+  var html=[]; for(var cur=start;cur&&!seen[cur];cur=nexts[cur]){ seen[cur]=1;
+    html.push('<span class="s" data-go="'+cur+'" style="border-color:'+tc('Method')+'">'+esc(lab(N[cur]))+'</span>');
+    var lim=OUT[cur].filter(function(e){return e.p==='lab:hasLimitation';})[0];
+    if(lim)html.push('<span class="a">→ 限界</span><span class="s lim" data-go="'+lim.o+'">'+esc(lab(N[lim.o]))+'</span>');
+    if(nexts[cur])html.push('<span class="a">→ 解決</span>');}
+  lad.innerHTML=html.length?html.join(''):'<span class="note">このページにははしごの連鎖はない。</span>';
+  lad.addEventListener('click',function(ev){var s=ev.target.closest('[data-go]'); if(s)pick(s.dataset.go,true);});
+  var qs=root.querySelector('.qs'); KG.nodes.filter(function(n){return n.type==='Question';}).forEach(function(n){
+    var li=el('li',null,'<b>'+esc(lab(n))+'</b>'+(n.definition?' — '+esc(n.definition[LANG]||n.definition.ko):'')+(n.confidence==='low'?' <span class="badge no">要確認</span>':'')+(n.anchor?' <a href="'+n.anchor+'" style="color:var(--gfp,#5ee39c)">本文</a>':''));
+    qs.appendChild(li);});
+  render();
+}
+
+/* ── 꾸러미 ─────────────────────────────────────────── */
+function mountExport(root){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); root.classList.add('kgx');
+  var verifiedAll=function(r){var v=r.lab&&r.lab.verified; return v&&Object.keys(v).every(function(k){return v[k];});};
+  var vb=REF.filter(verifiedAll).length;
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';});
+  var todo=[]; REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; Object.keys(v).forEach(function(k){if(!v[k])todo.push(r.id+' — '+k+' 未確認 (空欄のまま)');});});
+  todo.push('主張 '+claims.length+'件の原文位置(ページ・図番号) — provenance.csv の loc 欄が空である');
+  todo.push('ページ著者名・ライセンス・公開アドレス — page_meta.json で空欄にした');
+  var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
+  KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
+  var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
+  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">助手</div><p>出典のない主張はパッケージに入れませんでした。人が確認する項目 '+todo.length+'件は下にあります。</p></div>'+
+    '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>ノード</span></div><div><b>'+KG.edges.length+'</b><span>関係</span></div><div><b>'+REF.length+'</b><span>文献</span></div>'+
+    '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>書誌がすべて確認された文献</span></div>'+
+    '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>出典のある主張</span></div></div>'+
+    '<h3>このページを引用する</h3><div class="tools"><button class="tchip cf" data-f="text" aria-pressed="true" style="background:var(--gfp,#5ee39c);border-color:var(--gfp,#5ee39c)">通常の文</button><button class="tchip cf" data-f="bib" aria-pressed="false">BibTeX</button><button class="tchip cf" data-f="ris" aria-pressed="false">RIS</button><button class="bt cp" type="button">コピー</button></div><pre class="cite pc"></pre>'+
+    '<h3>参考文献 — 確認バッジと裏づける概念</h3><div class="refs list"></div>'+
+    '<h3>範囲と形式を選ぶ</h3><div class="tools sc" role="group" aria-label="範囲"></div><div class="tools"><button class="bt primary zip" type="button">パッケージ ZIP をダウンロード</button><span class="note zc"></span></div>'+
+    '<div class="files"></div><p class="note">claude.ai の画面で個別ファイルを受け取ると、.bib・.ris・.ttl・.jsonld の名前の末尾に .txt が付く（末尾の .txt だけ消せば元の形式になる）。ZIP 内のファイルは元の名前のままである。</p>'+
+    (META.seeAlso?'<p class="note">複数ページのパッケージを統合して領域マップと照らし合わせるには → <a style="color:var(--gfp,#5ee39c)" href="'+esc(META.seeAlso)+'"'+(/^https?:/.test(META.seeAlso)?' target="_blank" rel="noopener"':'')+'>領域マップの統合 (KG_00)</a></p>':'')+
+    '<h3>人が確認する項目</h3><ul class="todo">'+todo.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>'+
+    '<p class="note">パッケージ版 1.0 · 作成日 '+esc(META.date)+' · 登録簿 '+esc(META.registry||'KG_00_registry (試作版)')+' · lab: 接頭辞 '+NS+' (仮) · 骨格トピック(lab:topic/*)は作成者の草稿</p>';
+  var fmt='text', pc=root.querySelector('.pc');
+  function cite(){pc.textContent=fmt==='bib'?pageBib(META):fmt==='ris'?pageRis(META):pageText(META);}
+  [].forEach.call(root.querySelectorAll('.cf'),function(b){b.onclick=function(){fmt=b.dataset.f; [].forEach.call(root.querySelectorAll('.cf'),function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); cite();};});
+  root.querySelector('.cp').onclick=function(){copy(pc.textContent,this);}; cite();
+  var RL=root.querySelector('.refs');
+  REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; var bad=Object.keys(v).filter(function(k){return !v[k];});
+    var d=el('div','r','<div>'+esc(toText(r))+'<span class="badge role">'+esc({primary:'主資料',background:'背景',data:'数値',figure:'図'}[r.lab&&r.lab.role]||'背景')+'</span>'+
+      (bad.length?'<span class="badge no">要確認: '+esc(bad.join(', '))+'</span>':'<span class="badge ok">書誌確認済み</span>')+'</div>'+
+      '<div style="margin-top:6px">'+(sup[r.id]||[]).map(function(id){var n=N[id]; return n?'<a class="rel" href="'+(n.anchor||'#kg')+'">'+esc(lab(n))+'</a>':'';}).join('')+'</div>');
+    RL.appendChild(d);});
+  var scope='all', SC=root.querySelector('.sc'), zc=root.querySelector('.zc');
+  [['all','全体'],['terms','概念・方法のみ'],['claims','主張 + 出典のみ'],['prereq','前提関係のみ']].forEach(function(s,i){
+    var b=el('button','tchip',s[1]); b.type='button'; b.setAttribute('aria-pressed',i===0); if(i===0)b.style.background='var(--gfp,#5ee39c)',b.style.borderColor='var(--gfp,#5ee39c)';
+    b.onclick=function(){scope=s[0]; [].forEach.call(SC.children,function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); info();};
+    SC.appendChild(b);});
+  var FL=root.querySelector('.files');
+  function info(){var f=buildPackage(scope), m=JSON.parse(f[0].text); zc.textContent='ノード '+m.counts.nodes+' · 関係 '+m.counts.edges+' · 文献 '+m.counts.refs+' · ファイル '+f.length+'個';
+    FL.innerHTML=''; f.forEach(function(x){var b=el('button','bt',esc(x.name)); b.type='button'; b.onclick=function(){dlText(x.text,x.name);}; FL.appendChild(b);});}
+  root.querySelector('.zip').onclick=function(){download(makeZip(buildPackage(scope)),'kg_'+META.number+'_'+scope+'.zip');};
+  info();
+}
+function init(){addCss(); var a=$id('kg-mount'),b=$id('export-mount'); if(a)mountIndex(a); if(b)mountExport(b);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+return {download:download,buildPackage:buildPackage,makeZip:makeZip,toJsonLd:toJsonLd,toTurtle:toTurtle,toBib:toBib,toRis:toRis};
+})();
+
+</script>
+<!-- /lab-kg:script -->
 </body>
 </html>

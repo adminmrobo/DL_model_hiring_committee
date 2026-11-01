@@ -571,7 +571,20 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
 .vt.pass{color:var(--stamp);border-color:var(--stamp)}
 .vt.hold{color:var(--muted)}
 .runshot pre{overflow-wrap:anywhere;word-break:break-all}
+/* 꼬리표(지식 색인·꾸러미): 조립기 스타일의 색 변수를 시리즈 테마에 맞춘다 */
+body .kgx{--gfp:var(--ok)}
+body .kgx .it .df,body .kgx .todo li{color:var(--soft)}
+body .kgx .path span.lim{color:var(--stamp)}
 :root{--font:"Noto Sans SC",system-ui,sans-serif;--stampf:"Noto Sans SC",sans-serif}*{word-break:normal!important;line-break:strict}</style>
+<!-- lab-kg:head -->
+<meta name="citation_title" content="模型招聘委员会 第二次公开招聘 · 6-4 CNN">
+<meta name="dc.title" content="模型招聘委员会 第二次公开招聘 · 6-4 CNN">
+<meta name="dc.date" content="2026-10-24">
+<meta name="dc.language" content="ko">
+<meta name="dc.type" content="InteractiveResource">
+<meta name="citation_author" content="Sangsun Ahn">
+<meta name="dcterms.isPartOf" content="模型招聘委员会 第二次公开招聘">
+<!-- /lab-kg:head -->
 </head>
 <body>
 <nav class="top" aria-label="本页目录">
@@ -843,6 +856,22 @@ pre.code .k{color:#8fb8ff} pre.code .s{color:#f2c46d} pre.code .c{color:#8b97ad}
   <div class="card"><ul class="reflist"><li><b>数据与计算。</b> 手写数字为 scikit-learn load_digits 的 1,797 张，密封试卷 450 张与错位试卷遵循与 6-0 相同的规定。两格错位试卷（复试 B）的方向和格数（0~2，两者同为 0 的情况除外）由 numpy.random.default_rng(43) 确定。判定数字由页面读取 A 部分 Colab 代码的运行结果后写出。第 01 节的特征图和第 04 节的“亲自训练”是浏览器用一个随机种子算出的值（为节省时间，浏览器 CNN 减少了轮次）。三个复试条件（少量数据 · 两格错位 · 同一抽屉）是在本系列的“复试事先登记”规则出现之前测得的。因此没有测试前的预测，三个条件全部原样展示。条件 C（同一抽屉）是看过 A·B 的结果之后确定的条件。</li><li><b>判定规则。</b> 第二次公开招聘的判定，取在 Colab 中用 5 个随机种子（随机数）训练所得的平均值。必须同时超过基准线（手册先生）和前辈成绩（现在负责同一工作的第一次录用者）才算录用。与前辈的差距小于种子间波动（标准差）时，视为平局，前辈保住席位。页面中的“亲自训练看看”只用一个种子在浏览器中重新训练，所以可能与判定数字略有出入。</li><li><b>复试。</b> 被判待定的应聘者可以申请一次复试。应聘者在考试前先说出依据和预测，前辈也在相同条件下重新应试。复试结果同样取 5 个种子的平均值，输了就如实记录。</li><li><b>图片。</b> 登场人物的图片沿用自《人工智能算法家族组织图》。面试室场景、工牌和图表由本页用代码直接绘制。</li><li><b>“招聘委员会”设定。</b> 这是把模型比作应聘者、把训练和评估比作面试的比喻，并不代表真实的招聘流程或任何具体公司。“待定”只是表示“在这项工作和这份数据上，前辈更合适”，并不是模型的优劣之分。</li><li><b>登场人物。</b> Money-Robo 是作者运营的服务的吉祥物角色。博士、助理、果蝇研究员、手册先生、前辈员工和应聘者都不代表真实人物。台词里关于钱和预算的说法，是用来比喻计算成本的口头禅。</li><li><b>数据。</b> 表格数据组的实操考题是 UCI Machine Learning Repository 的 Concrete Compressive Strength 数据（Yeh, 1998，1,030 条，CC BY 4.0），试卷沿用与第一次公开招聘相同的规定（test_size=0.25, stratify=强度 3 个等级, random_state=42；训练 772 · 测试 258）。图像方面的实操考题是 scikit-learn 自带的手写数字（load_digits，1,797 张，原始数据为 UCI Optical Recognition of Handwritten Digits，CC BY 4.0），监督学习各集的试卷为 test_size=0.25, stratify=y, random_state=42（训练 1,347 · 测试 450）。</li><li><b>语言。</b> 本系列以韩语撰写。译本在韩语版内容定稿后，以相同的文件名添加。Colab 代码中的注释和运行结果保持韩语原文。</li></ul></div>
 </div>
 </section>
+<!-- lab-kg:body -->
+<section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
+<h2>知识索引 — 在本页查找</h2>
+<p class="kgx-sub">汇集了本页出现的概念、方法、生物对应、主张与开放问题。可搜索，点击条目查看邻接关系，并通过“查看说明”返回正文。</p>
+<div id="kg-mount"></div>
+</div></section>
+<section class="kgx kgx-sec" id="export"><div class="kgx-wrap">
+<h2>本体·书目资料包 — 带走本页的知识</h2>
+<p class="kgx-sub">将知识索引连同出处下载为文件。可用于 Zotero（BibTeX·RIS）、Protégé（Turtle）、Neo4j·Gephi（CSV）以及合并多页（kg.json）。</p>
+<div id="export-mount"></div>
+</div></section>
+<script type="application/json" id="kg-raw">{"version": "1.0", "page": "6-4", "nodes": [{"id": "lab:method/cnn", "type": "Method", "label": {"ko": "합성곱 신경망 (CNN)", "en": "Convolutional neural network", "zh": "卷积神经网络（CNN）"}, "definition": {"ko": "작은 필터를 그림 전체에 같은 가중치로 미끄러뜨려 특징 지도를 만들고, 풀링으로 줄인 뒤 마지막에 분류하는 신경망. 이 편에서는 합성곱 2층과 선형 층으로 짠다.", "zh": "以相同权重将小滤波器在整幅图像上滑动以生成特征图，经池化缩减后最终进行分类的神经网络。本篇以两层卷积与线性层构建。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high", "source": [{"ref": "lecun1998"}]}, {"id": "lab:concept/convolution", "type": "Concept", "label": {"ko": "합성곱", "en": "Convolution", "zh": "卷积"}, "definition": {"ko": "필터를 한 자리에 대고 겹친 칸끼리 곱해 더한 값을 그 자리의 점수로 삼고, 모든 자리에서 같은 일을 되풀이하는 계산.", "zh": "将滤波器放在某一位置，对重叠的格子逐一相乘后求和，作为该位置的得分，并在所有位置重复同样的运算。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/filter", "type": "Term", "label": {"ko": "필터", "en": "Filter (kernel)", "zh": "滤波器"}, "definition": {"ko": "합성곱에 쓰는 작은 숫자 판. 3×3이면 숫자 9개와 편향 하나다.", "zh": "卷积所用的小数值板。3×3 即为 9 个数值与一个偏置。"}, "anchor": "#m1", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:concept/feature-map", "type": "Concept", "label": {"ko": "특징 지도", "en": "Feature map", "zh": "特征图"}, "definition": {"ko": "필터 하나를 그림 전체에 대어 얻은 점수 판. 그 무늬가 있는 자리가 밝다.", "zh": "把一个滤波器对准整张图得到的得分板。有该纹路的位置会变亮。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/weight-sharing", "type": "Concept", "label": {"ko": "가중치 공유", "en": "Weight sharing", "zh": "权重共享"}, "definition": {"ko": "같은 필터 숫자를 모든 자리에서 쓰는 것. 그림이 커져도 첫 층의 숫자 수가 그대로다.", "zh": "在所有位置使用相同的滤波器数值。即使图像变大，第一层的数值数量也保持不变。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/max-pooling", "type": "Method", "label": {"ko": "최대 풀링", "en": "Max pooling", "zh": "最大池化"}, "definition": {"ko": "특징 지도를 2×2 칸마다 가장 큰 값만 남겨 절반 크기로 줄이는 일. 작은 밀림을 조금 흡수한다.", "zh": "每 2×2 个格子仅保留最大值，将特征图缩小为一半。能吸收少量的错位。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/padding", "type": "Term", "label": {"ko": "채우기", "en": "Padding", "zh": "填充"}, "definition": {"ko": "그림 가장자리 바깥을 0으로 둘러 필터가 끝까지 닿게 하는 것. 3×3 필터에 채우기 1이면 8×8 크기가 그대로 남는다.", "zh": "在图像边缘外围补 0，使滤波器能够覆盖到边缘。3×3 滤波器的填充为 1 时，8×8 的大小保持不变。"}, "anchor": "#m3", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:concept/equivariance", "type": "Concept", "label": {"ko": "등변성", "en": "Equivariance", "zh": "等变性"}, "definition": {"ko": "입력이 밀리면 출력도 똑같이 밀리는 성질. 합성곱이 가진다.", "zh": "输入错位时，输出也同样错位的性质。卷积具备这一性质。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:concept/invariance", "type": "Concept", "label": {"ko": "불변성", "en": "Invariance", "zh": "不变性"}, "definition": {"ko": "입력이 밀려도 출력이 바뀌지 않는 성질. 풀링이 줄여 준 만큼, 그리고 증강이 조금씩 만든다. 8×8에서는 한 칸 밀림을 다 흡수하지 못한다.", "zh": "输入平移时输出不变的性质。由池化缩减的部分，以及数据增强逐步形成。在 8×8 中，无法完全吸收一格的平移。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/data-augmentation", "type": "Method", "label": {"ko": "데이터 증강", "en": "Data augmentation", "zh": "数据增强"}, "definition": {"ko": "훈련 글씨를 한 칸씩 민 사본 등을 만들어 더하는 일. 필터만으로는 밀림에 강해지지 않아 CNN에도 필요하고, 선배도 쓸 수 있다.", "zh": "将训练数字向一侧平移一格等制作副本并加入训练。仅靠滤波器不足以增强对平移的鲁棒性，因此 CNN 也需要，前辈同样可以使用。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high", "source": [{"ref": "azulay2019"}]}, {"id": "lab:method/svm-senior", "type": "Method", "label": {"ko": "SVM (선배)", "en": "SVM (senior)", "zh": "SVM（前辈）"}, "definition": {"ko": "1차 공채 5-8에서 합격한 선배. 64칸을 한 줄로 펴서 읽고, 밀린 사본을 섞어 배우면 다시 잘 맞힌다.", "zh": "第一次公开招聘 5-8 中录用的前辈。将 64 个格子展平为一行读取，混入错位副本后学习，便能再次答对。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:method/knn-senior", "type": "Method", "label": {"ko": "KNN (선배)", "en": "KNN (senior)", "zh": "KNN（前辈）"}, "definition": {"ko": "1차 공채 5-1의 선배. 사본까지 수천 장을 통째로 외워 두고 가장 가까운 글씨와 견준다.", "zh": "第一次公开招聘 5-1 的前辈。将包括副本在内的数千张图像整体记住，并与最接近的数字图像进行比对。"}, "anchor": "#overview", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:method/mlp", "type": "Method", "label": {"ko": "다층 퍼셉트론 (6-2)", "en": "Multilayer perceptron (6-2)", "zh": "多层感知器（6-2）"}, "definition": {"ko": "64칸을 한 줄로 펴서 칸마다 따로 가중치를 붙이는 신경망. 은닉 뉴런 16개에 가중치 1,024개가 든다.", "zh": "将 64 个格子展平为一行、为每个格子分别赋予权重的神经网络。16 个隐藏神经元共含 1,024 个权重。"}, "anchor": "#m1", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:task/digit-recognition", "type": "Task", "label": {"ko": "손글씨 숫자 읽기", "en": "Handwritten digit recognition", "zh": "手写数字识别"}, "definition": {"ko": "8×8 손글씨 그림을 보고 0~9 가운데 어느 숫자인지 맞히는 열 갈래 분류. 밀린 시험지에서도 읽어야 한다.", "zh": "观察 8×8 手写数字图像，判断其为 0~9 中的哪个数字的十类分类。在错位试卷上也必须能够识别。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:dataset/digits", "type": "Dataset", "label": {"ko": "손글씨 숫자 1,797장", "en": "Optical Recognition of Handwritten Digits (1,797)", "zh": "手写数字 1,797张"}, "definition": {"ko": "훈련 1,347장과 봉인된 시험지 450장. 시험지를 한 칸 민 밀린 시험지를 따로 둔다.", "zh": "训练 1,347张与封存试卷 450张。另行保留将试卷平移一格后的错位试卷。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high", "source": [{"ref": "alpaydin1998"}]}, {"id": "lab:dataset/shifted-test", "type": "Dataset", "label": {"ko": "밀린 시험지", "en": "Shifted test set", "zh": "错位试卷"}, "definition": {"ko": "봉인된 시험지 450장을 한 칸씩 민 것. 학습에는 한 번도 쓰지 않는다.", "zh": "将封存试卷 450张平移一格后的图像。学习时从未使用。"}, "anchor": "#m2", "coverage": "explained", "confidence": "high"}, {"id": "lab:metric/test-accuracy", "type": "Metric", "label": {"ko": "시험지 정확도 (씨앗 5개 평균)", "en": "Test accuracy (mean of 5 seeds)", "zh": "试卷准确率（5 个随机种子（seed）的平均）"}, "definition": {"ko": "봉인된 시험지와 밀린 시험지에서 맞힌 비율. 씨앗 다섯 개의 평균으로 판정한다.", "zh": "在封存试卷与错位试卷上答对的比例。以五个随机种子（seed）的平均进行判定。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/verdict", "type": "Claim", "label": {"ko": "판정: 보류 확정", "en": "Verdict: on hold, confirmed", "zh": "判定：待定（最终）"}, "definition": {"ko": "CNN은 봉인된 시험지 97.6%로 SVM 99.1%에 못 미치고, 밀린 시험지는 60.2%다. 증강하면 93.5%까지 오르지만, 같은 증강(사본)을 받은 선배도 밀린 시험지에서 KNN 98.7% · SVM 98.4%라 보류가 확정된다.", "zh": "CNN 在封存试卷上为 97.6%，未达到 SVM 的 99.1%，在错位试卷上为 60.2%。增强后可升至 93.5%，但同样接受相同增强（副本）的前辈在错位试卷上 KNN 为 98.7%、SVM 为 98.4%，因此最终判定为待定（最终）。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:claim/shift-fragility", "type": "Claim", "label": {"ko": "깊은 합성곱 망도 작은 이동에 약하다", "en": "Deep CNNs generalize poorly to small shifts", "zh": "深层卷积网络也对微小平移较弱"}, "definition": {"ko": "합성곱은 지도를 같이 밀 뿐이라, 풀링과 선형 층을 거치면 한 칸 밀림에 판정이 바뀔 수 있다. 이동 불변성은 증강 없이는 거의 생기지 않는다.", "zh": "卷积只是让特征图一同平移，因此经过池化与线性层后，一格的平移可能改变判定。若无增强，平移不变性几乎无法形成。"}, "anchor": "#m1", "coverage": "explained", "confidence": "medium", "source": [{"ref": "azulay2019"}]}, {"id": "lab:limitation/small-image", "type": "Limitation", "label": {"ko": "작은 그림에서는 장점이 드러나지 않는다", "en": "Little room to slide on small images", "zh": "在小图像上优势不明显"}, "definition": {"ko": "8×8처럼 작은 그림에서는 필터가 미끄러질 자리가 적고 풀링 두 번으로 2×2만 남는다. 사본을 섞은 선배가 더 잘 읽는다.", "zh": "在 8×8 这样的小图像上，滤波器可滑动的位置很少，经两次池化后只剩 2×2。混入副本的前辈读取得更好。"}, "anchor": "#m6", "coverage": "explained", "confidence": "high"}, {"id": "lab:limitation/shift-sensitive", "type": "Limitation", "label": {"ko": "증강 없이는 밀린 시험지에 무너진다", "en": "Collapses on shifted test without augmentation", "zh": "没有增强就会在错位试卷上崩溃"}, "definition": {"ko": "증강 없는 CNN은 봉인된 시험지 97.6%에서 밀린 시험지 60.2%로 떨어진다.", "zh": "没有增强的 CNN 从封存试卷的 97.6% 降至错位试卷的 60.2%。"}, "anchor": "#m5", "coverage": "explained", "confidence": "high"}, {"id": "lab:question/fair-comparison", "type": "Question", "label": {"ko": "선배에게도 같은 증강을 주었는가?", "en": "Did the senior get the same augmentation?", "zh": "前辈是否也给了相同的增强？"}, "definition": {"ko": "증강한 CNN을 증강 없는 선배와 견주면 불공정하다. 양쪽에 같은 사본을 주고 겨뤄야 한다.", "zh": "将增强后的 CNN 与未增强的前辈比较并不公平。应给双方相同的副本再进行比较。"}, "anchor": "#m5", "coverage": "mentioned", "confidence": "medium"}, {"id": "lab:sim/filter-slide", "type": "Simulation", "label": {"ko": "필터 미끄러뜨리기", "en": "Filter sliding lab", "zh": "滤波器滑动"}, "definition": {"ko": "가로·세로·대각 필터와 학습된 필터를 골라 특징 지도를 만들고, 한 칸 밀기로 지도가 같이 밀리는 것을 브라우저에서 본다.", "zh": "选择横向、纵向、对角滤波器以及学习得到的滤波器来生成特征图，在浏览器中观察平移一格时特征图随之一同平移的情况。"}, "anchor": "#m1", "coverage": "explained", "confidence": "high"}, {"id": "lab:sim/browser-cnn", "type": "Simulation", "label": {"ko": "브라우저 CNN 학습", "en": "In-browser CNN training", "zh": "浏览器 CNN 训练"}, "definition": {"ko": "증강을 켜고 끄며 8에포크 학습해 밀린 시험지 곡선을 비교한다.", "zh": "开启与关闭增强，训练 8 轮次（epoch），比较错位试卷的曲线。"}, "anchor": "#m4", "coverage": "explained", "confidence": "high"}, {"id": "lab:analogy/inspector", "type": "Analogy", "label": {"ko": "돋보기 하나로 훑는 검사원", "en": "An inspector scanning with one magnifier", "zh": "用一只放大镜扫描的检查员"}, "definition": {"ko": "돋보기 하나로 성적서 전체를 한 칸씩 훑으며 가로줄이 있는지만 본다. 같은 필터를 모든 자리에서 쓴다는 점을 보여 준다.", "zh": "用一只放大镜逐格扫过整份检测报告，只看是否有横线。展示了在所有位置使用同一滤波器的做法。"}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "high"}, {"id": "lab:bio/t4t5", "type": "BioAnalogue", "label": {"ko": "초파리 눈의 움직임 탐지 신경", "en": "Fly elementary motion detectors (T4/T5)", "zh": "果蝇视觉运动检测神经"}, "definition": {"ko": "작은 영역마다 같은 방식으로 움직임의 방향을 잰다. 다만 시간에 따라 바뀌는 빛을 재고, CNN 필터는 정지한 공간 무늬만 본다.", "zh": "在每个小区域以相同方式测量运动方向。但它测量的是随时间变化的光，而 CNN 滤波器只看静止的空间图案。"}, "anchor": "#analogy-sec", "coverage": "mentioned", "confidence": "medium", "source": [{"ref": "maisak2013"}]}], "edges": [{"s": "lab:method/cnn", "p": "lab:broader", "o": "lab:topic/convolution"}, {"s": "lab:concept/convolution", "p": "lab:broader", "o": "lab:topic/convolution"}, {"s": "lab:concept/weight-sharing", "p": "lab:broader", "o": "lab:topic/convolution"}, {"s": "lab:method/max-pooling", "p": "lab:broader", "o": "lab:topic/pooling"}, {"s": "lab:method/data-augmentation", "p": "lab:broader", "o": "lab:topic/data-augmentation"}, {"s": "lab:method/svm-senior", "p": "lab:broader", "o": "lab:topic/svm"}, {"s": "lab:method/knn-senior", "p": "lab:broader", "o": "lab:topic/knn"}, {"s": "lab:method/mlp", "p": "lab:broader", "o": "lab:topic/mlp"}, {"s": "lab:metric/test-accuracy", "p": "lab:broader", "o": "lab:topic/accuracy-metrics"}, {"s": "lab:dataset/shifted-test", "p": "lab:broader", "o": "lab:topic/distribution-shift"}, {"s": "lab:concept/filter", "p": "lab:partOf", "o": "lab:concept/convolution"}, {"s": "lab:concept/feature-map", "p": "lab:partOf", "o": "lab:method/cnn"}, {"s": "lab:concept/convolution", "p": "lab:partOf", "o": "lab:method/cnn"}, {"s": "lab:method/max-pooling", "p": "lab:partOf", "o": "lab:method/cnn"}, {"s": "lab:concept/padding", "p": "lab:partOf", "o": "lab:concept/convolution"}, {"s": "lab:concept/filter", "p": "lab:prerequisiteOf", "o": "lab:concept/feature-map"}, {"s": "lab:concept/convolution", "p": "lab:prerequisiteOf", "o": "lab:concept/equivariance"}, {"s": "lab:concept/equivariance", "p": "lab:prerequisiteOf", "o": "lab:concept/invariance"}, {"s": "lab:method/max-pooling", "p": "lab:prerequisiteOf", "o": "lab:concept/invariance"}, {"s": "lab:concept/convolution", "p": "lab:demonstratedBy", "o": "lab:sim/filter-slide"}, {"s": "lab:method/cnn", "p": "lab:demonstratedBy", "o": "lab:sim/browser-cnn"}, {"s": "lab:method/mlp", "p": "lab:prerequisiteOf", "o": "lab:method/cnn"}, {"s": "lab:method/cnn", "p": "lab:contrastsWith", "o": "lab:method/mlp"}, {"s": "lab:method/cnn", "p": "lab:contrastsWith", "o": "lab:method/svm-senior"}, {"s": "lab:concept/weight-sharing", "p": "lab:supports", "o": "lab:method/cnn"}, {"s": "lab:method/cnn", "p": "lab:hasLimitation", "o": "lab:limitation/shift-sensitive"}, {"s": "lab:limitation/shift-sensitive", "p": "lab:addressedBy", "o": "lab:method/data-augmentation"}, {"s": "lab:method/cnn", "p": "lab:prerequisiteOf", "o": "lab:method/data-augmentation"}, {"s": "lab:method/cnn", "p": "lab:hasLimitation", "o": "lab:limitation/small-image"}, {"s": "lab:limitation/small-image", "p": "lab:raises", "o": "lab:question/fair-comparison"}, {"s": "lab:claim/shift-fragility", "p": "lab:supports", "o": "lab:limitation/shift-sensitive"}, {"s": "lab:claim/shift-fragility", "p": "lab:raises", "o": "lab:question/fair-comparison"}, {"s": "lab:method/cnn", "p": "lab:solves", "o": "lab:task/digit-recognition"}, {"s": "lab:method/svm-senior", "p": "lab:solves", "o": "lab:task/digit-recognition"}, {"s": "lab:method/knn-senior", "p": "lab:solves", "o": "lab:task/digit-recognition"}, {"s": "lab:method/cnn", "p": "lab:evaluatedBy", "o": "lab:metric/test-accuracy"}, {"s": "lab:method/cnn", "p": "lab:evaluatedOn", "o": "lab:dataset/digits"}, {"s": "lab:task/digit-recognition", "p": "lab:evaluatedOn", "o": "lab:dataset/digits"}, {"s": "lab:dataset/shifted-test", "p": "lab:partOf", "o": "lab:dataset/digits"}, {"s": "lab:metric/test-accuracy", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/data-augmentation", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:method/svm-senior", "p": "lab:supports", "o": "lab:claim/verdict"}, {"s": "lab:analogy/inspector", "p": "lab:analogyOf", "o": "lab:method/cnn"}, {"s": "lab:bio/t4t5", "p": "lab:bioAnalogueOf", "o": "lab:method/cnn"}], "topicLabels": {"lab:area/math": "数学基础", "lab:topic/linear-algebra": "线性代数", "lab:topic/probability-statistics": "概率·统计", "lab:topic/calculus-optimization-math": "微积分与优化数学", "lab:topic/information-theory": "信息论", "lab:area/ml-basics": "机器学习基础", "lab:topic/supervised-learning": "监督学习", "lab:topic/unsupervised-learning": "无监督学习概念", "lab:topic/generalization": "泛化·过拟合", "lab:topic/bias-variance": "偏差-方差平衡", "lab:topic/data-splitting": "训练·验证·测试划分", "lab:topic/feature-engineering": "特征工程", "lab:topic/rule-vs-learning": "基于规则 vs 基于学习", "lab:area/classical": "经典模型", "lab:topic/linear-regression": "线性回归", "lab:topic/logistic-regression": "逻辑回归", "lab:topic/svm": "支持向量机", "lab:topic/knn": "k-近邻", "lab:topic/decision-tree": "决策树", "lab:topic/naive-bayes": "朴素贝叶斯", "lab:area/ensemble": "集成", "lab:topic/bagging": "装袋（Bagging）", "lab:topic/random-forest": "随机森林", "lab:topic/boosting": "提升（Boosting）", "lab:topic/stacking": "堆叠（Stacking）", "lab:area/nn-basics": "神经网络基础", "lab:topic/weights-and-biases": "权重与偏置", "lab:topic/perceptron": "感知机", "lab:topic/mlp": "多层感知机", "lab:topic/activation-function": "激活函数", "lab:topic/loss-function": "损失函数", "lab:topic/backpropagation": "反向传播", "lab:topic/universal-approximation": "通用近似定理", "lab:area/optimization": "优化", "lab:topic/gradient-descent": "梯度下降法", "lab:topic/sgd-minibatch": "随机梯度下降·小批量", "lab:topic/momentum-adam": "动量·Adam", "lab:topic/learning-rate-schedule": "学习率调整", "lab:area/regularization": "正则化与泛化技术", "lab:topic/weight-decay": "权重衰减（L2）", "lab:topic/dropout": "Dropout", "lab:topic/early-stopping": "早停", "lab:topic/normalization-layers": "归一化层", "lab:topic/data-augmentation": "数据增强", "lab:area/vision": "卷积·视觉", "lab:topic/convolution": "卷积·权重共享", "lab:topic/pooling": "池化", "lab:topic/receptive-field": "感受野", "lab:topic/residual-connections": "残差连接", "lab:topic/object-detection": "目标检测", "lab:topic/segmentation": "分割", "lab:area/sequence": "序列模型", "lab:topic/rnn": "循环神经网络", "lab:topic/lstm-gru": "LSTM·GRU", "lab:topic/seq2seq": "序列到序列", "lab:topic/time-series": "时间序列预测", "lab:area/attention": "注意力·Transformer", "lab:topic/attention-mechanism": "注意力机制", "lab:topic/self-attention": "自注意力", "lab:topic/multi-head-attention": "多头注意力", "lab:topic/positional-encoding": "位置编码", "lab:topic/transformer": "Transformer", "lab:area/language": "语言模型·自然语言处理", "lab:topic/tokenization": "词元化（Tokenization）", "lab:topic/word-embedding": "词嵌入", "lab:topic/pretrained-lm": "预训练语言模型", "lab:topic/transfer-learning": "迁移学习·微调", "lab:topic/lora": "LoRA·适配器", "lab:topic/prompting": "提示（Prompting）", "lab:topic/rag": "检索增强生成", "lab:area/generative": "生成模型", "lab:topic/autoencoder": "自编码器", "lab:topic/vae": "变分自编码器", "lab:topic/gan": "生成对抗网络", "lab:topic/diffusion": "扩散模型", "lab:topic/autoregressive-generation": "自回归生成", "lab:area/representation": "表示学习", "lab:topic/embedding-space": "嵌入空间", "lab:topic/self-supervised": "自监督学习", "lab:topic/contrastive": "对比学习", "lab:topic/sparse-representation": "稀疏表示", "lab:topic/random-features": "随机特征", "lab:topic/multi-task-learning": "多任务学习", "lab:area/rl": "强化学习", "lab:topic/mdp": "马尔可夫决策过程", "lab:topic/reward": "奖励", "lab:topic/value-function": "价值函数", "lab:topic/q-learning": "Q-学习", "lab:topic/policy-gradient": "策略梯度", "lab:topic/exploration": "探索与利用", "lab:topic/reward-prediction-error": "奖励预测误差", "lab:area/unsupervised": "无监督方法", "lab:topic/clustering": "聚类", "lab:topic/pca": "主成分分析", "lab:topic/tsne-umap": "t-SNE·UMAP", "lab:topic/density-estimation": "密度估计", "lab:topic/anomaly-detection": "异常检测", "lab:area/evaluation": "评估", "lab:topic/accuracy-metrics": "准确率·损失指标", "lab:topic/precision-recall": "精确率·召回率", "lab:topic/roc-auc": "ROC·AUC", "lab:topic/confusion-matrix": "混淆矩阵", "lab:topic/data-leakage": "数据泄露", "lab:topic/ablation": "消融实验", "lab:area/graph": "图学习", "lab:topic/gnn": "图神经网络", "lab:topic/message-passing": "消息传递", "lab:topic/knowledge-graph": "知识图谱", "lab:area/systems": "系统·MLOps", "lab:topic/deployment": "部署", "lab:topic/distribution-shift": "分布偏移", "lab:topic/monitoring": "监控", "lab:topic/reproducibility": "可复现性", "lab:area/responsible": "负责任的 AI", "lab:topic/fairness": "公平性", "lab:topic/interpretability": "可解释性·解释", "lab:topic/ai-safety": "安全性", "lab:topic/privacy": "隐私", "lab:area/neuro": "神经科学与 AI", "lab:topic/biological-neuron": "生物神经元与脉冲", "lab:topic/synaptic-plasticity": "突触可塑性", "lab:topic/connectome": "连接组", "lab:topic/sensory-processing": "感觉处理", "lab:topic/learning-memory-circuits": "学习·记忆回路", "lab:topic/circuit-methods": "神经回路实验技术"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/6-4","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"모델 채용 위원회 2차 공채 · 6-4 CNN","schema:inLanguage":"ko","schema:dateCreated":"2026-10-24","schema:version":"1.0","dct:isPartOf":"모델 채용 위원회 2차 공채","schema:about":[{"@id":"lab:topic/convolution"},{"@id":"lab:topic/pooling"},{"@id":"lab:topic/data-augmentation"}],"schema:educationalLevel":"대학 학부 · 입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/lecun1998"},{"@id":"lab:work/fukushima1980"},{"@id":"lab:work/krizhevsky2012"},{"@id":"lab:work/azulay2019"},{"@id":"lab:work/maisak2013"},{"@id":"lab:work/alpaydin1998"}]},{"@id":"lab:method/cnn","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"합성곱 신경망 (CNN)","@language":"ko"},{"@value":"Convolutional neural network","@language":"en"}],"skos:definition":[{"@value":"작은 필터를 그림 전체에 같은 가중치로 미끄러뜨려 특징 지도를 만들고, 풀링으로 줄인 뒤 마지막에 분류하는 신경망. 이 편에서는 합성곱 2층과 선형 층으로 짠다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/convolution"}],"skos:broader":[{"@id":"lab:topic/convolution"}],"lab:demonstratedBy":[{"@id":"lab:sim/browser-cnn"}],"lab:contrastsWith":[{"@id":"lab:method/mlp"},{"@id":"lab:method/svm-senior"}],"lab:hasLimitation":[{"@id":"lab:limitation/shift-sensitive"},{"@id":"lab:limitation/small-image"}],"lab:prerequisiteOf":[{"@id":"lab:method/data-augmentation"}],"lab:solves":[{"@id":"lab:task/digit-recognition"}],"lab:evaluatedBy":[{"@id":"lab:metric/test-accuracy"}],"lab:evaluatedOn":[{"@id":"lab:dataset/digits"}]},{"@id":"lab:concept/convolution","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"합성곱","@language":"ko"},{"@value":"Convolution","@language":"en"}],"skos:definition":[{"@value":"필터를 한 자리에 대고 겹친 칸끼리 곱해 더한 값을 그 자리의 점수로 삼고, 모든 자리에서 같은 일을 되풀이하는 계산.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/convolution"}],"skos:broader":[{"@id":"lab:topic/convolution"}],"lab:partOf":[{"@id":"lab:method/cnn"}],"lab:prerequisiteOf":[{"@id":"lab:concept/equivariance"}],"lab:demonstratedBy":[{"@id":"lab:sim/filter-slide"}]},{"@id":"lab:concept/filter","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"필터","@language":"ko"},{"@value":"Filter (kernel)","@language":"en"}],"skos:definition":[{"@value":"합성곱에 쓰는 작은 숫자 판. 3×3이면 숫자 9개와 편향 하나다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:concept/convolution"}],"lab:prerequisiteOf":[{"@id":"lab:concept/feature-map"}]},{"@id":"lab:concept/feature-map","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"특징 지도","@language":"ko"},{"@value":"Feature map","@language":"en"}],"skos:definition":[{"@value":"필터 하나를 그림 전체에 대어 얻은 점수 판. 그 무늬가 있는 자리가 밝다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:partOf":[{"@id":"lab:method/cnn"}]},{"@id":"lab:concept/weight-sharing","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"가중치 공유","@language":"ko"},{"@value":"Weight sharing","@language":"en"}],"skos:definition":[{"@value":"같은 필터 숫자를 모든 자리에서 쓰는 것. 그림이 커져도 첫 층의 숫자 수가 그대로다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/convolution"}],"skos:broader":[{"@id":"lab:topic/convolution"}],"lab:supports":[{"@id":"lab:method/cnn"}]},{"@id":"lab:method/max-pooling","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"최대 풀링","@language":"ko"},{"@value":"Max pooling","@language":"en"}],"skos:definition":[{"@value":"특징 지도를 2×2 칸마다 가장 큰 값만 남겨 절반 크기로 줄이는 일. 작은 밀림을 조금 흡수한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/pooling"}],"skos:broader":[{"@id":"lab:topic/pooling"}],"lab:partOf":[{"@id":"lab:method/cnn"}],"lab:prerequisiteOf":[{"@id":"lab:concept/invariance"}]},{"@id":"lab:concept/padding","@type":["lab:Term","skos:Concept"],"skos:prefLabel":[{"@value":"채우기","@language":"ko"},{"@value":"Padding","@language":"en"}],"skos:definition":[{"@value":"그림 가장자리 바깥을 0으로 둘러 필터가 끝까지 닿게 하는 것. 3×3 필터에 채우기 1이면 8×8 크기가 그대로 남는다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m3","lab:partOf":[{"@id":"lab:concept/convolution"}]},{"@id":"lab:concept/equivariance","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"등변성","@language":"ko"},{"@value":"Equivariance","@language":"en"}],"skos:definition":[{"@value":"입력이 밀리면 출력도 똑같이 밀리는 성질. 합성곱이 가진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1","lab:prerequisiteOf":[{"@id":"lab:concept/invariance"}]},{"@id":"lab:concept/invariance","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"불변성","@language":"ko"},{"@value":"Invariance","@language":"en"}],"skos:definition":[{"@value":"입력이 밀려도 출력이 바뀌지 않는 성질. 풀링이 줄여 준 만큼, 그리고 증강이 조금씩 만든다. 8×8에서는 한 칸 밀림을 다 흡수하지 못한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:method/data-augmentation","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"데이터 증강","@language":"ko"},{"@value":"Data augmentation","@language":"en"}],"skos:definition":[{"@value":"훈련 글씨를 한 칸씩 민 사본 등을 만들어 더하는 일. 필터만으로는 밀림에 강해지지 않아 CNN에도 필요하고, 선배도 쓸 수 있다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4","lab:broader":[{"@id":"lab:topic/data-augmentation"}],"skos:broader":[{"@id":"lab:topic/data-augmentation"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:method/svm-senior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"SVM (선배)","@language":"ko"},{"@value":"SVM (senior)","@language":"en"}],"skos:definition":[{"@value":"1차 공채 5-8에서 합격한 선배. 64칸을 한 줄로 펴서 읽고, 밀린 사본을 섞어 배우면 다시 잘 맞힌다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/svm"}],"skos:broader":[{"@id":"lab:topic/svm"}],"lab:solves":[{"@id":"lab:task/digit-recognition"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:method/knn-senior","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"KNN (선배)","@language":"ko"},{"@value":"KNN (senior)","@language":"en"}],"skos:definition":[{"@value":"1차 공채 5-1의 선배. 사본까지 수천 장을 통째로 외워 두고 가장 가까운 글씨와 견준다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#overview","lab:broader":[{"@id":"lab:topic/knn"}],"skos:broader":[{"@id":"lab:topic/knn"}],"lab:solves":[{"@id":"lab:task/digit-recognition"}]},{"@id":"lab:method/mlp","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"다층 퍼셉트론 (6-2)","@language":"ko"},{"@value":"Multilayer perceptron (6-2)","@language":"en"}],"skos:definition":[{"@value":"64칸을 한 줄로 펴서 칸마다 따로 가중치를 붙이는 신경망. 은닉 뉴런 16개에 가중치 1,024개가 든다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#m1","lab:broader":[{"@id":"lab:topic/mlp"}],"skos:broader":[{"@id":"lab:topic/mlp"}],"lab:prerequisiteOf":[{"@id":"lab:method/cnn"}]},{"@id":"lab:task/digit-recognition","@type":["lab:Task","skos:Concept"],"skos:prefLabel":[{"@value":"손글씨 숫자 읽기","@language":"ko"},{"@value":"Handwritten digit recognition","@language":"en"}],"skos:definition":[{"@value":"8×8 손글씨 그림을 보고 0~9 가운데 어느 숫자인지 맞히는 열 갈래 분류. 밀린 시험지에서도 읽어야 한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:evaluatedOn":[{"@id":"lab:dataset/digits"}]},{"@id":"lab:dataset/digits","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"손글씨 숫자 1,797장","@language":"ko"},{"@value":"Optical Recognition of Handwritten Digits (1,797)","@language":"en"}],"skos:definition":[{"@value":"훈련 1,347장과 봉인된 시험지 450장. 시험지를 한 칸 민 밀린 시험지를 따로 둔다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2"},{"@id":"lab:dataset/shifted-test","@type":["lab:Dataset","schema:Dataset"],"skos:prefLabel":[{"@value":"밀린 시험지","@language":"ko"},{"@value":"Shifted test set","@language":"en"}],"skos:definition":[{"@value":"봉인된 시험지 450장을 한 칸씩 민 것. 학습에는 한 번도 쓰지 않는다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m2","lab:broader":[{"@id":"lab:topic/distribution-shift"}],"skos:broader":[{"@id":"lab:topic/distribution-shift"}],"lab:partOf":[{"@id":"lab:dataset/digits"}]},{"@id":"lab:metric/test-accuracy","@type":["lab:Metric","skos:Concept"],"skos:prefLabel":[{"@value":"시험지 정확도 (씨앗 5개 평균)","@language":"ko"},{"@value":"Test accuracy (mean of 5 seeds)","@language":"en"}],"skos:definition":[{"@value":"봉인된 시험지와 밀린 시험지에서 맞힌 비율. 씨앗 다섯 개의 평균으로 판정한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:broader":[{"@id":"lab:topic/accuracy-metrics"}],"skos:broader":[{"@id":"lab:topic/accuracy-metrics"}],"lab:supports":[{"@id":"lab:claim/verdict"}]},{"@id":"lab:claim/verdict","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"판정: 보류 확정","@language":"ko"},{"@value":"Verdict: on hold, confirmed","@language":"en"}],"skos:definition":[{"@value":"CNN은 봉인된 시험지 97.6%로 SVM 99.1%에 못 미치고, 밀린 시험지는 60.2%다. 증강하면 93.5%까지 오르지만, 같은 증강(사본)을 받은 선배도 밀린 시험지에서 KNN 98.7% · SVM 98.4%라 보류가 확정된다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5"},{"@id":"lab:claim/shift-fragility","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"깊은 합성곱 망도 작은 이동에 약하다","@language":"ko"},{"@value":"Deep CNNs generalize poorly to small shifts","@language":"en"}],"skos:definition":[{"@value":"합성곱은 지도를 같이 밀 뿐이라, 풀링과 선형 층을 거치면 한 칸 밀림에 판정이 바뀔 수 있다. 이동 불변성은 증강 없이는 거의 생기지 않는다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"explained","lab:anchor":"#m1","lab:supports":[{"@id":"lab:limitation/shift-sensitive"}],"lab:raises":[{"@id":"lab:question/fair-comparison"}]},{"@id":"lab:limitation/small-image","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"작은 그림에서는 장점이 드러나지 않는다","@language":"ko"},{"@value":"Little room to slide on small images","@language":"en"}],"skos:definition":[{"@value":"8×8처럼 작은 그림에서는 필터가 미끄러질 자리가 적고 풀링 두 번으로 2×2만 남는다. 사본을 섞은 선배가 더 잘 읽는다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m6","lab:raises":[{"@id":"lab:question/fair-comparison"}]},{"@id":"lab:limitation/shift-sensitive","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"증강 없이는 밀린 시험지에 무너진다","@language":"ko"},{"@value":"Collapses on shifted test without augmentation","@language":"en"}],"skos:definition":[{"@value":"증강 없는 CNN은 봉인된 시험지 97.6%에서 밀린 시험지 60.2%로 떨어진다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m5","lab:addressedBy":[{"@id":"lab:method/data-augmentation"}]},{"@id":"lab:question/fair-comparison","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"선배에게도 같은 증강을 주었는가?","@language":"ko"},{"@value":"Did the senior get the same augmentation?","@language":"en"}],"skos:definition":[{"@value":"증강한 CNN을 증강 없는 선배와 견주면 불공정하다. 양쪽에 같은 사본을 주고 겨뤄야 한다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#m5"},{"@id":"lab:sim/filter-slide","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"필터 미끄러뜨리기","@language":"ko"},{"@value":"Filter sliding lab","@language":"en"}],"skos:definition":[{"@value":"가로·세로·대각 필터와 학습된 필터를 골라 특징 지도를 만들고, 한 칸 밀기로 지도가 같이 밀리는 것을 브라우저에서 본다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m1"},{"@id":"lab:sim/browser-cnn","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"브라우저 CNN 학습","@language":"ko"},{"@value":"In-browser CNN training","@language":"en"}],"skos:definition":[{"@value":"증강을 켜고 끄며 8에포크 학습해 밀린 시험지 곡선을 비교한다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"explained","lab:anchor":"#m4"},{"@id":"lab:analogy/inspector","@type":["lab:Analogy"],"skos:prefLabel":[{"@value":"돋보기 하나로 훑는 검사원","@language":"ko"},{"@value":"An inspector scanning with one magnifier","@language":"en"}],"skos:definition":[{"@value":"돋보기 하나로 성적서 전체를 한 칸씩 훑으며 가로줄이 있는지만 본다. 같은 필터를 모든 자리에서 쓴다는 점을 보여 준다.","@language":"ko"}],"lab:confidence":"high","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:analogyOf":[{"@id":"lab:method/cnn"}]},{"@id":"lab:bio/t4t5","@type":["lab:BioAnalogue","skos:Concept"],"skos:prefLabel":[{"@value":"초파리 눈의 움직임 탐지 신경","@language":"ko"},{"@value":"Fly elementary motion detectors (T4/T5)","@language":"en"}],"skos:definition":[{"@value":"작은 영역마다 같은 방식으로 움직임의 방향을 잰다. 다만 시간에 따라 바뀌는 빛을 재고, CNN 필터는 정지한 공간 무늬만 본다.","@language":"ko"}],"lab:confidence":"medium","lab:coverage":"mentioned","lab:anchor":"#analogy-sec","lab:bioAnalogueOf":[{"@id":"lab:method/cnn"}]}]}</script>
+<script type="application/json" id="refs-csl">[{"id":"lecun1998","type":"paper-conference","title":"Gradient-based learning applied to document recognition","author":[{"family":"LeCun","given":"Y."},{"family":"Bottou","given":"L."},{"family":"Bengio","given":"Y."},{"family":"Haffner","given":"P."}],"issued":{"date-parts":[[1998]]},"container-title":"Proceedings of the IEEE","volume":"86","page":"2278–2324","issue":"11","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"fukushima1980","type":"article-journal","title":"Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position","author":[{"family":"Fukushima","given":"K."}],"issued":{"date-parts":[[1980]]},"container-title":"Biological Cybernetics","volume":"36","page":"193–202","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"krizhevsky2012","type":"paper-conference","title":"ImageNet Classification with Deep Convolutional Neural Networks","author":[{"family":"Krizhevsky","given":"A."},{"family":"Sutskever","given":"I."},{"family":"Hinton","given":"G. E."}],"issued":{"date-parts":[[2012]]},"container-title":"NeurIPS","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"azulay2019","type":"article-journal","title":"Why do deep convolutional networks generalize so poorly to small image transformations?","author":[{"family":"Azulay","given":"A."},{"family":"Weiss","given":"Y."}],"issued":{"date-parts":[[2019]]},"container-title":"JMLR","volume":"20","page":"1–25","issue":"184","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"maisak2013","type":"article-journal","title":"A directional tuning map of Drosophila elementary motion detectors","author":[{"family":"Maisak","given":"M. S., et al."}],"issued":{"date-parts":[[2013]]},"container-title":"Nature","volume":"500","page":"212–216","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}},{"id":"alpaydin1998","type":"dataset","title":"Optical Recognition of Handwritten Digits","author":[{"family":"Alpaydin","given":"E."},{"family":"Kaynak","given":"C."}],"issued":{"date-parts":[[1998]]},"publisher":"UCI Machine Learning Repository","lab":{"note":"","basis":"페이지 레퍼런스 목록(저자 지식 기준, 온라인 대조 전)","verified":{"title":true,"year":true,"venue":true}}}]</script>
+<script type="application/json" id="page-meta">{"title": "模型招聘委员会 第二次公开招聘 · 6-4 CNN", "number": "6-4", "date": "2026-10-24", "version": "1.0", "series": "模型招聘委员会 第二次公开招聘", "language": "ko", "creator": [{"name": "Ahn Sangsun", "affiliation": "M-Robo Co., Ltd."}], "about": ["lab:topic/convolution", "lab:topic/pooling", "lab:topic/data-augmentation"], "educationalLevel": "대학 학부 · 입문", "learningResourceType": "interactive explainer", "description": "작은 필터를 그림 위로 미끄러뜨려 무늬를 찾는 지원자 CNN의 면접. 손글씨 숫자 8×8과 한 칸 밀린 시험지, 필터와 특징 지도, 풀링, 데이터 증강, 같은 증강을 받은 선배 KNN·SVM과의 공정한 비교, 세 가지 조건의 재시험. 모델 채용 위원회 2차 공채 6-4.", "basedOn": ["lecun1998", "fukushima1980", "krizhevsky2012", "azulay2019", "maisak2013", "alpaydin1998"]}</script>
+<!-- /lab-kg:body -->
 <footer>
   <div class="wrap">
     <p><b style="color:var(--text)">模型招聘委员会 第二次公开招聘 · 6-4 CNN</b> · <a href="6-0_job_posting.html#m8">完整地图（6-0）</a> — 作者 Sangsun Ahn（M-Robo 公司代表）</p>
@@ -1739,5 +1768,408 @@ var CODE={title:'CNN 面试 — 滤波器、错位试卷、公平的数据增强
 
 boot();
 </script>
+<!-- lab-kg:script -->
+<script>
+/* ai-lab-retrofit 휴대판 (색 변수가 없는 페이지에서도 동작) */
+/* ══ KG: 지식 색인(#kg) + 온톨로지·서지 꾸러미(#export) — 공용 모듈 ══
+   데이터 블록: #kg-raw(중립 JSON), #refs-csl(CSL-JSON), #page-meta, #kg-ld(빌드 때 생성)
+   외부 라이브러리 없음. 모든 내보내기는 kg-raw에서 만든다. */
+var KGX=(function(){
+'use strict';
+function $id(i){return document.getElementById(i);}
+function J(id){var e=$id(id); return e?JSON.parse(e.textContent):null;}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function el(tag,cls,html){var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+
+var TYPE={Concept:['概念','#82b8ff'],Method:['方法','#5ee39c'],BioAnalogue:['生物对应','#ef5b5b'],Claim:['主张','#f1b646'],
+  Question:['开放问题','#d672d6'],Limitation:['局限','#ff9a7a'],Task:['任务','#7fe0c8'],Metric:['指标','#b9a8ff'],
+  Dataset:['数据','#c9c4a4'],Simulation:['模拟','#8a88a8'],QuizItem:['测验','#6f6d8c'],Work:['文献','#e0d7a8'],
+  Area:['领域','#eceaf3'],Topic:['主题','#9d9bb8'],Analogy:['类比','#ff86b8'],Term:['术语','#82b8ff']};
+var REL={prerequisiteOf:'需先掌握',hasLimitation:'局限',addressedBy:'已解决',partOf:'部分',bioAnalogueOf:'生物对应',
+  contrastsWith:'对比',supports:'支持',assertedIn:'出处',evaluatedBy:'以指标评估',evaluatedOn:'以数据评估',
+  demonstratedBy:'模拟',raises:'引出问题',relatedTo:'相关',solves:'解决任务',analogyOf:'类比',assesses:'测验检验',
+  broader:'上位主题',explainedIn:'说明位置'};
+function tl(t){return (TYPE[t]||[t])[0];} function tc(t){return (TYPE[t]||[0,'#9d9bb8'])[1];}
+function pn(p){return p.replace(/^lab:/,'');}
+function lab(n){return n.label?(n.label[LANG]||n.label.en||n.label.ko):n.id;}
+
+/* ── 변환기 ─────────────────────────────────────────── */
+var NS='urn:lab:';
+var CTX={'@vocab':NS,lab:NS,skos:'http://www.w3.org/2004/02/skos/core#',schema:'https://schema.org/',
+  dct:'http://purl.org/dc/terms/',prov:'http://www.w3.org/ns/prov#',rdfs:'http://www.w3.org/2000/01/rdf-schema#'};
+var SKOS_T={Concept:1,Method:1,Task:1,Term:1,Limitation:1,BioAnalogue:1,Metric:1,Area:1,Topic:1};
+var SCH_T={Work:'schema:ScholarlyArticle',Claim:'schema:Claim',Dataset:'schema:Dataset',QuizItem:'schema:Question',Question:'schema:Question',Simulation:'schema:SoftwareApplication'};
+function lit(o){var a=[]; Object.keys(o||{}).forEach(function(k){ var v=o[k]; (Array.isArray(v)?v:[v]).forEach(function(x){a.push({'@value':x,'@language':k});});}); return a;}
+function toJsonLd(g,meta){
+  var graph=g.nodes.map(function(n){
+    var t=['lab:'+n.type]; if(SKOS_T[n.type])t.push('skos:Concept'); if(SCH_T[n.type])t.push(SCH_T[n.type]);
+    var o={'@id':n.id,'@type':t,'skos:prefLabel':lit(n.label)};
+    if(n.altLabel)o['skos:altLabel']=lit(n.altLabel);
+    if(n.definition)o['skos:definition']=lit(n.definition);
+    ['level','status','confidence','coverage','family','page','anchor'].forEach(function(k){ if(n[k]!=null)o['lab:'+k]=n[k];});
+    (n.match||[]).forEach(function(m){ var p=m.rel==='exact'?'skos:exactMatch':'skos:closeMatch'; (o[p]=o[p]||[]).push({'@id':m.iri});});
+    return o;});
+  var byS={}; graph.forEach(function(o){byS[o['@id']]=o;});
+  g.edges.forEach(function(e){ var s=byS[e.s]; if(!s)return; var k=e.p; (s[k]=s[k]||[]).push({'@id':e.o});
+    if(e.p==='lab:broader')(s['skos:broader']=s['skos:broader']||[]).push({'@id':e.o});
+    if(e.p==='lab:assertedIn')(s['prov:wasDerivedFrom']=s['prov:wasDerivedFrom']||[]).push({'@id':e.o});
+    if(e.p==='lab:relatedTo')(s['skos:related']=s['skos:related']||[]).push({'@id':e.o}); });
+  if(meta)graph.unshift({'@id':NS+'page/'+meta.number,'@type':['schema:LearningResource','schema:WebPage'],'schema:name':meta.title,
+    'schema:inLanguage':meta.language,'schema:dateCreated':meta.date,'schema:version':meta.version,'dct:isPartOf':meta.series,
+    'schema:about':(meta.about||[]).map(function(a){return {'@id':a};}),'schema:educationalLevel':meta.educationalLevel,
+    'schema:learningResourceType':meta.learningResourceType,'dct:source':(meta.basedOn||[]).map(function(b){return {'@id':'lab:work/'+b};})});
+  return {'@context':CTX,'@graph':graph};
+}
+function ttlS(s){return '"'+String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\n/g,'\\n')+'"';}
+function ttlI(id){return id.indexOf('lab:')===0?'lab:'+id.slice(4).replace(/[^A-Za-z0-9_\-]/g,function(c){return c==='/'?'_':encodeURIComponent(c).replace(/%/g,'_');}):'<'+id+'>';}
+function toTurtle(g){
+  var L=['@prefix lab: <'+NS+'> .','@prefix skos: <http://www.w3.org/2004/02/skos/core#> .','@prefix schema: <https://schema.org/> .',
+    '@prefix prov: <http://www.w3.org/ns/prov#> .',''];
+  var out={}; g.edges.forEach(function(e){(out[e.s]=out[e.s]||[]).push(e);});
+  g.nodes.forEach(function(n){
+    var P=['a lab:'+n.type+(SKOS_T[n.type]?', skos:Concept':'')];
+    Object.keys(n.label||{}).forEach(function(k){P.push('skos:prefLabel '+ttlS(n.label[k])+'@'+k);});
+    Object.keys(n.altLabel||{}).forEach(function(k){[].concat(n.altLabel[k]).forEach(function(v){P.push('skos:altLabel '+ttlS(v)+'@'+k);});});
+    Object.keys(n.definition||{}).forEach(function(k){P.push('skos:definition '+ttlS(n.definition[k])+'@'+k);});
+    if(n.status)P.push('lab:status '+ttlS(n.status)); if(n.level!=null)P.push('lab:level '+n.level);
+    if(n.anchor)P.push('lab:anchor '+ttlS(n.anchor));
+    (out[n.id]||[]).forEach(function(e){P.push(ttlI(e.p)+' '+ttlI(e.o)); if(e.p==='lab:broader')P.push('skos:broader '+ttlI(e.o));});
+    L.push(ttlI(n.id)+'\n  '+P.join(' ;\n  ')+' .\n');});
+  return L.join('\n');
+}
+function csvq(v){v=v==null?'':String(v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toNodesCsv(g){return ['id,type,label_ko,label_en,status,level,family,page,anchor,coverage,confidence'].concat(g.nodes.map(function(n){
+  return [n.id,n.type,n.label&&n.label.ko,n.label&&n.label.en,n.status,n.level,n.family,n.page,n.anchor,n.coverage,n.confidence].map(csvq).join(',');})).join('\r\n');}
+function toEdgesCsv(g){return ['source,predicate,target,anchor,confidence'].concat(g.edges.map(function(e){return [e.s,e.p,e.o,e.anchor,e.confidence].map(csvq).join(',');})).join('\r\n');}
+function toMermaid(g){
+  var keep=g.nodes.filter(function(n){return n.type!=='QuizItem'&&n.type!=='Simulation'&&n.type!=='Work';}).slice(0,40);
+  var ix={}; keep.forEach(function(n,i){ix[n.id]='n'+i;});
+  var L=['graph LR']; keep.forEach(function(n){L.push('  '+ix[n.id]+'["'+lab(n).replace(/"/g,"'")+'"]');});
+  g.edges.forEach(function(e){ if(ix[e.s]&&ix[e.o])L.push('  '+ix[e.s]+' -- '+(REL[pn(e.p)]||pn(e.p))+' --> '+ix[e.o]);});
+  return L.join('\n');
+}
+function toProvCsv(g,refs){
+  var R={}; refs.forEach(function(r){R[r.id]=r;});
+  var L=['item,kind,work,loc,confidence,verified,pageAnchor'];
+  g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){ var r=R[s.ref]; var v=r&&r.lab&&r.lab.verified;
+    L.push([n.id,'node',s.ref,s.loc||'',n.confidence,v?(v.title&&v.year&&v.venue?'bib-checked':'partial'):'no',n.anchor].map(csvq).join(','));});});
+  g.edges.forEach(function(e){ if(e.p==='lab:assertedIn')L.push([e.s+' '+e.p+' '+e.o,'edge',e.o.replace('lab:work/',''),'',e.confidence,'',e.anchor].map(csvq).join(','));});
+  return L.join('\r\n');
+}
+/* CSL → BibTeX · RIS · 문장 */
+var BIBT={'article-journal':'article','paper-conference':'inproceedings','book':'book','chapter':'incollection','webpage':'misc','dataset':'misc','report':'techreport','thesis':'phdthesis','software':'misc'};
+var RIST={'article-journal':'JOUR','paper-conference':'CPAPER','book':'BOOK','chapter':'CHAP','webpage':'ELEC','dataset':'DATA','report':'RPRT','thesis':'THES','software':'COMP'};
+function names(a){return (a||[]).map(function(p){return p.literal||(p.family+(p.given?', '+p.given:''));});}
+function yr(r){return r.issued&&r.issued['date-parts']&&r.issued['date-parts'][0][0];}
+function toBib(r){var f=[],add=function(k,v){ if(v!==undefined&&v!==null&&v!=='')f.push('  '+k+' = {'+v+'}');};
+  add('title',r.title); add('author',names(r.author).map(function(n){return n==='et al.'?'others':n;}).join(' and ')); add('year',yr(r));
+  add(r.type==='article-journal'?'journal':'booktitle',r['container-title']); add('volume',r.volume); add('number',r.issue);
+  add('pages',(r.page||'').replace('-','--')); add('publisher',r.publisher); add('doi',r.DOI); add('url',r.URL);
+  if(r.lab&&r.lab.note)add('note',r.lab.note);
+  return '@'+(BIBT[r.type]||'misc')+'{'+r.id+',\n'+f.join(',\n')+'\n}';}
+function toRis(r){var L=['TY  - '+(RIST[r.type]||'GEN')],add=function(t,v){ if(v)L.push(t+'  - '+v);};
+  add('TI',r.title); names(r.author).forEach(function(n){add('AU',n);}); add('PY',yr(r)); add('T2',r['container-title']);
+  add('VL',r.volume); add('IS',r.issue); var pg=(r.page||'').split('-'); add('SP',pg[0]); add('EP',pg[1]); add('DO',r.DOI); add('UR',r.URL);
+  if(r.lab&&r.lab.note)add('N1',r.lab.note); L.push('ER  - '); return L.join('\r\n');}
+function toText(r){ var a=names(r.author), first=a[0]?a[0].split(',')[0]:''; var au=a.length>2||a.indexOf('et al.')>=0?first+' 等':a.map(function(x){return x.split(',')[0];}).join(' & ');
+  return au+' ('+(yr(r)||'年份不详')+'). '+r.title+'. '+(r['container-title']||'')+(r.volume?', '+r.volume:'')+(r.issue?'('+r.issue+')':'')+(r.page?', '+r.page:'')+'.'+(r.DOI?' https://doi.org/'+r.DOI:'');}
+function pageBib(m){var f=['  title = {'+m.title+'}','  year = {'+m.date.slice(0,4)+'}','  howpublished = {'+m.series+' '+m.number+', v'+m.version+'}'];
+  if(m.creator&&m.creator.length&&m.creator[0].name)f.unshift('  author = {'+m.creator.map(function(c){return c.name;}).join(' and ')+'}'); if(m.url)f.push('  url = {'+m.url+'}');
+  return '@misc{lab_page_'+m.number+',\n'+f.join(',\n')+'\n}';}
+function pageRis(m){var L=['TY  - ELEC','TI  - '+m.title]; (m.creator||[]).forEach(function(c){ if(c.name)L.push('AU  - '+c.name);}); L.push('PY  - '+m.date.slice(0,4),'T2  - '+m.series,'ET  - '+m.version); if(m.url)L.push('UR  - '+m.url); L.push('ER  - '); return L.join('\r\n');}
+function pageText(m){ var who=(m.creator||[]).filter(function(c){return c.name;}).map(function(c){return c.name;}).join(', ')||'{作者}';
+  return who+' ('+m.date.slice(0,4)+'). '+m.title+'. '+m.series+' '+m.number+', v'+m.version+'.'+(m.url?' '+m.url:'');}
+
+/* ── ZIP (압축 없음) ─────────────────────────────────── */
+var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}
+  return function(u8){var x=0xFFFFFFFF;for(var i=0;i<u8.length;i++)x=t[(x^u8[i])&255]^(x>>>8);return (x^0xFFFFFFFF)>>>0;};})();
+function makeZip(files){
+  var enc=new TextEncoder(),parts=[],central=[],off=0;
+  function u16(v){return [v&255,(v>>8)&255];} function u32(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255];}
+  files.forEach(function(f){var name=enc.encode(f.name),data=enc.encode(f.text),crc=CRC(data);
+    var head=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0));
+    parts.push(new Uint8Array(head),name,data);
+    central.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),
+      u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),name);
+    off+=head.length+name.length+data.length;});
+  var cdLen=0; central.forEach(function(c){parts.push(c); cdLen+=c.length;});
+  parts.push(new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cdLen),u32(off),u16(0))));
+  return new Blob(parts,{type:'application/zip'});
+}
+/* 내려받기: claude.ai 아티팩트 안에서는 downloads 능력, 파일로 열면 일반 링크 */
+var DLP=(window.claude&&typeof window.claude.use==='function')?window.claude.use('downloads').catch(function(){return null;}):Promise.resolve(null);
+var OKX=/\.(json|txt|csv|md|zip|html|svg|pdf)$/i;
+function anchorSave(blob,name){var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name;
+  document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},800);}
+function download(blob,name){
+  return DLP.then(function(d){
+    if(!d){anchorSave(blob,name); return;}
+    var fn=OKX.test(name)?name:name+'.txt';   // .bib .ris .ttl .jsonld 은 .txt를 붙여 저장 (확장자만 지우면 원래 형식)
+    return d.save({filename:fn,data:blob}).catch(function(e){ if(e&&e.code==='declined')return;
+      if(e&&(e.code==='unavailable'||e.code==='not_granted'))anchorSave(blob,name);
+      else console.warn('保存失败',e&&e.code);});
+  });
+}
+function dlText(text,name,type){download(new Blob([text],{type:(type||'text/plain')+';charset=utf-8'}),name);}
+
+/* ── 범위 ───────────────────────────────────────────── */
+function filterScope(KG,scope){
+  if(scope==='all')return KG;
+  var keepT={terms:{Concept:1,Method:1,BioAnalogue:1,Limitation:1,Task:1,Metric:1,Dataset:1},
+             claims:{Claim:1,Work:1},prereq:null}[scope];
+  var nodes,edges;
+  if(scope==='prereq'){ edges=KG.edges.filter(function(e){return e.p==='lab:prerequisiteOf'||e.p==='lab:hasLimitation'||e.p==='lab:addressedBy';});
+    var ids={}; edges.forEach(function(e){ids[e.s]=1;ids[e.o]=1;}); nodes=KG.nodes.filter(function(n){return ids[n.id];}); }
+  else { nodes=KG.nodes.filter(function(n){return keepT[n.type];}); var ix={}; nodes.forEach(function(n){ix[n.id]=1;});
+    if(scope==='claims'){ KG.edges.forEach(function(e){ if(e.p==='lab:supports'&&ix[e.s])ix[e.o]=2;});
+      nodes=KG.nodes.filter(function(n){return ix[n.id];}); }
+    edges=KG.edges.filter(function(e){return ix[e.s]&&(ix[e.o]||/^lab:(topic|area)\//.test(e.o));}); }
+  return {version:KG.version,page:KG.page,scope:scope,nodes:nodes,edges:edges};
+}
+function readme(meta,g,refs){
+  var un=refs.filter(function(r){var v=r.lab&&r.lab.verified; return !v||Object.keys(v).some(function(k){return !v[k];});});
+  return ['本体·书目资料包 — '+meta.title,'系列： '+meta.series+' '+meta.number+' · 版本 '+meta.version+' · 制作日期 '+meta.date,'',
+   '范围： '+(g.scope||'all')+' · 节点 '+g.nodes.length+' · 关系 '+g.edges.length+' · 文献 '+refs.length,'',
+   '[파일]','manifest.json 清单 · page_meta.json 页面书目 · kg.json 中立图（原始）· kg.jsonld JSON-LD · kg.ttl Turtle',
+   'nodes.csv / edges.csv 表格（UTF-8 BOM）· references.csl.json 参考文献原文 · references.bib BibTeX · references.ris RIS',
+   'provenance.csv 主张↔文献对应 · mermaid.md 图用','',
+   '[이 페이지 인용]',pageText(meta),'',
+   '[확인 필요]',(un.length?un.map(function(r){var v=r.lab.verified;return '- '+r.id+': '+Object.keys(v).filter(function(k){return !v[k];}).join(', ');}).join('\n'):'- 文献书目条目均已确认'),
+   '- 主张（Claim）的原文位置（页·图号）尚空缺。请对照原文填写 provenance.csv 的 loc。',
+   '- 页面作者姓名、许可证和公开地址暂留空白。请用户自行填写。','',
+   '[규칙] lab: 접두어 IRI는 '+NS+' （临时）。外部本体 ID 仅在确认后以 skos:exactMatch/closeMatch 写入。',
+   '[주의] 뼈대 영역(lab:topic/*, lab:area/*)은 작성자 초안이며 공식 분류 체계가 아니다.'].join('\n');
+}
+function buildPackage(scope){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); var g=filterScope(KG,scope);
+  var used={}; g.nodes.forEach(function(n){(n.source||[]).forEach(function(s){used[s.ref]=1;}); if(n.type==='Work')used[n.id.replace('lab:work/','')]=1;});
+  var refs=scope==='all'?REF:REF.filter(function(r){return used[r.id];});
+  var files=[{name:'page_meta.json',text:JSON.stringify(META,null,2)},{name:'kg.json',text:JSON.stringify(g,null,2)},
+    {name:'kg.jsonld',text:JSON.stringify(toJsonLd(g,META),null,2)},{name:'kg.ttl',text:toTurtle(g)},
+    {name:'nodes.csv',text:'﻿'+toNodesCsv(g)},{name:'edges.csv',text:'﻿'+toEdgesCsv(g)},
+    {name:'references.csl.json',text:JSON.stringify(refs,null,2)},{name:'references.bib',text:[pageBib(META)].concat(refs.map(toBib)).join('\n\n')},
+    {name:'references.ris',text:[pageRis(META)].concat(refs.map(toRis)).join('\r\n')},{name:'provenance.csv',text:'﻿'+toProvCsv(g,refs)},
+    {name:'mermaid.md',text:'```mermaid\n'+toMermaid(g)+'\n```\n'},{name:'README.txt',text:readme(META,g,refs)}];
+  files.unshift({name:'manifest.json',text:JSON.stringify({package:'lab-kg',packageVersion:'1.0',page:META.number,pageId:KG.page,pageVersion:META.version,
+    registry:META.registry||'',created:META.date,scope:scope,counts:{nodes:g.nodes.length,edges:g.edges.length,refs:refs.length},
+    files:files.map(function(f){return f.name;})},null,2)});
+  return files;
+}
+
+/* ── 공통 화면 조각 ─────────────────────────────────── */
+var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding:48px 0;font-family:inherit}.kgx-sec .kgx-wrap{max-width:1080px;margin:0 auto;padding:0 16px}.kgx-sec h2{margin:0 0 6px;font-size:24px}.kgx-sec .kgx-sub{color:var(--muted,#9d9bb8);margin:0 0 18px}\
+\
+.kgx .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}\
+.kgx input[type=search]{flex:1 1 220px;min-width:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);color:var(--text,#eceaf3);border-radius:8px;padding:8px 12px;font:inherit;font-size:15px}\
+.kgx .tchip{font-size:12.5px;border-radius:999px;padding:3px 10px;border:1px solid var(--rule,#363a52);background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);cursor:pointer}\
+.kgx .tchip[aria-pressed=true]{color:#13141f;font-weight:700}\
+.kgx .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}\
+@media (max-width:860px){.kgx .grid2{grid-template-columns:1fr}}\
+.kgx .list{max-height:520px;overflow:auto;border:1px solid var(--rule,#363a52);border-radius:10px;background:var(--panel,#1c1e2d)}\
+.kgx .it{padding:10px 14px;border-bottom:1px solid var(--rule,#363a52);cursor:pointer}\
+.kgx .it:last-child{border-bottom:0}.kgx .it:hover{background:var(--panel2,#25283a)}\
+.kgx .it.sel{background:var(--panel2,#25283a);box-shadow:inset 3px 0 0 var(--gfp,#5ee39c)}\
+.kgx .it .h{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}\
+.kgx .it .nm{font-weight:700}.kgx .it .en{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .ty{font-size:11.5px;border-radius:5px;padding:0 6px;color:#13141f;font-weight:700;white-space:nowrap}\
+.kgx .it .df{color:#d7d4e6;font-size:14px;margin:3px 0 0}\
+.kgx .it .more{display:none;margin-top:6px;font-size:13.5px;color:var(--muted,#9d9bb8)}.kgx .it.sel .more{display:block}\
+.kgx .it a{color:var(--gfp,#5ee39c)}\
+.kgx .rel{display:inline-block;margin:2px 6px 2px 0;padding:1px 8px;border-radius:6px;background:var(--bg,#13141f);border:1px solid var(--rule,#363a52);font-size:12.5px;cursor:pointer;color:var(--text,#eceaf3)}\
+.kgx .gbox{position:relative;border:1px solid var(--rule,#363a52);border-radius:10px;background:#101119;overflow:hidden}\
+.kgx .gbox canvas{display:block;width:100%;height:420px}\
+.kgx .legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted,#9d9bb8);margin-top:8px}\
+.kgx .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}\
+.kgx .path{display:flex;flex-wrap:wrap;gap:6px;align-items:center}\
+.kgx .path span.s{background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:8px;padding:4px 10px;font-size:14px}\
+.kgx .path span.a{color:var(--muted,#9d9bb8)}.kgx .path span.lim{border-color:#ff9a7a;color:#ffbda8}\
+.kgx .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}\
+.kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
+.kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
+.kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
+.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
+.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
+.kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
+.kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
+.kgx .badge.role{background:var(--panel2,#25283a);color:var(--muted,#9d9bb8);border:1px solid var(--rule,#363a52)}\
+.kgx pre.cite{white-space:pre-wrap;word-break:break-word;background:#101119;border:1px solid var(--rule,#363a52);border-radius:8px;padding:10px 12px;font-size:13px;margin:8px 0;max-height:220px;overflow:auto}\
+.kgx .files{display:flex;flex-wrap:wrap;gap:6px}\
+.kgx .todo li{margin:4px 0;color:#d7d4e6}\
+.kgx h3{font-size:17px;margin:20px 0 8px}\
+';
+function addCss(){ if($id('kgx-css'))return; var s=el('style'); s.id='kgx-css'; s.textContent=CSS; document.head.appendChild(s);}
+function copy(text,btn){ function ok(){var o=btn.textContent; btn.textContent='已复制'; setTimeout(function(){btn.textContent=o;},1200);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback();
+  function fallback(){var p=btn.parentNode.parentNode.querySelector('pre.cite'); if(p){var r=document.createRange(); r.selectNodeContents(p); var s=getSelection(); s.removeAllRanges(); s.addRange(r);} btn.textContent='已选择 — Ctrl+C';}}
+
+/* ── 지식 색인 ──────────────────────────────────────── */
+function mountIndex(root){
+  var KG=J('kg-raw'); var N={},OUT={},IN={};
+  KG.nodes.forEach(function(n){N[n.id]=n;OUT[n.id]=[];IN[n.id]=[];});
+  KG.edges.forEach(function(e){ if(OUT[e.s])OUT[e.s].push(e); if(IN[e.o])IN[e.o].push(e);});
+  var types=Object.keys(KG.nodes.reduce(function(a,n){a[n.type]=(a[n.type]||0)+1;return a;},{}));
+  var count={}; KG.nodes.forEach(function(n){count[n.type]=(count[n.type]||0)+1;});
+  var on={}; types.forEach(function(t){on[t]=t!=='QuizItem'&&t!=='Simulation'&&t!=='Work';});
+  var sel=null,q='';
+  root.classList.add('kgx');
+  var topics=0; KG.edges.forEach(function(e){if(e.p==='lab:broader')topics++;});
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';}), csrc=claims.filter(function(n){return (n.source||[]).length;}).length;
+  root.innerHTML='<div class="stats"><div><b>'+KG.nodes.length+'</b><span>条目（节点）</span></div><div><b>'+KG.edges.length+'</b><span>关系</span></div>'+
+    '<div><b>'+(count.Concept||0)+(count.Method||0)+'</b><span>概念·方法</span></div><div><b>'+(count.BioAnalogue||0)+'</b><span>生物对应</span></div>'+
+    '<div><b>'+csrc+'/'+claims.length+'</b><span>有出处的主张</span></div><div><b>'+topics+'</b><span>骨架主题连接</span></div></div>'+
+    '<div class="tools"><input type="search" placeholder="查找 — 权重、overfitting、蘑菇体、气味记忆笔记 …" aria-label="知识索引搜索"></div>'+
+    '<div class="tools chips" role="group" aria-label="类型"></div>'+
+    '<div class="grid2"><div class="list" role="listbox" aria-label="搜索结果"></div>'+
+    '<div><div class="gbox"><canvas aria-label="所选条目及邻接关系图"></canvas></div><div class="legend"></div>'+
+    '<p class="note gnote">选择条目后，只显示与其直接相连的邻居。也可以点击图中的点。</p></div></div>'+
+    '<h3>阶梯路径 — 先修内容与局限的链条</h3><div class="path ladder"></div>'+
+    '<h3>开放问题 · 需确认</h3><ul class="todo qs"></ul>';
+  // 칸 수 계산 오류 방지: 개념+방법 합
+  root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);
+  var inp=root.querySelector('input'), chips=root.querySelector('.chips'), list=root.querySelector('.list'), cv=root.querySelector('canvas');
+  types.forEach(function(t){var b=el('button','tchip',tl(t)+' '+count[t]); b.type='button'; b.setAttribute('aria-pressed',on[t]);
+    if(on[t])b.style.background=tc(t),b.style.borderColor=tc(t);
+    b.onclick=function(){on[t]=!on[t]; b.setAttribute('aria-pressed',on[t]); b.style.background=on[t]?tc(t):''; b.style.borderColor=on[t]?tc(t):''; render();};
+    chips.appendChild(b);});
+  var lg=root.querySelector('.legend'); types.forEach(function(t){lg.insertAdjacentHTML('beforeend','<span><i style="background:'+tc(t)+'"></i>'+tl(t)+'</span>');});
+  lg.insertAdjacentHTML('beforeend','<span>── 箭头：关系方向</span>');
+  inp.addEventListener('input',function(){q=inp.value.trim().toLowerCase(); render();});
+  function hay(n){return [n.id,n.label&&n.label.ko,n.label&&n.label.en,n.definition&&n.definition.ko,n.label&&n.label[LANG],n.definition&&n.definition[LANG],n.altLabel&&[].concat(n.altLabel.ko||[]).join(' ')].join(' ').toLowerCase();}
+  function relHtml(n){
+    var h=[]; OUT[n.id].forEach(function(e){ var o=N[e.o]; var nm=o?lab(o):((KG.topicLabels||{})[e.o]||e.o.replace(/^lab:(topic|area)\//,'').replace(/-/g,' '));
+      h.push('<span class="rel" data-go="'+esc(o?e.o:'')+'">'+esc(REL[pn(e.p)]||pn(e.p))+' → '+esc(nm)+'</span>');});
+    IN[n.id].forEach(function(e){ var s=N[e.s]; if(!s)return; h.push('<span class="rel" data-go="'+esc(e.s)+'">'+esc(lab(s))+' → '+esc(REL[pn(e.p)]||pn(e.p))+'</span>');});
+    return h.join('');}
+  function render(){
+    var arr=KG.nodes.filter(function(n){return on[n.type]&&(!q||hay(n).indexOf(q)>=0);});
+    list.innerHTML=arr.length?'':'<div class="it">没有找到条目。请检查类型标签是否已关闭。</div>';
+    arr.forEach(function(n){var d=el('div','it'+(sel===n.id?' sel':'')); d.setAttribute('role','option'); d.dataset.id=n.id;
+      var alt=LANG==='ko'&&n.altLabel&&n.altLabel.ko?' · '+[].concat(n.altLabel.ko).join(', '):'';
+      var src=(n.source||[]).length?' · 出处 '+n.source.length:'';
+      d.innerHTML='<div class="h"><span class="ty" style="background:'+tc(n.type)+'">'+tl(n.type)+'</span><span class="nm">'+esc(lab(n))+'</span><span class="en">'+esc((LANG!=='en'&&n.label&&n.label.en&&n.label.en!==lab(n)&&n.label.en)||'')+esc(alt)+'</span></div>'+
+        (n.definition?'<p class="df">'+esc(n.definition[LANG]||n.definition.ko)+'</p>':'')+
+        '<div class="more">'+(n.anchor?'<a href="'+n.anchor+'">查看说明 →</a>':'')+' <span>'+esc(src)+(n.confidence&&n.confidence!=='high'?' · 确信度 '+n.confidence:'')+'</span><div style="margin-top:6px">'+relHtml(n)+'</div></div>';
+      d.onclick=function(ev){var g=ev.target.closest('.rel'); if(g){ if(g.dataset.go)pick(g.dataset.go,true); ev.stopPropagation(); return;}
+        if(ev.target.tagName==='A')return; pick(n.id);};
+      list.appendChild(d);});
+    draw();
+  }
+  function pick(id,scroll){ sel=id; var n=N[id]; if(n&&!on[n.type]){on[n.type]=true; var b=[].slice.call(chips.children)[types.indexOf(n.type)]; b.setAttribute('aria-pressed',true); b.style.background=tc(n.type); b.style.borderColor=tc(n.type);}
+    if(scroll&&q){q='';inp.value='';} render(); var it=list.querySelector('.it.sel'); if(it)it.scrollIntoView({block:'nearest'});}
+  // 그래프
+  var G={pts:[]};
+  function layout(){
+    var center=sel||KG.edges.reduce(function(best,e){return best;},null);
+    var ids={},pts=[];
+    if(!sel){ // 개요: 퀴즈·시뮬·문헌 빼고 연결 많은 순 최대 60
+      var deg={}; KG.edges.forEach(function(e){deg[e.s]=(deg[e.s]||0)+1;deg[e.o]=(deg[e.o]||0)+1;});
+      KG.nodes.filter(function(n){return on[n.type];}).sort(function(a,b){return (deg[b.id]||0)-(deg[a.id]||0);}).slice(0,60).forEach(function(n){ids[n.id]=1;});
+    } else { ids[sel]=1; OUT[sel].forEach(function(e){if(N[e.o])ids[e.o]=1;}); IN[sel].forEach(function(e){ids[e.s]=1;}); }
+    var r=mulberry(7); Object.keys(ids).forEach(function(id){pts.push({id:id,x:r()-.5,y:r()-.5,vx:0,vy:0});});
+    var ix={}; pts.forEach(function(p,i){ix[p.id]=i;});
+    var es=KG.edges.filter(function(e){return ix[e.s]!=null&&ix[e.o]!=null;});
+    for(var it=0;it<220;it++){
+      for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+1e-4,f=0.0016/d2;
+        a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+      es.forEach(function(e){var a=pts[ix[e.s]],b=pts[ix[e.o]],dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)+1e-6,f=(d-0.22)*0.04;
+        a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+      pts.forEach(function(p){ if(p.id===sel){p.x*=.9;p.y*=.9;} p.vx-=p.x*0.004;p.vy-=p.y*0.004; p.x+=p.vx;p.y+=p.vy;p.vx*=.6;p.vy*=.6;});
+    }
+    G={pts:pts,es:es,ix:ix};
+  }
+  function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    layout(); var dpr=Math.min(2,window.devicePixelRatio||1), W=cv.clientWidth||600, H=cv.clientHeight||420;
+    cv.width=W*dpr; cv.height=H*dpr; var c=cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0); c.clearRect(0,0,W,H);
+    var xs=G.pts.map(function(p){return p.x;}),ys=G.pts.map(function(p){return p.y;});
+    var mx=Math.min.apply(0,xs),Mx=Math.max.apply(0,xs),my=Math.min.apply(0,ys),My=Math.max.apply(0,ys);
+    var pad=54, sx=(W-2*pad)/Math.max(1e-3,Mx-mx), sy=(H-2*pad)/Math.max(1e-3,My-my);
+    G.pts.forEach(function(p){p.X=pad+(p.x-mx)*sx; p.Y=pad+(p.y-my)*sy; if(G.pts.length===1){p.X=W/2;p.Y=H/2;}});
+    c.lineWidth=1;
+    G.es.forEach(function(e){var a=G.pts[G.ix[e.s]],b=G.pts[G.ix[e.o]]; var hot=sel&&(e.s===sel||e.o===sel);
+      c.strokeStyle=hot?'rgba(236,234,243,.55)':'rgba(157,155,184,.22)'; c.beginPath(); c.moveTo(a.X,a.Y); c.lineTo(b.X,b.Y); c.stroke();
+      var ang=Math.atan2(b.Y-a.Y,b.X-a.X), ex=b.X-Math.cos(ang)*9, ey=b.Y-Math.sin(ang)*9;
+      c.fillStyle=c.strokeStyle; c.beginPath(); c.moveTo(ex,ey); c.lineTo(ex-Math.cos(ang-.4)*7,ey-Math.sin(ang-.4)*7); c.lineTo(ex-Math.cos(ang+.4)*7,ey-Math.sin(ang+.4)*7); c.fill();
+      if(sel&&hot&&G.pts.length<26){c.fillStyle='#9d9bb8'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='center';
+        c.fillText(REL[pn(e.p)]||pn(e.p),(a.X+b.X)/2,(a.Y+b.Y)/2-4);} });
+    c.textAlign='center'; c.font='12.5px '+getComputedStyle(document.body).fontFamily;
+    G.pts.forEach(function(p){var n=N[p.id]; var R=p.id===sel?9:6; c.fillStyle=tc(n.type); c.beginPath(); c.arc(p.X,p.Y,R,0,7); c.fill();
+      if(p.id===sel){c.strokeStyle='#eceaf3';c.lineWidth=2;c.stroke();c.lineWidth=1;}
+      var t=lab(n); if(t.length>14)t=t.slice(0,13)+'…'; c.fillStyle=p.id===sel?'#fff':'#d7d4e6'; c.fillText(t,p.X,p.Y-R-5);});
+    c.fillStyle='rgba(241,182,70,.9)'; c.font='11px '+getComputedStyle(document.body).fontFamily; c.textAlign='left';
+    c.fillText(sel?'邻居 '+(G.pts.length-1)+'个':'概览 — 连接较多的条目 '+G.pts.length+'个',10,18);
+  }
+  cv.addEventListener('click',function(ev){var r=cv.getBoundingClientRect(),x=ev.clientX-r.left,y=ev.clientY-r.top,best=null,bd=400;
+    G.pts.forEach(function(p){var d=(p.X-x)*(p.X-x)+(p.Y-y)*(p.Y-y); if(d<bd){bd=d;best=p;}}); if(best)pick(best.id,true);});
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt); rt=setTimeout(draw,150);});
+  // 사다리 경로
+  var lad=root.querySelector('.ladder'), chainE=KG.edges.filter(function(e){return (e.p==='lab:prerequisiteOf'&&N[e.s].type==='Method'&&N[e.o]&&N[e.o].type==='Method');});
+  var nexts={},has={}; chainE.forEach(function(e){nexts[e.s]=e.o;has[e.o]=1;});
+  var start=Object.keys(nexts).filter(function(k){return !has[k];})[0], seen={};
+  var html=[]; for(var cur=start;cur&&!seen[cur];cur=nexts[cur]){ seen[cur]=1;
+    html.push('<span class="s" data-go="'+cur+'" style="border-color:'+tc('Method')+'">'+esc(lab(N[cur]))+'</span>');
+    var lim=OUT[cur].filter(function(e){return e.p==='lab:hasLimitation';})[0];
+    if(lim)html.push('<span class="a">→ 局限</span><span class="s lim" data-go="'+lim.o+'">'+esc(lab(N[lim.o]))+'</span>');
+    if(nexts[cur])html.push('<span class="a">→ 解决</span>');}
+  lad.innerHTML=html.length?html.join(''):'<span class="note">本页没有阶梯链条。</span>';
+  lad.addEventListener('click',function(ev){var s=ev.target.closest('[data-go]'); if(s)pick(s.dataset.go,true);});
+  var qs=root.querySelector('.qs'); KG.nodes.filter(function(n){return n.type==='Question';}).forEach(function(n){
+    var li=el('li',null,'<b>'+esc(lab(n))+'</b>'+(n.definition?' — '+esc(n.definition[LANG]||n.definition.ko):'')+(n.confidence==='low'?' <span class="badge no">需确认</span>':'')+(n.anchor?' <a href="'+n.anchor+'" style="color:var(--gfp,#5ee39c)">正文</a>':''));
+    qs.appendChild(li);});
+  render();
+}
+
+/* ── 꾸러미 ─────────────────────────────────────────── */
+function mountExport(root){
+  var KG=J('kg-raw'),REF=J('refs-csl'),META=J('page-meta'); root.classList.add('kgx');
+  var verifiedAll=function(r){var v=r.lab&&r.lab.verified; return v&&Object.keys(v).every(function(k){return v[k];});};
+  var vb=REF.filter(verifiedAll).length;
+  var claims=KG.nodes.filter(function(n){return n.type==='Claim';});
+  var todo=[]; REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; Object.keys(v).forEach(function(k){if(!v[k])todo.push(r.id+' — '+k+' 未确认（留空）');});});
+  todo.push('主张 '+claims.length+'个原文位置（页·图号）— provenance.csv 的 loc 栏为空');
+  todo.push('页面作者姓名·许可证·公开地址 — 在 page_meta.json 中留空');
+  var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
+  KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
+  var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
+  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">助手</div><p>没有出处的主张未放入资料包。需要人工确认的条目 '+todo.length+'个，请见下方。</p></div>'+
+    '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>节点</span></div><div><b>'+KG.edges.length+'</b><span>关系</span></div><div><b>'+REF.length+'</b><span>文献</span></div>'+
+    '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>书目全部确认的文献</span></div>'+
+    '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>有出处的主张</span></div></div>'+
+    '<h3>引用本页</h3><div class="tools"><button class="tchip cf" data-f="text" aria-pressed="true" style="background:var(--gfp,#5ee39c);border-color:var(--gfp,#5ee39c)">普通文本</button><button class="tchip cf" data-f="bib" aria-pressed="false">BibTeX</button><button class="tchip cf" data-f="ris" aria-pressed="false">RIS</button><button class="bt cp" type="button">复制</button></div><pre class="cite pc"></pre>'+
+    '<h3>参考文献 — 确认标识与所支持的概念</h3><div class="refs list"></div>'+
+    '<h3>选择范围与格式</h3><div class="tools sc" role="group" aria-label="范围"></div><div class="tools"><button class="bt primary zip" type="button">下载资料包 ZIP</button><span class="note zc"></span></div>'+
+    '<div class="files"></div><p class="note">在 claude.ai 页面单独下载文件时，.bib·.ris·.ttl·.jsonld 文件名末尾会附加 .txt（删除末尾的 .txt 即可恢复原格式）。ZIP 内的文件保持原名。</p>'+
+    (META.seeAlso?'<p class="note">若要合并多个页面的资料包并与领域地图对照，请前往 → <a style="color:var(--gfp,#5ee39c)" href="'+esc(META.seeAlso)+'"'+(/^https?:/.test(META.seeAlso)?' target="_blank" rel="noopener"':'')+'>合并领域地图 (KG_00)</a></p>':'')+
+    '<h3>需人工确认的条目</h3><ul class="todo">'+todo.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>'+
+    '<p class="note">资料包版本 1.0 · 制作日期 '+esc(META.date)+' · 登记表 '+esc(META.registry||'KG_00_registry （原型）')+' · lab: 前缀 '+NS+' （临时）· 骨架主题（lab:topic/*）为作者草稿</p>';
+  var fmt='text', pc=root.querySelector('.pc');
+  function cite(){pc.textContent=fmt==='bib'?pageBib(META):fmt==='ris'?pageRis(META):pageText(META);}
+  [].forEach.call(root.querySelectorAll('.cf'),function(b){b.onclick=function(){fmt=b.dataset.f; [].forEach.call(root.querySelectorAll('.cf'),function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); cite();};});
+  root.querySelector('.cp').onclick=function(){copy(pc.textContent,this);}; cite();
+  var RL=root.querySelector('.refs');
+  REF.forEach(function(r){var v=r.lab&&r.lab.verified||{}; var bad=Object.keys(v).filter(function(k){return !v[k];});
+    var d=el('div','r','<div>'+esc(toText(r))+'<span class="badge role">'+esc({primary:'主资料',background:'背景',data:'数值',figure:'图'}[r.lab&&r.lab.role]||'背景')+'</span>'+
+      (bad.length?'<span class="badge no">需确认：'+esc(bad.join(', '))+'</span>':'<span class="badge ok">书目已确认</span>')+'</div>'+
+      '<div style="margin-top:6px">'+(sup[r.id]||[]).map(function(id){var n=N[id]; return n?'<a class="rel" href="'+(n.anchor||'#kg')+'">'+esc(lab(n))+'</a>':'';}).join('')+'</div>');
+    RL.appendChild(d);});
+  var scope='all', SC=root.querySelector('.sc'), zc=root.querySelector('.zc');
+  [['all','全部'],['terms','仅概念·方法'],['claims','仅主张 + 出处'],['prereq','仅先修关系']].forEach(function(s,i){
+    var b=el('button','tchip',s[1]); b.type='button'; b.setAttribute('aria-pressed',i===0); if(i===0)b.style.background='var(--gfp,#5ee39c)',b.style.borderColor='var(--gfp,#5ee39c)';
+    b.onclick=function(){scope=s[0]; [].forEach.call(SC.children,function(x){var o=x===b; x.setAttribute('aria-pressed',o); x.style.background=o?'var(--gfp,#5ee39c)':''; x.style.borderColor=o?'var(--gfp,#5ee39c)':'';}); info();};
+    SC.appendChild(b);});
+  var FL=root.querySelector('.files');
+  function info(){var f=buildPackage(scope), m=JSON.parse(f[0].text); zc.textContent='节点 '+m.counts.nodes+' · 关系 '+m.counts.edges+' · 文献 '+m.counts.refs+' · 文件 '+f.length+'个';
+    FL.innerHTML=''; f.forEach(function(x){var b=el('button','bt',esc(x.name)); b.type='button'; b.onclick=function(){dlText(x.text,x.name);}; FL.appendChild(b);});}
+  root.querySelector('.zip').onclick=function(){download(makeZip(buildPackage(scope)),'kg_'+META.number+'_'+scope+'.zip');};
+  info();
+}
+function init(){addCss(); var a=$id('kg-mount'),b=$id('export-mount'); if(a)mountIndex(a); if(b)mountExport(b);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+return {download:download,buildPackage:buildPackage,makeZip:makeZip,toJsonLd:toJsonLd,toTurtle:toTurtle,toBib:toBib,toRis:toRis};
+})();
+
+</script>
+<!-- /lab-kg:script -->
 </body>
 </html>
